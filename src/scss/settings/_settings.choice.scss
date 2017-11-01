@@ -1,0 +1,42 @@
+///* ========================================================================
+//   #CHOICE
+//   ======================================================================== */
+
+
+//
+// Choice (shared settings between checkboxes and radios)
+//
+
+$choice-margin: 0 0 rem(15px) 0 !default;
+$choice-input-margin: 0 rem(8px) 0 0 !default;
+$choice-color: $gunmetal-200 !default;
+
+
+$choice-font-size: $text-font-size !default;
+$choice-font-weight: $font-weight-normal !default;
+
+$choice-disabled-color: rgba(#354052, .5);
+$choice-disabled-border-color: $grey-400;
+$choice-disabled-background-color: $grey-300;
+
+$choice-input-border-width: $base-border-width;
+$choice-input-border-color: $grey-500;
+$choice-input-background-color: $white;
+
+//
+// Checkbox
+//
+$choice-checkbox-border-radius: 4px;
+$choice-checkbox-border-color: $green-400;
+$choice-checkbox-background-color: $green-300;
+
+//
+// Radio button
+//
+$choice-radio-border-width: 4px;
+$choice-radio-border-color: $green-300;
+$choice-radio-background-color: $white;
+$choice-radio-shadow-width: 1px;
+$choice-radio-shadow-color: $green-400;
+
+

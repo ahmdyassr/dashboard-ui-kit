@@ -1,0 +1,50 @@
+/* ==========================================================================
+   #SELECT
+   ========================================================================== */
+
+.c-select {
+	position: relative;
+
+	select {
+		@include linear-gradient(to bottom, $select-background-color);
+		display: block;
+		position: relative;
+		width: 100%;
+		margin: 0;
+		padding: $select-padding;
+		transition: all .1s;
+		border: $select-border-width solid $select-border-color;
+		border-radius: $base-border-radius;
+		outline: none;
+		color: $select-color;
+		font-size: $select-font-size;
+		font-weight: $select-font-weight;
+		cursor: pointer;
+		appearance: none;
+		resize: vertical;
+	}
+
+	&::after {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		color: #A8AAB7;
+		font-family: $base-icon-font;
+		content: "\f107"; // fa-angle-down
+	}
+
+	&:hover select {
+		border-color: $blue-200;
+		color: $select-hover-color;
+	}
+
+	&.is-disabled {
+		select {
+			border-color: $select-disabled-border-color;
+			background: $select-disabled-background-color;
+			color: $select-disabled-color;
+		}
+	}
+}
+
+

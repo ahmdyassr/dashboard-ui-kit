@@ -1,0 +1,91 @@
+/* ==========================================================================
+   #PROGRESS
+   ========================================================================== */
+
+.c-progress {
+	display: block;
+	width: 100%;
+	height: $progress-height;
+	margin: $progress-margin;
+	border-radius: $progress-border-radius;
+	background-color: $progress-background-color;
+}
+
+/**
+  * 1. Default (dark) background-color would be applied, if class 
+  *    `c-progress--[color]` isn't specified.
+  */
+
+.c-progress__bar {
+	position: relative;
+	height: 100%;
+	border-radius: $progress-border-radius;
+	background-color: $progress-bar-primary-background-color; /* [1] */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+/* Size variants
+   ========================================================================== */
+
+.c-progress--xsmall {
+	height: $progress-xsmall-height;
+}
+
+.c-progress--small {
+	height: $progress-small-height;
+}
+
+
+/* Style variants
+   ========================================================================== */
+
+.c-progress--danger {
+	.c-progress__bar {
+		background-color: $progress-bar-danger-background-color;
+	}
+}
+
+.c-progress--info {
+	.c-progress__bar {
+		background-color: $progress-bar-info-background-color;
+	}
+}
+
+.c-progress--success {
+	.c-progress__bar {
+		background-color: $progress-bar-success-background-color;
+	}
+}
+
+.c-progress--warning {
+	.c-progress__bar {
+		background-color: $progress-bar-warning-background-color;
+	}
+}
+
+.c-progress--fancy {
+	.c-progress__bar {
+		background-color: $progress-bar-fancy-background-color;
+	}
+}
+
+//
+// DEVELOPER NOTE: THIS NEEDS IMPROVEMENTS
+//
+/**
+  * Multi-level progress bars
+  */
+
+.c-progress__bar {
+	.c-progress__bar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		background-color: red;
+		z-index: $z-index-200;
+	}
+}
