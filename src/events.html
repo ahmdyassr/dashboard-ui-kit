@@ -163,13 +163,16 @@
                                 <h1 class="u-h3">Featured Events</h1>
                             </div>
                             <div class="col-4 col-xl-2">
-                                <div class="c-select u-mb-small">
-                                    <select name="recently-opened">
-                                        <option value="value1" selected="">All Types</option>
-                                        <option value="value2">Value 2</option>
-                                        <option value="value3">Value 3</option>
+                                <div class="c-field u-mb-small">
+                                    <label class="c-field__label u-hidden-visually" for="select-recently">Recently Opened</label>
+
+                                    <!-- Select2 jquery plugin is used -->
+                                    <select class="c-select" name="recently-opened" id="select-recently">
+                                        <option value="value1">All Types</option>
+                                        <option value="value2">This day</option>
+                                        <option value="value3">Last Week</option>
                                     </select>
-                                </div><!-- // .c-select -->
+                                </div>
                             </div>
                         </div><!-- // .row -->
                         <div class="row">
