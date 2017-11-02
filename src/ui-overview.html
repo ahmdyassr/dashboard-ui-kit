@@ -434,6 +434,8 @@
                 <div class="col-md-4 u-mb-medium">
                     <p class="u-text-mute u-text-uppercase u-mb-small">Selects</p>
 
+                    <!-- 
+                        OLD SELECT COMPONENT
                     <div class="c-field u-mb-medium">
                         <label class="c-field__label" for="select1">Label</label>
                         <div class="c-select">
@@ -443,17 +445,49 @@
                                 <option>Third</option>
                             </select>
                         </div>
+                    </div> -->
+
+                    <div class="c-field u-mb-medium">
+                        <label class="c-field__label" for="select1">Single Select</label>
+
+                        <!-- Select2 jquery plugin is used -->
+                        <select class="c-select" id="select1">
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                        </select>
                     </div>
 
-                    <div class="c-field">
-                        <label class="c-field__label" for="select3">Disabled</label>
-                        <div class="c-select is-disabled">
-                            <select id="select3" disabled>
-                                <option>First</option>
-                                <option>Second</option>
-                                <option>Third</option>
-                            </select>
-                        </div>
+                    <div class="c-field u-mb-medium">
+                        <label class="c-field__label" for="select2">Single Select (Search Enabled)</label>
+
+                        <!-- Select2 jquery plugin is used -->
+                        <select class="c-select has-search" id="select2">
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                        </select>
+                    </div>
+
+                    <div class="c-field u-mb-medium">
+                        <label class="c-field__label" for="select3">Multiple Select (Search Enabled)</label>
+
+                        <!-- Select2 jquery plugin is used -->
+                        <select class="c-select c-select--multiple" id="select3">
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                        </select>
+                    </div>
+
+                    <div class="c-field u-mb-medium">
+                        <label class="c-field__label" for="select4">Disabled Select</label>
+
+                        <select class="c-select is-disabled" id="select4" disabled>
+                            <option>First</option>
+                            <option>Second</option>
+                            <option>Third</option>
+                        </select>
                     </div>
                 </div>
 

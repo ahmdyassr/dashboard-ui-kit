@@ -28,11 +28,12 @@
     "sass-lint": "^1.10.2"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-beta.2",
     "chart.js": "^2.6.0",
     "dragula": "^3.7.2",
     "fullcalendar": "^3.4.0",
     "jquery": "^3.2.1",
     "moment": "^2.18.1",
-    "bootstrap": "^4.0.0-beta.2"
+    "select2": "^4.0.6-rc.0"
   }
 }
