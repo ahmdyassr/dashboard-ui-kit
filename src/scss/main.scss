@@ -165,6 +165,8 @@
 @import "vendor/fullcalendar";
 @import "vendor/fullcalendar-custom"; // override fullcalendar default styles
 @import "vendor/dragula";
+@import "vendor/select2";
+@import "vendor/select2-custom"; // override select2 default styles
 
 
 
@@ -188,7 +190,6 @@
 @import "components/components.pagination";
 @import "components/components.switch";
 @import "components/components.badges";
-@import "components/components.select";
 @import "components/components.tooltips";
 @import "components/components.alerts";
 @import "components/components.avatars";

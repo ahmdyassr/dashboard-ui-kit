@@ -220,12 +220,15 @@
                 <div class="col-lg-6">
                     <div class="u-flex u-justify-between">
                         <h3 class="u-mb-small">Recently Opened</h3>
+                        
+                        <div class="c-field u-width-25 u-mb-small">
+                            <label class="c-field__label u-hidden-visually" for="select-recently">Recently Opened</label>
 
-                        <div class="c-select u-width-25">
-                            <select name="recently-opened">
-                                <option value="value1" selected>All Types</option> 
-                                <option value="value2">Value 2</option>
-                                <option value="value3">Value 3</option>
+                            <!-- Select2 jquery plugin is used -->
+                            <select class="c-select" name="recently-opened" id="select-recently">
+                                <option value="value1">All Types</option>
+                                <option value="value2">This day</option>
+                                <option value="value3">Last Week</option>
                             </select>
                         </div>
                     </div>
