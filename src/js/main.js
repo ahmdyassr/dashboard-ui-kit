@@ -75,7 +75,14 @@ $(function() {
     // 8. datatable
      if($('#datatable').length) {
         $("#datatable").DataTable({
-            searching: false
+            searching: false,
+            "lengthChange": false, 
+            "order": [], // disable ordering on init
+            "ordering": true,
+            columnDefs: [{
+              orderable: false,
+              targets: "no-sort"
+            }]
         });
     }
 }); 

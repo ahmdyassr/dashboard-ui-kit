@@ -6675,6 +6675,7 @@ be a descendant of the grid when it is being dragged.
   opacity: 0.5; }
 
 .dataTables_info {
+  font-size: 0.875rem;
   margin-top: 0.9375rem;
   float: left;
   color: #7f8fa4; }
