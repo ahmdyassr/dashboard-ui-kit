@@ -42,13 +42,15 @@ gulp.task('copy-assets', function() {
             './node_modules/fullcalendar/dist/fullcalendar.min.js', // [1]
             './node_modules/chart.js/dist/chart.min.js',
             './node_modules/dragula/dist/dragula.min.js',
-            './node_modules/select2/dist/js/select2.full.min.js'
+            './node_modules/select2/dist/js/select2.full.min.js',
+            './node_modules/dropzone/dist/min/dropzone.min.js'
         ],
         scss: [
             './node_modules/bootstrap/dist/css/bootstrap-grid.css',
             './node_modules/fullcalendar/dist/fullcalendar.css', // [1]
             './node_modules/dragula/dist/dragula.css',
-            './node_modules/select2/dist/css/select2.css'
+            './node_modules/select2/dist/css/select2.css',
+            './node_modules/dropzone/dist/dropzone.css'
         ] 
     };
     lodash(assets).forEach(function (assets, type) {
@@ -132,6 +134,7 @@ gulp.task('javascript', function(){
             folder.src + 'js/vendor/chart.min.js',
             folder.src + 'js/vendor/dragula.min.js',
             folder.src + 'js/vendor/select2.full.min.js',
+            folder.src + 'js/vendor/dropzone.min.js',
             folder.src + 'js/fullcalendar-custom.js',
             folder.src + 'js/chart-custom.js',
             folder.src + 'js/sidebar.js',

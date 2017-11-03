@@ -12,11 +12,15 @@
 // 4. Todo Tasks
 // 5. Boards (dragula plugin)
 // 6. Select (select2 plugin)
+// 7. File Upload (dropzone plugin)
 
 //
 // Note: Bootstrap plugins is enabled through via data attributes
+//
 
-// document ready
+// A fix to initialise dropzone on document ready
+Dropzone.autoDiscover = false;
+
 $(function() {
 	"use strict";
 
@@ -62,4 +66,13 @@ $(function() {
             disabled: true
         });
     }
+
+    // 7. dropzone
+    if($('.dropzone').length) {
+        $("#custom-dropzone").dropzone();
+    }
 }); 
+
+
+
+
