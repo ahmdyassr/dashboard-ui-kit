@@ -8253,7 +8253,7 @@ be a descendant of the grid when it is being dragged.
  * because they are similar in styling, this class is used to share same 
  * styles between them.
  *
- * USAGE: 
+ * EXAMPLE: 
  *
  * <div class="c-choice c-choice--checkbox">
  *     <input class="c-choice__input" id="custom-checkbox" type="checkbox">
@@ -8275,8 +8275,6 @@ be a descendant of the grid when it is being dragged.
 	 * Disabled state
 	 *
 	 * NOTE: `disabled` attribute must be added to <input>
-	 *
-	 * EXAMPLE: <input class="c-choice__input" disabled>
 	 */ }
   .c-choice.is-disabled .c-choice__label {
     color: rgba(53, 64, 82, 0.5);
@@ -8285,7 +8283,12 @@ be a descendant of the grid when it is being dragged.
       border-color: #dfe3e9;
       background-color: #e6eaee; }
 
+/**
+ * 1. Hide default input and create a customized input.
+ * 2. Align the customized input with label.
+ */
 .c-choice__input {
+  /* [1] */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -8310,7 +8313,7 @@ be a descendant of the grid when it is being dragged.
     display: inline-block;
     position: relative;
     top: -1px;
-    /* [1] */
+    /* [2] */
     width: 16px;
     height: 16px;
     margin: 0 15px 0 0;
@@ -8325,6 +8328,9 @@ be a descendant of the grid when it is being dragged.
     visibility: visible;
     /* [2] */ }
 
+/**
+ * Checkboxes
+ */
 .c-choice--checkbox .c-choice__input + .c-choice__label::before {
   border-radius: 4px; }
 
@@ -8335,6 +8341,9 @@ be a descendant of the grid when it is being dragged.
   font-size: 10px;
   content: "\f00c"; }
 
+/**
+ * Radio buttons
+ */
 .c-choice--radio .c-choice__input + .c-choice__label::before {
   border-radius: 100%; }
 
