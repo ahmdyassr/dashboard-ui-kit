@@ -26,7 +26,28 @@
 	color: $choice-color;
 	font-size: 0; /* [1] */
 	font-weight: $choice-font-weight;
+
+	/**
+	 * Disabled state
+	 *
+	 * NOTE: `disabled` attribute must be added to <input>
+	 *
+	 * EXAMPLE: <input class="c-choice__input" disabled>
+	 */
+	&.is-disabled {
+		.c-choice__label {
+			color: $choice-disabled-color;
+			cursor: default;
+
+			&::before {
+				border-color: $choice-disabled-border-color;
+				background-color: $choice-disabled-background-color;
+			}
+		}
+	}
 }
+
+
 
 .c-choice__input {
 	position: absolute; // hide

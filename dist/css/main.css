@@ -8270,7 +8270,20 @@ be a descendant of the grid when it is being dragged.
   color: #354052;
   font-size: 0;
   /* [1] */
-  font-weight: 400; }
+  font-weight: 400;
+  /**
+	 * Disabled state
+	 *
+	 * NOTE: `disabled` attribute must be added to <input>
+	 *
+	 * EXAMPLE: <input class="c-choice__input" disabled>
+	 */ }
+  .c-choice.is-disabled .c-choice__label {
+    color: rgba(53, 64, 82, 0.5);
+    cursor: default; }
+    .c-choice.is-disabled .c-choice__label::before {
+      border-color: #dfe3e9;
+      background-color: #e6eaee; }
 
 .c-choice__input {
   position: absolute;
