@@ -6252,6 +6252,10 @@ be a descendant of the grid when it is being dragged.
   background-color: #EAEEF1;
   color: rgba(53, 64, 82, 0.5); }
 
+/*
+ * The MIT License
+ * Copyright (c) 2012 Matias Meno <m@tias.me>
+ */
 @-webkit-keyframes passing-through {
   0% {
     opacity: 0;
@@ -8248,45 +8252,71 @@ be a descendant of the grid when it is being dragged.
  * Checkboxes & Radios are controlled with a simple class called `c-choice`
  * because they are similar in styling, this class is used to share same 
  * styles between them.
+ *
+ * EXAMPLE: 
+ *
+ * <div class="c-choice c-choice--checkbox">
+ *     <input class="c-choice__input" id="custom-checkbox" type="checkbox">
+ *     <label class="c-choice__label" for="custom-checkbox">Checkbox 1</label>
+ * </div>
+ */
+/**
+ * 1. Get rid of white space cause by using `inline-flex`.
+ * 
+ * Read More: https://goo.gl/ajXW52
  */
 .c-choice {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 0 0.9375rem 0;
   color: #354052;
-  font-size: 0.875rem;
+  font-size: 0;
+  /* [1] */
   font-weight: 400;
-  cursor: pointer; }
-  .c-choice.is-disabled, .c-choice:disabled {
-    color: rgba(53, 64, 82, 0.5); }
-    .c-choice.is-disabled .c-choice__input::after, .c-choice:disabled .c-choice__input::after {
+  /**
+	 * Disabled state
+	 *
+	 * NOTE: `disabled` attribute must be added to <input>
+	 */ }
+  .c-choice.is-disabled .c-choice__label {
+    color: rgba(53, 64, 82, 0.5);
+    cursor: default; }
+    .c-choice.is-disabled .c-choice__label::before {
       border-color: #dfe3e9;
       background-color: #e6eaee; }
 
 /**
- * Choice input (shared styles between checkboxes and radios)
- *
- * 1. Align input with label.
- * 2. Hide default input and create a customized input.
+ * 1. Hide default input and create a customized input.
+ * 2. Align the customized input with label.
  */
 .c-choice__input {
-  display: inline-block;
-  position: relative;
-  top: -1px;
   /* [1] */
-  width: 16px;
-  height: 16px;
-  margin: 0 15px 0 0;
-  visibility: hidden;
-  /* [2] */ }
-  .c-choice__input::after {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%); }
+  .c-choice__input + .c-choice__label {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 0.875rem;
+    cursor: pointer; }
+  .c-choice__input + .c-choice__label::before {
     display: inline-block;
+    position: relative;
+    top: -1px;
+    /* [2] */
     width: 16px;
     height: 16px;
+    margin: 0 15px 0 0;
     -webkit-transition: all .3s;
     transition: all .3s;
     border: 1px solid #bbc5d5;
@@ -8298,20 +8328,26 @@ be a descendant of the grid when it is being dragged.
     visibility: visible;
     /* [2] */ }
 
-.c-choice__input[type="checkbox"]::after {
+/**
+ * Checkboxes
+ */
+.c-choice--checkbox .c-choice__input + .c-choice__label::before {
   border-radius: 4px; }
 
-.c-choice__input[type="checkbox"]:checked::after {
+.c-choice--checkbox .c-choice__input:checked + .c-choice__label::before {
   border-color: #34aa44;
   background-color: #39b54a;
   font-family: "FontAwesome";
   font-size: 10px;
   content: "\f00c"; }
 
-.c-choice__input[type="radio"]::after {
+/**
+ * Radio buttons
+ */
+.c-choice--radio .c-choice__input + .c-choice__label::before {
   border-radius: 100%; }
 
-.c-choice__input[type="radio"]:checked::after {
+.c-choice--radio .c-choice__input:checked + .c-choice__label::before {
   border: 4px solid #39b54a;
   background-color: #fff;
   -webkit-box-shadow: 0 0 0 1px #34aa44;
