@@ -8,15 +8,63 @@
  * Dashboard's custom styles for datatables plugin.
  */
 
-.dataTable .sorting {
+.dataTable .sorting,
+.dataTable .sorting_asc,
+.dataTable .sorting_desc {
+	position: relative;
 	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
 }
 
-.dataTable .sorting:after {
+
+.dataTable thead .sorting:before,
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:before,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:before,
+.dataTable thead .sorting_desc:after {
+	position: absolute;
 	display: inline-block;
-	content: "x";
+	content: "\f0d8"; // fa-caret-up
 	color: $color-mute;
+	font-family: $base-icon-font;
 }
+
+.dataTable thead .sorting:before,
+.dataTable thead .sorting_asc:before,
+.dataTable thead .sorting_desc:before {
+	right: 10px;
+	top: 6px;
+}
+
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:after  {
+	right: 10px;
+	bottom: 6px;
+	content: "\f0d7"; // fa-caret-down
+}
+
+.dataTable thead .sorting:last-child:after,
+.dataTable thead .sorting_asc:last-child:after,
+.dataTable thead .sorting_desc:last-child:after,
+.dataTable thead .sorting:last-child:before,
+.dataTable thead .sorting_asc:last-child:before,
+.dataTable thead .sorting_desc:last-child:before  {
+	right: 20px;
+} 
+
+.dataTable thead .sorting_asc:after {
+	opacity: 0.5;
+}
+
+.dataTable thead .sorting_desc:before {
+	opacity: 0.5;
+}
+
 
 .dataTables_info {
 	margin-top: $spacer-small;

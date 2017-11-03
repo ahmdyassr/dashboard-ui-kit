@@ -6625,13 +6625,54 @@ be a descendant of the grid when it is being dragged.
 /**
  * Dashboard's custom styles for datatables plugin.
  */
-.dataTable .sorting {
+.dataTable .sorting,
+.dataTable .sorting_asc,
+.dataTable .sorting_desc {
+  position: relative;
   cursor: pointer; }
+  .dataTable .sorting:focus,
+  .dataTable .sorting_asc:focus,
+  .dataTable .sorting_desc:focus {
+    outline: none; }
 
-.dataTable .sorting:after {
+.dataTable thead .sorting:before,
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:before,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:before,
+.dataTable thead .sorting_desc:after {
+  position: absolute;
   display: inline-block;
-  content: "x";
-  color: #7f8fa4; }
+  content: "\f0d8";
+  color: #7f8fa4;
+  font-family: "FontAwesome"; }
+
+.dataTable thead .sorting:before,
+.dataTable thead .sorting_asc:before,
+.dataTable thead .sorting_desc:before {
+  right: 10px;
+  top: 6px; }
+
+.dataTable thead .sorting:after,
+.dataTable thead .sorting_asc:after,
+.dataTable thead .sorting_desc:after {
+  right: 10px;
+  bottom: 6px;
+  content: "\f0d7"; }
+
+.dataTable thead .sorting:last-child:after,
+.dataTable thead .sorting_asc:last-child:after,
+.dataTable thead .sorting_desc:last-child:after,
+.dataTable thead .sorting:last-child:before,
+.dataTable thead .sorting_asc:last-child:before,
+.dataTable thead .sorting_desc:last-child:before {
+  right: 20px; }
+
+.dataTable thead .sorting_asc:after {
+  opacity: 0.5; }
+
+.dataTable thead .sorting_desc:before {
+  opacity: 0.5; }
 
 .dataTables_info {
   margin-top: 0.9375rem;
