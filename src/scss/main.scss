@@ -163,10 +163,12 @@
 @import "vendor/bootstrap-grid";
 @import "vendor/fontawesome";
 @import "vendor/fullcalendar";
-@import "vendor/fullcalendar-custom"; // override fullcalendar default styles
+@import "vendor/fullcalendar-custom"; // override `fullcalendar` default styles
 @import "vendor/dragula";
 @import "vendor/select2";
-@import "vendor/select2-custom"; // override select2 default styles
+@import "vendor/select2-custom"; // override `select2` default styles
+@import "vendor/dropzone.min";
+@import "vendor/dropzone-custom"; // override `dropzone` default styles
 
 
 

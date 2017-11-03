@@ -17,6 +17,8 @@
 // Note: Bootstrap plugins is enabled through via data attributes
 
 // document ready
+Dropzone.autoDiscover = false;
+
 $(function() {
 	"use strict";
 
@@ -62,4 +64,12 @@ $(function() {
             disabled: true
         });
     }
+
+    // dropzone
+    $("#custom-dropzone").dropzone();
+
 }); 
+
+
+
+
