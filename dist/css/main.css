@@ -6620,6 +6620,66 @@ be a descendant of the grid when it is being dragged.
   color: #E2E3E9; }
 
 /* ==========================================================================
+   #DATATABLES CUSTOM STYLES
+   ========================================================================== */
+/**
+ * Dashboard's custom styles for datatables plugin.
+ */
+.dataTable .sorting {
+  cursor: pointer; }
+
+.dataTable .sorting:after {
+  display: inline-block;
+  content: "x";
+  color: #7f8fa4; }
+
+.dataTables_info {
+  margin-top: 0.9375rem;
+  float: left;
+  color: #7f8fa4; }
+
+.dataTables_paginate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.9375rem;
+  float: right; }
+  .dataTables_paginate span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .dataTables_paginate .paginate_button {
+    display: block;
+    height: 2.1875rem;
+    /* [1] */
+    padding: 0 16px;
+    border: 1px solid #e6eaee;
+    background-color: #fff;
+    color: rgba(53, 64, 82, 0.5);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 2.1875rem;
+    /* [1] */
+    text-align: center; }
+    .dataTables_paginate .paginate_button:hover {
+      color: #354052;
+      text-decoration: none; }
+    .dataTables_paginate .paginate_button.current {
+      color: #354052; }
+    .dataTables_paginate .paginate_button + .paginate_button {
+      border-left: 0; }
+    .dataTables_paginate .paginate_button.previous {
+      border-radius: 4px;
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+    .dataTables_paginate .paginate_button.next {
+      border-radius: 4px;
+      border-left: 0;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0; }
+
+/* ==========================================================================
    #PAGE OBJECT
    ========================================================================== */
 /**

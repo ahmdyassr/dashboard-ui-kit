@@ -71,6 +71,13 @@ $(function() {
     if($('.dropzone').length) {
         $("#custom-dropzone").dropzone();
     }
+
+    // 8. datatable
+     if($('#datatable').length) {
+        $("#datatable").DataTable({
+            searching: false
+        });
+    }
 }); 
 
 

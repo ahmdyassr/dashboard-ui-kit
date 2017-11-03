@@ -43,7 +43,8 @@ gulp.task('copy-assets', function() {
             './node_modules/chart.js/dist/chart.min.js',
             './node_modules/dragula/dist/dragula.min.js',
             './node_modules/select2/dist/js/select2.full.min.js',
-            './node_modules/dropzone/dist/min/dropzone.min.js'
+            './node_modules/dropzone/dist/min/dropzone.min.js',
+            './node_modules/datatables.net/js/jquery.dataTables.js'
         ],
         scss: [
             './node_modules/bootstrap/dist/css/bootstrap-grid.css',
@@ -134,7 +135,8 @@ gulp.task('javascript', function(){
             folder.src + 'js/vendor/chart.min.js',
             folder.src + 'js/vendor/dragula.min.js',
             folder.src + 'js/vendor/select2.full.min.js',
-            folder.src + 'js/vendor/dropzone.min.js',
+            folder.src + 'js/vendor/dropzone.min.js', 
+            folder.src + 'js/vendor/jquery.dataTables.js',
             folder.src + 'js/fullcalendar-custom.js',
             folder.src + 'js/chart-custom.js',
             folder.src + 'js/sidebar.js',
