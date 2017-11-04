@@ -4,14 +4,41 @@
 
 .c-invoice {
 	position: relative;
-	padding: $spacer-xlarge;
+	padding: $spacer-xlarge $spacer-xlarge $spacer;
 	border: $base-border-width solid $base-border-color;
 	border-radius: $base-border-radius;
 	background-color: $base-background-color;
+	color: $heading-color;
+
+	@include respond-to($breakpoint-tablet) {
+		padding: $spacer;
+	}
+}
+
+/**
+ * Invoice Header
+ *
+ * Contains:
+ * - compnay's name & logo 
+ * - invoice's title & date
+ */
+
+.c-invoice__header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: $spacer-large;
+
+	@include respond-to($breakpoint-tablet) {
+		flex-flow: column;
+	}
 }
 
 .c-invoice__brand {
 	margin-bottom: $spacer;
+
+	@include respond-to($breakpoint-tablet) {
+		margin: 0;
+	}
 }
 
 .c-invoice__brand-img {
@@ -20,24 +47,68 @@
 }
 
 .c-invoice__brand-name {
-	font-size: 28px;
+	font-size: $h3-font-size;
 }
+
+.c-invoice__title {
+	margin-top: $spacer;
+
+	h4 {
+		margin: 0;
+	}
+}
+
+.c-invoice__date {
+	color: $color-mute;
+}
+
+/**
+ * Invoice Details
+ *
+ */
 
 .c-invoice__details {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: $spacer-xlarge;
 }
+
+
+.c-invoice__company-name {
+	margin-bottom: $spacer-small;
+	font-size: $h4-font-size;
+}
+
+.c-invoice__company-address {
+	margin-bottom: $spacer-small;
+	color: $color-mute;
+}
+
+/**
+ * Invoice content
+ */
 
 .c-invoice__body {
 	display: flex;
-}
 
-.c-invoice__title {
-	margin-bottom: $spacer;
+	@include respond-to($breakpoint-tablet) {
+		flex-flow: column;
+	}
 }
 
 .c-invoice__desc {
 	flex: 0 1 250px;
+	font-size: $h4-font-size;
+
+	@include respond-to($breakpoint-tablet) {
+		flex: 0;
+		margin-bottom: $spacer;
+	}
+}
+
+.c-invoice__number {
+	color: $color-mute;
+	font-size: $text-font-size;
 }
 
 .c-invoice__table {
@@ -45,10 +116,40 @@
 
 	.c-table {
 		margin-bottom: $spacer-xsmall;
+
+		@include respond-to($breakpoint-tablet) {
+			display: table;
+			width: 100%;
+		}
 	}
 }
 
+.c-invoice__terms {
+	color: $color-mute;
+	font-size: $text-font-size;
+}
 
+/**
+ * Footer
+ */
+
+.c-invoice__footer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: $spacer-xlarge;
+	padding-top: $spacer;
+	border-top: $base-border-width solid $base-border-color;
+}
+
+.c-invoice__footer-brand {
+	display: flex;
+	align-items: center;
+}
+
+.c-invoice__footer-brand img {
+	max-width: 30px;
+	margin-right: $spacer-xsmall;
+}
 
 
 
