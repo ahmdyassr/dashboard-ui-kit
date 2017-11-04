@@ -1,0 +1,57 @@
+/* ==========================================================================
+   #INVOICE
+   ========================================================================== */
+
+.c-invoice {
+	position: relative;
+	padding: $spacer-xlarge;
+	border: $base-border-width solid $base-border-color;
+	border-radius: $base-border-radius;
+	background-color: $base-background-color;
+}
+
+.c-invoice__brand {
+	margin-bottom: $spacer;
+}
+
+.c-invoice__brand-img {
+	max-width: 40px;
+	margin-bottom: $spacer-small;
+}
+
+.c-invoice__brand-name {
+	font-size: 28px;
+}
+
+.c-invoice__details {
+	display: flex;
+	justify-content: space-between;
+}
+
+.c-invoice__body {
+	display: flex;
+}
+
+.c-invoice__title {
+	margin-bottom: $spacer;
+}
+
+.c-invoice__desc {
+	flex: 0 1 250px;
+}
+
+.c-invoice__table {
+	width: 100%;
+
+	.c-table {
+		margin-bottom: $spacer-xsmall;
+	}
+}
+
+
+
+
+
+
+
+

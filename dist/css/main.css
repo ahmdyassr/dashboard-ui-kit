@@ -10524,6 +10524,52 @@ textarea.c-input {
       font-size: 1.25rem; } }
 
 /* ==========================================================================
+   #INVOICE
+   ========================================================================== */
+.c-invoice {
+  position: relative;
+  padding: 6.25rem;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+  background-color: #fff; }
+
+.c-invoice__brand {
+  margin-bottom: 1.875rem; }
+
+.c-invoice__brand-img {
+  max-width: 40px;
+  margin-bottom: 0.9375rem; }
+
+.c-invoice__brand-name {
+  font-size: 28px; }
+
+.c-invoice__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.c-invoice__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.c-invoice__title {
+  margin-bottom: 1.875rem; }
+
+.c-invoice__desc {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 250px;
+          flex: 0 1 250px; }
+
+.c-invoice__table {
+  width: 100%; }
+  .c-invoice__table .c-table {
+    margin-bottom: 0.625rem; }
+
+/* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
 /**
