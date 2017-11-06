@@ -13,6 +13,7 @@
 // 5. Boards (dragula plugin)
 // 6. Select (select2 plugin)
 // 7. File Upload (dropzone plugin)
+// 8. Sortable Table (dataTable plugin)
 
 //
 // Note: Bootstrap plugins is enabled through via data attributes
@@ -22,19 +23,19 @@
 Dropzone.autoDiscover = false;
 
 $(function() {
-	"use strict";
+    "use strict";
 
 
-	// Initialize 
-	
-	Sidebar(); // 1. Sidebar
-	Switch();  // 2. Switches
-	Toggle();  // 3. Toggles
-	Todo();    // 4. Todo
+    // Initialize 
+    
+    Sidebar(); // 1. Sidebar
+    Switch();  // 2. Switches
+    Toggle();  // 3. Toggles
+    Todo();    // 4. Todo
 
     // 5. Boards 
     if($('.c-board').length) {
-    	var dragulaObj = dragula( $('.c-board__content').toArray(), {});
+        var dragulaObj = dragula( $('.c-board__content').toArray(), {});
     }
 
     // 6. Select
@@ -45,7 +46,7 @@ $(function() {
             $disabledSelect = $('.c-select.is-disabled');
 
         $singleSelect.select2({
-        	width: '100%',
+            width: '100%',
             minimumResultsForSearch: Infinity // disable search
         });
 
@@ -86,7 +87,3 @@ $(function() {
         });
     }
 }); 
-
-
-
-

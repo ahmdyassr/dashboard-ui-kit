@@ -1,23 +1,23 @@
 'use strict';
 
 const gulp = require('gulp'),
-	  newer = require('gulp-newer'),
-	  imagemin = require('gulp-imagemin'),
-	  sass = require('gulp-sass'),
-	  sourcemaps = require('gulp-sourcemaps'),
-	  autoprefixer = require('gulp-autoprefixer'),
-	  cssnano = require('gulp-cssnano'),
-	  rename = require('gulp-rename'),
-	  concat = require('gulp-concat'),
-	  uglify = require('gulp-uglify'),
+      newer = require('gulp-newer'),
+      imagemin = require('gulp-imagemin'),
+      sass = require('gulp-sass'),
+      sourcemaps = require('gulp-sourcemaps'),
+      autoprefixer = require('gulp-autoprefixer'),
+      cssnano = require('gulp-cssnano'),
+      rename = require('gulp-rename'),
+      concat = require('gulp-concat'),
+      uglify = require('gulp-uglify'),
       pump = require('pump'),
-	  lodash = require('lodash'),
-	  browsersync = require('browser-sync');
+      lodash = require('lodash'),
+      browsersync = require('browser-sync');
 
 
 const folder = { 
-	src: 'src/',     // source files
-	dist: 'dist/'   // build/distribution files
+    src: 'src/',     // source files
+    dist: 'dist/'   // build/distribution files
 };
 
 
@@ -36,10 +36,10 @@ const folder = {
 gulp.task('copy-assets', function() {
     var assets = {
         js: [
-        	'./node_modules/jquery/dist/jquery.min.js',
+            './node_modules/jquery/dist/jquery.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', // bootstrap & popper.js
             './node_modules/moment/min/moment.min.js',
-            './node_modules/fullcalendar/dist/fullcalendar.min.js', // [1]
+            './node_modules/fullcalendar/dist/fullcalendar.js', // [1]
             './node_modules/chart.js/dist/chart.min.js',
             './node_modules/dragula/dist/dragula.min.js',
             './node_modules/select2/dist/js/select2.full.min.js',
@@ -55,26 +55,26 @@ gulp.task('copy-assets', function() {
         ] 
     };
     lodash(assets).forEach(function (assets, type) {
-    	if (type == "scss") { 
-    		gulp.src(assets)
-    		.pipe(rename({ // rename example.css to _example.scss
-    			prefix: '_',
-    			extname: '.scss'
-    		}))
-    		.pipe(gulp.dest(folder.src + 'scss/vendor'));
-    	} else {
-    		gulp.src(assets).pipe(gulp.dest(folder.src + 'js/vendor'));
-    	}
+        if (type == "scss") { 
+            gulp.src(assets)
+            .pipe(rename({ // rename example.css to _example.scss
+                prefix: '_',
+                extname: '.scss'
+            }))
+            .pipe(gulp.dest(folder.src + 'scss/vendor'));
+        } else {
+            gulp.src(assets).pipe(gulp.dest(folder.src + 'js/vendor'));
+        }
     });
 });
 
 // image processing
 gulp.task('imageMin', function(){
-	var out = folder.dist + 'img';
-	return gulp.src(folder.src + 'img/**/*')
-		.pipe(newer(out))
-		.pipe(imagemin())
-		.pipe(gulp.dest(out));
+    var out = folder.dist + 'img';
+    return gulp.src(folder.src + 'img/**/*')
+        .pipe(newer(out))
+        .pipe(imagemin())
+        .pipe(gulp.dest(out));
 });
 
 // copy fonts
@@ -105,8 +105,8 @@ gulp.task('html', function(){
 // compile & minify sass
 gulp.task('css', function () {
     return gulp.src(folder.src + '/scss/main.scss')
-    	.pipe(sourcemaps.init())
-    	.pipe(sass()) // scss to css
+        .pipe(sourcemaps.init())
+        .pipe(sass()) // scss to css
         .pipe(autoprefixer({
             browsers: ['last 2 version']
         }))
@@ -117,26 +117,26 @@ gulp.task('css', function () {
         .pipe(cssnano({ // minify css
             discardComments: {removeAllButFirst: true}
         }))
-		.pipe(sourcemaps.write('./')) // source maps for main.min.css
-	    .pipe(gulp.dest(folder.dist + 'css/'));
+        .pipe(sourcemaps.write('./')) // source maps for main.min.css
+        .pipe(gulp.dest(folder.dist + 'css/'));
 });
 
 // js
 gulp.task('javascript', function(){
-	var out = folder.dist + 'js/';
+    var out = folder.dist + 'js/';
 
     // It's important to keep files at this order 
     // so that `main.js` can be executed properly
-	return gulp.src([
+    return gulp.src([
             folder.src + 'js/vendor/jquery.min.js',
             folder.src + 'js/vendor/bootstrap.bundle.min.js', 
             folder.src + 'js/vendor/moment.min.js',
-            folder.src + 'js/vendor/fullcalendar.min.js',
             folder.src + 'js/vendor/chart.min.js',
             folder.src + 'js/vendor/dragula.min.js',
             folder.src + 'js/vendor/select2.full.min.js',
             folder.src + 'js/vendor/dropzone.min.js', 
             folder.src + 'js/vendor/jquery.dataTables.js',
+            folder.src + 'js/vendor/fullcalendar.js',
             folder.src + 'js/fullcalendar-custom.js',
             folder.src + 'js/chart-custom.js',
             folder.src + 'js/sidebar.js',
@@ -145,13 +145,15 @@ gulp.task('javascript', function(){
             folder.src + 'js/todo.js',
             folder.src + 'js/main.js'
         ])
-		.pipe(concat('main.js'))
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.js'))
         .pipe(gulp.dest(out))
         .pipe(rename({ // rename main.css to main.min.css
             suffix: ".min"
         }))
         .pipe(uglify())
-		.pipe(gulp.dest(out));
+         .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(out));
 });
 
 // live browser loading
@@ -166,10 +168,10 @@ gulp.task('browserSync', function() {
 // watch all changes
 gulp.task('watch', function(){
     gulp.watch(folder.src + '*.html', ['html', browsersync.reload]);
-	gulp.watch(folder.src + 'img/**/*', ['imageMin', browsersync.reload]);
+    gulp.watch(folder.src + 'img/**/*', ['imageMin', browsersync.reload]);
     gulp.watch(folder.src + 'fonts/**/*', ['fonts', browsersync.reload]);
-	gulp.watch(folder.src + 'scss/**/*', ['css', browsersync.reload]);
-	gulp.watch(folder.src + 'js/**/*', ['javascript', browsersync.reload]);
+    gulp.watch(folder.src + 'scss/**/*', ['css', browsersync.reload]);
+    gulp.watch(folder.src + 'js/**/*', ['javascript', browsersync.reload]);
 });
 
 // default task
