@@ -15312,32 +15312,32 @@ $(function(){
 	        events: [
 		        {
 		            title  : 'Sara\'s birthday',
-		            start  : '2017-10-28',
+		            start  : '2017-11-28',
 		            className: 'fc-event--orange',
 		            allDay: true
 		        },
 		        {
 		        	title  : 'Jason',
-		            start  : '2017-10-24',
-		            end    : '2017-10-26',
+		            start  : '2017-11-24',
+		            end    : '2017-11-26',
 		            className: 'fc-event--green',
 		            allDay: true
 		        },
 		        {
 		            title  : 'Ruth in London',
-		            start  : '2017-10-08',
-		            end    : '2017-10-12',
+		            start  : '2017-11-08',
+		            end    : '2017-11-12',
 		            className: 'fc-event--blue'
 		        },
 		        {
 		            title  : 'All Hands 4',
-		            start  : '2017-10-27',
+		            start  : '2017-11-27',
 		            className: 'fc-event--green',
 		            allDay: true
 		        },
 		        {
 		            title  : 'Carl',
-		            start  : '2017-10-30',
+		            start  : '2017-11-30',
 		            className: 'fc-event--green'
 		        }
 		    ]
