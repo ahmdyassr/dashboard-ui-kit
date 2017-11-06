@@ -1,6 +1,6 @@
 {
   "name": "dashboard-ui-kit",
-  "version": "1.0.0",
+  "version": "1.1",
   "description": "Powerful UI framework for building responsive web interfaces.",
   "main": "index.js",
   "scripts": {
