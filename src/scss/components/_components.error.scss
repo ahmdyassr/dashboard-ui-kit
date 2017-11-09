@@ -85,6 +85,37 @@
 	}
 }
 
+/**
+ * Search Form
+ */
+
+.c-error__search-form {
+	display: flex;
+
+	.c-field {
+		width: 75%;
+	}
+
+	.c-btn {
+		width: 25%;
+		margin-left: $spacer-xsmall;
+	}
+
+	@include respond-to (450px){
+		flex-flow: column;
+
+		.c-field,
+		.c-btn {
+			width: 100%;
+		}
+
+		.c-btn {
+			margin: $spacer-xsmall 0 0;
+		}
+	}
+}
+
+
 .c-error__footer {
 	@include clearfix;
 	position: absolute;
