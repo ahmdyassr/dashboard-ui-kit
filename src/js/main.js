@@ -86,4 +86,7 @@ $(function() {
             }]
         });
     }
+
+    // 9. datepicker
+    $('[data-toggle="datepicker"]').datepicker();
 }); 
