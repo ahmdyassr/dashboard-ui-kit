@@ -1,0 +1,63 @@
+/* ==========================================================================
+   #DATEPICKER CUSTOM STYLES
+   ========================================================================== */
+
+// sass-lint:disable-all
+
+/**
+ * Instead of modifying `_datepicker.scss` directly, we add Dashboard's custom
+ * styles for datepicker plugin here.
+ */
+
+
+.datepicker-container {
+	width: 224px;
+	padding: 10px;
+}
+
+.datepicker-panel>ul>li[data-view="month current"], 
+.datepicker-panel>ul>li[data-view="year current"], 
+.datepicker-panel>ul>li[data-view="years current"] {
+	width: 160px; // 224px - (32px * 2)
+	border-radius: 0;
+}
+
+.datepicker-panel > ul[data-view=week] > li, 
+.datepicker-panel > ul[data-view=week] > li:hover {
+	color: $calendar-day-color;
+}
+
+.datepicker-panel >ul >li.picked, 
+.datepicker-panel >ul >li.picked:hover {
+	color: $calendar-date-active-background-color;
+}
+
+.datepicker-dropdown {
+	background: $calendar-background-color;
+	border: $calendar-border-width solid $calendar-border-color;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.08);
+	border-radius: $base-border-radius;
+	overflow: hidden;
+}
+
+.datepicker-panel > ul > li {
+	border-radius: 100%;
+	font-size: $text-font-size;
+	width: 32px;
+	height: 32px;
+}
+
+.datepicker-panel > ul > li:hover {
+	background-color: $calendar-date-hover-background-color;
+}
+
+.datepicker-panel > ul > li.highlighted {
+	background-color: $calendar-date-active-background-color;
+	color: $calendar-date-active-color;
+	border-radius: 100%;
+}
+
+
+.datepicker-panel > ul > li[data-view="month"] {
+	font-size: $calendar-header-font-size;
+}
