@@ -85,7 +85,17 @@
 	}
 }
 
-.c-error__link {
+.c-error__footer {
+	@include clearfix;
+	position: absolute;
+	bottom: -40px;
+	width: 100%;
+}
+
+.c-error__footer-link {
+	color: $color-mute;
+	font-size: $text-font-size;
+
 	i {
 		margin-right: $spacer-xsmall;
 	}

@@ -11266,10 +11266,22 @@ textarea.c-input {
   font-size: 1.125rem; }
   @media (max-width: 576px) {
     .c-error__description {
-      padding: 0 0.9375rem; } }
+      padding: 0 0.625rem; } }
 
-.c-error__link i {
-  margin-right: 0.625rem; }
+.c-error__footer {
+  position: absolute;
+  bottom: -40px;
+  width: 100%; }
+  .c-error__footer::after {
+    display: table !important;
+    clear: both !important;
+    content: "" !important; }
+
+.c-error__footer-link {
+  color: #7f8fa4;
+  font-size: 0.875rem; }
+  .c-error__footer-link i {
+    margin-right: 0.625rem; }
 
 /* ==========================================================================
    #TYPOGRAPHY UTILITIES
