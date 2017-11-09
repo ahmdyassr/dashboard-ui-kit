@@ -6904,6 +6904,11 @@ be a descendant of the grid when it is being dragged.
 /**
  * Instead of modifying `_datepicker.scss` directly, we add Dashboard's custom
  * styles for datepicker plugin here.
+ *
+ * This file  isn't for asscoited with `fullcalendar` plugin, `fullcalender` has 
+ * its own custom styles in `vendor` folder.
+ *
+ * SCSS variables used in this file can be found in: settings/_settings.calendar.scss
  */
 .datepicker-container {
   width: 224px;
@@ -8191,102 +8196,6 @@ be a descendant of the grid when it is being dragged.
   background-color: #fff; }
   .c-tabs__pane.is-active, .c-tabs__pane.active {
     display: block; }
-
-/* ==========================================================================
-   #CALENDAR
-   ========================================================================== */
-/**
- *
- * `c-calendar` component isn't asscoited with `fullcalendar` plugin, 
- * `fullcalender` has its own custom styles in `venndor` folder.
- * 
- * `c-calendar` is calendar widget that you will find in `ui-elements.html` 
- *  page.
- */
-.c-calendar {
-  display: inline-block;
-  max-width: 400px;
-  margin: 0;
-  padding: 0;
-  border: 1px solid #dfe3e9;
-  border-radius: 4px;
-  background-color: #fff; }
-
-.c-calendar__header {
-  display: inline-block;
-  font-size: 0.875rem; }
-
-.c-calendar__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 20px 15px;
-  border-bottom: 1px solid #dfe3e9;
-  text-align: center; }
-
-.c-calendar__control {
-  color: #bbc5d5; }
-
-.c-calendar__picker {
-  padding: 15px 20px;
-  text-align: center; }
-
-/**
- * 1. Remove `abbr` default decaoration
- */
-.c-calendar__day {
-  color: rgba(53, 64, 82, 0.5);
-  font-size: 0.75rem;
-  font-weight: 400;
-  text-transform: uppercase; }
-  .c-calendar__day abbr {
-    /* [1] */
-    border-bottom: 0;
-    text-decoration: none; }
-
-/**
- * 1. Calendar date background (circualr shape)
- */
-.c-calendar__date {
-  position: relative;
-  padding: 0.625rem;
-  color: #354052;
-  cursor: pointer;
-  z-index: 200; }
-  .c-calendar__date.is-disabled {
-    opacity: .5; }
-  .c-calendar__date::before {
-    /* [1] */
-    display: inline-block;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    margin: 0 auto;
-    padding: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    border-radius: 100%;
-    background-color: #e6eaee;
-    text-align: center;
-    content: " ";
-    opacity: 0;
-    z-index: -100; }
-  .c-calendar__date:hover::before {
-    opacity: .4; }
-  .c-calendar__date.is-active {
-    color: #fff; }
-    .c-calendar__date.is-active::before {
-      background-color: #1a91eb;
-      opacity: 1; }
 
 /* ==========================================================================
    #DROPDOWN
