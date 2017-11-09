@@ -6899,6 +6899,56 @@ be a descendant of the grid when it is being dragged.
   display: none; }
 
 /* ==========================================================================
+   #DATEPICKER CUSTOM STYLES
+   ========================================================================== */
+/**
+ * Instead of modifying `_datepicker.scss` directly, we add Dashboard's custom
+ * styles for datepicker plugin here.
+ */
+.datepicker-container {
+  width: 224px;
+  padding: 10px; }
+
+.datepicker-panel > ul > li[data-view="month current"],
+.datepicker-panel > ul > li[data-view="year current"],
+.datepicker-panel > ul > li[data-view="years current"] {
+  width: 160px;
+  border-radius: 0; }
+
+.datepicker-panel > ul[data-view=week] > li,
+.datepicker-panel > ul[data-view=week] > li:hover {
+  color: rgba(53, 64, 82, 0.5); }
+
+.datepicker-panel > ul > li.picked,
+.datepicker-panel > ul > li.picked:hover {
+  color: #1a91eb; }
+
+.datepicker-dropdown {
+  background: #fff;
+  border: 1px solid #dfe3e9;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow: hidden; }
+
+.datepicker-panel > ul > li {
+  border-radius: 100%;
+  font-size: 0.875rem;
+  width: 32px;
+  height: 32px; }
+
+.datepicker-panel > ul > li:hover {
+  background-color: #f5f7f8; }
+
+.datepicker-panel > ul > li.highlighted {
+  background-color: #1a91eb;
+  color: #fff;
+  border-radius: 100%; }
+
+.datepicker-panel > ul > li[data-view="month"] {
+  font-size: 0.875rem; }
+
+/* ==========================================================================
    #PAGE OBJECT
    ========================================================================== */
 /**
