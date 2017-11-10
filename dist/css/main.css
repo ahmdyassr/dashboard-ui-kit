@@ -11539,6 +11539,31 @@ textarea.c-input {
   background: linear-gradient(to bottom, #39b54a, #34aa44); }
 
 /* ==========================================================================
+   #RATING
+   ========================================================================== */
+/**
+ * A list of starts aligned horizontally to show the current rating of an item.
+ *
+ * EXAMPLE:
+ *
+ * <div class="c-rating">
+ *      <i class="c-rating__icon is-active fa fa-star"></i>
+ *      <i class="c-rating__icon is-active fa fa-star"></i>
+ *      <i class="c-rating__icon is-active fa fa-star"></i>
+ *      <i class="c-rating__icon is-active fa fa-star"></i>
+ *      <i class="c-rating__icon fa fa-star"></i>
+ *  </div>
+ */
+.c-rating {
+  display: block; }
+
+.c-rating__icon {
+  color: #BBBFC5;
+  font-size: 0.75rem; }
+  .c-rating__icon.is-active {
+    color: #FDBC0E; }
+
+/* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
 /**
@@ -12028,7 +12053,7 @@ textarea.c-input {
   color: #fd9a18 !important; }
 
 .u-color-primary {
-  color: #475364 !important; }
+  color: #354052 !important; }
 
 .u-color-secondary {
   color: #fff !important; }
