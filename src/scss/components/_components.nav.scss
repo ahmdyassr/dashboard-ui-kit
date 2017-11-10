@@ -88,6 +88,10 @@
 		text-decoration: none;
 	}
 
+	&.is-active {
+		color: $nav-link-active-color;
+	}
+
 	@include respond-to($breakpoint-tablet) {
 		display: block;
 		color: $heading-color;

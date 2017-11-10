@@ -7437,6 +7437,8 @@ be a descendant of the grid when it is being dragged.
   font-weight: 400; }
   .c-nav__link:hover {
     text-decoration: none; }
+  .c-nav__link.is-active {
+    color: #2ea1f8; }
   @media (max-width: 768px) {
     .c-nav__link {
       display: block;
