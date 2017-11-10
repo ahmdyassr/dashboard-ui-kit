@@ -12103,12 +12103,12 @@ textarea.c-input {
 .u-justify-start {
   -webkit-box-pack: start !important;
       -ms-flex-pack: start !important;
-          justify-content: start !important; }
+          justify-content: flex-start !important; }
 
 .u-justify-end {
   -webkit-box-pack: end !important;
       -ms-flex-pack: end !important;
-          justify-content: end !important; }
+          justify-content: flex-end !important; }
 
 .u-justify-center {
   -webkit-box-pack: center !important;
