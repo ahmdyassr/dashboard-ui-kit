@@ -34532,6 +34532,7 @@ var Todo = function() {
 // 6. Select (select2 plugin)
 // 7. File Upload (dropzone plugin)
 // 8. Sortable Table (dataTable plugin)
+// 9. Date Picker (datepicker plugin)
 
 //
 // Note: Bootstrap plugins is enabled through via data attributes
@@ -34592,7 +34593,7 @@ $(function() {
     }
 
     // 8. datatable
-     if($('#datatable').length) {
+    if($('#datatable').length) {
         $("#datatable").DataTable({
             searching: false,
             "lengthChange": false, 
@@ -34606,5 +34607,7 @@ $(function() {
     }
 
     // 9. datepicker
-    $('[data-toggle="datepicker"]').datepicker();
+    if($('[data-toggle="datepicker"]').length) {
+        $('[data-toggle="datepicker"]').datepicker();
+    }
 }); 
