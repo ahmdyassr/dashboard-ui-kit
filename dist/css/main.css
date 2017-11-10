@@ -11503,6 +11503,19 @@ textarea.c-input {
   border-radius: 4px;
   background-color: #FAFBFC; }
 
+.c-feed__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.625rem; }
+
+.c-feed__gallery-item {
+  width: 80px;
+  height: 80px;
+  margin: 0 0.625rem 0.625rem 0;
+  border-radius: 4px;
+  overflow: hidden; }
+
 .c-feed__meta {
   display: block;
   color: #7f8fa4;

@@ -69,6 +69,23 @@
 	background-color: #FAFBFC;
 }
 
+
+.c-feed__gallery {
+	display: flex;
+	margin-top: $spacer-xsmall;
+}
+
+.c-feed__gallery-item {
+	width: 80px;
+	height: 80px;
+	margin: 0 $spacer-xsmall $spacer-xsmall 0;
+	border-radius: $base-border-radius;
+	overflow: hidden;
+
+	//&: last-c
+}
+
+
 .c-feed__meta {
 	display: block;
 	color: $color-mute;
