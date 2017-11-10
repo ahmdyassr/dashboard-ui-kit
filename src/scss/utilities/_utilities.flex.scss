@@ -5,15 +5,13 @@
 // sass-lint:disable no-important
 
 //
-// DEV NOTE: ADD REMAINGING FLEX UTILITITES LIKE: align-self
-//
-//
 // Table of content:
 //
 // 1. Flex display
 // 2. Justify content
 // 3. Align items
-// 4. Flex wrap
+// 4. Align self
+// 5. Flex wrap
 // 
 
 //
@@ -77,7 +75,32 @@
 }
 
 //
-// 4. Flex wrap
+// 4. Align self
+//
+
+.u-align-self-start {
+	align-self: flex-start !important;
+}
+
+.u-align-self-end {
+	align-self: flex-end !important;
+}
+
+.u-align-self-center {
+	align-self: center !important;
+}
+
+.u-align-self-baseline {
+	align-self: baseline !important;
+}
+
+.u-align-self-stretch {
+	align-self: stretch !important;
+}
+
+
+//
+// 5. Flex wrap
 //
 
 .u-flex-wrap {

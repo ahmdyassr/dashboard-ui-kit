@@ -12149,6 +12149,26 @@ textarea.c-input {
       -ms-flex-align: stretch !important;
           align-items: stretch !important; }
 
+.u-align-self-start {
+  -ms-flex-item-align: start !important;
+      align-self: flex-start !important; }
+
+.u-align-self-end {
+  -ms-flex-item-align: end !important;
+      align-self: flex-end !important; }
+
+.u-align-self-center {
+  -ms-flex-item-align: center !important;
+      align-self: center !important; }
+
+.u-align-self-baseline {
+  -ms-flex-item-align: baseline !important;
+      align-self: baseline !important; }
+
+.u-align-self-stretch {
+  -ms-flex-item-align: stretch !important;
+      align-self: stretch !important; }
+
 .u-flex-wrap {
   -ms-flex-wrap: wrap !important;
       flex-wrap: wrap !important; }
