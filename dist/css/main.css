@@ -11467,6 +11467,10 @@ textarea.c-input {
     height: 100%;
     background-color: #e6eaee;
     content: ""; }
+  .c-feed.has-icons {
+    padding-left: 47px; }
+    .c-feed.has-icons::before {
+      left: 14px; }
 
 .c-feed__item {
   position: relative;
@@ -11494,6 +11498,25 @@ textarea.c-input {
       border-radius: 0;
       background-color: #fff;
       content: ""; }
+  .c-feed__item.has-icon::before {
+    display: none; }
+  .c-feed__item.has-icon .c-feed__item-icon {
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: -47px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: #2ea1f8;
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 30px;
+    text-align: center; }
+  .c-feed__item.has-icon:last-child::after {
+    top: 34px;
+    left: -47px;
+    width: 30px; }
 
 .c-feed__comment {
   display: inline-block;

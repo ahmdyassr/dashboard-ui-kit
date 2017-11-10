@@ -24,6 +24,14 @@
 		background-color: $base-border-color;
 		content: "";
 	}
+
+	&.has-icons {
+		padding-left: 47px;
+
+		&::before {
+			left: 14px;
+		}
+	}
 }
 
 .c-feed__item {
@@ -58,6 +66,33 @@
 			content: "";
 		}
 	}
+
+	&.has-icon {
+		&::before {
+			display: none;
+		}
+
+		.c-feed__item-icon {
+			display: block;
+			position: absolute;
+			top: 4px;
+			left: -47px;
+			width: 30px;
+			height: 30px;
+			border-radius: 100%;
+			background-color: $color-info;
+			color: $white;
+			font-size: $text-font-size;
+			line-height: 30px;
+			text-align: center;
+		}
+
+		&:last-child::after {
+			top: 34px;
+			left: -47px;
+			width: 30px;
+		}
+	}
 }
 
 .c-feed__comment {
@@ -81,8 +116,6 @@
 	margin: 0 $spacer-xsmall $spacer-xsmall 0;
 	border-radius: $base-border-radius;
 	overflow: hidden;
-
-	//&: last-c
 }
 
 
