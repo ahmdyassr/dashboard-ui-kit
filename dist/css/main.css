@@ -11495,6 +11495,21 @@ textarea.c-input {
       background-color: #fff;
       content: ""; }
 
+.c-feed__comment {
+  display: inline-block;
+  margin: 0.625rem 0;
+  padding: 0.625rem;
+  border: 1px solid #DFE2E5;
+  border-radius: 4px;
+  background-color: #FAFBFC; }
+
+.c-feed__meta {
+  display: block;
+  color: #7f8fa4;
+  font-size: 0.875rem; }
+
+/* Style variants
+   ========================================================================== */
 .c-feed__item--fancy::before {
   background: #886ce6;
   background: -webkit-gradient(linear, left top, left bottom, from(#886ce6), to(#7d5be2));

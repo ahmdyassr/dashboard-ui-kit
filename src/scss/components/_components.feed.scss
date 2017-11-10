@@ -60,6 +60,24 @@
 	}
 }
 
+.c-feed__comment {
+	display: inline-block;
+	margin: $spacer-xsmall 0;
+	padding: $spacer-xsmall;
+	border: $base-border-width solid #DFE2E5;
+	border-radius: $base-border-radius;
+	background-color: #FAFBFC;
+}
+
+.c-feed__meta {
+	display: block;
+	color: $color-mute;
+	font-size: $text-font-size;
+}
+
+/* Style variants
+   ========================================================================== */
+
 .c-feed__item--fancy {
 	&::before {
 		@include linear-gradient(to bottom, $purple-300, $purple-500);
