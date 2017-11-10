@@ -11446,6 +11446,71 @@ textarea.c-input {
     margin-right: 0.625rem; }
 
 /* ==========================================================================
+   #FEED
+   ========================================================================== */
+/**
+ * User Activity Feed
+ * 
+ * This component is used to show a stream of the user's activities and it's 
+ * used in user-profile.html page.
+ */
+.c-feed {
+  position: relative;
+  margin-bottom: 1.875rem;
+  padding-left: 32px;
+  overflow: hidden; }
+  .c-feed::before {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    width: 1px;
+    height: 100%;
+    background-color: #e6eaee;
+    content: ""; }
+
+.c-feed__item {
+  position: relative;
+  margin-bottom: 25px;
+  /**
+	 * The small circle (dot) before every item of the feed
+	 */ }
+  .c-feed__item::before {
+    position: absolute;
+    top: 4px;
+    left: -32px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #2ea1f8;
+    content: ""; }
+  .c-feed__item:last-child {
+    margin-bottom: 0; }
+    .c-feed__item:last-child::after {
+      position: absolute;
+      top: 16px;
+      left: -32px;
+      width: 12px;
+      height: 100%;
+      border-radius: 0;
+      background-color: #fff;
+      content: ""; }
+
+.c-feed__item--fancy::before {
+  background: #886ce6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#886ce6), to(#7d5be2));
+  background: linear-gradient(to bottom, #886ce6, #7d5be2); }
+
+.c-feed__item--info::before {
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+
+.c-feed__item--success::before {
+  background: #39b54a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#39b54a), to(#34aa44));
+  background: linear-gradient(to bottom, #39b54a, #34aa44); }
+
+/* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
 /**
