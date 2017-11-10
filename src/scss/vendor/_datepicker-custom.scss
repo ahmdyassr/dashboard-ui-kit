@@ -16,14 +16,14 @@
 
 
 .datepicker-container {
-	width: 224px;
-	padding: 10px;
+	width: $calendar-width;
+	padding: $calendar-padding;
 }
 
 .datepicker-panel>ul>li[data-view="month current"], 
 .datepicker-panel>ul>li[data-view="year current"], 
 .datepicker-panel>ul>li[data-view="years current"] {
-	width: 160px; // 224px - (32px * 2)
+	width: 160px; // $calendar-width - (32px * 2)
 	border-radius: 0;
 }
 
@@ -32,8 +32,8 @@
 	color: $calendar-day-color;
 }
 
-.datepicker-panel >ul >li.picked, 
-.datepicker-panel >ul >li.picked:hover {
+.datepicker-panel > ul >li.picked, 
+.datepicker-panel > ul >li.picked:hover {
 	color: $calendar-date-active-background-color;
 }
 

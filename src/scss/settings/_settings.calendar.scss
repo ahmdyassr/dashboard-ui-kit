@@ -3,20 +3,16 @@
 //   ======================================================================== */
 
 
-$calendar-max-width: 400px !default;
+$calendar-width: 224px !default;
+$calendar-padding: 10px;
 $calendar-border-color: $grey-400 !default;
 $calendar-border-width: $base-border-width !default;
 $calendar-border-radius: $base-border-radius !default;
 $calendar-background-color: $white !default;
 
-
-$calendar-nav-padding: 20px 15px !default;
 $calendar-header-font-size: $text-font-size !default;
 
 $calendar-control-color: $grey-500 !default;
-
-$calendar-picker-padding: 15px 20px !default;
-
 
 $calendar-day-font-size: $text-small-font-size !default;
 $calendar-day-color: rgba($gunmetal-200, 0.5) !default;
