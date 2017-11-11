@@ -33721,7 +33721,12 @@ $(function(){
 		// pie charts
 		chartSummary1 = document.getElementById("js-chart-summary1"),
 		chartSummary2 = document.getElementById("js-chart-summary2"),
-		chartSummary3 = document.getElementById("js-chart-summary3");
+		chartSummary3 = document.getElementById("js-chart-summary3"),
+
+		// used in performance.html page
+		chartSales = document.getElementById("js-chart-sales"),
+		chartCustomers = document.getElementById("js-chart-customers"),
+		chartProfit = document.getElementById("js-chart-profit");
 
 	var lineChartPayoutData = {
 	    labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
@@ -33935,6 +33940,74 @@ $(function(){
 			//pointRadius: 4,
 			//pointHitRadius: 5,
 			data: [50, 20, 40, 20, 50, 8],
+			spanGaps: false
+	    }]
+	};
+
+	var barChartSalesData = {
+	   labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+	    datasets: [{
+			label: "Profit",
+			fill: true,
+			backgroundColor: '#00AAFF',
+			data: [50, 60, 80, 40,50, 60]
+	    }]
+	};
+
+	var barChartCustomersData = {
+	    labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
+	    datasets: [{
+			label: "Sold",
+			fill: true,
+			lineTension: 0,
+			backgroundColor: 'rgba(163,136,227, 0.1)',
+			borderWidth: 2,
+			borderColor: "#886CE6",
+			borderCapStyle: 'butt',
+			borderDash: [],
+			borderDashOffset: 0.0,
+			borderJoinStyle: 'miter',
+			//pointStyle: 'cross',
+			pointRadius: 0,
+			pointBorderColor: "#fff",
+			pointBackgroundColor: "#2a2f37",
+			pointBorderWidth: 2,
+			pointHoverRadius: 6,
+			pointHoverBackgroundColor: "#FC2055",
+			pointHoverBorderColor: "#fff",
+			pointHoverBorderWidth: 2,
+			//pointRadius: 4,
+			//pointHitRadius: 5,
+			data: [40, 32, 42, 28, 53, 34],
+			spanGaps: false
+	    }]
+	};
+
+	var lineChartProfitData = {
+	    labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
+	    datasets: [{
+			label: "Sold",
+			fill: true,
+			lineTension: 0,
+			backgroundColor: 'rgba(163,136,227, 0.1)',
+			borderWidth: 2,
+			borderColor: "#886CE6",
+			borderCapStyle: 'butt',
+			borderDash: [],
+			borderDashOffset: 0.0,
+			borderJoinStyle: 'miter',
+			//pointStyle: 'cross',
+			pointRadius: 0,
+			pointBorderColor: "#fff",
+			pointBackgroundColor: "#2a2f37",
+			pointBorderWidth: 2,
+			pointHoverRadius: 6,
+			pointHoverBackgroundColor: "#FC2055",
+			pointHoverBorderColor: "#fff",
+			pointHoverBorderWidth: 2,
+			//pointRadius: 4,
+			//pointHitRadius: 5,
+			data: [40, 32, 42, 28, 53, 34],
 			spanGaps: false
 	    }]
 	};
@@ -34444,6 +34517,78 @@ $(function(){
 			}
 		});
 	}
+
+	if(chartSales) {
+		var barChartSales = new Chart(chartSales, {
+		    type: 'bar',
+		    data: barChartSalesData,
+		    options: {
+		    	responsive: false,
+		    	maintainAspectRatio: false
+			}
+		});
+	}
+
+	if(chartCustomers) {
+		var doChartCustomers = new Chart(chartCustomers, {
+			type: 'doughnut',
+		    data: {
+			    datasets: [{
+			        data: [20, 10],
+			        backgroundColor: ['#1991EB', '#E2E7EE']
+			    }],
+			    // These labels appear in the legend and in the tooltips when hovering different arcs
+			    labels: [
+			        'Red',
+			        'Yellow',
+			        'Blue'
+			    ]
+			},
+			options: {
+				cutoutPercentage: 70,
+		    	responsive: false,
+		    	maintainAspectRatio: false,
+				legend: {
+					display: false,
+				},
+				tooltips: {
+					enabled: false
+				}
+			}
+		});
+	}
+
+	if (chartProfit) {
+		var lineChartProfit = new Chart(chartProfit, {
+		    type: 'line',
+		    data: lineChartProfitData,
+		    options: {
+				legend: {
+					display: false
+				},
+				scales: {
+					xAxes: [{
+							display: false,
+							ticks: {
+							fontSize: '11',
+							fontColor: '#969da5'
+						},
+						gridLines: {
+							color: 'rgba(0,0,0,0.0)',
+							zeroLineColor: 'rgba(0,0,0,0.0)'
+						}
+					}],
+					yAxes: [{
+						display: false,
+						ticks: {
+							beginAtZero: true,
+							max: 55
+						}
+					}]
+				}
+			}
+		});
+	}
 });
 
 //
@@ -34635,19 +34780,4 @@ $(function() {
         scaleColors: ['#C8EEFF', '#006491'],
         normalizeFunction: 'polynomial'
     });
-
-    // if($('#vmap').length) {
-    //     $('#vmap').vectorMap({
-    //         map: 'world_en',
-    //         backgroundColor: null,
-    //         color: '#EFF3F6',
-    //         hoverColor '#D7DFE6',
-    //         hoverOpacity: 0.7,
-    //         selectedColor: '#D7DFE6',
-    //         enableZoom: true,
-    //         showTooltip: true,
-    //         scaleColors: ['#C8EEFF', '#006491'],
-    //         normalizeFunction: 'polynomial'
-    //     });
-    // }
 }); 

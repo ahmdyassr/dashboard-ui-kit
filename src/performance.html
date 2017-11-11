@@ -194,7 +194,7 @@
         </div><!-- // .o-page__sidebar -->
 
         <main class="o-page__content">
-            <header class="c-navbar u-mb-medium">
+            <header class="c-navbar">
                 <button class="c-sidebar-toggle u-mr-small">
                     <span class="c-sidebar-toggle__bar"></span>
                     <span class="c-sidebar-toggle__bar"></span>
@@ -316,10 +316,13 @@
                 </div>
             </header>
 
-            <div class="container-fluid">
+            <div class="c-toolbar u-mb-small">
+                <h3 class="c-toolbar__title">Toolbar</h3>
+            </div>
 
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-5 u-ml-auto">
+                    <div class="col-lg-6 u-ml-auto u-mb-medium">
                         <div class="c-card u-p-medium">
                             <h4>World Wide</h4>
 
@@ -339,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 u-mr-auto">
+                    <div class="col-lg-6 u-mr-auto u-mb-medium">
                         <div class="c-card u-p-medium">
 
                             <h4>Product Sales</h4>
@@ -369,6 +372,37 @@
                                 <span class="u-text-mute u-text-small u-opacity-heavy">100</span>
                                 <span class="u-text-mute u-text-small u-opacity-heavy">200</span>
                                 <span class="u-text-mute u-text-small u-opacity-heavy">300</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row u-mb-xlarge">
+                    <div class="col-lg-4">
+                        <div class="c-card u-p-medium u-mb-medium">
+                            <h4>Daily Sales</h4>
+                            <!-- <canvas id="js-chart-profit-q1" height="85px"></canvas> -->
+                            <canvas id="js-chart-sales"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="c-card u-p-medium">
+                            <h4>Customer</h4>
+                            <!-- <canvas id="js-chart-summary1" width="50" height="50"></canvas> -->
+                            <canvas id="js-chart-customers" width="50" height="50"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="c-graph-card">
+                            <div class="c-graph-card__content">
+                                <h3 class="c-graph-card__title">Profit</h3>
+                            </div>
+                            
+                            <div class="c-graph-card__chart">
+                                <!--<canvas id="js-chart-payout" width="300" height="74"></canvas>-->
+                                <canvas id="js-chart-profit" width="50" height="50"></canvas>
                             </div>
                         </div>
                     </div>
