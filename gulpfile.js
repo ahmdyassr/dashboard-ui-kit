@@ -45,7 +45,8 @@ gulp.task('copy-assets', function() {
             './node_modules/select2/dist/js/select2.full.min.js',
             './node_modules/dropzone/dist/min/dropzone.min.js',
             './node_modules/datatables.net/js/jquery.dataTables.js',
-            './node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js'
+            './node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js',
+            './node_modules/jqvmap/dist/jquery.vmap.min.js'
         ],
         scss: [
             './node_modules/bootstrap/dist/css/bootstrap-grid.css',
@@ -53,7 +54,8 @@ gulp.task('copy-assets', function() {
             './node_modules/dragula/dist/dragula.css',
             './node_modules/select2/dist/css/select2.css',
             './node_modules/dropzone/dist/dropzone.css',
-            './node_modules/@fengyuanchen/datepicker/dist/datepicker.css'
+            './node_modules/@fengyuanchen/datepicker/dist/datepicker.css',
+            './node_modules/jqvmap/dist/jqvmap.css'
         ] 
     };
     lodash(assets).forEach(function (assets, type) {
