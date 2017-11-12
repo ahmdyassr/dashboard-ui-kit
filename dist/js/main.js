@@ -34061,7 +34061,7 @@ $(function(){
 		datasets: [{
 			label: "Sales",
 			fill: true,
-			backgroundColor: '#00AAFF',
+			backgroundColor: '#1991EB',
 			data: [50, 60, 80, 40, 50, 60, 50, 60, 80, 40, 50, 60, 80, 40, 50, 
 			60, 50, 60, 80, 40, 50, 60, 80, 40, 50, 60, 50, 60, 80, 40]
 		}]
