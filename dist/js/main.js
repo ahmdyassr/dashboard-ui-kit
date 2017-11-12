@@ -33828,12 +33828,11 @@ $(function(){
 		// pie charts
 		chartSummary1 = document.getElementById("js-chart-summary1"),
 		chartSummary2 = document.getElementById("js-chart-summary2"),
-		chartSummary3 = document.getElementById("js-chart-summary3"),
+		chartSummary3 = document.getElementById("js-chart-summary3");
 
 		// used in performance.html page
-		chartSales = document.getElementById("js-chart-sales").getContext("2d");
-
-	var	chartCustomers = document.getElementById("js-chart-customers"),
+	var	chartSales = document.getElementById("js-chart-sales").getContext("2d"),
+		chartCustomers = document.getElementById("js-chart-customers"),
 		chartProfit = document.getElementById("js-chart-profit");
 
 	var lineChartPayoutData = {
@@ -34055,13 +34054,16 @@ $(function(){
 	var barChartSalesData = {
 	    labels: ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7", 
 	    		 "Day 8", "Day 9", "Day 10", "Day 11", "Day 12", "Day 13", 
-	    		 "Day 14", "Day 15", "Day 16", "Day 17", "Day 18", "Day 19", "Day 20"],
+	    		 "Day 14", "Day 15", "Day 16", "Day 17", "Day 18", "Day 19", "Day 20",
+	    		 "Day 21", "Day 22", "Day 23", "Day 24", 
+	    		 "Day 25", "Day 26", "Day 27", "Day 28", "Day 29", "Day 30", "Day 31"],
 
 		datasets: [{
 			label: "Sales",
 			fill: true,
 			backgroundColor: '#00AAFF',
-			data: [50, 60, 80, 40, 50, 60, 50, 60, 80, 40, 50, 60, 80, 40, 50, 60, 50, 60, 80, 40]
+			data: [50, 60, 80, 40, 50, 60, 50, 60, 80, 40, 50, 60, 80, 40, 50, 
+			60, 50, 60, 80, 40, 50, 60, 80, 40, 50, 60, 50, 60, 80, 40]
 		}]
 	};
 
@@ -34634,6 +34636,9 @@ $(function(){
 		    type: 'roundedBar', 
 		    data: barChartSalesData,
 		    options: {
+		    	legend: {
+					display: false
+				},
 		    	barRoundness: 1,
 		    	responsive: false,
 		    	maintainAspectRatio: false,
@@ -34695,7 +34700,7 @@ $(function(){
 		    type: 'line',
 		    data: lineChartProfitData,
 		    options: {
-				legend: {
+		    	legend: {
 					display: false
 				},
 				scales: {

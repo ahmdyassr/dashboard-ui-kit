@@ -7,6 +7,7 @@
 	border: $base-border-width solid $grey-300;
 	border-radius: $base-border-radius;
 	background-color: $base-background-color;
+	overflow: hidden;
 }
 
 .c-graph-card__content {
@@ -42,3 +43,13 @@
 	margin: 0;
 	padding: $spacer;
 }
+
+.c-graph-card__footer {
+	padding: $spacer-small $spacer;
+	border-top: $base-border-color solid $base-border-width;
+	background-color: #FAFBFC;
+}
+
+
+
+

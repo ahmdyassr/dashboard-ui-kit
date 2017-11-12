@@ -10161,7 +10161,8 @@ textarea.c-input {
   margin: 0 0 1.875rem;
   border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
 
 .c-graph-card__content {
   padding: 1.875rem 1.875rem 0; }
@@ -10190,6 +10191,11 @@ textarea.c-input {
   position: relative;
   margin: 0;
   padding: 1.875rem; }
+
+.c-graph-card__footer {
+  padding: 0.9375rem 1.875rem;
+  border-top: #e6eaee solid 1px;
+  background-color: #FAFBFC; }
 
 /* ==========================================================================
    #DIVIDER
