@@ -93,15 +93,39 @@ $(function() {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
+    function escapeXml(string) {
+        return string.replace(/[<>]/g, function (c) {
+            switch (c) {
+                case '<': return '\u003c';
+                case '>': return '\u003e';
+            }
+        });
+    }
+
+    var pins = { 
+      us: escapeXml('<i class="fa fa-map-marker u-color-success"></i>'),
+      au: escapeXml('<i class="fa fa-map-marker u-color-danger"></i>'),
+      fr: escapeXml('<i class="fa fa-map-marker u-color-warning"></i>'),
+      br: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
+      cn: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
+      th: escapeXml('<i class="fa fa-map-marker u-color-primary"></i>')
+    };
+
     jQuery('#vmap').vectorMap({
         map: 'world_en',
+        mode: 'svg',
         backgroundColor: null,
-        color: '#ffffff',
-        hoverOpacity: 0.7,
-        selectedColor: '#666666',
-        enableZoom: true,
+        color: '#eff3f6',
+        hoverOpacity: 1,
+        borderColor: '#eff3f6',
+        hoverColor: '#d7dfe6',
+        selectedColor: '#d7dfe6',
+        enableZoom: false,
         showTooltip: true,
-        scaleColors: ['#C8EEFF', '#006491'],
+        selectedRegions: ['US', 'AU', 'FR', 'BR', 'CN', 'TH'],
+        pins: pins,
+        pinMode: 'content',
+        scaleColors: ['#eff3f6', '#d7dfe6'],
         normalizeFunction: 'polynomial'
     });
 }); 

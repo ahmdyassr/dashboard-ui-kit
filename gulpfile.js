@@ -47,7 +47,12 @@ gulp.task('copy-assets', function() {
             './node_modules/datatables.net/js/jquery.dataTables.js',
             './node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js',
             './node_modules/jqvmap/dist/jquery.vmap.min.js',
-            './node_modules/jqvmap/dist/maps/jquery.vmap.world.js'
+            './node_modules/jqvmap/dist/maps/jquery.vmap.world.js',
+            './node_modules/jqvmap/dist/maps/jquery.vmap.brazil.js',
+            './node_modules/jqvmap/dist/maps/jquery.vmap.usa.js',
+            './node_modules/jqvmap/dist/maps/jquery.vmap.france.js',
+            './node_modules/jqvmap/dist/maps/jquery.vmap.russia.js',
+            './node_modules/jqvmap/dist/maps/jquery.vmap.europe.js'
         ],
         scss: [
             './node_modules/bootstrap/dist/css/bootstrap-grid.css',

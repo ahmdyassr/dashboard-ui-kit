@@ -16,6 +16,53 @@
 
         <!-- Stylesheet -->
         <link rel="stylesheet" href="css/main.min.css">
+
+        <style>
+            #vmap {
+                width: 100%;
+                height: 100%;
+            }
+
+      .map-pin {
+        width: 64px;
+        height: 50px;
+        position: absolute;
+        top: -25px;
+        left: -32px;
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position: top center;
+        color: #888;
+        font-weight: 500;
+        font-size: 14px;
+      }
+      .map-pin span {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        left: 0;
+      }
+      .red {
+        background-image: url('images/marker/red.png');
+      }
+      .blue {
+        background-image: url('images/marker/blue.png');
+      }
+      .purple {
+        background-image: url('images/marker/purple.png');
+      }
+      /* Setup basic CSS for Label */
+      .jqvmap-pin {
+        font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+        cursor: default;
+      }
+      /* Reposition Labels that are not quite right ( labels are centered in shape, and sometimes need tweaking ) */
+      #jqvmap1_fl_pin {
+        margin-left: 5%;
+      }
+        </style>
     </head>
     <body class="o-page">
         <!--[if lte IE 9]>
@@ -326,20 +373,51 @@
                         <div class="c-card u-p-medium">
                             <h4>World Wide</h4>
 
-                            <div id="vmap" style="width: 100%; height: 300px;"></div>
+                            <div id="vmap" style="height: 300px;"></div>
 
-                            <!-- Location pins -->
-                            <i id="pin_for_ru" class="fa fa-map-marker u-color-danger"></i>
-
-
-                            <div class="c-map__labels">
-                                <i class="fa fa-map-marker"></i>
-                                <i class="fa fa-map-marker"></i>
-                                <i class="fa fa-map-marker"></i>
-                                <i class="fa fa-map-marker"></i>
-                                <i class="fa fa-map-marker"></i>
-                                <i class="fa fa-map-marker"></i>
+                            <div class="u-flex u-justify-between">
+                                <ul class="u-width-50 u-ml-large">    
+                                    <li class="u-flex u-justify-between">
+                                        <span>
+                                            <i class="fa fa-circle-o u-mr-xsmall u-color-success"></i> USA
+                                        </span>
+                                        <span>$1.733</span>
+                                    </li>
+                                    <li class="u-flex u-justify-between">
+                                        <span>
+                                            <i class="fa fa-circle-o u-mr-xsmall u-color-info"></i> Australia
+                                        </span>
+                                        <span>$1.733</span>
+                                    </li>
+                                    <li class="u-flex u-justify-between">
+                                        <span>
+                                            <i class="fa fa-circle-o u-mr-xsmall u-color-warning"></i> Frnace
+                                        </span>
+                                        <span>$1.733</span>
+                                    </li>
+                                </ul>
+                                <ul class="u-width-50 u-mr-large u-ml-medium">
+                                    <li class="u-flex u-justify-between">
+                                        <span>
+                                            <i class="fa fa-circle-o u-mr-xsmall u-color-danger"></i> Brazil
+                                        </span>
+                                        <span>$1.733</span>
+                                    </li>
+                                    <li class="u-flex u-justify-between">
+                                        <span>
+                                            <i class="fa fa-circle-o u-mr-xsmall u-color-primary"></i> China
+                                        </span>
+                                        <span>$1.733</span>
+                                    </li>
+                                    <li class="u-flex u-justify-between">
+                                        <span>
+                                            <i class="fa fa-circle-o u-mr-xsmall u-color-info"></i> Thailand
+                                        </span>
+                                        <span>$1.733</span>
+                                    </li>
+                                </ul>
                             </div>
+                
                         </div>
                     </div>
                     <div class="col-lg-6 u-mr-auto u-mb-medium">
@@ -377,7 +455,7 @@
                     </div>
                 </div>
 
-                <div class="row u-mb-xlarge">
+                <div class="row u-mb-large">
                     <div class="col-lg-4">
                         <div class="c-graph-card">
                             <div class="c-graph-card__content">
