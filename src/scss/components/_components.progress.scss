@@ -24,6 +24,7 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow: hidden;
+	@include linear-gradient(to bottom, $blue-300, $blue-400);
 }
 
 
@@ -44,40 +45,37 @@
 
 .c-progress--danger {
 	.c-progress__bar {
-		background-color: $progress-bar-danger-background-color;
+		@include linear-gradient(to bottom, $red-100, $red-300);
 	}
 }
 
 .c-progress--info {
-	.c-progress__bar {
-		background-color: $progress-bar-info-background-color;
+	.c-progress__bar { 
+		@include linear-gradient(to bottom, #2DA1F8, #1991EB);
 	}
 }
 
 .c-progress--success {
 	.c-progress__bar {
-		background-color: $progress-bar-success-background-color;
+		@include linear-gradient(to bottom, #5AD946, #2BB415);
 	}
 }
 
 .c-progress--warning {
 	.c-progress__bar {
-		background-color: $progress-bar-warning-background-color;
+		@include linear-gradient(to bottom, #F8CF5D, #FDC018);
 	}
 }
 
 .c-progress--fancy {
 	.c-progress__bar {
-		background-color: $progress-bar-fancy-background-color;
+		@include linear-gradient(to bottom, #9D90E4, #8261E6);
 	}
 }
 
-//
-// DEVELOPER NOTE: THIS NEEDS IMPROVEMENTS
-//
 /**
-  * Multi-level progress bars
-  */
+ * Multi-level progress bars
+ */
 
 .c-progress__bar {
 	.c-progress__bar {

@@ -8120,7 +8120,7 @@ be a descendant of the grid when it is being dragged.
   height: 20px;
   margin: 0 0 15px 0;
   border-radius: 20px;
-  background-color: #e6eaee; }
+  background-color: #E2E7EE; }
 
 /**
   * 1. Default (dark) background-color would be applied, if class 
@@ -8134,7 +8134,10 @@ be a descendant of the grid when it is being dragged.
   /* [1] */
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
 
 /* Size variants
    ========================================================================== */
@@ -8147,23 +8150,33 @@ be a descendant of the grid when it is being dragged.
 /* Style variants
    ========================================================================== */
 .c-progress--danger .c-progress__bar {
-  background-color: #ed1c24; }
+  background: #f95359;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f95359), to(#d35847));
+  background: linear-gradient(to bottom, #f95359, #d35847); }
 
 .c-progress--info .c-progress__bar {
-  background-color: #2ea1f8; }
+  background: #2DA1F8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
+  background: linear-gradient(to bottom, #2DA1F8, #1991EB); }
 
 .c-progress--success .c-progress__bar {
-  background-color: #1bb934; }
+  background: #5AD946;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5AD946), to(#2BB415));
+  background: linear-gradient(to bottom, #5AD946, #2BB415); }
 
 .c-progress--warning .c-progress__bar {
-  background-color: #fd9a18; }
+  background: #F8CF5D;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF5D), to(#FDC018));
+  background: linear-gradient(to bottom, #F8CF5D, #FDC018); }
 
 .c-progress--fancy .c-progress__bar {
-  background-color: #8261e6; }
+  background: #9D90E4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9D90E4), to(#8261E6));
+  background: linear-gradient(to bottom, #9D90E4, #8261E6); }
 
 /**
-  * Multi-level progress bars
-  */
+ * Multi-level progress bars
+ */
 .c-progress__bar .c-progress__bar {
   position: absolute;
   top: 0;
