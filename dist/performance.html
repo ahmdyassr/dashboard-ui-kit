@@ -316,9 +316,28 @@
                 </div>
             </header>
 
-            <div class="c-toolbar u-mb-small">
-                <h3 class="c-toolbar__title">Toolbar</h3>
-            </div>
+            <div class="c-toolbar u-justify-center u-mb-small">
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">354</h4>
+                            <span class="c-toolbar__state-title">Customers</span>
+                        </div>
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">54%</h4>
+                            <span class="c-toolbar__state-title">Target Achieved</span>
+                        </div>
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">13%</h4>
+                            <span class="c-toolbar__state-title">New Sales</span>
+                        </div>
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">21</h4>
+                            <span class="c-toolbar__state-title">New Customers</span>
+                        </div>
+                    </div><!-- // .row -->
+                </div><!-- // -->
+            </div><!-- // .c-toolbar -->
 
             <div class="container-fluid">
                 <div class="row">
@@ -433,9 +452,9 @@
                 </div>
 
                 <div class="row u-mb-large">
-                    <div class="col-lg-4">
+                    <div class="col-xl-4">
                         <div class="c-graph-card">
-                            <div class="c-graph-card__content u-flex u-justify-between u-align-items-center">
+                            <div class="c-graph-card__content u-flex u-justify-between u-align-items-baseline">
                                 <h3 class="c-graph-card__title u-h4">Daily Sales</h3>
                                 <div class="u-text-right">
                                     <h4 class="u-h1 u-mb-zero">552</h4>
@@ -447,7 +466,7 @@
                                 <canvas id="js-chart-sales" height="150"></canvas>
                             </div>
 
-                            <div class="u-flex u-justify-between u-ph-medium u-mb-medium">
+                            <div class="u-flex u-justify-between u-ph-medium u-pv-small u-border-top">
                                 <div>
                                     <span class="u-text-mute u-text-xsmall u-mr-xsmall">BEST DAY</span>21
                                 </div>
@@ -457,29 +476,31 @@
                             </div>
 
                             <div class="c-graph-card__footer">
-                                <div class="u-flex">
+                                <div class="row u-align-items-center">
 
-                                    <div class="u-width-75">
-                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">This Month</p>
-                                        <div class="c-progress c-progress--small c-progress--info">
+                                    <div class="col-9">
+                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">This Month
+                                        </p>
+                                        <div class="c-progress c-progress--medium c-progress--info">
                                             <div class="c-progress__bar" style="width:35%;"></div>
                                         </div>
                                     </div>
-                                    <div class="u-width-25 u-text-right">
-                                        <h4 class="u-h2">21</h4>
+                                    <div class="col-3 u-text-right">
+                                        <span class="u-h2">21</span>
                                     </div>
                                     
                                 </div>
 
-                                <div class="u-flex">
+                                <div class="row u-align-items-center">
 
-                                    <div class="u-width-75">
-                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">Last Month</p>
-                                        <div class="c-progress c-progress--small c-progress--fancy">
+                                    <div class="col-9">
+                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">
+                                        Last Month</p>
+                                        <div class="c-progress c-progress--medium c-progress--fancy">
                                             <div class="c-progress__bar" style="width:56%;"></div>
                                         </div>
                                     </div>
-                                    <div class="u-width-25 u-text-right">
+                                    <div class="col-3 u-text-right">
                                         <h4 class="u-h2">34</h4>
                                     </div>
                                     
@@ -488,9 +509,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4">
                         <div class="c-graph-card">
-                            <div class="c-graph-card__content u-flex u-justify-between u-align-items-center">
+                            <div class="c-graph-card__content u-flex u-justify-between u-align-items-baseline">
                                 <h3 class="c-graph-card__title u-h4">Customers</h3>
                                 <div class="u-text-right">
                                     <h4 class="u-h1 u-mb-zero">354</h4>
@@ -502,7 +523,7 @@
                                 <canvas id="js-chart-customers" width="150" height="150"></canvas>
                             </div>
 
-                            <div class="u-flex u-justify-between u-ph-medium u-mb-medium">
+                            <div class="u-flex u-justify-between u-ph-medium u-pv-small u-border-top">
                                 <div>
                                     <span class="u-text-mute u-text-xsmall u-mr-xsmall">BEST DAY</span>21
                                 </div>
@@ -512,40 +533,42 @@
                             </div>
 
                             <div class="c-graph-card__footer">
-                                <div class="u-flex">
+                                <div class="row">
 
-                                    <div class="u-width-75">
-                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">This Month</p>
-                                        <div class="c-progress c-progress--small c-progress--info">
-                                            <div class="c-progress__bar" style="width:35%;"></div>
+                                    <div class="col-4">
+
+                                        <h5 class="u-h2 u-mb-zero">39</h5>
+                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">New</p>
+                                        <div class="c-progress c-progress--medium c-progress--info">
+                                            <div class="c-progress__bar" style="width:70%;"></div>
                                         </div>
                                     </div>
-                                    <div class="u-width-25 u-text-right">
-                                        <h4 class="u-h2">21</h4>
-                                    </div>
-                                    
-                                </div>
 
-                                <div class="u-flex">
+                                    <div class="col-4">
 
-                                    <div class="u-width-75">
-                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">Last Month</p>
-                                        <div class="c-progress c-progress--small c-progress--fancy">
-                                            <div class="c-progress__bar" style="width:56%;"></div>
+                                        <h5 class="u-h2 u-mb-zero">54</h5>
+                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">Returning</p>
+                                        <div class="c-progress c-progress--medium c-progress--success">
+                                            <div class="c-progress__bar" style="width:70%;"></div>
                                         </div>
                                     </div>
-                                    <div class="u-width-25 u-text-right">
-                                        <h4 class="u-h2">34</h4>
+
+                                    <div class="col-4">
+
+                                        <h5 class="u-h2 u-mb-zero">28</h5>
+                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">Referrals</p>
+                                        <div class="c-progress c-progress--medium c-progress--warning">
+                                            <div class="c-progress__bar" style="width:70%;"></div>
+                                        </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-xl-4">
                         <div class="c-graph-card">
-                            <div class="c-graph-card__content u-flex u-justify-between u-align-items-center">
+                            <div class="c-graph-card__content u-flex u-justify-between u-align-items-baseline">
                                 <h3 class="c-graph-card__title u-h4">Profit</h3>
                                 <div class="u-text-right">
                                     <h4 class="u-h1 u-mb-zero">$1.435</h4>
@@ -566,35 +589,41 @@
                                 </div>
                             </div>
 
-                            <div class="c-graph-card__footer">
-                                <div class="u-flex">
+                            <div class="c-graph-card__footer u-ph-zero">
+                                <div class="u-flex u-justify-between u-border-bottom u-ph-medium u-pb-small">
 
-                                    <div class="u-width-75">
-                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">This Month</p>
-                                        <div class="c-progress c-progress--small c-progress--info">
-                                            <div class="c-progress__bar" style="width:35%;"></div>
-                                        </div>
+                                    <span class="u-color-primary">
+                                        <i class="fa fa-circle-o u-text-small u-mr-xsmall u-color-info"></i> Paypal
+                                    </span>
+                                   
+                                    <div class="u-text-right u-color-primary">
+                                        $365 <span class="u-color-warning u-ml-xsmall">18,7% <i class="fa fa-angle-down"></i></span>
                                     </div>
-                                    <div class="u-width-25 u-text-right">
-                                        <h4 class="u-h2">21</h4>
-                                    </div>
-                                    
                                 </div>
 
-                                <div class="u-flex">
+                                <div class="u-flex u-justify-between u-border-bottom u-ph-medium u-pv-small">
 
-                                    <div class="u-width-75">
-                                        <p class="u-text-mute u-text-uppercase u-mb-xsmall u-text-xsmall">Last Month</p>
-                                        <div class="c-progress c-progress--small c-progress--fancy">
-                                            <div class="c-progress__bar" style="width:56%;"></div>
-                                        </div>
+                                    <span class="u-color-primary">
+                                        <i class="fa fa-circle-o u-text-small u-mr-xsmall u-color-primary"></i> Gumroad
+                                    </span>
+                                   
+                                    <div class="u-text-right u-color-primary">
+                                        $365 <span class="u-color-success u-ml-xsmall">18,7% <i class="fa fa-angle-up"></i></span>
                                     </div>
-                                    <div class="u-width-25 u-text-right">
-                                        <h4 class="u-h2">34</h4>
-                                    </div>
-                                    
                                 </div>
-                            </div>
+
+                                <div class="u-flex u-justify-between u-ph-medium u-pt-small">
+
+                                    <span class="u-color-primary">
+                                        <i class="fa fa-circle-o u-text-small u-mr-xsmall u-color-primary"></i> Others
+                                    </span>
+                                   
+                                    <div class="u-text-right u-color-primary">
+                                        $365 <span class="u-color-success u-ml-xsmall">18,7% <i class="fa fa-angle-up"></i></span> 
+                                    </div>
+                                </div>
+                            </div><!-- // .c-graph-card__footer -->
+
                         </div>
                     </div>
                 </div>

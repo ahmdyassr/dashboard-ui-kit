@@ -114,3 +114,59 @@
 		padding-bottom: 20px;
 	}
 }
+
+/**
+ * Toolbar stats
+ *
+ * Numbers & states placed in the toolbar, used in performance.html page
+ */
+
+.c-toolbar__state {
+	border-right: $base-border-width solid $base-border-color;
+	text-align: center;
+
+	@include respond-to($breakpoint-tablet) {
+		margin-bottom: $spacer;
+		border-right: 0;
+
+		&:nth-child(3),
+		&:nth-child(4) {
+			margin-bottom: 0;
+		}
+	}
+
+	&:last-child {
+		border-right: 0;
+	}
+}
+
+.c-toolbar__state-number {
+	margin-bottom: 0;
+	font-size: $h2-font-size;
+}
+
+.c-toolbar__state-title {
+	color: $color-mute;
+	font-size: $text-font-size;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
