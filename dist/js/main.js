@@ -33810,7 +33810,6 @@ $(function(){
 	// line carts
 	var chartPayout = document.getElementById("js-chart-payout"),
 		chartEarnings = document.getElementById("js-chart-earnings"),
-		chartEarnings = document.getElementById("js-chart-earnings"),
 		chartRevenue = document.getElementById("js-chart-revenue"),
 
 		chartNewsletters = document.getElementById("js-chart-newsletters"),
@@ -34121,6 +34120,35 @@ $(function(){
 			//pointRadius: 4,
 			//pointHitRadius: 5,
 			data: [40, 32, 42, 28, 53, 34],
+			spanGaps: false
+	    }]
+	};
+
+	var lineChartProfit2Data = {
+	    labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
+	    datasets: [{
+			label: "Sold",
+			fill: true,
+			lineTension: 0,
+			backgroundColor: 'rgba(0,172,255, 0.1)',
+			borderWidth: 2,
+			borderColor: "#00AAFF",
+			borderCapStyle: 'butt',
+			borderDash: [],
+			borderDashOffset: 0.0,
+			borderJoinStyle: 'miter',
+			pointStyle: 'circle',
+			pointRadius: 0,
+			pointBorderColor: "#00AAFF",
+			pointBackgroundColor: "#ffffff",
+			pointBorderWidth: 2,
+			pointHoverRadius: 6,
+			pointHoverBackgroundColor: "#00AAFF",
+			pointHoverBorderColor: "#fff",
+			pointHoverBorderWidth: 2,
+			pointRadius: 4,
+			pointHitRadius: 5,
+			data: [25, 45, 25, 32, 15, 28],
 			spanGaps: false
 	    }]
 	};
@@ -34698,7 +34726,7 @@ $(function(){
 	if (chartProfit) {
 		var lineChartProfit = new Chart(chartProfit, {
 		    type: 'line',
-		    data: lineChartProfitData,
+		    data: lineChartProfit2Data,
 		    options: {
 		    	legend: {
 					display: false
