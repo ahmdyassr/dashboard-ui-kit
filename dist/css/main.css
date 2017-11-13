@@ -10285,6 +10285,7 @@ textarea.c-input {
   padding: 1.875rem; }
 
 .c-graph-card__footer {
+  height: 100%;
   padding: 0.9375rem 1.875rem;
   border-top: #e6eaee solid 1px;
   background-color: #FAFBFC; }
