@@ -11685,6 +11685,43 @@ textarea.c-input {
     color: #FDBC0E; }
 
 /* ==========================================================================
+   #ALERTS
+   ========================================================================== */
+/**
+ * Map is powered by jqvmap plugin, these labels are added manually.
+ */
+.c-map__visual {
+  margin-bottom: 1.875rem; }
+
+.c-map__labels--left {
+  margin-right: 0.9375rem;
+  margin-left: 3.125rem; }
+
+.c-map__labels--right {
+  margin-right: 3.125rem;
+  margin-left: 0.9375rem; }
+
+@media (max-width: 1200px) {
+  .c-map__labels {
+    margin-right: 0;
+    margin-left: 0; } }
+
+.c-map__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0.625rem; }
+  .c-map__label:last-child {
+    margin-bottom: 0; }
+
+.c-map__country,
+.c-map__number {
+  color: #354052; }
+
+/* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
 /**

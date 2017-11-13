@@ -345,51 +345,62 @@
                         <div class="c-card u-p-medium">
                             <h4>World Wide</h4>
 
-                            <div id="vmap" style="height: 300px;"></div>
+                            <div class="c-map">
+                                <div class="c-map__visual" id="vmap" style="height: 251px;"></div>
 
-                            <div class="u-flex u-justify-between">
-                                <ul class="u-width-50 u-ml-large">    
-                                    <li class="u-flex u-justify-between">
-                                        <span>
-                                            <i class="fa fa-circle-o u-mr-xsmall u-color-success"></i> USA
-                                        </span>
-                                        <span>$1.733</span>
-                                    </li>
-                                    <li class="u-flex u-justify-between">
-                                        <span>
-                                            <i class="fa fa-circle-o u-mr-xsmall u-color-info"></i> Australia
-                                        </span>
-                                        <span>$1.733</span>
-                                    </li>
-                                    <li class="u-flex u-justify-between">
-                                        <span>
-                                            <i class="fa fa-circle-o u-mr-xsmall u-color-warning"></i> Frnace
-                                        </span>
-                                        <span>$1.733</span>
-                                    </li>
-                                </ul>
-                                <ul class="u-width-50 u-mr-large u-ml-medium">
-                                    <li class="u-flex u-justify-between">
-                                        <span>
-                                            <i class="fa fa-circle-o u-mr-xsmall u-color-danger"></i> Brazil
-                                        </span>
-                                        <span>$1.733</span>
-                                    </li>
-                                    <li class="u-flex u-justify-between">
-                                        <span>
-                                            <i class="fa fa-circle-o u-mr-xsmall u-color-primary"></i> China
-                                        </span>
-                                        <span>$1.733</span>
-                                    </li>
-                                    <li class="u-flex u-justify-between">
-                                        <span>
-                                            <i class="fa fa-circle-o u-mr-xsmall u-color-info"></i> Thailand
-                                        </span>
-                                        <span>$1.733</span>
-                                    </li>
-                                </ul>
-                            </div>
-                
+                                <div class="row">
+                                    <div class="col-6">
+                                        <ul class="c-map__labels c-map__labels--left">
+                                            <li class="c-map__label">
+                                                <span class="c-map__country">
+                                                    <i class="fa fa-circle-o u-mr-xsmall u-color-success"></i> USA
+                                                </span>
+                                                <span class="c-map__number">$1.397</span>
+                                            </li>
+
+                                            <li class="c-map__label">
+                                                <span class="c-map__country">
+                                                    <i class="fa fa-circle-o u-mr-xsmall u-color-info"></i> Australia
+                                                </span>
+                                                <span class="c-map__number">$501</span>
+                                            </li>
+
+                                            <li class="c-map__label">
+                                                <span class="c-map__country">
+                                                    <i class="fa fa-circle-o u-mr-xsmall u-color-danger"></i> France
+                                                </span>
+                                                <span class="c-map__number">$465</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <ul class="c-map__labels c-map__labels--right">
+                                            <li class="c-map__label">
+                                                <span class="c-map__country">
+                                                    <i class="fa fa-circle-o u-mr-xsmall u-color-fancy"></i> Brazil
+                                                </span>
+                                                <span class="c-map__number">$430</span>
+                                            </li>
+
+                                            <li class="c-map__label">
+                                                <span class="c-map__country">
+                                                    <i class="fa fa-circle-o u-mr-xsmall u-color-info"></i> China
+                                                </span>
+                                                <span class="c-map__number">$215</span>
+                                            </li>
+
+                                            <li class="c-map__label">
+                                                <span class="c-map__country">
+                                                    <i class="fa fa-circle-o u-mr-xsmall u-color-warning"></i> Thailand
+                                                </span>
+                                                <span class="c-map__number">$201</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div><!-- // .row -->    
+                            </div><!-- // .c-map -->
+                            
                         </div>
                     </div>
                     <div class="col-lg-6 u-mr-auto u-mb-medium">
@@ -577,22 +588,21 @@
                             </div>
                             
                             <div class="c-graph-card__chart u-p-zero">
-                                <canvas id="js-chart-profit" width="50" height="25"></canvas>
+                                <canvas id="js-chart-profit" width="50" height="29"></canvas>
                             </div>
 
-                            <div class="u-flex u-justify-between u-ph-medium u-pv-small u-border-top">
-                                <div>
-                                    <span class="u-text-mute u-text-xsmall u-mr-xsmall">BEST DAY</span>21
-                                </div>
-                                <div>
-                                    <span class="u-text-mute u-text-xsmall u-mr-xsmall">AVERAGE</span>32
-                                </div>
+                            <div class="u-flex u-justify-between u-ph-medium u-pt-small u-pb-medium u-border-top">
+                                <span class="u-text-mute u-text-uppercase u-opacity-medium u-text-xsmall">Jan</span>
+                                <span class="u-text-mute u-text-uppercase u-opacity-medium u-text-xsmall">Feb</span>
+                                <span class="u-text-mute u-text-uppercase u-opacity-medium u-text-xsmall">Mar</span>
+                                <span class="u-text-mute u-text-uppercase u-opacity-medium u-text-xsmall">Apr</span>
+                                <span class="u-text-mute u-text-uppercase u-opacity-medium u-text-xsmall">May</span>
                             </div>
 
                             <div class="c-graph-card__footer u-ph-zero">
-                                <div class="u-flex u-justify-between u-border-bottom u-ph-medium u-pb-small">
+                                <div class="u-flex u-justify-between u-align-items-center u-border-bottom u-ph-medium u-pb-small">
 
-                                    <span class="u-color-primary">
+                                    <span class="u-text-small u-color-primary">
                                         <i class="fa fa-circle-o u-text-small u-mr-xsmall u-color-info"></i> Paypal
                                     </span>
                                    
@@ -601,25 +611,25 @@
                                     </div>
                                 </div>
 
-                                <div class="u-flex u-justify-between u-border-bottom u-ph-medium u-pv-small">
+                                <div class="u-flex u-justify-between u-align-items-center u-border-bottom u-ph-medium u-pv-small">
 
-                                    <span class="u-color-primary">
+                                    <span class="u-text-small u-color-primary">
                                         <i class="fa fa-circle-o u-text-small u-mr-xsmall u-color-primary"></i> Gumroad
                                     </span>
                                    
                                     <div class="u-text-right u-color-primary">
-                                        $365 <span class="u-color-success u-ml-xsmall">18,7% <i class="fa fa-angle-up"></i></span>
+                                        $299 <span class="u-color-success u-ml-xsmall">18,7% <i class="fa fa-angle-up"></i></span>
                                     </div>
                                 </div>
 
-                                <div class="u-flex u-justify-between u-ph-medium u-pt-small">
+                                <div class="u-flex u-justify-between u-align-items-center u-ph-medium u-pt-small">
 
-                                    <span class="u-color-primary">
+                                    <span class="u-text-small u-color-primary">
                                         <i class="fa fa-circle-o u-text-small u-mr-xsmall u-color-primary"></i> Others
                                     </span>
                                    
                                     <div class="u-text-right u-color-primary">
-                                        $365 <span class="u-color-success u-ml-xsmall">18,7% <i class="fa fa-angle-up"></i></span> 
+                                        $69 <span class="u-color-success u-ml-xsmall">18,7% <i class="fa fa-angle-up"></i></span> 
                                     </div>
                                 </div>
                             </div><!-- // .c-graph-card__footer -->
