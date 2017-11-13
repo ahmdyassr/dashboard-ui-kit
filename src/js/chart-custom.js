@@ -1005,14 +1005,14 @@ $(function(){
 			type: 'doughnut',
 		    data: {
 			    datasets: [{
-			        data: [20, 10],
-			        backgroundColor: ['#1991EB', '#E2E7EE']
+			        data: [60, 25, 15],
+			        backgroundColor: ['#289DF5', '#40557D', '#FFD400']
 			    }],
 			    // These labels appear in the legend and in the tooltips when hovering different arcs
 			    labels: [
-			        'Red',
-			        'Yellow',
-			        'Blue'
+			        'Blue',
+			        'Dark',
+			        'Yellow'
 			    ]
 			},
 			options: {

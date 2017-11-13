@@ -48,11 +48,7 @@ gulp.task('copy-assets', function() {
             './node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js',
             './node_modules/jqvmap/dist/jquery.vmap.min.js',
             './node_modules/jqvmap/dist/maps/jquery.vmap.world.js',
-            './node_modules/jqvmap/dist/maps/jquery.vmap.brazil.js',
-            './node_modules/jqvmap/dist/maps/jquery.vmap.usa.js',
-            './node_modules/jqvmap/dist/maps/jquery.vmap.france.js',
-            './node_modules/jqvmap/dist/maps/jquery.vmap.russia.js',
-            './node_modules/jqvmap/dist/maps/jquery.vmap.europe.js'
+            './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js'
         ],
         scss: [
             './node_modules/bootstrap/dist/css/bootstrap-grid.css',
@@ -150,6 +146,7 @@ gulp.task('javascript', function(){
             folder.src + 'js/vendor/datepicker.min.js',
             folder.src + 'js/vendor/jquery.vmap.min.js',
             folder.src + 'js/vendor/jquery.vmap.world.js',
+            folder.src + 'js/vendor/jquery.matchHeight-min.js',
             folder.src + 'js/fullcalendar-custom.js',
             folder.src + 'js/chart-custom.js',
             folder.src + 'js/sidebar.js',

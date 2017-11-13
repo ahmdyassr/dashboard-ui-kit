@@ -93,6 +93,9 @@ $(function() {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
+    // 10. Match Height
+    //$('.match-height').matchHeight();
+
     function escapeXml(string) {
         return string.replace(/[<>]/g, function (c) {
             switch (c) {
