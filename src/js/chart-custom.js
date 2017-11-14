@@ -133,10 +133,10 @@ $(function(){
 		// pie charts
 		chartSummary1 = document.getElementById("js-chart-summary1"),
 		chartSummary2 = document.getElementById("js-chart-summary2"),
-		chartSummary3 = document.getElementById("js-chart-summary3");
+		chartSummary3 = document.getElementById("js-chart-summary3"),
 
 		// used in performance.html page
-	var	chartSales = document.getElementById("js-chart-sales").getContext("2d"),
+		chartSales = document.getElementById("js-chart-sales"),
 		chartCustomers = document.getElementById("js-chart-customers"),
 		chartProfit = document.getElementById("js-chart-profit");
 
@@ -431,7 +431,7 @@ $(function(){
 	};
 
 	var lineChartProfit2Data = {
-	    labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
+	    labels: ["December", "January", "February", "Mars", "April", "May", "June"],
 	    datasets: [{
 			label: "Sold",
 			fill: true,
@@ -454,7 +454,7 @@ $(function(){
 			pointHoverBorderWidth: 2,
 			pointRadius: 4,
 			pointHitRadius: 5,
-			data: [25, 45, 25, 32, 15, 28],
+			data: [25, 45, 25, 32, 15, 30, 22],
 			spanGaps: false
 	    }]
 	};

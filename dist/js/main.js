@@ -33839,10 +33839,10 @@ $(function(){
 		// pie charts
 		chartSummary1 = document.getElementById("js-chart-summary1"),
 		chartSummary2 = document.getElementById("js-chart-summary2"),
-		chartSummary3 = document.getElementById("js-chart-summary3");
+		chartSummary3 = document.getElementById("js-chart-summary3"),
 
 		// used in performance.html page
-	var	chartSales = document.getElementById("js-chart-sales").getContext("2d"),
+		chartSales = document.getElementById("js-chart-sales"),
 		chartCustomers = document.getElementById("js-chart-customers"),
 		chartProfit = document.getElementById("js-chart-profit");
 
@@ -34137,7 +34137,7 @@ $(function(){
 	};
 
 	var lineChartProfit2Data = {
-	    labels: ["January 1", "January 5", "January 10", "January 15", "January 20", "January 25"],
+	    labels: ["December", "January", "February", "Mars", "April", "May", "June"],
 	    datasets: [{
 			label: "Sold",
 			fill: true,
@@ -34160,7 +34160,7 @@ $(function(){
 			pointHoverBorderWidth: 2,
 			pointRadius: 4,
 			pointHitRadius: 5,
-			data: [25, 45, 25, 32, 15, 28],
+			data: [25, 45, 25, 32, 15, 30, 22],
 			spanGaps: false
 	    }]
 	};
@@ -34868,9 +34868,10 @@ var Todo = function() {
 // 7. File Upload (dropzone plugin)
 // 8. Sortable Table (dataTable plugin)
 // 9. Date Picker (datepicker plugin)
+// 10. Map (jqvmap plugin)
 
 //
-// Note: Bootstrap plugins is enabled through via data attributes
+// Note: Bootstrap plugins is enabled via data attributes
 //
 
 // A fix to initialise dropzone on document ready
@@ -34946,42 +34947,42 @@ $(function() {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
-    // 10. Match Height
-    //$('.match-height').matchHeight();
+    // 10. Map
+    if($('#vmap').length){
+        function escapeXml(string) {
+            return string.replace(/[<>]/g, function (c) {
+                switch (c) {
+                    case '<': return '\u003c';
+                    case '>': return '\u003e';
+                }
+            });
+        }
 
-    function escapeXml(string) {
-        return string.replace(/[<>]/g, function (c) {
-            switch (c) {
-                case '<': return '\u003c';
-                case '>': return '\u003e';
-            }
+        var pins = { 
+          us: escapeXml('<i class="fa fa-map-marker u-color-success"></i>'),
+          au: escapeXml('<i class="fa fa-map-marker u-color-danger"></i>'),
+          fr: escapeXml('<i class="fa fa-map-marker u-color-warning"></i>'),
+          br: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
+          cn: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
+          th: escapeXml('<i class="fa fa-map-marker u-color-primary"></i>')
+        };
+
+        jQuery('#vmap').vectorMap({
+            map: 'world_en',
+            mode: 'svg',
+            backgroundColor: null,
+            color: '#eff3f6',
+            hoverOpacity: 1,
+            borderColor: '#eff3f6',
+            hoverColor: '#d7dfe6',
+            selectedColor: '#d7dfe6',
+            enableZoom: false,
+            showTooltip: true,
+            selectedRegions: ['US', 'AU', 'FR', 'BR', 'CN', 'TH'],
+            pins: pins,
+            pinMode: 'content',
+            scaleColors: ['#eff3f6', '#d7dfe6'],
+            normalizeFunction: 'polynomial'
         });
     }
-
-    var pins = { 
-      us: escapeXml('<i class="fa fa-map-marker u-color-success"></i>'),
-      au: escapeXml('<i class="fa fa-map-marker u-color-danger"></i>'),
-      fr: escapeXml('<i class="fa fa-map-marker u-color-warning"></i>'),
-      br: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
-      cn: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
-      th: escapeXml('<i class="fa fa-map-marker u-color-primary"></i>')
-    };
-
-    jQuery('#vmap').vectorMap({
-        map: 'world_en',
-        mode: 'svg',
-        backgroundColor: null,
-        color: '#eff3f6',
-        hoverOpacity: 1,
-        borderColor: '#eff3f6',
-        hoverColor: '#d7dfe6',
-        selectedColor: '#d7dfe6',
-        enableZoom: false,
-        showTooltip: true,
-        selectedRegions: ['US', 'AU', 'FR', 'BR', 'CN', 'TH'],
-        pins: pins,
-        pinMode: 'content',
-        scaleColors: ['#eff3f6', '#d7dfe6'],
-        normalizeFunction: 'polynomial'
-    });
 }); 

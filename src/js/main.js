@@ -15,9 +15,10 @@
 // 7. File Upload (dropzone plugin)
 // 8. Sortable Table (dataTable plugin)
 // 9. Date Picker (datepicker plugin)
+// 10. Map (jqvmap plugin)
 
 //
-// Note: Bootstrap plugins is enabled through via data attributes
+// Note: Bootstrap plugins is enabled via data attributes
 //
 
 // A fix to initialise dropzone on document ready
@@ -93,42 +94,42 @@ $(function() {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
-    // 10. Match Height
-    //$('.match-height').matchHeight();
+    // 10. Map
+    if($('#vmap').length){
+        function escapeXml(string) {
+            return string.replace(/[<>]/g, function (c) {
+                switch (c) {
+                    case '<': return '\u003c';
+                    case '>': return '\u003e';
+                }
+            });
+        }
 
-    function escapeXml(string) {
-        return string.replace(/[<>]/g, function (c) {
-            switch (c) {
-                case '<': return '\u003c';
-                case '>': return '\u003e';
-            }
+        var pins = { 
+          us: escapeXml('<i class="fa fa-map-marker u-color-success"></i>'),
+          au: escapeXml('<i class="fa fa-map-marker u-color-danger"></i>'),
+          fr: escapeXml('<i class="fa fa-map-marker u-color-warning"></i>'),
+          br: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
+          cn: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
+          th: escapeXml('<i class="fa fa-map-marker u-color-primary"></i>')
+        };
+
+        jQuery('#vmap').vectorMap({
+            map: 'world_en',
+            mode: 'svg',
+            backgroundColor: null,
+            color: '#eff3f6',
+            hoverOpacity: 1,
+            borderColor: '#eff3f6',
+            hoverColor: '#d7dfe6',
+            selectedColor: '#d7dfe6',
+            enableZoom: false,
+            showTooltip: true,
+            selectedRegions: ['US', 'AU', 'FR', 'BR', 'CN', 'TH'],
+            pins: pins,
+            pinMode: 'content',
+            scaleColors: ['#eff3f6', '#d7dfe6'],
+            normalizeFunction: 'polynomial'
         });
     }
-
-    var pins = { 
-      us: escapeXml('<i class="fa fa-map-marker u-color-success"></i>'),
-      au: escapeXml('<i class="fa fa-map-marker u-color-danger"></i>'),
-      fr: escapeXml('<i class="fa fa-map-marker u-color-warning"></i>'),
-      br: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
-      cn: escapeXml('<i class="fa fa-map-marker u-color-info"></i>'),
-      th: escapeXml('<i class="fa fa-map-marker u-color-primary"></i>')
-    };
-
-    jQuery('#vmap').vectorMap({
-        map: 'world_en',
-        mode: 'svg',
-        backgroundColor: null,
-        color: '#eff3f6',
-        hoverOpacity: 1,
-        borderColor: '#eff3f6',
-        hoverColor: '#d7dfe6',
-        selectedColor: '#d7dfe6',
-        enableZoom: false,
-        showTooltip: true,
-        selectedRegions: ['US', 'AU', 'FR', 'BR', 'CN', 'TH'],
-        pins: pins,
-        pinMode: 'content',
-        scaleColors: ['#eff3f6', '#d7dfe6'],
-        normalizeFunction: 'polynomial'
-    });
 }); 
