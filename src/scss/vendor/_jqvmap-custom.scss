@@ -7,5 +7,13 @@
  */
 
 .jqvmap-pin {
-	transform: translate(-3100%, -900%);
+	transform: translate(-3200%, -1050%);
+
+	@include respond-to($breakpoint-desktop) {
+		transform: translate(-300%, -1050%);
+	}
+
+	@include respond-to($breakpoint-tablet) {
+		transform: translate(-500%,-1500%);
+	}
 }

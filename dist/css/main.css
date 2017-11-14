@@ -7000,8 +7000,16 @@ be a descendant of the grid when it is being dragged.
  * A quick fix for jqvmap pins (not positioned properly)
  */
 .jqvmap-pin {
-  -webkit-transform: translate(-3100%, -900%);
-          transform: translate(-3100%, -900%); }
+  -webkit-transform: translate(-3200%, -1050%);
+          transform: translate(-3200%, -1050%); }
+  @media (max-width: 992px) {
+    .jqvmap-pin {
+      -webkit-transform: translate(-300%, -1050%);
+              transform: translate(-300%, -1050%); } }
+  @media (max-width: 768px) {
+    .jqvmap-pin {
+      -webkit-transform: translate(-500%, -1500%);
+              transform: translate(-500%, -1500%); } }
 
 /* ==========================================================================
    #PAGE OBJECT
