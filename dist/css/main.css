@@ -12232,27 +12232,35 @@ textarea.c-input {
   * Set the background color of elements.
   */
 .u-bg-success {
+  background: #1bb934 !important;
   background-color: #1bb934 !important; }
 
 .u-bg-info {
+  background: #1a91eb !important;
   background-color: #1a91eb !important; }
 
 .u-bg-danger {
+  background: #ed1c24 !important;
   background-color: #ed1c24 !important; }
 
 .u-bg-fancy {
+  background: #a388e3 !important;
   background-color: #a388e3 !important; }
 
 .u-bg-warning {
+  background: #fd9a18 !important;
   background-color: #fd9a18 !important; }
 
 .u-bg-primary {
+  background: #475364 !important;
   background-color: #475364 !important; }
 
 .u-bg-secondary {
+  background: #fff !important;
   background-color: #fff !important; }
 
 .u-bg-white {
+  background: #fff !important;
   background-color: #fff !important; }
 
 /**
