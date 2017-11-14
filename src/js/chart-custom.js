@@ -974,8 +974,8 @@ $(function(){
 					display: false
 				},
 		    	barRoundness: 1,
-		    	responsive: false,
-		    	maintainAspectRatio: false,
+		    	responsive: true,
+		    	maintainAspectRatio: true,
 		    	scales: {
 					xAxes: [{
 							display: false,
