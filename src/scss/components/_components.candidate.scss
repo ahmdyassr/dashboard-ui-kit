@@ -1,0 +1,43 @@
+/* ==========================================================================
+   #CANDIDATE
+   ========================================================================== */
+
+/**
+ * Used in candidates.html page
+ */
+
+
+.c-candidate {
+	padding: $spacer-small;
+	border: $base-border-width solid $base-border-color;
+	border-radius: $base-border-radius;
+	background-color: $base-background-color;
+}
+
+
+/**
+ * 1. Remove weird extra space.
+ */
+
+.c-candidate__cover {
+	border-top-left-radius: $base-border-radius / 2;
+	border-top-right-radius: $base-border-radius / 2;
+	font-size: 0; /* [1] */
+	overflow: hidden;
+}
+
+.c-candidate__avatar {
+	display: inline-block;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.c-candidate__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.c-candidate__status {
+	margin-right: $spacer-small;
+}

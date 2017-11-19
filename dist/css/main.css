@@ -11731,6 +11731,47 @@ textarea.c-input {
   color: #354052; }
 
 /* ==========================================================================
+   #CANDIDATE
+   ========================================================================== */
+/**
+ * Used in candidates.html page
+ */
+.c-candidate {
+  padding: 0.9375rem;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+  background-color: #fff; }
+
+/**
+ * 1. Remove weird extra space.
+ */
+.c-candidate__cover {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  font-size: 0;
+  /* [1] */
+  overflow: hidden; }
+
+.c-candidate__avatar {
+  display: inline-block;
+  border-radius: 100%;
+  overflow: hidden; }
+
+.c-candidate__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.c-candidate__status {
+  margin-right: 0.9375rem; }
+
+/* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
 /**
