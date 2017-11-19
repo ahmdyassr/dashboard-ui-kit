@@ -11737,6 +11737,7 @@ textarea.c-input {
  * Used in candidates.html page
  */
 .c-candidate {
+  margin-bottom: 1.875rem;
   padding: 0.9375rem;
   border: 1px solid #e6eaee;
   border-radius: 4px;
@@ -11746,16 +11747,69 @@ textarea.c-input {
  * 1. Remove weird extra space.
  */
 .c-candidate__cover {
+  max-height: 150px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   font-size: 0;
   /* [1] */
   overflow: hidden; }
 
+.c-candidate__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: -0.9375rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 0.9375rem;
+  border-bottom: 1px solid #F2F4F6; }
+
 .c-candidate__avatar {
-  display: inline-block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 0.9375rem;
+  margin-left: 0.625rem;
   border-radius: 100%;
   overflow: hidden; }
+
+.c-candidate__meta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.c-candidate__title {
+  margin: 0;
+  font-size: 1rem; }
+
+.c-candidate__country {
+  display: block;
+  color: #7f8fa4; }
+  .c-candidate__country i {
+    margin-right: 0.625rem; }
+
+.c-candidate__actions {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: 0.625rem; }
+  .c-candidate__actions a {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    color: #7f8fa4;
+    opacity: .5; }
+    .c-candidate__actions a:last-child {
+      margin-left: 0.3125rem; }
+    .c-candidate__actions a:hover {
+      opacity: 1; }
 
 .c-candidate__footer {
   display: -webkit-box;
@@ -11769,7 +11823,8 @@ textarea.c-input {
           justify-content: space-between; }
 
 .c-candidate__status {
-  margin-right: 0.9375rem; }
+  margin-right: 0.9375rem;
+  font-size: 0.875rem; }
 
 /* ==========================================================================
    #TYPOGRAPHY UTILITIES
