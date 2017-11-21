@@ -11841,8 +11841,26 @@ textarea.c-input {
   background-color: #fff; }
 
 .c-stage__header {
-  padding: 1.875rem;
-  border-bottom: 1px solid #e6eaee; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.9375rem 1.875rem;
+  border-bottom: 1px solid #e6eaee;
+  cursor: pointer; }
+  .c-stage__header:hover {
+    text-decoration: none; }
+
+.c-stage__header-img {
+  max-width: 60px;
+  margin-right: 20px;
+  border-radius: 4px;
+  overflow: hidden; }
 
 .c-stage__icon {
   width: 30px;
@@ -11856,7 +11874,21 @@ textarea.c-input {
   text-align: center; }
 
 .c-stage__panel {
-  padding: 1.875rem; }
+  border-bottom: 1px solid #e6eaee;
+  /**
+	 * Bootstrap classes used to show and hide sidebar submenu.
+	 * This behaviour depends on collapse.js plugin.
+	 */ }
+  .c-stage__panel.collapse {
+    display: none; }
+    .c-stage__panel.collapse.show {
+      display: block; }
+  .c-stage__panel.collapsing {
+    position: relative;
+    height: 0;
+    -webkit-transition: height 0.3s;
+    transition: height 0.3s;
+    overflow: hidden; }
 
 .c-stage__label {
   display: -webkit-box;

@@ -15,8 +15,23 @@
 }
 
 .c-stage__header {
-	padding: $spacer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: $spacer-small $spacer;
 	border-bottom: $base-border-width solid $base-border-color;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.c-stage__header-img {
+	max-width: 60px;
+	margin-right: 20px;
+	border-radius: $base-border-radius;
+	overflow: hidden;
 }
 
 .c-stage__icon {
@@ -32,7 +47,26 @@
 }
 
 .c-stage__panel {
-	padding: $spacer;
+	border-bottom: $base-border-width solid $base-border-color;
+
+	/**
+	 * Bootstrap classes used to show and hide sidebar submenu.
+	 * This behaviour depends on collapse.js plugin.
+	 */
+	&.collapse {
+		display: none;
+
+		&.show {
+			display: block;
+	  	}
+	}
+
+	&.collapsing {
+		position: relative;
+		height: 0;
+		transition: height 0.3s;
+		overflow: hidden;
+	}
 }
 
 .c-stage__label {
