@@ -4,11 +4,52 @@
 
 /**
  * Stage component is used to describe the project you are working on based on
- * multiple stages. This compent is used project-overview.html page.
+ * multiple stages. This component is used in project-overview.html page.
  */
 
+.c-stage {
+	margin-bottom: $spacer;
+	border: $base-border-width solid $base-border-color;
+	border-radius: $base-border-radius;
+	background-color: $base-background-color;
+}
 
-/* Style variants
-   ========================================================================== */
+.c-stage__header {
+	padding: $spacer;
+	border-bottom: $base-border-width solid $base-border-color;
+}
+
+.c-stage__icon {
+	width: 30px;
+	height: 30px;
+	margin-right: $spacer-xsmall;
+	border: $base-border-color solid $base-border-width;
+	border-radius: 100%;
+	color: $color-mute;
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.c-stage__panel {
+	padding: $spacer;
+}
+
+.c-stage__label {
+	display: flex;
+	align-items: center;
+	padding: $spacer-small $spacer;
+	background-color: $color-success;
+	color: $white;
+}
+
+.c-stage__label-icon {
+	margin-right: $spacer-xsmall;
+	font-size: $h2-font-size;
+}
+
+.c-stage__label-title {
+	color: $white;
+}
 
 

@@ -11832,10 +11832,50 @@ textarea.c-input {
    ========================================================================== */
 /**
  * Stage component is used to describe the project you are working on based on
- * multiple stages. This compent is used project-overview.html page.
+ * multiple stages. This component is used in project-overview.html page.
  */
-/* Style variants
-   ========================================================================== */
+.c-stage {
+  margin-bottom: 1.875rem;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+  background-color: #fff; }
+
+.c-stage__header {
+  padding: 1.875rem;
+  border-bottom: 1px solid #e6eaee; }
+
+.c-stage__icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.625rem;
+  border: #e6eaee solid 1px;
+  border-radius: 100%;
+  color: #7f8fa4;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center; }
+
+.c-stage__panel {
+  padding: 1.875rem; }
+
+.c-stage__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.9375rem 1.875rem;
+  background-color: #1bb934;
+  color: #fff; }
+
+.c-stage__label-icon {
+  margin-right: 0.625rem;
+  font-size: 1.75rem; }
+
+.c-stage__label-title {
+  color: #fff; }
+
 /* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
