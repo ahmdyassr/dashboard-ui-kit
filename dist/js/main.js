@@ -31241,12 +31241,13 @@ var ChatDialogue = function(){
 // 2. Switches
 // 3. Toggles
 // 4. Todo Tasks
-// 5. Boards (dragula plugin)
-// 6. Select (select2 plugin)
-// 7. File Upload (dropzone plugin)
-// 8. Sortable Table (dataTable plugin)
-// 9. Date Picker (datepicker plugin)
-// 10. Map (jqvmap plugin)
+// 5. Chat Dialogue
+// 6. Boards (dragula plugin)
+// 7. Select (select2 plugin)
+// 8. File Upload (dropzone plugin)
+// 9. Sortable Table (dataTable plugin)
+// 10. Date Picker (datepicker plugin)
+// 11. Map (jqvmap plugin)
 
 //
 // Note: Bootstrap plugins is enabled via data attributes

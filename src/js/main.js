@@ -10,12 +10,13 @@
 // 2. Switches
 // 3. Toggles
 // 4. Todo Tasks
-// 5. Boards (dragula plugin)
-// 6. Select (select2 plugin)
-// 7. File Upload (dropzone plugin)
-// 8. Sortable Table (dataTable plugin)
-// 9. Date Picker (datepicker plugin)
-// 10. Map (jqvmap plugin)
+// 5. Chat Dialogue
+// 6. Boards (dragula plugin)
+// 7. Select (select2 plugin)
+// 8. File Upload (dropzone plugin)
+// 9. Sortable Table (dataTable plugin)
+// 10. Date Picker (datepicker plugin)
+// 11. Map (jqvmap plugin)
 
 //
 // Note: Bootstrap plugins is enabled via data attributes
@@ -36,12 +37,12 @@ $(function() {
     Todo();    // 4. Todo
     ChatDialogue(); // 5. Chat Dialogue
 
-    // 5. Boards 
+    // 6. Boards 
     if($('.c-board').length) {
         var dragulaObj = dragula( $('.c-board__content').toArray(), {});
     }
 
-    // 6. Select
+    // 7. Select
     if($('.c-select').length) {
         var $singleSelect = $('.c-select'),
             $singleSelectHasSearch = $('.c-select.has-search'),
@@ -71,12 +72,12 @@ $(function() {
         });
     }
 
-    // 7. dropzone
+    // 8. dropzone
     if($('.dropzone').length) {
         $("#custom-dropzone").dropzone();
     }
 
-    // 8. datatable
+    // 9. datatable
     if($('#datatable').length) {
         $("#datatable").DataTable({
             searching: false,
@@ -90,12 +91,12 @@ $(function() {
         });
     }
 
-    // 9. datepicker
+    // 10. datepicker
     if($('[data-toggle="datepicker"]').length) {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
-    // 10. Map
+    // 11. Map
     if($('#vmap').length){
         function escapeXml(string) {
             return string.replace(/[<>]/g, function (c) {
