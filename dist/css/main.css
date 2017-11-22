@@ -11889,6 +11889,8 @@ textarea.c-input {
     -webkit-transition: height 0.3s;
     transition: height 0.3s;
     overflow: hidden; }
+  .c-stage__panel--mute {
+    background-color: #FAFBFC; }
 
 .c-stage__label {
   display: -webkit-box;

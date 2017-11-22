@@ -67,6 +67,10 @@
 		transition: height 0.3s;
 		overflow: hidden;
 	}
+
+	&--mute {
+		background-color: #FAFBFC;
+	}
 }
 
 .c-stage__label {
