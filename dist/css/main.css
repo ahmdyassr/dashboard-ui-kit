@@ -11911,6 +11911,64 @@ textarea.c-input {
   color: #fff; }
 
 /* ==========================================================================
+   #COUNTER NAV
+   ========================================================================== */
+/**
+ * Counter nav is a different style of navigation, every navigation link has 
+ * an icon (that contains current number) before it. This component is used 
+ * in project-overview.html page.
+ */
+.c-counter-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.c-counter-nav__title {
+  margin-right: 0.625rem;
+  color: #7f8fa4; }
+
+.c-counter-nav__item {
+  margin-right: 1.25rem; }
+
+.c-counter-nav__link {
+  color: #7f8fa4;
+  font-size: 14px; }
+  .c-counter-nav__link:hover {
+    text-decoration: none; }
+  .c-counter-nav__link.is-active {
+    color: #354052; }
+
+.c-counter-nav__counter {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+  border: 1px solid #e6eaee;
+  border-radius: 100%;
+  background-color: #FAFBFC;
+  color: #828A96;
+  text-align: center; }
+  .c-counter-nav__link.is-active .c-counter-nav__counter {
+    background: #2EA1F8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2EA1F8), to(#1990EA));
+    background: linear-gradient(to bottom, #2EA1F8, #1990EA);
+    border-color: #2EA1F8;
+    color: #fff; }
+
+/* ==========================================================================
    #TYPOGRAPHY UTILITIES
    ========================================================================== */
 /**
