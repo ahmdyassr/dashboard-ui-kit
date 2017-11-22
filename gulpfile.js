@@ -153,6 +153,7 @@ gulp.task('javascript', function(){
             folder.src + 'js/switch.js',
             folder.src + 'js/toggle.js',
             folder.src + 'js/todo.js',
+            folder.src + 'js/chat-dialogue.js',
             folder.src + 'js/main.js'
         ])
         .pipe(sourcemaps.init())

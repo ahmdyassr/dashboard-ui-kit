@@ -27,6 +27,20 @@
 	font-size: $h3-font-size;
 	box-shadow: 0 2px 7px 0 rgba(34,44,60,0.40);
 	cursor: pointer;
+
+	.c-chat-dialogue__btn-close {
+		display: none;
+	}
+
+	&.is-open {
+		.c-chat-dialogue__btn-open {
+			display: none;
+		}
+
+		.c-chat-dialogue__btn-close {
+			display: block;
+		}
+	}
 }
 
 .c-chat-dialogue__header {
@@ -60,10 +74,20 @@
 	right: 0;
 	bottom: 70px;
 	width: 350px;
+	transform: translateY(-20px);
+	transition: all 0.3s;
 	border-radius: $base-border-radius;
 	background-color: $white;
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
+	opacity: 0;
 	overflow: hidden;
+	visibility: hidden;
+
+	&.is-active {
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+	}
 }
 
 .c-chat-dialogue__footer {

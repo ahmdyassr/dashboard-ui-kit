@@ -12002,6 +12002,12 @@ textarea.c-input {
   -webkit-box-shadow: 0 2px 7px 0 rgba(34, 44, 60, 0.4);
           box-shadow: 0 2px 7px 0 rgba(34, 44, 60, 0.4);
   cursor: pointer; }
+  .c-chat-dialogue__btn .c-chat-dialogue__btn-close {
+    display: none; }
+  .c-chat-dialogue__btn.is-open .c-chat-dialogue__btn-open {
+    display: none; }
+  .c-chat-dialogue__btn.is-open .c-chat-dialogue__btn-close {
+    display: block; }
 
 .c-chat-dialogue__header {
   display: -webkit-box;
@@ -12032,11 +12038,22 @@ textarea.c-input {
   right: 0;
   bottom: 70px;
   width: 350px;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   border-radius: 4px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
           box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
-  overflow: hidden; }
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden; }
+  .c-chat-dialogue__body.is-active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+    visibility: visible; }
 
 .c-chat-dialogue__footer {
   padding: 1.25rem;

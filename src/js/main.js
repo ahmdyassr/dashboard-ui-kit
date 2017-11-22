@@ -34,6 +34,7 @@ $(function() {
     Switch();  // 2. Switches
     Toggle();  // 3. Toggles
     Todo();    // 4. Todo
+    ChatDialogue(); // 5. Chat Dialogue
 
     // 5. Boards 
     if($('.c-board').length) {

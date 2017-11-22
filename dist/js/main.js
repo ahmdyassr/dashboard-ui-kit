@@ -31217,6 +31217,19 @@ var Todo = function() {
 };
 
 //
+// Chat Dialogue
+//
+
+var ChatDialogue = function(){
+	var $document = $(document),
+		$chatDialogueBody = $('.c-chat-dialogue__body');
+
+	$document.on('click', '.c-chat-dialogue__btn', function(e){
+		$chatDialogueBody.toggleClass('is-active');
+		$(this).toggleClass('is-open');
+	});
+}; 
+//
 // Main javascript
 //
 // Initialize plugins
@@ -31252,6 +31265,7 @@ $(function() {
     Switch();  // 2. Switches
     Toggle();  // 3. Toggles
     Todo();    // 4. Todo
+    ChatDialogue(); // 5. Chat Dialogue
 
     // 5. Boards 
     if($('.c-board').length) {
