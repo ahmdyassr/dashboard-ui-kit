@@ -2,6 +2,14 @@
 /* ==========================================================================
    #FRONT LANDING PAGE
    ========================================================================== */
+/**
+ * This stylesheet contains all styles for the front landing page. It's 
+ * separated from `main.scss` file to keep the file size of front-landing.html 
+ * as small as possible as it's usually used as a landing page (make it load as 
+ * fast as possible).
+ * 
+ * NOTE: Import only the required tools, settings, components..etc.
+ */
 /* ==========================================================================
    #BASE GLOBAL
    ========================================================================== */
