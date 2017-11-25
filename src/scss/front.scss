@@ -2,63 +2,29 @@
    #FRONT LANDING PAGE
    ========================================================================== */
 
-/**
- * This stylesheet contains all style for the front landing page
- *
- * Table of content: 
- *
- */
+//
+// This stylesheet contains all styles for the front landing page. It's 
+// separated from `main.scss` file to keep the file size of front-landing.html 
+// as small as possible as it's usually used as a landing page.
+// 
+// NOTE: Import only the required files for the front-landing.html page.
+//
 
-//
 // TOOLS
-//
 @import "tools/tools.rem";
 @import "tools/tools.clearfix";
 @import "tools/tools.linear-gradient";
 @import "tools/tools.respond-to";
-
-
-//
-// SETTINGS 
-// 
 
 // Global Settings
 @import "settings/settings.global";
 
 // UI-Kit Settings
 @import "settings/settings.buttons";
-@import "settings/settings.tables";
 @import "settings/settings.navbar";
 @import "settings/settings.nav";
-@import "settings/settings.toolbar";
-@import "settings/settings.badges";
-@import "settings/settings.alerts";
-@import "settings/settings.pagination";
-@import "settings/settings.avatars";
-@import "settings/settings.progress";
-@import "settings/settings.tabs";
-@import "settings/settings.calendar";
-@import "settings/settings.dropdown";
-@import "settings/settings.breadcrumb";
-@import "settings/settings.notifications";
-@import "settings/settings.tooltips";
-@import "settings/settings.inputs";
-@import "settings/settings.toggle";
-@import "settings/settings.select";
-@import "settings/settings.choice";
-@import "settings/settings.field";
-@import "settings/settings.switches";
-@import "settings/settings.divider";
-@import "settings/settings.close";
-@import "settings/settings.scrollbar";
-@import "settings/settings.range";
 
-@import "tools/tools.scrollbar";
-
-
-//
 // BASE
-//
 @import "base/base.global";
 @import "base/base.typography";
 
@@ -67,17 +33,14 @@
 @import "settings/settings.navbar";
 @import "settings/settings.nav";
 
-
+// VENDORS
 @import "vendor/bootstrap-grid";
 @import "vendor/fontawesome";
 
-
+// COMPONENTS
 @import "components/components.buttons";
-@import "components/components.button-group";
 @import "components/components.navbar";
 @import "components/components.nav";
-@import "components/components.toolbar";
-
 
 // UTILITIES
 @import "utilities/utilities.typography";
@@ -92,6 +55,11 @@
 @import "utilities/utilities.opacity";
 @import "utilities/utilities.sizes";
 
+
+/**
+ * Front Landing Sections/Components
+ */
+
 .c-hero {
 	position: relative;
 	height: 100vh;
@@ -104,6 +72,7 @@
 /**
  * SECTION #1
  */
+
 .c-intro {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -166,12 +135,12 @@
 }
 
 .c-intro__btn {
-	padding: 12px 50px;
+	padding: rem(12px) rem(50px);
 	transition: opacity 0.3s;
 	border-radius: $base-border-radius;
 	background-image: linear-gradient(45deg, #6758F3 0%, #E061F5 100%);
 	color: $white;
-	font-size: 18px;
+	font-size: $h5-font-size;
 
 	&:hover {
 		color: $white;
@@ -180,7 +149,7 @@
 	}
 
 	& + & {
-		margin-left: 15px;
+		margin-left: $spacer;
 	}
 }
 
@@ -197,7 +166,7 @@
 	display: block;
 
 	@media (max-width: $breakpoint-tablet) {
-		margin-bottom: 50px;
+		margin-bottom: $spacer-large;
 	}
 }
 
@@ -207,7 +176,7 @@
 
 
 .c-preview__item {
-	positino: relative;
+	position: relative;
 	margin-bottom: $spacer;
 	padding: 0 50px;
 	border-bottom: 1px solid $base-border-color;
@@ -232,18 +201,18 @@
 
 .c-preview__item-label {
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	position: absolute;
 	top: 0;
 	right: 50px;
+	align-items: center;
+	justify-content: center;
 	width: 60px;
 	height: 60px;
+	transition: opacity 0.3s;
 	border-radius: 100%;
+	background: linear-gradient(180deg,#2ea1f8,#1990ea);
 	color: #fff;
 	text-transform: uppercase;
-	background: linear-gradient(180deg,#2ea1f8,#1990ea);
-	transition: opacity 0.3s;
 }
 
 .c-preview__text {
@@ -259,6 +228,7 @@
 /**
  * SECTION #3
  */
+
 .c-design {
 	position: relative;
 	padding: $spacer-xlarge 0;
@@ -273,17 +243,17 @@
 	right: 0;
 	transform: translateX(45%);
 
-    @media (max-width: $breakpoint-tablet) {
+	@include respond-to($breakpoint-tablet) {
 		display: none;
-    }
+	}
 }
 
 .c-design__content {
 	margin-left: $spacer-large;
 
-	@media (max-width: $breakpoint-tablet) {
-    	margin-left: 0;
-    }
+	@include respond-to($breakpoint-tablet) {
+		margin-left: 0;
+	}
 }
 
 .c-design__icon {
@@ -337,13 +307,13 @@
 
 .c-start__btn {
 	display: inline-block;
-	margin-top: 20px;
-	padding: 12px 50px;
+	margin-top: rem(20px);
+	padding: rem(12px) $spacer-large;
 	transition: opacity 0.3s;
 	border-radius: $base-border-radius;
 	background-image: linear-gradient(45deg, #6758F3 0%, #E061F5 100%);
 	color: $white;
-	font-size: 24px;
+	font-size: $h3-font-size;
 
 	&:hover {
 		color: $white;
@@ -366,47 +336,10 @@
 .c-footer__brand {
 	display: flex;
 	align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: $spacer-large;
 	color: $heading-color;
 
 	img {
-		margin-right: 10px;
-	}
-}
-
-.c-sale {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: $spacer 0;
-	background: linear-gradient(134deg,#23169d,#5cb1f1);
-	color: $white;
-	font-size: $h6-font-size;
-	text-align: center;
-
-	@include respond-to($breakpoint-tablet) {
-		flex-flow: column;
-	}
-
-	strong {
-		padding: 0 $spacer-xsmall / 2;
-		color: $white;
-		text-decoration: none;
-	}
-
-	&:hover {
-		text-decoration: none;
-		color: $white;
-		opacity: 0.9;
-	}
-}
-
-.c-sale__arrow {
-	margin-left: $spacer-xsmall;
-	transition: all .3s;
-	font-size: $h3-font-size;
-
-	.c-sale:hover & {
-		transform: translateX(10px);
+		margin-right: $spacer-xsmall;
 	}
 }
