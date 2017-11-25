@@ -31268,12 +31268,12 @@ $(function() {
     Todo();    // 4. Todo
     ChatDialogue(); // 5. Chat Dialogue
 
-    // 5. Boards 
+    // 6. Boards 
     if($('.c-board').length) {
         var dragulaObj = dragula( $('.c-board__content').toArray(), {});
     }
 
-    // 6. Select
+    // 7. Select
     if($('.c-select').length) {
         var $singleSelect = $('.c-select'),
             $singleSelectHasSearch = $('.c-select.has-search'),
@@ -31303,12 +31303,12 @@ $(function() {
         });
     }
 
-    // 7. dropzone
+    // 8. dropzone
     if($('.dropzone').length) {
         $("#custom-dropzone").dropzone();
     }
 
-    // 8. datatable
+    // 9. datatable
     if($('#datatable').length) {
         $("#datatable").DataTable({
             searching: false,
@@ -31322,12 +31322,12 @@ $(function() {
         });
     }
 
-    // 9. datepicker
+    // 10. datepicker
     if($('[data-toggle="datepicker"]').length) {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
-    // 10. Map
+    // 11. Map
     if($('#vmap').length){
         function escapeXml(string) {
             return string.replace(/[<>]/g, function (c) {

@@ -48,7 +48,8 @@ gulp.task('copy-assets', function() {
             './node_modules/@fengyuanchen/datepicker/dist/datepicker.min.js',
             './node_modules/jqvmap/dist/jquery.vmap.min.js',
             './node_modules/jqvmap/dist/maps/jquery.vmap.world.js',
-            './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js'
+            './node_modules/jquery-match-height/dist/jquery.matchHeight-min.js',
+            './node_modules/imagesloaded/imagesloaded.pkgd.min.js'
         ],
         scss: [
             './node_modules/bootstrap/dist/css/bootstrap-grid.css',
@@ -110,7 +111,10 @@ gulp.task('html', function(){
 
 // compile & minify sass
 gulp.task('css', function () {
-    return gulp.src(folder.src + '/scss/main.scss')
+    return gulp.src([
+            folder.src + '/scss/main.scss',
+            folder.src + '/scss/front.scss'
+        ])
         .pipe(sourcemaps.init())
         .pipe(sass()) // scss to css
         .pipe(autoprefixer({
@@ -132,7 +136,7 @@ gulp.task('javascript', function(){
     var out = folder.dist + 'js/';
 
     // It's important to keep files at this order 
-    // so that `main.js` can be executed properly
+    // so that `main.min.js` can be executed properly
     return gulp.src([
             folder.src + 'js/vendor/jquery.min.js',
             folder.src + 'js/vendor/bootstrap.bundle.min.js', 
@@ -167,6 +171,29 @@ gulp.task('javascript', function(){
         .pipe(gulp.dest(out));
 });
 
+// A separate js task for front-landing scripts
+gulp.task('javascript-front', function(){
+    var out = folder.dist + 'js/';
+
+    // It's important to keep files at this order 
+    // so that `front.min.js` can be executed properly
+    return gulp.src([
+            folder.src + 'js/vendor/jquery.min.js',
+            folder.src + 'js/vendor/bootstrap.bundle.min.js',
+            folder.src + 'js/vendor/imagesloaded.pkgd.min.js',
+            folder.src + 'js/front.js'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('front.js'))
+        .pipe(gulp.dest(out))
+        .pipe(rename({ // rename main.css to main.min.css
+            suffix: ".min"
+        }))
+        .pipe(uglify())
+         .pipe(sourcemaps.write('./'))
+        .pipe(gulp.dest(out));
+});
+
 // live browser loading
 gulp.task('browserSync', function() {
     browsersync.init({
@@ -182,9 +209,9 @@ gulp.task('watch', function(){
     gulp.watch(folder.src + 'img/**/*', ['imageMin', browsersync.reload]);
     gulp.watch(folder.src + 'fonts/**/*', ['fonts', browsersync.reload]);
     gulp.watch(folder.src + 'scss/**/*', ['css', browsersync.reload]);
-    gulp.watch(folder.src + 'js/**/*', ['javascript', browsersync.reload]);
+    gulp.watch(folder.src + 'js/**/*', ['javascript', 'javascript-front', browsersync.reload]);
 });
 
 // default task
 gulp.task('default', 
-    ['copy-assets', 'html', 'imageMin', 'fonts', 'css', 'javascript','browserSync', 'watch']);
+    ['copy-assets', 'html', 'imageMin', 'fonts', 'css', 'javascript', 'javascript-front', 'browserSync', 'watch']);
