@@ -59,6 +59,12 @@
 	}
 }
 
+.c-progress--primary {
+	.c-progress__bar {
+		@include linear-gradient(to bottom, $gunmetal-100, $gunmetal-400);
+	}
+}
+
 .c-progress--success {
 	.c-progress__bar {
 		@include linear-gradient(to bottom, #5AD946, #2BB415);

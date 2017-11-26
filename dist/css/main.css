@@ -8170,6 +8170,11 @@ be a descendant of the grid when it is being dragged.
   background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
   background: linear-gradient(to bottom, #2DA1F8, #1991EB); }
 
+.c-progress--primary .c-progress__bar {
+  background: #475364;
+  background: -webkit-gradient(linear, left top, left bottom, from(#475364), to(#273142));
+  background: linear-gradient(to bottom, #475364, #273142); }
+
 .c-progress--success .c-progress__bar {
   background: #5AD946;
   background: -webkit-gradient(linear, left top, left bottom, from(#5AD946), to(#2BB415));
