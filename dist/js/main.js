@@ -30064,6 +30064,36 @@ $(function(){
 		            title  : 'Carl',
 		            start  : '2017-11-30',
 		            className: 'fc-event--green'
+		        }, //
+		        {
+		            title  : 'Adam\'s birthday',
+		            start  : '2017-12-28',
+		            className: 'fc-event--orange',
+		            allDay: true
+		        },
+		        {
+		        	title  : 'Business Meeting',
+		            start  : '2017-12-24',
+		            end    : '2017-12-26',
+		            className: 'fc-event--green',
+		            allDay: true
+		        },
+		        {
+		            title  : 'Vist Japan',
+		            start  : '2017-12-08',
+		            end    : '2017-12-12',
+		            className: 'fc-event--blue'
+		        },
+		        {
+		            title  : 'Buy New Mac',
+		            start  : '2017-12-27',
+		            className: 'fc-event--green',
+		            allDay: true
+		        },
+		        {
+		            title  : 'New Product Launch',
+		            start  : '2017-12-30',
+		            className: 'fc-event--green'
 		        }
 		    ]
 	    });
