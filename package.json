@@ -1,6 +1,6 @@
 {
   "name": "dashboard-ui-kit",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": true,
   "description": "Powerful UI framework for building responsive web interfaces.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "author": "Zawia Studio",
   "license": "ThemeForest Standard License",
-  "homepage": "https://zawiastudio.com/dashboard",
+  "homepage": "https://zawiastudio.com/dashboard/",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
