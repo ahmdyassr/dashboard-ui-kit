@@ -37,18 +37,19 @@
 }
 
 .c-error__icon {
-	display: block;
+	display: flex;
 	position: absolute;
 	top: -35px;
 	right: 0;
 	left: 0;
+	align-items: center;
+	justify-content: center;
 	width: 70px;
 	height: 70px;
 	margin: 0 auto;
 	border-radius: 100%;
 	color: $white;
 	font-size: $h4-font-size;
-	line-height: 70px;
 	@include linear-gradient(to bottom, $gradient-blue);
 }
 

@@ -10674,6 +10674,30 @@ textarea.c-input {
   height: 70px;
   margin: 0 auto; }
 
+.c-login__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -35px;
+  right: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 1.25rem;
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+
 .c-login__title {
   margin: 0;
   font-size: 24px;
@@ -11471,18 +11495,25 @@ textarea.c-input {
   background-color: #F8FAFC; }
 
 .c-error__icon {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: -35px;
   right: 0;
   left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 70px;
   height: 70px;
   margin: 0 auto;
   border-radius: 100%;
   color: #fff;
   font-size: 1.25rem;
-  line-height: 70px;
   background: #2ea1f8;
   background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
   background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
