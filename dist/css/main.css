@@ -10866,9 +10866,8 @@ textarea.c-input {
   color: #7f8fa4;
   font-size: 0.875rem; }
 
-/**
- * LOGIN (Login page v2)
- * ========================================================================== */
+/* Horizontal Login - Login v2
+   ========================================================================== */
 .c-login--horizontal {
   display: -webkit-box;
   display: -ms-flexbox;
