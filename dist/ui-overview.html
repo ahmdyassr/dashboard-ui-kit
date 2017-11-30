@@ -808,7 +808,7 @@
 <!-- ============================== ALERTS ================================= -->
 
             <div class="row u-mb-xlarge">
-                <div class="col-lg-8 u-mb-medium">
+                <div class="col-lg-6 u-mb-medium">
                     <h4 class="u-mb-medium">Alerts</h4>
                     <div class="c-alert c-alert--success">
                         <i class="c-alert__icon fa fa-check-circle"></i> Success! This is positive notification.
@@ -828,6 +828,33 @@
                         <i class="c-alert__icon fa fa-times-circle"></i> Error. Can’t connect to the platform.
 
                         <button class="c-close" data-dismiss="alert" type="button">&times;</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h4 class="u-mb-medium">Popovers</h4>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="c-btn c-btn--secondary u-mb-medium" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                              Popover on top
+                            </button>
+
+                            
+
+                            <button type="button" class="c-btn c-btn--secondary" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                              Popover on right
+                            </button>
+                        </div>
+                        <div class="col-6 u-mb-medium">
+                            <button type="button" class="c-btn c-btn--secondary u-mb-medium" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                              Popover on bottom
+                            </button>
+
+                            <button type="button" class="c-btn c-btn--secondary" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                              Popover on left
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1924,6 +1951,6 @@
 
         </div><!-- // .container -->
         
-        <script src="js/main.js"></script>
+        <script src="js/main.min.js"></script>
     </body>
 </html>

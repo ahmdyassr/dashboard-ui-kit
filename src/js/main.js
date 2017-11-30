@@ -96,6 +96,16 @@ $(function() {
         $('[data-toggle="datepicker"]').datepicker();
     }
 
+    // 11. Custom Bootstrap Popovers
+    $('[data-toggle=popover]').popover({
+      trigger: 'focus',
+      template: '<div class="c-popover popover">'+
+                '<div class="c-popover__arrow popover-arrow"></div>'+
+                '<div class="c-popover__body popover-body">'+
+                '</div>'+
+                '</div>'
+    });
+
     // 11. Map
     if($('#vmap').length){
         function escapeXml(string) {

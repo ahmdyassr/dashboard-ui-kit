@@ -9077,6 +9077,69 @@ textarea.c-input {
   overflow: scroll; }
 
 /* ==========================================================================
+   #POPOVERS
+   ========================================================================== */
+.c-popover {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 18.75rem;
+  padding: 0.9375rem 20px;
+  border-radius: 4px;
+  background-clip: padding-box;
+  background-color: #1d2531;
+  color: #fff;
+  text-align: center;
+  word-wrap: break-word;
+  /**
+	 * 1. (bs-popover-*) classes are inserted by bootstrap's popover plugin, we 
+	 *    customize these classes for better compatibility with Dashboard UI Kit.
+	 */ }
+  .c-popover .arrow {
+    display: none; }
+  .c-popover::before {
+    position: absolute;
+    border: 6px solid transparent;
+    content: " "; }
+  .c-popover.bs-popover-top {
+    /* [1] */
+    margin-bottom: 0.9375rem; }
+    .c-popover.bs-popover-top::before {
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      border-top-color: #1d2531; }
+  .c-popover.bs-popover-bottom {
+    /* [1] */
+    margin-top: 0.9375rem; }
+    .c-popover.bs-popover-bottom::before {
+      bottom: 100%;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      border-bottom-color: #1d2531; }
+  .c-popover.bs-popover-right {
+    /* [1] */
+    margin-left: 0.9375rem; }
+    .c-popover.bs-popover-right::before {
+      top: 50%;
+      right: 100%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      border-right-color: #1d2531; }
+  .c-popover.bs-popover-left {
+    /* [1] */
+    margin-right: 0.9375rem; }
+    .c-popover.bs-popover-left::before {
+      top: 50%;
+      left: 100%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      border-left-color: #1d2531; }
+
+/* ==========================================================================
    #PROFILE
    ========================================================================== */
 .c-profile-card {
