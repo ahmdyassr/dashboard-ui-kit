@@ -137,6 +137,56 @@
 	}
 }
 
+/* Style Variation - Light Sidebar
+   ========================================================================== */
+
+.c-sidebar--light {
+	border-right: $base-border-width solid $base-border-color;
+	background-color: $white;
+
+	.c-sidebar__divider {
+		background-color: $base-border-color;
+	}
+
+	.c-sidebar__brand {
+		border-color: $base-border-color;
+		color: $heading-color;
+	}
+
+	.c-sidebar__item {
+		&.has-submenu > .c-sidebar__link::after { /* [1] */
+			color: #B7C0CD;
+		}
+
+		&.is-open {
+			background-color: #FAFBFC;
+		}
+	}
+
+	.c-sidebar__link {
+		color: $color-mute;
+
+		&.is-active {
+			background-color: transparent;
+			color: $heading-color;
+
+			i {
+				color: $link-color;
+			}
+
+			&:hover {
+				color: #2ea1f8;
+			}
+		}
+
+		&:hover {
+			color: $heading-color;
+		}
+	}
+}
+
+
+
 /* Sidebar toggle
    ========================================================================== */
 

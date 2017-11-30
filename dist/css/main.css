@@ -6025,9 +6025,7 @@ be a descendant of the grid when it is being dragged.
   color: #555; }
 
 .select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
-  float: right; }
-
-.select2-container--classic[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
+  float: right;
   margin-left: 5px;
   margin-right: auto; }
 
@@ -6731,13 +6729,13 @@ be a descendant of the grid when it is being dragged.
       border-bottom-left-radius: 0; }
 
 /*!
- * Datepicker v0.6.3
+ * Datepicker v0.6.4
  * https://github.com/fengyuanchen/datepicker
- * 
- * Copyright (c) 2014-2017 Fengyuan Chen
+ *
+ * Copyright (c) 2014-2017 Chen Fengyuan
  * Released under the MIT license
- * 
- * Date: 2017-09-29T14:28:02.764Z
+ *
+ * Date: 2017-11-24T14:38:19.628Z
  */
 .datepicker-container {
   background-color: #fff;
@@ -9408,6 +9406,33 @@ textarea.c-input {
     -webkit-transition: height 0.3s;
     transition: height 0.3s;
     overflow: hidden; }
+
+/* Style Variation - Light Sidebar
+   ========================================================================== */
+.c-sidebar--light {
+  border-right: 1px solid #e6eaee;
+  background-color: #fff; }
+  .c-sidebar--light .c-sidebar__divider {
+    background-color: #e6eaee; }
+  .c-sidebar--light .c-sidebar__brand {
+    border-color: #e6eaee;
+    color: #354052; }
+  .c-sidebar--light .c-sidebar__item.has-submenu > .c-sidebar__link::after {
+    /* [1] */
+    color: #B7C0CD; }
+  .c-sidebar--light .c-sidebar__item.is-open {
+    background-color: #FAFBFC; }
+  .c-sidebar--light .c-sidebar__link {
+    color: #7f8fa4; }
+    .c-sidebar--light .c-sidebar__link.is-active {
+      background-color: transparent;
+      color: #354052; }
+      .c-sidebar--light .c-sidebar__link.is-active i {
+        color: #2ea1f8; }
+      .c-sidebar--light .c-sidebar__link.is-active:hover {
+        color: #2ea1f8; }
+    .c-sidebar--light .c-sidebar__link:hover {
+      color: #354052; }
 
 /* Sidebar toggle
    ========================================================================== */
