@@ -29,6 +29,7 @@
 	display: flex;
 	align-items: center;
 	height: $navbar-height; /* [1] */
+	padding-left: $spacer;
 	border-bottom: $base-border-width solid #2a3547;
 	color: $grey-300;
 	font-size: 16px;
@@ -182,6 +183,14 @@
 		&:hover {
 			color: $heading-color;
 		}
+	}
+
+	/**
+	 * 1. Add a slight shadow to the sidebar to make it popup a little bit
+	 *    on small screens.
+	 */
+	@include respond-to($breakpoint-desktop) {
+		box-shadow: 1px 1px 5px rgba(0,0,0,.1); /* [1] */
 	}
 }
 

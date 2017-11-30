@@ -9312,6 +9312,7 @@ textarea.c-input {
           align-items: center;
   height: 70px;
   /* [1] */
+  padding-left: 1.875rem;
   border-bottom: 1px solid #2a3547;
   color: #e6eaee;
   font-size: 16px;
@@ -9411,7 +9412,11 @@ textarea.c-input {
    ========================================================================== */
 .c-sidebar--light {
   border-right: 1px solid #e6eaee;
-  background-color: #fff; }
+  background-color: #fff;
+  /**
+	 * 1. Add a slight shadow to the sidebar to make it popup a little bit
+	 *    on small screens.
+	 */ }
   .c-sidebar--light .c-sidebar__divider {
     background-color: #e6eaee; }
   .c-sidebar--light .c-sidebar__brand {
@@ -9433,6 +9438,11 @@ textarea.c-input {
         color: #2ea1f8; }
     .c-sidebar--light .c-sidebar__link:hover {
       color: #354052; }
+  @media (max-width: 992px) {
+    .c-sidebar--light {
+      -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+              box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+      /* [1] */ } }
 
 /* Sidebar toggle
    ========================================================================== */
