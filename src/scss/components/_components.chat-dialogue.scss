@@ -47,6 +47,7 @@
 	display: flex;
 	flex-shrink: 0;
 	padding: $spacer;
+	border-bottom: $base-border-width solid $base-border-color;
 }
 
 .c-chat-dialogue__team {
@@ -90,8 +91,57 @@
 	}
 }
 
+.c-chat-dialogue__messages {
+	height: 400px;
+	padding: 0 rem(20px);
+	background-color: #F0F3F8;
+	overflow-y: auto;
+}
+
+.c-chat-dialogue__message {
+	padding: 10px 20px;
+}
+
+.c-chat-dialogue__message-content {
+	position: relative;
+	max-width: 80%;
+	padding: 15px 20px;
+	border-radius: $base-border-radius * 2;
+	color: $white;
+	font-size: $text-font-size;
+	@include linear-gradient(to bottom, $blue-300, $blue-400);
+	word-wrap: break-word;
+
+	&::before {
+		position: absolute;
+		top: 30%;
+		right: 100%;
+		transform: translate(0, -50%);
+		border: 6px solid transparent;
+		border-right-color: $blue-300;
+		content: " ";
+	}
+}
+
+.c-chat-dialogue__message--self {
+	text-align: right;
+
+	.c-chat-dialogue__message-content {
+		margin-left: auto;
+		border: $base-border-width solid $base-border-color;
+		background: $white;
+		color: $heading-color;
+
+		&::before {
+			left: 100%;
+			border: 6px solid transparent;
+			border-left-color: $white;
+		}
+	}
+}
+
 .c-chat-dialogue__footer {
 	padding: rem(20px);
 	border-top: $base-border-width solid $base-border-color;
-	background-color: #F0F3F8;
+	background-color: $white;
 }
