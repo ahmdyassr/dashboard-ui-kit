@@ -30,6 +30,23 @@ var ChatDialogue = function(){
 		$(this).toggleClass('is-open');
 	});
 
+	// Disable scrolling on any element outside the chat dialogue
+	$chatDialogueMessages.on('mousewheel DOMMouseScroll', function(e) {
+	    var scrollTo = null;
+
+	    if (e.type == 'mousewheel') {
+	        scrollTo = (e.originalEvent.wheelDelta * -1);
+	    } 
+	    else if (e.type == 'DOMMouseScroll') {
+	        scrollTo = 40 * e.originalEvent.detail;
+	    }
+	    if (scrollTo) {
+	        e.preventDefault();
+	        $(this).scrollTop(scrollTo + $(this).scrollTop());
+	    }
+	});
+
+	// Add new message on pressing Enter Key
 	$('#input-chat').on('keypress', function (e) {
 	    if (e.which == 13) {
 	      	addChatMessage($(this));
