@@ -14,6 +14,16 @@
 	background-color: $base-background-color;
 }
 
+
+/**
+ * 1. Display a scrollbar if the content of the card is larger than the 
+ *    card's width.
+ */
+
+.c-card--responsive {
+	overflow: auto; /* [1] */
+}
+
 .c-card__head {
 	display: flex;
 	align-items: center;

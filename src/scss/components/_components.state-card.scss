@@ -14,15 +14,18 @@
 }
 
 .c-state-card__icon {
+	display: flex;
 	position: relative;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
 	width: 60px;
 	height: 60px;
 	margin-right: rem(20px);
 	border-radius: 100%;
 	background-color: $grey-600;
 	color: $white;
-	font-size: $h3-font-size;
-	line-height: 60px;
+	font-size: $h4-font-size;
 	text-align: center;
 
 	/**

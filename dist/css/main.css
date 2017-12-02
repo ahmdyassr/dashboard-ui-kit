@@ -8066,6 +8066,8 @@ be a descendant of the grid when it is being dragged.
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
@@ -10365,6 +10367,14 @@ textarea.c-input {
   border-radius: 4px;
   background-color: #fff; }
 
+/**
+ * 1. Display a scrollbar if the content of the card is larger than the 
+ *    card's width.
+ */
+.c-card--responsive {
+  overflow: auto;
+  /* [1] */ }
+
 .c-card__head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10603,15 +10613,25 @@ textarea.c-input {
   background-color: #fff; }
 
 .c-state-card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 60px;
   height: 60px;
   margin-right: 1.25rem;
   border-radius: 100%;
   background-color: #b7c0cd;
   color: #fff;
-  font-size: 1.5rem;
-  line-height: 60px;
+  font-size: 1.25rem;
   text-align: center;
   /**
 	 * Icon's inside border
