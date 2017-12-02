@@ -11,6 +11,7 @@
 .c-avatar {
 	display: flex;
 	position: relative;
+	flex-shrink: 0;
 	align-content: center;
 	align-items: center;
 	margin: 0;
