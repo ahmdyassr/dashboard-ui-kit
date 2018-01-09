@@ -16,7 +16,7 @@
 	text-align: center;
 	word-wrap: break-word;
 
-	// Hide Bootstrap's default arrow
+	// hide Bootstrap's default arrow
 	.arrow {
 		display: none;
 	}
@@ -26,6 +26,16 @@
 		position: absolute;
 		border: 6px solid transparent;
 		content: " ";
+	}
+
+	// bootstrap transitions
+	&.fade {
+		transition: opacity 0.3s;
+		opacity: 0;
+
+		&.show {
+			opacity: 1;
+		}
 	}
 
 	/**
