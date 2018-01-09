@@ -7513,9 +7513,6 @@ be a descendant of the grid when it is being dragged.
 /**
  * 1. The border-collapse CSS property specifies that the table's borders are 
  *    collapsed and it means that adjacent cells share borders.
- * 
- * 2. Show horizontal scroll-bar when table doesn't fit into its container, 
- *    it's known as responsive table.
  */
 .c-table {
   display: table;
@@ -7526,14 +7523,62 @@ be a descendant of the grid when it is being dragged.
   background-color: #fff;
   border-collapse: collapse;
   /* [1] */ }
-  @media (max-width: 992px) {
-    .c-table {
-      display: block;
-      /* [2] */
-      overflow-x: auto;
-      /* [2] */
-      overflow-y: hidden;
-      /* [2] */ } }
+
+/**
+ * Responsive Tables
+ *
+ * Wrap any table with one of these classes to make it responsive at certain
+ * breakpoint.
+ *
+ * 1. Wrap your table with this class `c-table-responsive` if the table's width 
+ * is larger than 1200px.
+ */
+.c-table-responsive {
+  /* [1] */
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+@media (max-width: 576px) {
+  .c-table-responsive\@mobile {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+@media (max-width: 768px) {
+  .c-table-responsive\@tablet {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+@media (max-width: 992px) {
+  .c-table-responsive\@desktop {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+@media (max-width: 1200px) {
+  .c-table-responsve\@wide {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+/**
+ * Use `c-table--zebra` to add zebra-styling to table rows inside the table.
+ */
+.c-table--zebra tbody tr:nth-of-type(odd) {
+  background-color: rgba(230, 234, 238, 0.3); }
+
+/**
+ * Highlight table row on hover.
+ */
+.c-table--highlight tbody tr:hover {
+  background-color: rgba(230, 234, 238, 0.3); }
 
 .c-table--fixed {
   table-layout: fixed; }
