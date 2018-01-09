@@ -10,19 +10,26 @@
  */
 
 .c-switch {
-	display: inline-block;
+	display: inline-flex;
 	position: relative;
-	width: $switch-width;
-	height: $switch-height;
-	transition: all .3s;
-	border-radius: $switch-border-radius;
-	background-color: $switch-background-color;
+	align-items: center;
 	cursor: pointer;
+
+	&::before {
+		display: inline-block;
+		position: relative;
+		width: $switch-width;
+		height: $switch-height;
+		transition: all .3s;
+		border-radius: $switch-border-radius;
+		background-color: $switch-background-color;
+		content: " ";
+	}
 
 	&::after { /* [2] */
 		position: absolute;
 		top: 2px;
-		right: 2px;
+		left: 2px;
 		width: $switch-toggle-width;
 		height: $switch-toggle-height;
 		transition: all .3s;
@@ -33,10 +40,13 @@
 
 	// switch is (on)
 	&.is-active {
-		background-color: $switch-active-background-color;
+
+		&::before {
+			background-color: $switch-active-background-color;
+		}
 
 		&::after {
-			right: 26px; /* [3] */
+			left: 26px; /* [3] */
 		}
 	}
 
@@ -48,7 +58,9 @@
 		}
 
 		&.is-active { /* [4] */
-			background-color: $switch-background-color;
+			&::before {
+				background-color: $switch-background-color;
+			}
 
 			&::after {
 				right: 2px;
@@ -59,8 +71,8 @@
 
 
 /**
-  * 1. Hide input to replace it with switch-style input
-  */
+ * 1. Hide input to replace it with switch-style input
+ */
 
 .c-switch__input {
 	display: none; /* [1] */

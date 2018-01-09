@@ -31437,12 +31437,22 @@ var Sidebar = function(){
 //
 
 var Switch = function(){
-	var $switch = $('.c-switch');
+    var $switch = $('.c-switch');
 
 	$switch.on('click', function(e){
-		$(this).toggleClass('is-active');
-		return false;
-	});
+    	var $switchInput = $(this).find('.c-switch__input');
+
+    	if ( !$(this).hasClass('is-disabled') ) {
+    		if ($(this).hasClass('is-active') && $switchInput.attr('checked')) {
+	        	$switchInput.removeAttr('checked');
+        		$(this).removeClass('is-active');
+	    	} else {
+	        	$switchInput.attr('checked', 'checked')
+        		$(this).addClass('is-active');
+	     	}
+    	} 
+        return false;
+    });
 };
 //
 // Toggles
