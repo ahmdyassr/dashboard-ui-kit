@@ -7927,10 +7927,11 @@ be a descendant of the grid when it is being dragged.
 .c-tooltip {
   position: relative; }
   .c-tooltip::after {
-    display: none;
     position: absolute;
     max-height: 5rem;
     padding: 0.625rem 0.9375rem;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
     border-radius: 4px;
     background-color: #1d2531;
     color: #fff;
@@ -7943,15 +7944,21 @@ be a descendant of the grid when it is being dragged.
     white-space: nowrap;
     content: attr(aria-label);
     /* [2] */
+    opacity: 0;
     overflow: hidden;
+    visibility: hidden;
     z-index: 200; }
   .c-tooltip::before {
-    display: none;
     position: absolute;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
     border: 6px solid transparent;
-    content: " "; }
+    content: " ";
+    opacity: 0;
+    visibility: hidden; }
   .c-tooltip:hover::before, .c-tooltip:hover::after {
-    display: block; }
+    opacity: 1;
+    visibility: visible; }
 
 /* Direction variants
    ========================================================================== */
@@ -8031,6 +8038,12 @@ be a descendant of the grid when it is being dragged.
     /* [1] */
     right: 0.75rem;
     /* [1] */ }
+  .c-alert.fade {
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 0; }
+    .c-alert.fade.show {
+      opacity: 1; }
 
 /**
  * 1. Align icon with text properly.
@@ -8308,23 +8321,24 @@ be a descendant of the grid when it is being dragged.
  *    bootstrap), dropdown menu should be positioned properly.
  */
 .c-dropdown__menu {
-  display: none;
   position: absolute;
   top: 100%;
   /* [1] */
   right: 0;
   width: 9.375rem;
   margin: 5px 0 0;
+  -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
   border: 1px solid #dfe3e9;
   border-radius: 4px;
   background-color: #fff;
   text-align: left;
-  z-index: 400;
-  /**
-	 * `.show` is a bootstrap class and it's required for toggling dropdown. 
-	 */ }
-  .c-dropdown__menu.show {
-    display: block; }
+  opacity: 0;
+  visibility: hidden;
+  z-index: 400; }
+  .c-dropdown.show .c-dropdown__menu {
+    opacity: 1;
+    visibility: visible; }
 
 /**
  * A larger dropdown menu for dropdowns used in navbar.

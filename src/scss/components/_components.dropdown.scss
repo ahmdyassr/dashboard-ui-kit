@@ -11,6 +11,7 @@
 	position: relative;
 }
 
+
 /**
  * Dropdown Menu
  * 
@@ -19,30 +20,31 @@
  */
 
 .c-dropdown__menu {
-	display: none; // none by default, but block on "open" of the menu
 	position: absolute;
 	top: 100%; /* [1] */
 	right: 0;
 	width: $dropdown-menu-width;
 	margin: 5px 0 0;
+	transition: visibility 0.3s ease, opacity 0.3s ease;
 	border: $dropdown-menu-border-width solid $dropdown-menu-border-color;
 	border-radius: $dropdown-menu-border-radius;
 	background-color: $dropdown-menu-background-color;
 	text-align: left;
+	opacity: 0;
+	visibility: hidden;
 	z-index: $z-index-400;
 
-	/**
-	 * `.show` is a bootstrap class and it's required for toggling dropdown. 
-	 */
-	&.show {
-		display: block;
-	}
+	.c-dropdown.show & {
+		opacity: 1;
+		visibility: visible;
+    }
 }
 
 
 /**
  * A larger dropdown menu for dropdowns used in navbar.
  */
+
 .c-dropdown__menu--large {
 	width: $dropdown-menu-large-width;
 

@@ -14,10 +14,10 @@
 
 	// tooltip content
 	&::after {
-		display: none;
 		position: absolute;
 		max-height: $tooltip-max-height;
 		padding: $tooltip-padding;
+		transition: opacity 0.3s;
 		border-radius: $tooltip-border-radius;
 		background-color: $tooltip-background-color;
 		color: $tooltip-color;
@@ -28,22 +28,27 @@
 		text-transform: none;
 		white-space: nowrap;
 		content: attr(aria-label); /* [2] */
+		opacity: 0;
 		overflow: hidden;
+		visibility: hidden;
 		z-index: $z-index-200;
 	}
 
 	// tooltip arrow
 	&::before {
-		display: none;
 		position: absolute;
+		transition: opacity 0.3s;
 		border: 6px solid transparent;
 		content: " ";
+		opacity: 0;
+		visibility: hidden;
 	}
 
 	&:hover {
 		&::before,
 		&::after {
-			display: block;
+			opacity: 1;
+			visibility: visible;
 		}
 	}
 }
