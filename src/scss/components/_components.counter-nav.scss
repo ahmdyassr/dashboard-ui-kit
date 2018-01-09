@@ -4,8 +4,9 @@
 
 /**
  * Counter nav is a different style of navigation, every navigation link has 
- * an icon (that contains current number) before it. This component is used 
- * in project-overview.html page.
+ * an icon (that contains current number) before it. 
+ *
+ * This component is used in project-overview.html page.
  */
 
 .c-counter-nav {
@@ -45,8 +46,8 @@
 	margin-right: 10px;
 	border: $base-border-width solid $base-border-color;
 	border-radius: 100%;
-	background-color: #FAFBFC;
-	color: #828A96;
+	background-color: $secondary-background-color;
+	color: $color-mute;
 	text-align: center;
 
 	.c-counter-nav__link.is-active & {

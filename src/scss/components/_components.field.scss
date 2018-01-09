@@ -119,7 +119,7 @@
   */
 
 .c-field__addon {
-	@include linear-gradient(to bottom, #FFF, #F2F4F7);
+	@include linear-gradient(to bottom, $field-addon-gradient);
 	display: inline-flex;
 	flex-basis: $field-addon-width;
 	align-content: center;

@@ -28,7 +28,7 @@
 		display: block;
 		height: $base-border-width; // because it acts like a border
 		margin: $spacer 0;
-		background-color: $grey-300;
+		background-color: $base-border-color;
 		content: " ";
 		opacity: 0.5;
 	}

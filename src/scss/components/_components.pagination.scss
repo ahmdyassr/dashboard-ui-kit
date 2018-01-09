@@ -59,17 +59,17 @@
 	font-weight: $pagination-control-font-weight;
 	line-height: $pagination-control-height; /* [1] */
 	text-align: center;
-	color: #CED0DA;
+	color: $pagination-control-color;
 
 	/**
 	 * 1. You may resize this icon if you used another icon font.
 	 */
 	i {
-		font-size: 16px; /* [1] */
-		color: #CED0DA;
 		position: relative;
-    	bottom: -1px;
-    	transition: color .15s;
+		bottom: -1px;
+		transition: color .15s;
+		color: $pagination-control-color;
+		font-size: 16px; /* [1] */
 	}
 
 	&:hover {

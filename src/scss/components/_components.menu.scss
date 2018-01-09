@@ -2,20 +2,16 @@
    #MENU
    ========================================================================== */
 
-//
-// DEVELOPER NOTE: UNDER DEVELOPMENT!!
-//
-
 /**
- * A list of horizontal or vertical links, and unlike `c-menu` component, 
- * `c-menu-pills` shouldn't be used inside a sidebar or any other component.
+ * A list of horizontal or vertical links, and unlike `c-menu` component, this 
+ * component shouldn't be used inside a sidebar or any other component.
  */
 
 .c-menu {}
 
 .c-menu__title {
 	margin: 0 0 $spacer-xsmall 20px;
-	color: #9FA9BA;
+	color: $color-mute;
 	font-size: $text-small-font-size;
 	font-weight: $font-weight-normal;
 	text-transform: uppercase;
@@ -35,7 +31,7 @@
 	}
 
 	&.is-active {
-		background-color: #1991EB;
+		background-color: $color-info;
 		color: $white;
 	}
 }

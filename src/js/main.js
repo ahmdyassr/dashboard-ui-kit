@@ -1,7 +1,8 @@
 //
 // Main javascript
+// 
 //
-// Initialize plugins
+// Initialize & Configure plugins
 "use strict";
 
 //

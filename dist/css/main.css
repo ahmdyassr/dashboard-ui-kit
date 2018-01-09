@@ -7761,13 +7761,13 @@ be a descendant of the grid when it is being dragged.
 	 * 1. You may resize this icon if you used another icon font.
 	 */ }
   .c-pagination__control i {
-    font-size: 16px;
-    /* [1] */
-    color: #CED0DA;
     position: relative;
     bottom: -1px;
     -webkit-transition: color .15s;
-    transition: color .15s; }
+    transition: color .15s;
+    color: #CED0DA;
+    font-size: 16px;
+    /* [1] */ }
   .c-pagination__control:hover {
     color: #354052;
     text-decoration: none; }
@@ -10456,7 +10456,7 @@ textarea.c-input {
   height: 100%;
   padding: 0.9375rem 1.875rem;
   border-top: #e6eaee solid 1px;
-  background-color: #FAFBFC; }
+  background-color: #fafbfc; }
 
 /* ==========================================================================
    #DIVIDER
@@ -10500,7 +10500,7 @@ textarea.c-input {
   .c-divider--small.has-text::before, .c-divider--small.has-text::after {
     width: 25%;
     height: 1px;
-    background-color: #E3E8EF; }
+    background-color: #dfe3e9; }
 
 /* ==========================================================================
    #PROGRESS CARD
@@ -10832,7 +10832,7 @@ textarea.c-input {
   border-bottom: 1px solid #e6eaee;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #F8FAFC; }
+  background-color: #fafbfc; }
 
 .c-login__brand {
   display: block;
@@ -11034,12 +11034,12 @@ textarea.c-input {
    #MENU
    ========================================================================== */
 /**
- * A list of horizontal or vertical links, and unlike `c-menu` component, 
- * `c-menu-pills` shouldn't be used inside a sidebar or any other component.
+ * A list of horizontal or vertical links, and unlike `c-menu` component, this 
+ * component shouldn't be used inside a sidebar or any other component.
  */
 .c-menu__title {
   margin: 0 0 0.625rem 20px;
-  color: #9FA9BA;
+  color: #7f8fa4;
   font-size: 0.75rem;
   font-weight: 400;
   text-transform: uppercase; }
@@ -11055,7 +11055,7 @@ textarea.c-input {
   .c-menu__link:hover {
     text-decoration: none; }
   .c-menu__link.is-active {
-    background-color: #1991EB;
+    background-color: #2ea1f8;
     color: #fff; }
 
 .c-menu__icon {
@@ -11415,7 +11415,7 @@ textarea.c-input {
 
 .c-plans__description {
   margin: 0 0 50px;
-  color: #7F8FA4; }
+  color: #7f8fa4; }
 
 .c-plans__body {
   padding: 0 60px; }
@@ -11909,9 +11909,9 @@ textarea.c-input {
   display: inline-block;
   margin: 0.625rem 0;
   padding: 0.625rem;
-  border: 1px solid #DFE2E5;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #FAFBFC; }
+  background-color: #fafbfc; }
 
 .c-feed__gallery {
   display: -webkit-box;
@@ -12195,8 +12195,9 @@ textarea.c-input {
    ========================================================================== */
 /**
  * Counter nav is a different style of navigation, every navigation link has 
- * an icon (that contains current number) before it. This component is used 
- * in project-overview.html page.
+ * an icon (that contains current number) before it. 
+ *
+ * This component is used in project-overview.html page.
  */
 .c-counter-nav {
   display: -webkit-box;
@@ -12238,8 +12239,8 @@ textarea.c-input {
   margin-right: 10px;
   border: 1px solid #e6eaee;
   border-radius: 100%;
-  background-color: #FAFBFC;
-  color: #828A96;
+  background-color: #fafbfc;
+  color: #7f8fa4;
   text-align: center; }
   .c-counter-nav__link.is-active .c-counter-nav__counter {
     background: #2EA1F8;

@@ -99,9 +99,9 @@
 	display: inline-block;
 	margin: $spacer-xsmall 0;
 	padding: $spacer-xsmall;
-	border: $base-border-width solid #DFE2E5;
+	border: $base-border-width solid $base-border-color;
 	border-radius: $base-border-radius;
-	background-color: #FAFBFC;
+	background-color: $secondary-background-color;
 }
 
 
