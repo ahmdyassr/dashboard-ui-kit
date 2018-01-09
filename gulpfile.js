@@ -10,6 +10,7 @@ const gulp = require('gulp'),
       rename = require('gulp-rename'),
       concat = require('gulp-concat'),
       uglify = require('gulp-uglify'),
+      gutil = require('gulp-util'),
       pump = require('pump'),
       lodash = require('lodash'),
       browsersync = require('browser-sync');
@@ -167,7 +168,8 @@ gulp.task('javascript', function(){
             suffix: ".min"
         }))
         .pipe(uglify())
-         .pipe(sourcemaps.write('./'))
+        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(out));
 });
 

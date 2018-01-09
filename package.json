@@ -24,6 +24,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
     "lodash": "^4.17.4",
     "pump": "^1.0.2",
     "sass-lint": "^1.10.2"

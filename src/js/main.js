@@ -2,6 +2,7 @@
 // Main javascript
 //
 // Initialize plugins
+"use strict";
 
 //
 // Table of content:
@@ -26,9 +27,6 @@
 Dropzone.autoDiscover = false;
 
 $(function() {
-    "use strict";
-
-
     // Initialize 
     
     Sidebar(); // 1. Sidebar
