@@ -7006,6 +7006,23 @@ be a descendant of the grid when it is being dragged.
     margin-bottom: 0; }
 
 /* ==========================================================================
+   #LINE OBJECT
+   ========================================================================== */
+/**
+ * The line object is used to align elemnts on one line, obviously.
+ */
+.o-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* ==========================================================================
    #RATIO OBJECT
    ========================================================================== */
 /**
