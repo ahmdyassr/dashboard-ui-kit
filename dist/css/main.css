@@ -9215,6 +9215,29 @@ textarea.c-input {
       border-left-color: #1d2531; }
 
 /* ==========================================================================
+   #ICONS
+   ========================================================================== */
+.c-icon {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  background: #2ea1f8;
+  color: #fff;
+  font-size: 1.5rem; }
+  .c-icon:hover {
+    color: #fff;
+    text-decoration: none; }
+
+/* ==========================================================================
    #PROFILE
    ========================================================================== */
 .c-profile-card {
@@ -10959,9 +10982,9 @@ textarea.c-input {
   left: 30px; }
 
 .c-login__icon--rounded {
+  top: -25px;
   width: 45px;
   height: 45px;
-  top: -25px;
   border-radius: 4px; }
 
 .c-login__title {
