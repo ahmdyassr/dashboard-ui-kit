@@ -6988,11 +6988,11 @@ be a descendant of the grid when it is being dragged.
  * Page Card
  *
  * A centered page card is used when you want the card to be centered and 
- * provide a little space at the top e.g. login, 404 pages.
+ * provide a little space at the top & bottom e.g. login, 404 pages.
  */
 .o-page__card {
   width: 450px;
-  margin: 0 auto; }
+  margin: 0 auto 3.125rem; }
   @media (max-width: 768px) {
     .o-page__card {
       width: 95%; } }

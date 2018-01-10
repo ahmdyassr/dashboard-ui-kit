@@ -22,56 +22,61 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="c-login o-page__card">
-            <header class="c-login__head">
-                <a class="c-login__brand" href="#!">
-                    <img src="img/logo-login.svg" alt="Dashboard's Logo">
+        <div class="o-page__card">
+            <div class="c-card u-mb-xsmall">
+                <header class="c-card__header u-pt-large">
+                    <a class="c-card__icon" href="#!">
+                        <img src="img/logo-login.svg" alt="Dashboard UI Kit">
+                    </a>
+                    <h1 class="u-h3 u-text-center u-mb-zero">Sign up to Get Started</h1>
+                </header>
+                
+                <form class="c-card__body">
+                    <div class="c-field u-mb-small">
+                        <label class="c-field__label" for="input1">E-mail address</label> 
+                        <input class="c-input" type="email" id="input1" placeholder="clark@dashboard.com"> 
+                    </div>
+
+                    <div class="c-field u-mb-small">
+                        <label class="c-field__label" for="input2">Password</label> 
+                        <input class="c-input" type="password" id="input2" placeholder="Numbers, Letters..."> 
+                    </div>
+
+                    <div class="c-field u-mb-small">
+                        <label class="c-field__label" for="input3">Confirm Password</label> 
+                        <input class="c-input" type="password" id="input3" placeholder="Confirm Password"> 
+                    </div>
+
+                    <button class="c-btn c-btn--info c-btn--fullwidth" type="submit">Sign Up</button>
+
+                    <span class="c-divider has-text c-divider--small u-mv-medium">Singup via social networks</span>
+
+                    <div class="o-line">
+                        <a class="c-icon u-bg-twitter" href="#!">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+
+                        <a class="c-icon u-bg-facebook" href="#!">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+
+                        <a class="c-icon u-bg-pinterest" href="#!">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+
+                        <a class="c-icon u-bg-dribbble" href="#!">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="o-line">
+                <a class="u-text-mute u-text-small" href="register.html" title="Login">
+                    <i class="fa fa-long-arrow-left u-mr-xsmall"></i> Already have an account, login instead
                 </a>
-                <h1 class="c-login__title">Signup to Get Started</h1>
-            </header>
-            
-            <form class="c-login__content">
-                <div class="c-field u-mb-small">
-                    <label class="c-field__label" for="input1">E-mail address</label> 
-                    <input class="c-input" type="email" id="input1" placeholder="clark@dashboard.com"> 
-                </div>
-
-                <div class="c-field u-mb-small">
-                    <label class="c-field__label" for="input2">Password</label> 
-                    <input class="c-input" type="password" id="input2" placeholder="Numbers, Letters..."> 
-                </div>
-
-                <div class="c-field u-mb-small">
-                    <label class="c-field__label" for="input3">Confirm Password</label> 
-                    <input class="c-input" type="password" id="input3" placeholder="Confirm Password"> 
-                </div>
-
-                <button class="c-btn c-btn--info c-btn--fullwidth" type="submit">Sign Up</button>
-
-                <span class="c-divider has-text c-divider--small u-mv-medium">Singup via social networks</span>
-
-                <div class="c-login__social">
-                    <a class="c-login__social-icon u-bg-twitter" href="#!" title="Sign-up via Twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-
-                    <a class="c-login__social-icon u-bg-facebook" href="#!" title="Sign-up via Facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-
-                    <a class="c-login__social-icon u-bg-pinterest" href="#!" title="Sign-up via Pinterest">
-                        <i class="fa fa-pinterest"></i>
-                    </a>
-
-                    <a class="c-login__social-icon u-bg-dribbble" href="#!" title="Sign-up via Dribbble">
-                        <i class="fa fa-dribbble"></i>
-                    </a>
-                </div>
-            </form>
-
-            <footer class="c-login__footer">
-                <a class="c-login__footer-link u-left" href="#!" title="Terms & Conditions">We care about your privacy, go to our terms & conditions.</a>
-            </footer>
+            </div>
+        
         </div>
 
         <script src="js/main.min.js"></script>
