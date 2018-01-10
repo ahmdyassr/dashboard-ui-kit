@@ -30,11 +30,16 @@
 	border-radius: $dropdown-menu-border-radius;
 	background-color: $dropdown-menu-background-color;
 	text-align: left;
-	opacity: 0;
-	visibility: hidden;
 	z-index: $z-index-400;
 
-	.c-dropdown.show & {
+	.c-dropdown &,
+	.dropdown & {
+		opacity: 0;
+		visibility: hidden;
+	}
+
+	.c-dropdown.show &,
+	.dropdown.show & {
 		opacity: 1;
 		visibility: visible;
     }

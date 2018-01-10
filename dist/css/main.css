@@ -6933,6 +6933,12 @@ be a descendant of the grid when it is being dragged.
   height: 100%; }
 
 /**
+ * Used with `o-page__card` for better alignment.
+ */
+.o-page--center {
+  padding-top: 6.25rem; }
+
+/**
  * 1. Control the width of sidebar.
  * 2. Sidebar always on the top.
  */
@@ -6977,6 +6983,19 @@ be a descendant of the grid when it is being dragged.
       margin-left: 0; } }
   .o-page__content.is-pushed {
     margin-left: 250px; }
+
+/** 
+ * Page Card
+ *
+ * A centered page card is used when you want the card to be centered and 
+ * provide a little space at the top e.g. login, 404 pages.
+ */
+.o-page__card {
+  width: 450px;
+  margin: 0 auto; }
+  @media (max-width: 768px) {
+    .o-page__card {
+      width: 95%; } }
 
 /* ==========================================================================
    #MEDIA OBJECT
@@ -8350,10 +8369,13 @@ be a descendant of the grid when it is being dragged.
   border-radius: 4px;
   background-color: #fff;
   text-align: left;
-  opacity: 0;
-  visibility: hidden;
   z-index: 400; }
-  .c-dropdown.show .c-dropdown__menu {
+  .c-dropdown .c-dropdown__menu,
+  .dropdown .c-dropdown__menu {
+    opacity: 0;
+    visibility: hidden; }
+  .c-dropdown.show .c-dropdown__menu,
+  .dropdown.show .c-dropdown__menu {
     opacity: 1;
     visibility: visible; }
 
@@ -10426,17 +10448,19 @@ textarea.c-input {
   overflow: auto;
   /* [1] */ }
 
-.c-card__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1.5625rem 1.875rem; }
+/**
+ * 1. Align header's content vertically in the center
+ */
+.c-card__header {
+  padding: 1.5625rem 1.875rem;
+  border-bottom: 1px solid #e6eaee;
+  background-color: #fafbfc; }
+
+/**
+ * Remove default background-color of card's header
+ */
+.c-card__header--transparent {
+  background-color: transparent; }
 
 .c-card__title {
   margin: 0;
@@ -10447,9 +10471,34 @@ textarea.c-input {
   font-size: 0.75rem; }
 
 .c-card__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  top: 1.875rem;
-  right: 1.875rem; }
+  top: -35px;
+  right: 0;
+  left: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 1.75rem;
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+  .c-card__icon:hover {
+    color: inherit;
+    text-decoration: none; }
+
+.c-card__body {
+  padding: 1.875rem; }
 
 /* ==========================================================================
    #GRAPH CARD

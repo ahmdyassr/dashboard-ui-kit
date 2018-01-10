@@ -13,6 +13,15 @@
 
 
 /**
+ * Used with `o-page__card` for better alignment.
+ */
+
+.o-page--center {
+	padding-top: $spacer-xlarge;
+}
+
+
+/**
  * 1. Control the width of sidebar.
  * 2. Sidebar always on the top.
  */
@@ -59,3 +68,32 @@
 		margin-left: 250px;
 	}
 }
+
+
+/** 
+ * Page Card
+ *
+ * A centered page card is used when you want the card to be centered and 
+ * provide a little space at the top e.g. login, 404 pages.
+ */
+
+.o-page__card {
+	width: 450px;
+	margin: 0 auto;
+
+	@include respond-to ($breakpoint-tablet) {
+		width: 95%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+

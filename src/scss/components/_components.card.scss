@@ -24,11 +24,24 @@
 	overflow: auto; /* [1] */
 }
 
-.c-card__head {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+
+/**
+ * 1. Align header's content vertically in the center
+ */
+
+.c-card__header {
 	padding: rem(25px) $spacer;
+	border-bottom: $base-border-width solid $base-border-color;
+	background-color: $secondary-background-color;
+}
+
+
+/**
+ * Remove default background-color of card's header
+ */
+
+.c-card__header--transparent {
+	background-color: transparent;
 }
 
 .c-card__title {
@@ -42,7 +55,27 @@
 }
 
 .c-card__icon {
+	display: flex;
 	position: absolute;
-	top: $spacer;
-	right: $spacer;
+	top: -35px;
+	right: 0;
+	left: 0;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	border-radius: 100%;
+	color: $white;
+	font-size: $h2-font-size;
+	@include linear-gradient(to bottom, $gradient-blue);
+
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+.c-card__body {
+	padding: $spacer;
 }
