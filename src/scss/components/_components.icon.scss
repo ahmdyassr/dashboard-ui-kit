@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+.c-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: $base-border-radius;
+	background: $color-info;
+	color: $white;
+	font-size: $h3-font-size;
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+
+
