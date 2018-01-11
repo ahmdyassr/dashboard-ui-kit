@@ -87,15 +87,13 @@ $modal-width: (
 	}
 }
 
-.modal-body {
-	position: relative;
-}
-
 // Actual modal
 .c-modal__content {
 	position: relative;
 	width: 100%;
+	border-radius: $base-border-radius;
 	outline: 0;
+	overflow: hidden; // make sure border radius is applied
 }
 
 .c-modal__header {
@@ -105,8 +103,6 @@ $modal-width: (
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px $spacer;
-	border-top-left-radius: $base-border-radius;
-	border-top-right-radius: $base-border-radius;
 }
 
 .c-modal__title {
@@ -145,6 +141,16 @@ $modal-width: (
 	background-color: $white;
 }
 
+/**
+ * Apply max height to force the body of the modal to be scrolled. This class
+ * is used with (achievements) modal.
+ */
+
+.c-modal__body--maximized {
+	max-height: 450px;
+	overflow: auto;
+}
+
 .c-modal__footer {
 	display: flex;
 	align-content: center;
@@ -152,8 +158,6 @@ $modal-width: (
 	justify-content: space-between;
 	padding: 20px $spacer;
 	border-top: $base-border-width solid $base-border-color;
-	border-bottom-left-radius: $base-border-radius;
-	border-bottom-right-radius: $base-border-radius;
 	background-color: $body-background-color;
 }
 
