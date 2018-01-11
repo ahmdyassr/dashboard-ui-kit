@@ -16,11 +16,7 @@
  *    sourced from our default variables. The `font-size` is calculated to exist
  *    in ems, the `line-height` is calculated to exist unitlessly.
  *
- * 3. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
- *    navigating between pages that do/do not have enough content to produce
- *    scrollbars naturally.
- *
- * 4. Prevent adjustments of font size after orientation changes in
+ * 3. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
 html {
@@ -33,13 +29,11 @@ html {
   /* [2] */
   line-height: 1.5;
   /* [2] */
-  overflow-y: scroll;
-  /* [3] */
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
-  /* [4] */ }
+  /* [3] */ }
 
 body {
   height: 100%;
@@ -9086,6 +9080,9 @@ textarea.c-input {
 /* ==========================================================================
    #MODAL 
    ========================================================================== */
+.modal-open {
+  overflow: hidden; }
+
 .c-modal {
   display: none;
   position: fixed;
@@ -9093,16 +9090,11 @@ textarea.c-input {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   z-index: 500;
   outline: 0; }
   .modal-open .c-modal {
     overflow-x: hidden;
     overflow-y: auto; }
-
-.modal-open {
-  overflow: hidden; }
 
 /**
  * 1. Allow scrolling when content's height is larger than viewport's height.
@@ -9110,17 +9102,22 @@ textarea.c-input {
 .c-modal__dialog {
   position: relative;
   margin: 30px auto; }
-  .modal.fade .c-modal__dialog {
-    -webkit-transform: translate(0, -25%);
-            transform: translate(0, -25%);
-    -webkit-transition: all .3s;
-    transition: all .3s; }
-  .modal.show .c-modal__dialog {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+  .c-modal.fade .c-modal__dialog {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
+  .c-modal.show .c-modal__dialog {
+    -webkit-animation-name: zoomIn;
+            animation-name: zoomIn; }
 
 .modal-body {
   position: relative; }
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  outline: 0; }
 
 /** 
  * Add a dark background to make modal dialog standout.
@@ -9132,6 +9129,7 @@ textarea.c-input {
   bottom: 0;
   left: 0;
   background-color: #1d2531;
+  background-color: rgba(29, 37, 49, 0.9);
   z-index: 400; }
   .modal-backdrop.fade {
     opacity: 0; }
@@ -9144,6 +9142,25 @@ textarea.c-input {
   width: 50px;
   height: 50px;
   overflow: scroll; }
+
+/**
+ * Modal zoom animation
+ */
+@-webkit-keyframes zoomIn {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+
+@keyframes zoomIn {
+  from {
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
 
 /* ==========================================================================
    #POPOVERS

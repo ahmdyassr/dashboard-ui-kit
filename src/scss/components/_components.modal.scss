@@ -2,6 +2,10 @@
    #MODAL 
    ========================================================================== */
 
+.modal-open {
+	overflow: hidden;
+}
+
 .c-modal {
 	display: none;
 	position: fixed;
@@ -9,7 +13,6 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	transition: all 0.3s;
 	z-index: $z-index-500;
 
 	// Prevent Chrome on Windows from adding a focus outline. For details, see
@@ -22,11 +25,6 @@
 	}
 }
 
-.modal-open {
-	overflow: hidden;
-}
-
-
 /**
  * 1. Allow scrolling when content's height is larger than viewport's height.
  */
@@ -35,20 +33,27 @@
 	position: relative;
 	margin: 30px auto;
 
-	// When fading in the modal, animate it to slide down
-	.modal.fade & {
-		transform: translate(0, -25%);
-		transition: all .3s;
+	.c-modal.fade & {
+		animation-duration: 0.3s;
+		animation-fill-mode: both;
 	}
 
-	.modal.show & {
-		transform: translate(0, 0);
+	.c-modal.show & {
+		animation-name: zoomIn;
 	}
 }
 
 .modal-body {
 	position: relative;
 }
+
+// Actual modal
+.modal-content {
+	position: relative;
+	width: 100%;
+	outline: 0;
+}
+
 
 
 /** 
@@ -62,7 +67,8 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: $gunmetal-500;
+	background-color: $gunmetal-500; // fallback
+	background-color: rgba($gunmetal-500, .9);
 	z-index: $z-index-400;
 
 	// Fade for backdrop
@@ -85,3 +91,28 @@
 	overflow: scroll;
 }
 
+/**
+ * Modal zoom animation
+ */
+
+@-webkit-keyframes zoomIn {
+  	from {
+  		transform: scale3d(.3, .3, .3);
+		opacity: 0;
+  	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
+@keyframes zoomIn {
+	from {
+		transform: scale3d(.3, .3, .3);
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+}

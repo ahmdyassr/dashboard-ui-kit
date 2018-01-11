@@ -27,6 +27,7 @@
 // A fix to initialise dropzone on document ready
 Dropzone.autoDiscover = false;
 
+
 $(function() {
     // Initialize 
     
