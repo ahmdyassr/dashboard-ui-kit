@@ -17,40 +17,45 @@
         <!-- Stylesheet -->
         <link rel="stylesheet" href="css/main.min.css">
     </head>
-    <body class="o-page">
+    <body class="o-page o-page--center">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="o-page__card c-card u-text-center">
-            <header class="c-error__head">
-                <span class="c-error__icon">
-                    <i class="fa fa-chain-broken"></i>
-                </span>
-                <h1 class="c-error__title">404 <em>Page Not Found</em></h1>
-            </header>
+        <div class="o-page__card">
 
-            <div class="c-error__body">
-                <h2 class="c-error__description">Sorry, but we didn't find the page you are looking for. Try searching for it.</h2>
+            <div class="c-card u-mb-small">
+                <header class="c-card__header u-text-center u-pt-large">
+                    <span class="c-card__icon">
+                        <i class="fa fa-chain-broken"></i>
+                    </span>
+                    <h1 class="c-error__title">404 <em>Page Not Found</em></h1>
+                </header>
 
-                <form class="c-error__search-form">
-                    <div class="c-field has-icon-right">
-                        <span class="c-field__icon">
-                            <i class="fa fa-search"></i>
-                        </span>
-                        <label class="c-field__label u-hidden-visually" for="input-search">Search</label>
-                        <input class="c-input" id="input-search" type="text" placeholder="Search for something..">
-                    </div>
+                <div class="c-card__body">
+                    <h2 class="u-h5 u-text-center u-mb-medium">
+                        Sorry, but we didn't find the page you are looking for. Try searching for it.
+                    </h2>
 
-                    <button class="c-btn c-btn--info">Search</button>
-                </form>
+                    <form class="o-line">
+                        <div class="c-field has-icon-right">
+                            <span class="c-field__icon">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <label class="c-field__label u-hidden-visually" for="input-search">Search</label>
+                            <input class="c-input" id="input-search" type="text" placeholder="Search for something..">
+                        </div>
+                        <button class="c-btn c-btn--info">Search</button>
+                    </form>
+                </div>
             </div>
 
-            <footer class="c-error__footer">
-                <a class="c-error__footer-link u-left" href="#!">
-                    <i class="fa fa-long-arrow-left"></i>Back to Homepage
+            <div class="o-line u-justify-center">
+                <a class="u-text-mute" href="#">
+                    <i class="fa fa-long-arrow-left u-mr-xsmall"></i>Back to Homepage
                 </a>
-            </footer>
+            </div>
+            
         </div>
 
         <!-- Main javascsript -->
