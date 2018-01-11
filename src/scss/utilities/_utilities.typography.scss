@@ -85,6 +85,14 @@
 	font-size: $h6-font-size !important;
 }
 
+// This class is used for 404 text only, we just couldn't find a better way
+// for implementing it
+.u-text-big {
+	font-size: $h1-font-size * 1.5;
+	font-weight: $font-weight-bold;
+	line-height: 48px;
+}
+
 
 /**
   * Font Weights
