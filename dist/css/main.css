@@ -9090,17 +9090,19 @@ textarea.c-input {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 500;
-  outline: 0; }
+  outline: 0;
+  z-index: 500; }
   .modal-open .c-modal {
     overflow-x: hidden;
     overflow-y: auto; }
 
 /**
  * 1. Allow scrolling when content's height is larger than viewport's height.
+ * 2. Set the default width of the modal to be medium.
  */
 .c-modal__dialog {
   position: relative;
+  max-width: 550px;
   margin: 30px auto; }
   .c-modal.fade .c-modal__dialog {
     -webkit-animation-duration: 0.3s;
@@ -9110,6 +9112,20 @@ textarea.c-input {
   .c-modal.show .c-modal__dialog {
     -webkit-animation-name: zoomIn;
             animation-name: zoomIn; }
+  .c-modal .c-modal__dialog {
+    max-width: 550px; }
+  .c-modal--xsmall .c-modal__dialog {
+    max-width: 350px; }
+  .c-modal--small .c-modal__dialog {
+    max-width: 450px; }
+  .c-modal--medium .c-modal__dialog {
+    max-width: 550px; }
+  .c-modal--large .c-modal__dialog {
+    max-width: 650px; }
+  .c-modal--xlarge .c-modal__dialog {
+    max-width: 750px; }
+  .c-modal--huge .c-modal__dialog {
+    max-width: 950px; }
 
 .modal-body {
   position: relative; }
@@ -9148,18 +9164,22 @@ textarea.c-input {
  */
 @-webkit-keyframes zoomIn {
   from {
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-            transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
     opacity: 0; }
   50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1; } }
 
 @keyframes zoomIn {
   from {
-    -webkit-transform: scale3d(0.3, 0.3, 0.3);
-            transform: scale3d(0.3, 0.3, 0.3);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
     opacity: 0; }
-  50% {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1; } }
 
 /* ==========================================================================
@@ -11387,7 +11407,7 @@ textarea.c-input {
    ========================================================================== */
 .c-onboard {
   position: relative;
-  width: 770px;
+  width: 100%;
   margin: 0 auto;
   border-radius: 4px;
   background-color: #fff;
