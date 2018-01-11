@@ -9130,10 +9130,79 @@ textarea.c-input {
 .modal-body {
   position: relative; }
 
-.modal-content {
+.c-modal__content {
   position: relative;
   width: 100%;
   outline: 0; }
+
+.c-modal__header {
+  background: #2EA1F8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2EA1F8), to(#1990EA));
+  background: linear-gradient(to bottom, #2EA1F8, #1990EA);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 1.875rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px; }
+
+.c-modal__title {
+  margin: 0;
+  color: #fff;
+  font-size: 1.125rem; }
+
+.c-modal__close {
+  color: #fff;
+  font-size: 1.125rem;
+  cursor: pointer;
+  opacity: 0.8; }
+  .c-modal__close:hover {
+    color: #fff; }
+
+.c-modal__subheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 30px;
+  background-color: #222C3C;
+  color: #fff; }
+  .c-modal__subheader p {
+    color: inherit; }
+
+.c-modal__body {
+  padding: 1.875rem;
+  background-color: #fff; }
+
+.c-modal__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 1.875rem;
+  border-top: 1px solid #e6eaee;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #EFF3F6; }
 
 /** 
  * Add a dark background to make modal dialog standout.
@@ -11433,7 +11502,7 @@ textarea.c-input {
 .c-onboard__title {
   margin: 0;
   color: #fff;
-  font-size: 18px; }
+  font-size: 1.125rem; }
 
 .c-onboard__close {
   color: #fff;

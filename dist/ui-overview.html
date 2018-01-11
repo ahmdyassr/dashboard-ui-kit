@@ -808,21 +808,40 @@
             <div class="row u-mb-xlarge">
                 <div class="col-sm-4 u-mb-medium">
                     <!-- Button trigger modal -->
-                    <button type="button" class="c-btn c-btn--success" data-toggle="modal" data-target="#myModal4">
-                      Launch New modal
+                    <button type="button" class="c-btn c-btn--success" data-toggle="modal" data-target="#standard-modal">
+                      Standard Modal
                     </button>
 
                     <!-- Modal -->
-                    <div class="c-modal modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModal4" data-backdrop="static">
+                    <div class="c-modal modal fade" id="standard-modal" tabindex="-1" role="dialog" aria-labelledby="standard-modal" data-backdrop="static">
                         <div class="c-modal__dialog modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="c-card u-p-small">
-                                    <h3>This is a new modal</h3>
-                                </div>
+                            <div class="c-modal__content">
                                 
-                            </div>
-                        </div>
-                    </div>
+                                <div class="c-modal__header">
+                                    <h3 class="c-modal__title">This is the modal title</h3>
+
+                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                </div>
+
+                                <div class="c-modal__subheader">
+                                    <p>Some text for sub header content</p>
+                                </div>
+
+                                <div class="c-modal__body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ratione quibusdam? Consequuntur natus praesentium adipisci eos, reiciendis distinctio error nostrum animi quos hic perferendis eius fugiat fuga sunt fugit deserunt!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis eveniet modi excepturi error nesciunt cupiditate tempora deserunt perspiciatis exercitationem, suscipit temporibus officia sit recusandae autem iure vero neque quia consequatur!</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ratione quibusdam? Consequuntur natus praesentium adipisci eos, reiciendis distinctio error nostrum animi quos hic perferendis eius fugiat fuga sunt fugit deserunt!</p>
+                                </div>
+
+                                <div class="c-modal__footer">
+                                    <p>This is the modal footer</p>
+                                </div>
+
+                            </div><!-- // .c-modal__content -->
+                        </div><!-- // .c-modal__dialog -->
+                    </div><!-- // .c-modal -->
                 </div>
             </div>
 

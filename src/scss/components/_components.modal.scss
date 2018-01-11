@@ -3,7 +3,7 @@
    ========================================================================== */
 
 //
-// modal sizes
+// modal sizes, different sizes of the modal based on its width
 //
 
 $modal-width: (
@@ -29,6 +29,7 @@ $modal-width: (
 	outline: 0;
 	z-index: $z-index-500;
 
+	// bootstrap class for hiding scrollbar when modal is opened
 	.modal-open & {
 		overflow-x: hidden;
 		overflow-y: auto;
@@ -91,10 +92,69 @@ $modal-width: (
 }
 
 // Actual modal
-.modal-content {
+.c-modal__content {
 	position: relative;
 	width: 100%;
 	outline: 0;
+}
+
+.c-modal__header {
+	@include linear-gradient(to bottom, #2EA1F8, #1990EA);
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px $spacer;
+	border-top-left-radius: $base-border-radius;
+	border-top-right-radius: $base-border-radius;
+}
+
+.c-modal__title {
+	margin: 0;
+	color: $white;
+	font-size: $h5-font-size;
+}
+
+.c-modal__close {
+	color: $white;
+	font-size: $h5-font-size;
+	cursor: pointer;
+	opacity: 0.8;
+
+	&:hover {
+		color: $white;
+	}
+}
+
+
+.c-modal__subheader {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	background-color: #222C3C;
+	color: $white;
+
+	p {
+		color: inherit;
+	}
+}
+
+.c-modal__body {
+	padding: $spacer;
+	background-color: $white;
+}
+
+.c-modal__footer {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px $spacer;
+	border-top: $base-border-width solid $base-border-color;
+	border-bottom-left-radius: $base-border-radius;
+	border-bottom-right-radius: $base-border-radius;
+	background-color: $body-background-color;
 }
 
 
