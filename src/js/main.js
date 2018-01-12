@@ -74,7 +74,7 @@ $(function() {
 
     // 8. dropzone
     if($('.dropzone').length) {
-        $("#custom-dropzone").dropzone();
+        $(".dropzone").dropzone();
     }
 
     // 9. datatable

@@ -156,7 +156,7 @@ $modal-width: (
 	align-content: center;
 	align-items: center;
 	justify-content: space-between;
-	padding: 20px $spacer;
+	padding: $spacer-small $spacer;
 	border-top: $base-border-width solid $base-border-color;
 	background-color: $body-background-color;
 }

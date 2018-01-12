@@ -1072,6 +1072,306 @@
                         </div><!-- // .c-modal__dialog -->
                     </div><!-- // .c-modal -->
                 </div>
+
+                <div class="col-sm-4 u-mb-medium">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="c-btn c-btn--info" data-toggle="modal" data-target="#modal6">
+                       Settings Modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="c-modal c-modal--large modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="modal6" data-backdrop="static">
+                        <div class="c-modal__dialog modal-dialog" role="document">
+                            <div class="c-modal__content">
+                                
+                                <div class="c-modal__header">
+                                    <h3 class="c-modal__title">Settings</h3>
+
+                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                </div>
+
+                                <div class="c-modal__subheader o-line">
+                                    <a href="#">System</a>
+                                    <a href="#">Emails</a>
+                                    <a href="#">Messanger</a>
+                                    <a href="#">Phone</a>
+                                    <a href="#">Other</a>
+                                </div>
+
+                                <div class="c-modal__body c-modal__body--maximized">
+                                    <div class="o-line u-border-bottom u-pb-small">
+                                       <p>Go to next request after reply</p>
+                                       <div class="c-switch is-active">
+                                            <input class="c-switch__input" id="switch12" type="checkbox" checked="checked">
+                                        </div>
+                                    </div>
+
+                                    <div class="o-line u-border-bottom u-pv-small">
+                                       <p>Allow keyboard arrow for switching between requests</p>
+                                       <div class="c-switch is-active">
+                                            <input class="c-switch__input" id="switch12" type="checkbox" checked="checked">
+                                        </div>
+                                    </div>
+
+                                    <div class="o-line u-border-bottom u-pv-small">
+                                       <p>Show input as first method of answer</p>
+                                       <div class="c-switch">
+                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <div class="o-line u-border-bottom u-pv-small">
+                                       <p>Show Notes opened in default</p>
+                                       <div class="c-switch is-active">
+                                            <input class="c-switch__input" id="switch12" type="checkbox" checked="checked">
+                                        </div>
+                                    </div>
+
+                                    <div class="o-line u-border-bottom u-pv-small">
+                                       <p>Connect Automatic Signature</p>
+                                       <div class="c-switch">
+                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <div class="o-line u-border-bottom u-pv-small">
+                                       <p>Automatically erase all messages after delete (Skip Trash)</p>
+                                       <div class="c-switch">
+                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                        </div>
+                                    </div>
+
+                                    <div class="o-line u-pt-small">
+                                       <p>Go to next request after reply</p>
+                                       <div class="c-switch">
+                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-modal__footer">
+                                    <button class="c-btn c-btn--secondary">Cancel</button>
+                                    <button class="c-btn c-btn--success">Send</button>
+                                </div>
+
+                            </div><!-- // .c-modal__content -->
+                        </div><!-- // .c-modal__dialog -->
+                    </div><!-- // .c-modal -->
+                </div>
+            </div>
+
+            <div class="row u-mb-xlarge">
+                <div class="col-sm-4 u-mb-medium">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="c-btn c-btn--success" data-toggle="modal" data-target="#modal7">
+                      Connect a New Service
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="c-modal c-modal--xsmall modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="modal7" data-backdrop="static">
+                        <div class="c-modal__dialog modal-dialog" role="document">
+                            <div class="c-modal__content">
+                                
+                                <div class="c-modal__header">
+                                    <h3 class="c-modal__title">Connect New Service</h3>
+
+                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                </div>
+
+                                <div class="c-modal__body">
+
+                                    <div class="c-field u-mb-xsmall">
+                                        <label class="c-field__label" for="select12">Account</label>
+
+                                        <!-- Select2 jquery plugin is used -->
+                                        <select class="c-select" id="select12">
+                                            <option>
+                                                <img src="img/paypal-icon.svg" alt="PayPal Logo">PayPal
+                                            </option>
+                                            <option>Skrill</option>
+                                            <option>TransferWise</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="c-field u-mb-xsmall">
+                                        <label class="c-field__label" for="select12">User ID</label>
+
+                                        <input class="c-input" type="email" placeholder="adam@gamil.com">
+                                    </div>
+
+                                    <div class="c-field u-mb-small">
+                                        <label class="c-field__label" for="select12">User Password</label>
+
+                                        <input class="c-input" type="password" placeholder="Numbers, Captial & Small letters">
+                                    </div>
+
+                                    <div class="c-card u-bg-secondary u-p-small u-mb-small">
+                                        <span class="u-text-mute u-text-small">Credentials Security</span>
+                                        <p>Your external account credentials are stored securely and used for the sole purpose of retrieving relevant reports.</p>
+                                    </div>
+
+                                    <a class="c-btn c-btn--success c-btn--fullwidth" href="#">
+                                        Connect Service
+                                    </a>
+                                </div>
+
+                            </div><!-- // .c-modal__content -->
+                        </div><!-- // .c-modal__dialog -->
+                    </div><!-- // .c-modal -->
+                </div>
+
+                <div class="col-sm-4 u-mb-medium">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="c-btn c-btn--info" data-toggle="modal" data-target="#modal8">
+                      Setup New Project
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="c-modal c-modal--small modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="modal8" data-backdrop="static">
+                        <div class="c-modal__dialog modal-dialog" role="document">
+                            <div class="c-modal__content">
+                                
+                                <div class="c-modal__header">
+                                    <h3 class="c-modal__title">Setup New Project</h3>
+
+                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                </div>
+
+                                <div class="c-modal__body">
+                                    <form action="/file-upload" class="dropzone u-mb-small" id="custom-dropzone" style="height: 180px;">
+                                        <div class="dz-message" data-dz-message>
+                                            <i class="dz-icon fa fa-cloud-upload"></i>
+                                            <span>Drag a file here or browse for a file to upload.</span>
+                                        </div>
+
+                                        <div class="fallback">
+                                            <input name="file" type="file" multiple>
+                                        </div>
+                                    </form>
+
+                                    <div class="c-field u-mb-xsmall">
+                                        <label class="c-field__label" for="select24">Project Name</label>
+
+                                        <input type="text" class="c-input" placeholder="Twitter Background">
+                                    </div>
+
+                                    <div class="c-field u-mb-xsmall">
+                                        <!-- Select2 jquery plugin is used -->
+                                        <select class="c-select" id="select14">
+                                            <option>
+                                                <img src="img/paypal-icon.svg" alt="PayPal Logo">Twitter
+                                            </option>
+                                            <option>Facebook</option>
+                                            <option>Google</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="c-modal__footer u-justify-center">
+                                    <a class="c-btn c-btn--success" href="#">Create Project</a>
+                                </div>
+
+                            </div><!-- // .c-modal__content -->
+                        </div><!-- // .c-modal__dialog -->
+                    </div><!-- // .c-modal -->
+                </div>
+
+                <div class="col-sm-4 u-mb-medium">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="c-btn c-btn--info" data-toggle="modal" data-target="#modal9">
+                      Billing 
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="c-modal c-modal--large modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9" data-backdrop="static">
+                        <div class="c-modal__dialog modal-dialog" role="document">
+                            <div class="c-modal__content">
+                                <div class="c-card">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="img/project-card1.jpg" alt="Image">
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="u-pt-medium u-pr-medium">
+
+                                                <div class="c-modal__header u-bg-transparent">
+                                                    <h3 class="c-modal__title">Credit Card Details</h3>
+
+                                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                                        <i class="fa fa-close"></i>
+                                                    </span>
+                                                </div>
+                                               
+
+                                                <div class="c-field u-mb-xsmall">
+                                                    <div class="c-field has-icon-left">
+                                                        <span class="c-field__icon">
+                                                            <i class="fa fa-user-o"></i>
+                                                        </span> 
+                                                        <label class="c-field__label u-hidden-visually" for="input11">Email Address</label>
+                                                        <input class="c-input" id="input11" type="text" placeholder="Clark">
+                                                    </div>
+                                                </div>
+
+                                                <div class="c-field u-mb-xsmall">
+                                                    <div class="c-field has-icon-left">
+                                                        <span class="c-field__icon">
+                                                            <i class="fa fa-user-o"></i>
+                                                        </span> 
+                                                        <label class="c-field__label u-hidden-visually" for="input11">Card Number</label>
+                                                        <input class="c-input" id="input11" type="text" placeholder="Clark">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="c-field">
+                                                            <div class="c-field has-icon-left">
+                                                                <span class="c-field__icon">
+                                                                    <i class="fa fa-calendar-o"></i>
+                                                                </span> 
+                                                                <label class="c-field__label u-hidden-visually" for="input11">MM / YY</label>
+                                                                <input class="c-input" id="input11" type="text" placeholder="MM/YY">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="c-field u-mb-small">
+                                                            <div class="c-field has-icon-left">
+                                                                <span class="c-field__icon">
+                                                                    <i class="fa fa-calendar-o"></i>
+                                                                </span> 
+                                                                <label class="c-field__label u-hidden-visually" for="input11">CVC</label>
+                                                                <input class="c-input" id="input11" type="text" placeholder="CVC">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <a class="c-btn c-btn--success c-btn--fullwidth u-mb-small" href="#">
+                                                    Pay $20.00
+                                                </a>
+
+                                                <a class="c-btn c-btn--info c-btn--fullwidth u-mb-small" href="#">
+                                                    Pay with <img src="img/paypal-logo.svg" alt="PayPal">
+                                                </a>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div><!-- // .c-modal__content -->
+                        </div><!-- // .c-modal__dialog -->
+                    </div><!-- // .c-modal -->
+                </div>
             </div>
 
 <!-- ============================== ALERTS ================================= -->

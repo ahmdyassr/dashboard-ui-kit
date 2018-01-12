@@ -9203,7 +9203,7 @@ textarea.c-input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px 1.875rem;
+  padding: 0.9375rem 1.875rem;
   border-top: 1px solid #e6eaee;
   background-color: #EFF3F6; }
 
@@ -13011,8 +13011,8 @@ textarea.c-input {
   background-color: #475364 !important; }
 
 .u-bg-secondary {
-  background: #fff !important;
-  background-color: #fff !important; }
+  background: #fafbfc !important;
+  background-color: #fafbfc !important; }
 
 .u-bg-white {
   background: #fff !important;
