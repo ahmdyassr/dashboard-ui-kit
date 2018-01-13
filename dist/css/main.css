@@ -9195,7 +9195,8 @@ textarea.c-input {
 
 .c-modal__body {
   padding: 1.875rem;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
 
 /**
  * Apply max height to force the body of the modal to be scrolled. This class
@@ -11540,9 +11541,9 @@ textarea.c-input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 40px;
   padding: 15px 30px;
-  background-color: #222C3C; }
+  background-color: #222C3C;
+  overflow-x: auto; }
 
 .c-onboard__nav-title {
   margin: 0 30px 0 0;
@@ -13378,6 +13379,36 @@ textarea.c-input {
 
 .u-height-100 {
   height: 100% !important; }
+
+/* ==========================================================================
+   #OVERFLOW UTILITIES
+   ========================================================================== */
+/**
+ * Overflow
+ */
+.u-overflow-auto {
+  overflow: auto; }
+
+.u-overflow-scroll {
+  overflow: scroll; }
+
+/**
+ * Horizontal Overflow
+ */
+.u-overflow-x-auto {
+  overflow: auto; }
+
+.u-overflow-x-scroll {
+  overflow: scroll; }
+
+/**
+ * Vericall Overflow
+ */
+.u-overflow-y-auto {
+  overflow: auto; }
+
+.u-overflow-y-scroll {
+  overflow: scroll; }
 
 /* ==========================================================================
    #BOOTSTRAP UTILITIES

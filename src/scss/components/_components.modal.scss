@@ -148,7 +148,7 @@ $modal-width: (
 		color: $white;
 		text-decoration: none;
 	}
-	
+
 	&.is-active {
 		padding: $spacer-small 0;
 		border-bottom: $base-border-width*3 solid $color-info;
@@ -159,6 +159,7 @@ $modal-width: (
 .c-modal__body {
 	padding: $spacer;
 	background-color: $white;
+	overflow: hidden;
 }
 
 /**

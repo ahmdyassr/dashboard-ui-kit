@@ -575,16 +575,16 @@
                     <div class="c-modal c-modal--xlarge modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModal1" data-backdrop="static">
                         <div class="c-modal__dialog modal-dialog" role="document">
                             <div class="modal-content">
-                                <div class="c-onboard">
-                                
-                                    <header class="c-onboard__header">
-                                        <h1 class="c-onboard__title">Welcome To Our App</h1>
-                                        <button class="c-onboard__close c-close" data-dismiss="modal" aria-label="Close">
-                                            <i class="fa fa-close"></i>
-                                        </button>
-                                    </header>
 
-                                    <nav class="c-onboard__nav">
+                                <header class="c-modal__header">
+                                    <h1 class="c-modal__title">Welcome To Our App</h1>
+                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                        <i class="fa fa-close"></i>
+                                    </span>
+                                </header>
+
+                                <div class="u-overflow-x-auto u-width-100">
+                                    <div class="c-modal__subheader" style="width:750px;">
                                         <p class="c-onboard__nav-title">Quick Tour</p>
 
                                         <ul class="c-onboard__nav-list">
@@ -605,24 +605,21 @@
                                                 <span class="c-onboard__nav-counter">4</span>Share</a>
                                             </li>
                                         </ul>
-                                    </nav>
-
-                                    <div class="c-onboard__body">
-                                        <h2 class="u-h5 u-mb-small">Start your first board</h2>
-                                        <p class="u-text-mute u-nosapce">Click on the right panel and start your first board. Boards are our core feature for helping you keep your work in order and easy to manage.</p>
                                     </div>
-                                
-                                    <div class="c-onboard__img">
-                                        <img src="img/onboard-img.png" alt="About image">
+                                </div>
+
+                                <div class="c-modal__body u-text-center u-pb-small">
+                                    <h2 class="u-h5 u-mb-small">Start your first board</h2>
+                                    <p class="u-text-mute u-mb-small">Click on the right panel and start your first board. Boards are our core feature for helping you keep your work in order and easy to manage.</p>
+
+                                    <div class="o-line">
+                                        <a class="u-text-mute u-align-self-end" href="#">Skip</a>
+
+                                        <img src="img/onboard.png" class="u-width-75 u-hidden-down@mobile" style="transform:translate(30px, 30px);" alt="About image">
+
+                                        <a class="c-btn c-btn--green u-align-self-end" href="#">Next</a>
                                     </div>
                                     
-                                    <span class="c-onboard__skip">
-                                        <a class="u-text-mute" href="#">Skip</a>
-                                    </span>
-
-                                    <span class="c-onboard__next">
-                                        <a class="c-btn c-btn--green" href="#">Next</a>
-                                    </span>
                                 </div>
                             </div>
                         </div>
