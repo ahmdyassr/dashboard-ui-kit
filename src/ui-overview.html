@@ -1292,82 +1292,80 @@
                     <div class="c-modal c-modal--large modal fade" id="modal9" tabindex="-1" role="dialog" aria-labelledby="modal9" data-backdrop="static">
                         <div class="c-modal__dialog modal-dialog" role="document">
                             <div class="c-modal__content">
-                                <div class="c-card">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <img src="img/project-card1.jpg" alt="Image">
+                                <div class="o-media c-card u-border-zero">
+                                    <!-- `font-size: 0` is a quick fix to remove weird spacing -->
+                                    <div class="o-media__img u-hidden-down@tablet" style="font-size: 0;">
+                                        <img src="img/billing.jpg" alt="Image">
+                                    </div>
+
+                                    <div class="o-media__body u-p-medium">
+                                        <div class="o-line u-align-items-start">
+                                            <h3 class="u-mb-medium">Credit Card Details</h3>
+
+                                            <span class="c-modal__close u-text-mute" data-dismiss="modal" aria-label="Close">
+                                                <i class="u-opacity-medium fa fa-close"></i>
+                                            </span>
                                         </div>
-                                        <div class="col-6">
-                                            <div class="u-pt-medium u-pr-medium">
+                                       
 
-                                                <div class="c-modal__header u-bg-transparent">
-                                                    <h3 class="c-modal__title">Credit Card Details</h3>
-
-                                                    <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
-                                                        <i class="fa fa-close"></i>
-                                                    </span>
-                                                </div>
-                                               
-
-                                                <div class="c-field u-mb-xsmall">
-                                                    <div class="c-field has-icon-left">
-                                                        <span class="c-field__icon">
-                                                            <i class="fa fa-user-o"></i>
-                                                        </span> 
-                                                        <label class="c-field__label u-hidden-visually" for="input11">Email Address</label>
-                                                        <input class="c-input" id="input11" type="text" placeholder="Clark">
-                                                    </div>
-                                                </div>
-
-                                                <div class="c-field u-mb-xsmall">
-                                                    <div class="c-field has-icon-left">
-                                                        <span class="c-field__icon">
-                                                            <i class="fa fa-user-o"></i>
-                                                        </span> 
-                                                        <label class="c-field__label u-hidden-visually" for="input11">Card Number</label>
-                                                        <input class="c-input" id="input11" type="text" placeholder="Clark">
-                                                    </div>
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="c-field">
-                                                            <div class="c-field has-icon-left">
-                                                                <span class="c-field__icon">
-                                                                    <i class="fa fa-calendar-o"></i>
-                                                                </span> 
-                                                                <label class="c-field__label u-hidden-visually" for="input11">MM / YY</label>
-                                                                <input class="c-input" id="input11" type="text" placeholder="MM/YY">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="c-field u-mb-small">
-                                                            <div class="c-field has-icon-left">
-                                                                <span class="c-field__icon">
-                                                                    <i class="fa fa-calendar-o"></i>
-                                                                </span> 
-                                                                <label class="c-field__label u-hidden-visually" for="input11">CVC</label>
-                                                                <input class="c-input" id="input11" type="text" placeholder="CVC">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                                <a class="c-btn c-btn--success c-btn--fullwidth u-mb-small" href="#">
-                                                    Pay $20.00
-                                                </a>
-
-                                                <a class="c-btn c-btn--info c-btn--fullwidth u-mb-small" href="#">
-                                                    Pay with <img src="img/paypal-logo.svg" alt="PayPal">
-                                                </a>
+                                        <div class="c-field u-mb-xsmall">
+                                            <div class="c-field has-icon-left">
+                                                <span class="c-field__icon">
+                                                    <i class="fa fa-user-o"></i>
+                                                </span> 
+                                                <label class="c-field__label u-hidden-visually" for="input11">Email</label>
+                                                <input class="c-input" id="input11" type="text" placeholder="Email">
                                             </div>
-
-
                                         </div>
+
+                                        <div class="c-field u-mb-xsmall">
+                                            <div class="c-field has-icon-left">
+                                                <span class="c-field__icon">
+                                                    <i class="fa fa-credit-card"></i>
+                                                </span> 
+                                                <label class="c-field__label u-hidden-visually" for="input11">Card Number</label>
+                                                <input class="c-input" id="input11" type="text" placeholder="Card Number">
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="c-field">
+                                                    <div class="c-field has-icon-left">
+                                                        <span class="c-field__icon">
+                                                            <i class="fa fa-calendar-o"></i>
+                                                        </span> 
+                                                        <label class="c-field__label u-hidden-visually" for="input11">MM / YY</label>
+                                                        <input class="c-input" id="input11" type="text" placeholder="MM/YY">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="c-field u-mb-small">
+                                                    <div class="c-field has-icon-left">
+                                                        <span class="c-field__icon">
+                                                            <i class="fa fa-lock"></i>
+                                                        </span> 
+                                                        <label class="c-field__label u-hidden-visually" for="input11">CVC</label>
+                                                        <input class="c-input" id="input11" type="text" placeholder="CVC">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <a class="c-btn c-btn--success c-btn--fullwidth u-mb-small" href="#">
+                                            Pay $20.00
+                                        </a>
+
+                                        <span class="c-divider has-text u-mb-small">
+                                            or
+                                        </span>
+
+                                        <a class="c-btn c-btn--info c-btn--fullwidth u-flex u-align-items-center u-justify-center" href="#">
+                                            Pay with <img class="u-ml-xsmall" src="img/paypal.svg" alt="PayPal">
+                                        </a>
                                     </div>
                                 </div>
-                                
                             </div><!-- // .c-modal__content -->
                         </div><!-- // .c-modal__dialog -->
                     </div><!-- // .c-modal -->
