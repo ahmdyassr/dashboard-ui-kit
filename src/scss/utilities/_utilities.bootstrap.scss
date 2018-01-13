@@ -15,17 +15,4 @@
 	}
 }
 
-.collapse {
-	display: none;
 
-	&.show {
-		display: block;
-	}
-}
-
-.collapsing {
-	position: relative;
-	height: 0;
-	transition: height .3s;
-	overflow: hidden;
-}

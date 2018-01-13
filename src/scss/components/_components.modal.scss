@@ -136,6 +136,26 @@ $modal-width: (
 	}
 }
 
+/**
+ * Tab-style navigation inside modal subheader. When used, make sure to remove 
+ * default vertical padding from `c-modal__subheader`.
+ */
+
+.c-modal__subheader-tab {
+	color: $color-mute;
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+	
+	&.is-active {
+		padding: $spacer-small 0;
+		border-bottom: $base-border-width*3 solid $color-info;
+		color: $white;
+	}
+}
+
 .c-modal__body {
 	padding: $spacer;
 	background-color: $white;
