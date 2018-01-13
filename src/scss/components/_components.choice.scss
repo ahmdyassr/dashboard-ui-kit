@@ -64,6 +64,7 @@
 	& + .c-choice__label {
 		display: inline-flex;
 		align-items: center;
+		color: $choice-color;
 		font-size: $choice-font-size;
 		cursor: pointer;
 	}

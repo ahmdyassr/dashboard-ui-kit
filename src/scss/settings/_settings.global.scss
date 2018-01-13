@@ -74,12 +74,12 @@ $orange-400: #ff7800 !default;
 $orange-500: #f16911 !default;
 
 // states
-$color-mute:    $grey-800 !default;
 $color-success: $green-200 !default;
 $color-info:    $blue-300 !default;
 $color-warning: $orange-300 !default;
 $color-danger:  $red-400 !default;
 $color-fancy:   $purple-400 !default;
+$color-mute:    $grey-800 !default;
 
 // gradients
 $gradient-blue:   $blue-300, $blue-400 !default;
@@ -97,8 +97,8 @@ $color-dribbble:  #ea4c89 !default;
 $color-linkedin:  #222 !default;
 
 // backgrounds
-$body-background-color: #EFF3F6 !default;
-$base-background-color: $white !default;
+$body-background-color:      #EFF3F6 !default;
+$base-background-color:      $white !default;
 $secondary-background-color: #fafbfc !default;
 
 

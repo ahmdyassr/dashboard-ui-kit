@@ -41,7 +41,7 @@ body {
   min-height: 100%;
   /* [1] */
   margin: 0;
-  background-color: #EFF3F6; }
+  background-color: #1B2431; }
 
 button,
 input,
@@ -120,7 +120,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem;
-  color: #354052;
+  color: #fff;
   font-weight: 500; }
 
 h1 {
@@ -142,7 +142,7 @@ h6 {
   font-size: 1rem; }
 
 p {
-  color: #354052;
+  color: #fff;
   font-size: 0.875rem; }
 
 strong {
@@ -189,7 +189,7 @@ small {
 
 blockquote {
   padding-left: 15px;
-  border-left: 3px solid #e6eaee; }
+  border-left: 3px solid #313D4F; }
 
 /*!
  * Bootstrap Grid v4.0.0-beta.3 (https://getbootstrap.com)
@@ -5220,7 +5220,7 @@ be a descendant of the grid when it is being dragged.
  * Calendar Wrapper
  */
 .fc-view-container {
-  background-color: #fff; }
+  background-color: #273142; }
 
 /**
  * Calendar Header
@@ -6027,12 +6027,12 @@ be a descendant of the grid when it is being dragged.
 
 .select2-results {
   border-radius: 4px;
-  border: 1px solid #e6eaee; }
+  border: 1px solid #313D4F; }
 
 .select2-dropdown {
   margin: 5px 0;
   background-color: #fff;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px; }
@@ -6048,7 +6048,7 @@ be a descendant of the grid when it is being dragged.
   padding: 0.625rem 0.9375rem;
   font-size: 0.875rem; }
   .select2-results__option + .select2-results__option {
-    border-top: 1px solid #e6eaee; }
+    border-top: 1px solid #313D4F; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
   background-color: #fff;
@@ -6100,7 +6100,7 @@ be a descendant of the grid when it is being dragged.
     content: "\f002"; }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   padding: 8px 15px;
   outline: none;
@@ -6485,7 +6485,7 @@ be a descendant of the grid when it is being dragged.
           justify-content: center;
   background-color: #fff;
   color: #7f8fa4;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   padding: 5px;
   -webkit-transition: border-color 0.3s;
@@ -6600,19 +6600,19 @@ be a descendant of the grid when it is being dragged.
     height: 2.1875rem;
     /* [1] */
     padding: 0 16px;
-    border: 1px solid #e6eaee;
-    background-color: #fff;
-    color: rgba(53, 64, 82, 0.5);
+    border: 1px solid #313D4F;
+    background-color: #273142;
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 2.1875rem;
     /* [1] */
     text-align: center; }
     .dataTables_paginate .paginate_button:hover {
-      color: #354052;
+      color: #fff;
       text-decoration: none; }
     .dataTables_paginate .paginate_button.current {
-      color: #354052; }
+      color: #fff; }
     .dataTables_paginate .paginate_button + .paginate_button {
       border-left: 0; }
     .dataTables_paginate .paginate_button.previous {
@@ -7340,8 +7340,8 @@ be a descendant of the grid when it is being dragged.
   min-width: 100%;
   min-height: 70px;
   padding: 13px 30px;
-  border-bottom: 1px solid #E6EAEE;
-  background-color: #fff; }
+  border-bottom: 1px solid #313D4F;
+  background-color: #273142; }
   @media (max-width: 768px) {
     .c-navbar {
       padding: 0.625rem 0.9375rem; } }
@@ -7395,7 +7395,7 @@ be a descendant of the grid when it is being dragged.
   .c-navbar--inverse .c-nav-toggle__icon,
   .c-navbar--inverse .c-nav-toggle__icon::before,
   .c-navbar--inverse .c-nav-toggle__icon::after {
-    background-color: #fff;
+    background-color: #273142;
     opacity: 0.95; }
 
 /* ==========================================================================
@@ -7426,7 +7426,7 @@ be a descendant of the grid when it is being dragged.
       margin-right: -0.9375rem !important;
       /* [1] */
       margin-left: -0.9375rem;
-      border-top: 1px solid #e6eaee;
+      border-top: 1px solid #313D4F;
       /**
 		 * Bootstrap classes used to show and hide nav.
 		 * This behaviour depends on collapse.js plugin.
@@ -7486,7 +7486,7 @@ be a descendant of the grid when it is being dragged.
   @media (max-width: 768px) {
     .c-nav__link {
       display: block;
-      color: #354052;
+      color: #fff;
       font-size: 1rem; } }
 
 /* Nav Toggle
@@ -7777,16 +7777,16 @@ be a descendant of the grid when it is being dragged.
   height: 2.1875rem;
   /* [1] */
   padding: 0 16px;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
-  color: #CED0DA;
+  background-color: #273142;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 2.1875rem;
   /* [1] */
   text-align: center;
-  color: #CED0DA;
+  color: #fff;
   /**
 	 * 1. You may resize this icon if you used another icon font.
 	 */ }
@@ -7795,29 +7795,29 @@ be a descendant of the grid when it is being dragged.
     bottom: -1px;
     -webkit-transition: color .15s;
     transition: color .15s;
-    color: #CED0DA;
+    color: #fff;
     font-size: 16px;
     /* [1] */ }
   .c-pagination__control:hover {
-    color: #354052;
+    color: #fff;
     text-decoration: none; }
     .c-pagination__control:hover i {
-      color: #354052; }
+      color: #fff; }
 
 .c-pagination__link {
   display: block;
   height: 2.1875rem;
   padding: 0 16px;
-  border: 1px solid #e6eaee;
-  background-color: #fff;
-  color: rgba(53, 64, 82, 0.5);
+  border: 1px solid #313D4F;
+  background-color: #273142;
+  color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
   line-height: 2.1875rem;
   text-align: center; }
   .c-pagination__link.is-active {
-    color: #354052; }
+    color: #fff; }
   .c-pagination__link:hover {
-    color: #354052;
+    color: #fff;
     text-decoration: none; }
 
 .c-pagination__counter {
@@ -7853,7 +7853,7 @@ be a descendant of the grid when it is being dragged.
     -webkit-transition: all .3s;
     transition: all .3s;
     border-radius: 83px;
-    background-color: #dfe3e9;
+    background-color: #273142;
     content: " "; }
   .c-switch::after {
     /* [2] */
@@ -7880,7 +7880,7 @@ be a descendant of the grid when it is being dragged.
     .c-switch.is-disabled.is-active {
       /* [4] */ }
       .c-switch.is-disabled.is-active::before {
-        background-color: #dfe3e9; }
+        background-color: #273142; }
       .c-switch.is-disabled.is-active::after {
         right: 2px; }
 
@@ -7893,6 +7893,7 @@ be a descendant of the grid when it is being dragged.
 
 .c-switch__label {
   margin: 0 0 0 0.625rem;
+  color: #fff;
   font-size: 0.875rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -7963,7 +7964,7 @@ be a descendant of the grid when it is being dragged.
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     border-radius: 4px;
-    background-color: #1d2531;
+    background-color: #353C48;
     color: #fff;
     font-size: 0.875rem;
     font-weight: 400;
@@ -8003,7 +8004,7 @@ be a descendant of the grid when it is being dragged.
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  border-top-color: #1d2531; }
+  border-top-color: #353C48; }
 
 .c-tooltip--bottom::after {
   top: 100%;
@@ -8016,7 +8017,7 @@ be a descendant of the grid when it is being dragged.
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  border-bottom-color: #1d2531; }
+  border-bottom-color: #353C48; }
 
 .c-tooltip--right::after {
   top: 50%;
@@ -8029,7 +8030,7 @@ be a descendant of the grid when it is being dragged.
   left: 100%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  border-right-color: #1d2531; }
+  border-right-color: #353C48; }
 
 .c-tooltip--left::after {
   top: 50%;
@@ -8042,7 +8043,7 @@ be a descendant of the grid when it is being dragged.
   right: 100%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  border-left-color: #1d2531; }
+  border-left-color: #353C48; }
 
 /* ==========================================================================
    #ALERTS
@@ -8184,7 +8185,7 @@ be a descendant of the grid when it is being dragged.
   height: 20px;
   margin: 0 0 15px 0;
   border-radius: 20px;
-  background-color: #E2E7EE; }
+  background-color: rgba(49, 61, 79, 0.3); }
 
 /**
   * 1. Default (dark) background-color would be applied, if class 
@@ -8269,10 +8270,10 @@ be a descendant of the grid when it is being dragged.
 .c-tabs__list {
   /* [1] */
   padding: 20px 30px;
-  border: 1px solid #dfe3e9;
+  border: 1px solid #313D4F;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
   .c-tabs__list li {
     display: inline-block; }
 
@@ -8282,11 +8283,11 @@ be a descendant of the grid when it is being dragged.
   color: #7f8fa4;
   font-size: 1rem; }
   .c-tabs__link:hover {
-    color: #354052;
+    color: #fff;
     text-decoration: none; }
   .c-tabs__link.is-active, .c-tabs__link.active {
     border-bottom: 2px solid #2ea1f8;
-    color: #2d3848;
+    color: #fff;
     font-weight: 600; }
 
 /**
@@ -8309,7 +8310,7 @@ be a descendant of the grid when it is being dragged.
         align-self: flex-end;
     margin-right: 4px;
     padding: 15px 30px;
-    border: 1px solid #dfe3e9;
+    border: 1px solid #313D4F;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     font-size: 14px;
@@ -8326,11 +8327,12 @@ be a descendant of the grid when it is being dragged.
   display: none;
   margin: 0;
   padding: 20px 30px;
-  border: 1px solid #dfe3e9;
+  border: 1px solid #313D4F;
   border-top: 0;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142;
+  color: #fff; }
   .c-tabs__pane.is-active, .c-tabs__pane.active {
     display: block; }
 
@@ -8546,11 +8548,11 @@ be a descendant of the grid when it is being dragged.
   .c-toolbar__nav-item:last-child {
     margin-right: 0; }
   .c-toolbar__nav-item:hover {
-    color: #354052;
+    color: #fff;
     text-decoration: none; }
   .c-toolbar__nav-item.is-active {
     border-bottom: 2px solid #2ea1f8;
-    color: #2d3848;
+    color: #fff;
     font-weight: 600; }
   @media only screen and (max-width: 576px) {
     .c-toolbar__nav-item {
@@ -8562,7 +8564,7 @@ be a descendant of the grid when it is being dragged.
  * Numbers & states placed in the toolbar, used in performance.html page
  */
 .c-toolbar__state {
-  border-right: 1px solid #e6eaee;
+  border-right: 1px solid #313D4F;
   text-align: center; }
   @media (max-width: 768px) {
     .c-toolbar__state {
@@ -8607,8 +8609,8 @@ be a descendant of the grid when it is being dragged.
     opacity: 0.5; }
     .c-toggle.is-disabled .c-toggle__btn.is-active {
       /* [1] */
-      border-color: #E7E9ED;
-      background-color: #FAFBFC;
+      border-color: #313D4F;
+      background-color: #273142;
       color: #565F6D; }
 
 .c-toggle__btn {
@@ -8616,9 +8618,9 @@ be a descendant of the grid when it is being dragged.
   height: 45px;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #E7E9ED;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #FAFBFC;
+  background-color: #273142;
   color: #565F6D;
   font-size: 14px;
   text-align: center;
@@ -8672,7 +8674,7 @@ be a descendant of the grid when it is being dragged.
  */
 .c-choice {
   margin: 0 0 0.9375rem 0;
-  color: #354052;
+  color: #fff;
   font-size: 0;
   /* [1] */
   font-weight: 400;
@@ -8682,11 +8684,11 @@ be a descendant of the grid when it is being dragged.
 	 * NOTE: `disabled` attribute must be added to <input>
 	 */ }
   .c-choice.is-disabled .c-choice__label {
-    color: rgba(53, 64, 82, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     cursor: default; }
     .c-choice.is-disabled .c-choice__label::before {
-      border-color: #dfe3e9;
-      background-color: #e6eaee; }
+      border-color: #313D4F;
+      background-color: #273142; }
 
 /**
  * 1. Hide default input and create a customized input.
@@ -8712,6 +8714,7 @@ be a descendant of the grid when it is being dragged.
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    color: #fff;
     font-size: 0.875rem;
     cursor: pointer; }
   .c-choice__input + .c-choice__label::before {
@@ -8724,8 +8727,8 @@ be a descendant of the grid when it is being dragged.
     margin: 0 15px 0 0;
     -webkit-transition: all .3s;
     transition: all .3s;
-    border: 1px solid #bbc5d5;
-    background-color: #fff;
+    border: 1px solid #313D4F;
+    background-color: #273142;
     color: #fff;
     line-height: 15px;
     text-align: center;
@@ -8836,9 +8839,9 @@ be a descendant of the grid when it is being dragged.
   * Addon is an icon placed in box next to input, used as a visual indicator
   */
 .c-field__addon {
-  background: #FFF;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F2F4F7));
-  background: linear-gradient(to bottom, #FFF, #F2F4F7);
+  background: #273142;
+  background: -webkit-gradient(linear, left top, left bottom, from(#273142), to(#273142));
+  background: linear-gradient(to bottom, #273142, #273142);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -8852,7 +8855,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #dfe3e9;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   color: #CED0DA;
   font-size: 18px;
@@ -8896,7 +8899,7 @@ be a descendant of the grid when it is being dragged.
     -webkit-transition: all .3s;
     transition: all .3s;
     border-radius: 83px;
-    background-color: #dfe3e9;
+    background-color: #273142;
     content: " "; }
   .c-switch::after {
     /* [2] */
@@ -8923,7 +8926,7 @@ be a descendant of the grid when it is being dragged.
     .c-switch.is-disabled.is-active {
       /* [4] */ }
       .c-switch.is-disabled.is-active::before {
-        background-color: #dfe3e9; }
+        background-color: #273142; }
       .c-switch.is-disabled.is-active::after {
         right: 2px; }
 
@@ -8936,6 +8939,7 @@ be a descendant of the grid when it is being dragged.
 
 .c-switch__label {
   margin: 0 0 0 0.625rem;
+  color: #fff;
   font-size: 0.875rem;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -8952,34 +8956,35 @@ be a descendant of the grid when it is being dragged.
   padding: 0.59375rem 0.9375rem;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #dfe3e9;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  color: #354052;
+  background-color: #273142;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 400;
   resize: none; }
   .c-input::-webkit-input-placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: rgba(53, 64, 82, 0.5);
+    color: #7f8fa4;
     font-weight: 400;
     opacity: 0.5; }
   .c-input:-ms-input-placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: rgba(53, 64, 82, 0.5);
+    color: #7f8fa4;
     font-weight: 400;
     opacity: 0.5; }
   .c-input::-ms-input-placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: rgba(53, 64, 82, 0.5);
+    color: #7f8fa4;
     font-weight: 400;
     opacity: 0.5; }
   .c-input::placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: rgba(53, 64, 82, 0.5);
+    color: #7f8fa4;
     font-weight: 400;
     opacity: 0.5; }
   .c-input:focus {
@@ -8994,9 +8999,9 @@ be a descendant of the grid when it is being dragged.
     .c-input:focus::placeholder {
       opacity: 0.2; }
   .c-input.is-disabled, .c-input:disabled {
-    border-color: #dfe3e9;
-    background-color: #e6eaee;
-    color: rgba(53, 64, 82, 0.5);
+    border-color: #313D4F;
+    background-color: #273142;
+    color: rgba(255, 255, 255, 0.5);
     cursor: not-allowed; }
 
 textarea.c-input {
@@ -9219,8 +9224,8 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.9375rem 1.875rem;
-  border-top: 1px solid #e6eaee;
-  background-color: #EFF3F6; }
+  border-top: 1px solid #313D4F;
+  background-color: #1B2431; }
 
 /** 
  * Add a dark background to make modal dialog standout.
@@ -9309,7 +9314,7 @@ textarea.c-input {
       left: 50%;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
-      border-top-color: #1d2531; }
+      border-top-color: #353C48; }
   .c-popover.bs-popover-bottom {
     /* [1] */
     margin-top: 0.9375rem; }
@@ -9318,7 +9323,7 @@ textarea.c-input {
       left: 50%;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
-      border-bottom-color: #1d2531; }
+      border-bottom-color: #353C48; }
   .c-popover.bs-popover-right {
     /* [1] */
     margin-left: 0.9375rem; }
@@ -9327,7 +9332,7 @@ textarea.c-input {
       right: 100%;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%);
-      border-right-color: #1d2531; }
+      border-right-color: #353C48; }
   .c-popover.bs-popover-left {
     /* [1] */
     margin-right: 0.9375rem; }
@@ -9336,7 +9341,7 @@ textarea.c-input {
       left: 100%;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%);
-      border-left-color: #1d2531; }
+      border-left-color: #353C48; }
 
 /* ==========================================================================
    #ICONS
@@ -9367,9 +9372,9 @@ textarea.c-input {
 .c-profile-card {
   margin: 0 0 0.9375rem;
   padding: 0.625rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-profile-card__cover {
   height: 100px;
@@ -9438,7 +9443,7 @@ textarea.c-input {
 .c-profile-card__state-number {
   display: block;
   margin: 0;
-  color: #354052;
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 600; }
 
@@ -9450,7 +9455,7 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 0.625rem 12px;
-  border-bottom: 1px solid #e6eaee; }
+  border-bottom: 1px solid #313D4F; }
 
 /**
  * Use brand color utilities to set the background-color of every icon.
@@ -9499,9 +9504,9 @@ textarea.c-input {
 .c-event {
   margin-bottom: 1.875rem;
   padding: 0.625rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background: #fff; }
+  background: #273142; }
 
 .c-event__img {
   position: relative;
@@ -9696,17 +9701,17 @@ textarea.c-input {
 /* Style Variation - Light Sidebar
    ========================================================================== */
 .c-sidebar--light {
-  border-right: 1px solid #e6eaee;
+  border-right: 1px solid #313D4F;
   background-color: #fff;
   /**
 	 * 1. Add a slight shadow to the sidebar to make it popup a little bit
 	 *    on small screens.
 	 */ }
   .c-sidebar--light .c-sidebar__divider {
-    background-color: #e6eaee; }
+    background-color: #313D4F; }
   .c-sidebar--light .c-sidebar__brand {
-    border-color: #e6eaee;
-    color: #354052; }
+    border-color: #313D4F;
+    color: #fff; }
   .c-sidebar--light .c-sidebar__item.has-submenu > .c-sidebar__link::after {
     /* [1] */
     color: #B7C0CD; }
@@ -9716,13 +9721,13 @@ textarea.c-input {
     color: #7f8fa4; }
     .c-sidebar--light .c-sidebar__link.is-active {
       background-color: transparent;
-      color: #354052; }
+      color: #fff; }
       .c-sidebar--light .c-sidebar__link.is-active i {
         color: #2ea1f8; }
       .c-sidebar--light .c-sidebar__link.is-active:hover {
         color: #2ea1f8; }
     .c-sidebar--light .c-sidebar__link:hover {
-      color: #354052; }
+      color: #fff; }
   @media (max-width: 992px) {
     .c-sidebar--light {
       -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
@@ -9783,9 +9788,9 @@ textarea.c-input {
 .c-project {
   margin-bottom: 1.875rem;
   padding: 0.625rem 0.625rem 20px;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background: #fff; }
+  background: #273142; }
   .c-project:hover .c-project__profile:nth-child(n) {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
@@ -9881,15 +9886,15 @@ textarea.c-input {
   min-width: 100%;
   min-height: 120px;
   padding: 0.625rem 1.875rem 0.625rem 20px;
-  border: 1px solid #e6eaee;
-  color: #354052;
+  border: 1px solid #313D4F;
+  color: #fff;
   font-size: 0.875rem;
   overflow-y: auto;
   resize: none; }
 
 .c-post__toolbar {
   padding: 12px;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-top: 0;
   background-color: #FAFBFC;
   overflow: hidden; }
@@ -9915,7 +9920,7 @@ textarea.c-input {
     left: 0;
     width: 1px;
     height: 70px;
-    background-color: #e6eaee;
+    background-color: #313D4F;
     content: ""; }
   .c-post__time i {
     margin-right: 5px; }
@@ -9931,13 +9936,13 @@ textarea.c-input {
  */
 .c-stream {
   margin: 0 0 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-stream-item {
   padding: 0.9375rem 20px 0.9375rem 12px;
-  border-bottom: 1px solid #e6eaee; }
+  border-bottom: 1px solid #313D4F; }
 
 /**
  * Stream item header
@@ -9955,7 +9960,7 @@ textarea.c-input {
   margin-bottom: 0.3125rem; }
 
 .c-stream-item__name {
-  color: #354052;
+  color: #fff;
   font-weight: 400; }
 
 .c-stream-item__username {
@@ -10024,9 +10029,9 @@ textarea.c-input {
 .c-gallery-card {
   margin: 0 0 1.875rem;
   padding: 10px;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background: #fff; }
+  background: #273142; }
 
 .c-gallery-card__header {
   display: -webkit-box;
@@ -10138,9 +10143,9 @@ textarea.c-input {
    ========================================================================== */
 .c-landing-card {
   padding: 2.5rem 2.5rem 2.5rem 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #273142;
   text-align: center; }
 
 .c-landing-card__img {
@@ -10167,7 +10172,7 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.25rem 1.875rem;
-  border-top: 1px solid #e6eaee;
+  border-top: 1px solid #313D4F;
   font-size: 0;
   /* [1] */
   font-weight: 400;
@@ -10177,11 +10182,11 @@ textarea.c-input {
 	 * NOTE: `disabled` attribute must be added to <input>
 	 */ }
   .c-todo.is-disabled .c-todo__label {
-    color: rgba(53, 64, 82, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     cursor: default; }
     .c-todo.is-disabled .c-todo__label::before {
-      border-color: #dfe3e9;
-      background-color: #e6eaee;
+      border-color: #313D4F;
+      background-color: #273142;
       text-decoration: none; }
 
 /**
@@ -10210,7 +10215,7 @@ textarea.c-input {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 1.5625rem;
-    color: #354052;
+    color: #fff;
     font-size: 0.875rem;
     cursor: pointer; }
     .c-todo.is-completed .c-todo__input + .c-todo__label {
@@ -10461,14 +10466,14 @@ textarea.c-input {
   padding: 1.5625rem 1.875rem;
   border: 2px solid #2ea1f8;
   border-radius: 8px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-credit-card__logo {
   margin-bottom: 0.9375rem; }
 
 .c-credit-card__number {
   margin-bottom: 0.3125rem;
-  color: #354052;
+  color: #fff;
   font-size: 1.25rem;
   font-weight: 600; }
 
@@ -10484,9 +10489,9 @@ textarea.c-input {
   max-height: 195px;
   padding: 30px 0;
   padding-left: calc(50% + 60px);
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-credit-card__user-title {
   margin-bottom: 20px;
@@ -10504,9 +10509,9 @@ textarea.c-input {
   position: relative;
   margin-bottom: 1.875rem;
   padding: 1.25rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-search-result__avatar {
   margin-right: 1.25rem; }
@@ -10562,7 +10567,7 @@ textarea.c-input {
   margin-bottom: 1.875rem;
   padding: 1.25rem;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-search-form__label {
   margin-bottom: 0.625rem;
@@ -10583,9 +10588,9 @@ textarea.c-input {
  */
 .c-card {
   position: relative;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 /**
  * 1. Display a scrollbar if the content of the card is larger than the 
@@ -10600,7 +10605,7 @@ textarea.c-input {
  */
 .c-card__header {
   padding: 1.5625rem 1.875rem;
-  border-bottom: 1px solid #e6eaee;
+  border-bottom: 1px solid #313D4F;
   background-color: #fafbfc; }
 
 /**
@@ -10654,7 +10659,7 @@ textarea.c-input {
   margin: 0 0 1.875rem;
   border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #273142;
   overflow: hidden; }
 
 .c-graph-card__content {
@@ -10688,7 +10693,7 @@ textarea.c-input {
 .c-graph-card__footer {
   height: 100%;
   padding: 0.9375rem 1.875rem;
-  border-top: #e6eaee solid 1px;
+  border-top: #313D4F solid 1px;
   background-color: #fafbfc; }
 
 /* ==========================================================================
@@ -10741,9 +10746,9 @@ textarea.c-input {
 .c-progress-card {
   margin: 0 0 1.875rem;
   padding: 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-progress-card__title {
   margin: 0;
@@ -10810,10 +10815,10 @@ textarea.c-input {
   height: 100%;
   margin: 0;
   padding: 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-top: 0;
   /* [1] */
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-panel__title {
   margin-bottom: 1.875rem;
@@ -10823,7 +10828,7 @@ textarea.c-input {
   display: block;
   height: 1px;
   margin: 1.875rem 0;
-  background-color: #e6eaee;
+  background-color: #313D4F;
   content: " ";
   opacity: 0.5; }
 
@@ -10855,9 +10860,9 @@ textarea.c-input {
           justify-content: flex-start;
   margin-bottom: 1.875rem;
   padding: 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-state-card__icon {
   display: -webkit-box;
@@ -11050,9 +11055,9 @@ textarea.c-input {
   margin: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
   @media (max-width: 576px) {
     .c-login {
       width: 95%;
@@ -11062,7 +11067,7 @@ textarea.c-input {
 .c-login__head {
   position: relative;
   padding: 3.125rem 0 1.875rem;
-  border-bottom: 1px solid #e6eaee;
+  border-bottom: 1px solid #313D4F;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   background-color: #fafbfc; }
@@ -11233,9 +11238,9 @@ textarea.c-input {
  * used in `home-overview.html`
  */
 .c-project-card {
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #273142;
   overflow: hidden; }
 
 .c-project-card__img {
@@ -11243,7 +11248,7 @@ textarea.c-input {
 
 .c-project-card__head {
   padding: 1.25rem 1.875rem;
-  border-bottom: 1px solid #e6eaee; }
+  border-bottom: 1px solid #313D4F; }
 
 .c-project-card__title {
   margin: 0;
@@ -11282,7 +11287,7 @@ textarea.c-input {
   width: 100%;
   padding: 5px 0 5px 20px;
   border-radius: 4px;
-  color: #354052;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 400; }
   .c-menu__link:hover {
@@ -11344,7 +11349,7 @@ textarea.c-input {
 .c-board__content {
   position: relative;
   padding: 10px;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   background-color: #f5f8fa;
   overflow-y: auto; }
@@ -11419,9 +11424,9 @@ textarea.c-input {
    ========================================================================== */
 .c-task {
   margin-bottom: 0.625rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #273142;
   cursor: -webkit-grabbing;
   cursor: grabbing;
   overflow: hidden; }
@@ -11434,7 +11439,7 @@ textarea.c-input {
 .c-task__content {
   margin: 0;
   padding: 0.9375rem 0.625rem 0.625rem;
-  color: #354052;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 600; }
 
@@ -11716,7 +11721,7 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.9375rem 0;
-  border-bottom: 1px solid #e6eaee; }
+  border-bottom: 1px solid #313D4F; }
   .c-fileitem:first-child {
     padding-top: 0; }
   .c-fileitem:last-child {
@@ -11746,7 +11751,7 @@ textarea.c-input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #354052;
+  color: #fff;
   font-weight: 600; }
   .c-fileitem__name > img {
     margin-right: 8px; }
@@ -11781,10 +11786,10 @@ textarea.c-input {
 .c-invoice {
   position: relative;
   padding: 6.25rem 6.25rem 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
-  color: #354052;
+  background-color: #273142;
+  color: #fff;
   -webkit-box-shadow: 0 0 10px 1px rgba(53, 64, 82, 0.1);
           box-shadow: 0 0 10px 1px rgba(53, 64, 82, 0.1); }
   @media (max-width: 768px) {
@@ -11910,7 +11915,7 @@ textarea.c-input {
           justify-content: space-between;
   margin-top: 6.25rem;
   padding-top: 1.875rem;
-  border-top: 1px solid #e6eaee; }
+  border-top: 1px solid #313D4F; }
   @media (max-width: 576px) {
     .c-invoice__footer {
       -webkit-box-orient: vertical;
@@ -11963,7 +11968,7 @@ textarea.c-input {
     left: 6px;
     width: 1px;
     height: 100%;
-    background-color: #e6eaee;
+    background-color: #313D4F;
     content: ""; }
   .c-feed.has-icons {
     padding-left: 47px; }
@@ -12020,7 +12025,7 @@ textarea.c-input {
   display: inline-block;
   margin: 0.625rem 0;
   padding: 0.625rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   background-color: #fafbfc; }
 
@@ -12119,7 +12124,7 @@ textarea.c-input {
 
 .c-map__country,
 .c-map__number {
-  color: #354052; }
+  color: #fff; }
 
 /* ==========================================================================
    #CANDIDATE
@@ -12130,9 +12135,9 @@ textarea.c-input {
 .c-candidate {
   margin-bottom: 1.875rem;
   padding: 0.9375rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 /**
  * 1. Remove weird extra space.
@@ -12227,9 +12232,9 @@ textarea.c-input {
  */
 .c-stage {
   margin-bottom: 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #273142; }
 
 .c-stage__header {
   display: -webkit-box;
@@ -12242,7 +12247,7 @@ textarea.c-input {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.9375rem 1.875rem;
-  border-bottom: 1px solid #e6eaee;
+  border-bottom: 1px solid #313D4F;
   cursor: pointer; }
   .c-stage__header:hover {
     text-decoration: none; }
@@ -12257,7 +12262,7 @@ textarea.c-input {
   width: 30px;
   height: 30px;
   margin-right: 0.625rem;
-  border: #e6eaee solid 1px;
+  border: #313D4F solid 1px;
   border-radius: 100%;
   color: #7f8fa4;
   font-size: 14px;
@@ -12265,7 +12270,7 @@ textarea.c-input {
   text-align: center; }
 
 .c-stage__panel {
-  border-bottom: 1px solid #e6eaee;
+  border-bottom: 1px solid #313D4F;
   /**
 	 * Bootstrap classes used to show and hide sidebar submenu.
 	 * This behaviour depends on collapse.js plugin.
@@ -12333,7 +12338,7 @@ textarea.c-input {
   .c-counter-nav__link:hover {
     text-decoration: none; }
   .c-counter-nav__link.is-active {
-    color: #354052; }
+    color: #fff; }
 
 .c-counter-nav__counter {
   display: -webkit-inline-box;
@@ -12348,7 +12353,7 @@ textarea.c-input {
   width: 28px;
   height: 28px;
   margin-right: 10px;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 100%;
   background-color: #fafbfc;
   color: #7f8fa4;
@@ -12408,7 +12413,7 @@ textarea.c-input {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 1.875rem;
-  border-bottom: 1px solid #e6eaee; }
+  border-bottom: 1px solid #313D4F; }
 
 .c-chat-dialogue__team {
   position: relative;
@@ -12482,9 +12487,9 @@ textarea.c-input {
   text-align: right; }
   .c-chat-dialogue__message--self .c-chat-dialogue__message-content {
     margin-left: auto;
-    border: 1px solid #e6eaee;
+    border: 1px solid #313D4F;
     background: #fff;
-    color: #354052; }
+    color: #fff; }
     .c-chat-dialogue__message--self .c-chat-dialogue__message-content::before {
       left: 100%;
       border: 6px solid transparent;
@@ -12492,7 +12497,7 @@ textarea.c-input {
 
 .c-chat-dialogue__footer {
   padding: 1.25rem;
-  border-top: 1px solid #e6eaee;
+  border-top: 1px solid #313D4F;
   background-color: #fff; }
 
 /* ==========================================================================
@@ -12990,7 +12995,7 @@ textarea.c-input {
   color: #fd9a18 !important; }
 
 .u-color-primary {
-  color: #354052 !important; }
+  color: #fff !important; }
 
 .u-color-secondary {
   color: #fff !important; }
@@ -13112,16 +13117,16 @@ textarea.c-input {
  * Add borders
  */
 .u-border-top {
-  border-top: 1px solid #e6eaee !important; }
+  border-top: 1px solid #313D4F !important; }
 
 .u-border-right {
-  border-right: 1px solid #e6eaee !important; }
+  border-right: 1px solid #313D4F !important; }
 
 .u-border-bottom {
-  border-bottom: 1px solid #e6eaee !important; }
+  border-bottom: 1px solid #313D4F !important; }
 
 .u-border-left {
-  border-left: 1px solid #e6eaee !important; }
+  border-left: 1px solid #313D4F !important; }
 
 /**
  * Remove borders

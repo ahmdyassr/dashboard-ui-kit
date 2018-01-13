@@ -1,0 +1,109 @@
+///* ========================================================================
+//   #DARK THEME
+//   ======================================================================== */
+
+//
+// Dark Theme SCSS Variables
+//
+// We override default scss variabls to apply the new dark colors.
+//
+
+// global
+$body-background-color: #1B2431;
+$heading-color: #fff;
+$base-background-color: #273142;
+$base-border-color: #313D4F;
+
+// text
+$text-color: $white;
+$text-strong-color: $gunmetal-200;
+
+// navbar
+$navbar-background-color: $base-background-color;
+$navbar-border-color: $base-border-color;
+
+// inputs
+$input-background-color: $base-background-color;
+$input-disabled-background-color: $base-background-color;
+$input-disabled-color: rgba($white, 0.5);
+$input-disabled-border-color: $base-border-color;
+
+$input-placeholder-color: $color-mute;
+$input-border-color: $base-border-color;
+$input-focus-color: $white;
+
+
+// fields
+$field-addon-border-color: $base-border-color;
+$field-addon-gradient: #273142, #273142;
+
+
+// choices
+$choice-color: $white;
+$choice-disabled-color: rgba($white, .5);
+
+$choice-input-border-color: $base-border-color;
+$choice-input-background-color: $base-background-color;
+
+$choice-disabled-border-color: $base-border-color;
+$choice-disabled-background-color: $base-background-color;
+
+
+// Switches
+$switch-label-color: $white;
+$switch-background-color: $base-background-color;
+$switch-active-background-color: $green-400;
+
+// toggles
+$toggle-btn-background-color: $base-background-color;
+$toggle-btn-border-color: $base-border-color;
+
+// tooltips
+$tooltip-background-color: #353C48;
+
+
+// pagination
+$pagination-background-color: #273142;
+$pagination-color: $white;
+
+$pagination-control-background-color: #273142;
+$pagination-control-color: $white;
+$pagination-control-border-color: $base-border-color;
+
+$pagination-link-background-color: #273142;
+$pagination-link-border-color: $base-border-color;
+$pagination-link-color: rgba($white, 0.5);
+$pagination-link-active-color: $white;
+
+
+// progress
+$progress-background-color: rgba($base-border-color, .3);
+
+// tabs
+$tabs-list-background-color: #273142;
+$tabs-list-border-color: #313D4F;
+
+$tabs-link-hover-color: $white;
+
+$tabs-link-active-color: $white;
+
+$tabs-pane-background-color: #273142;
+$tabs-pane-border-color: $base-border-color;
+$tabs-pane-color: $text-color;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

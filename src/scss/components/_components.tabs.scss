@@ -85,11 +85,12 @@
 	display: none;
 	margin: $tabs-pane-margin;
 	padding: $tabs-pane-padding;
-	border: $tabs-pane-border-width solid $grey-400;
+	border: $tabs-pane-border-width solid $tabs-pane-border-color;
 	border-top: 0;
 	border-bottom-left-radius: $tabs-pane-border-radius;
 	border-bottom-right-radius: $tabs-pane-border-radius;
 	background-color: $tabs-pane-background-color;
+	color: $tabs-pane-color;
 
 	&.is-active,
 	&.active {
