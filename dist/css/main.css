@@ -148,6 +148,10 @@ p {
 strong {
   color: #fff; }
 
+dl dt,
+dl dd {
+  color: #fff; }
+
 /**
  * 1. Remove the gray background on active links in IE 10.
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
@@ -7533,7 +7537,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 4px;
-  background-color: #354052; }
+  background-color: #fff; }
   .c-nav-toggle__bar:first-child {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px); }
@@ -9497,6 +9501,7 @@ textarea.c-input {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 0.625rem;
+  color: #fff;
   font-size: 0.875rem; }
   .c-profile-card__meta-item > i {
     margin-right: 0.75rem;
@@ -9776,7 +9781,7 @@ textarea.c-input {
   -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 4px;
-  background-color: #354052; }
+  background-color: #fff; }
   .c-sidebar-toggle__bar:first-child {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px); }
@@ -9892,6 +9897,7 @@ textarea.c-input {
   min-height: 120px;
   padding: 0.625rem 1.875rem 0.625rem 20px;
   border: 1px solid #313D4F;
+  background-color: #273142;
   color: #fff;
   font-size: 0.875rem;
   overflow-y: auto;
@@ -9901,7 +9907,7 @@ textarea.c-input {
   padding: 12px;
   border: 1px solid #313D4F;
   border-top: 0;
-  background-color: #FAFBFC;
+  background-color: #313C4E;
   overflow: hidden; }
 
 /**
@@ -10291,12 +10297,18 @@ textarea.c-input {
 /* 1. Messages
    ========================================================================== */
 /**
+ * A container for the messanger app.
+ */
+.c-messanger {
+  background-color: #273142; }
+
+/**
  * A container for inbox messages.
  */
 .c-messages {
-  overflow-y: auto;
   height: calc(100vh - (69px + 70px));
-  border-right: 1px solid #E3E8EF; }
+  border-right: 1px solid #313D4F;
+  overflow-y: auto; }
   .c-messages::-webkit-scrollbar {
     /* [2] */
     width: 6px;
@@ -10310,8 +10322,8 @@ textarea.c-input {
   display: block;
   position: relative;
   padding: 15px 20px 15px 30px;
-  border-bottom: 1px solid #E3E8EF;
-  color: #354052; }
+  border-bottom: 1px solid #313D4F;
+  color: #fff; }
   .c-message:hover {
     text-decoration: none; }
   .c-message.is-active {
@@ -10319,19 +10331,19 @@ textarea.c-input {
 
 .c-message__title {
   margin: 0;
-  color: #354052;
+  color: #fff;
   font-size: 16px; }
 
 .c-message__title-meta {
   display: block;
-  color: #7F8FA4;
+  color: #7f8fa4;
   font-size: 0.875rem; }
 
 .c-message__time {
   position: absolute;
   top: 15px;
   right: 20px;
-  color: #7F8FA4;
+  color: #7f8fa4;
   font-size: 14px; }
 
 /**
@@ -10396,32 +10408,35 @@ textarea.c-input {
 .c-chat__message-author {
   display: inline-block;
   margin-bottom: 10px;
-  color: #354052;
+  color: #fff;
   font-size: 1rem;
   font-weight: 500; }
 
 .c-chat__message-time {
   margin-left: 8px;
-  color: #7F8FA4;
+  color: #7f8fa4;
   font-size: 14px; }
 
 .c-chat__message-content {
   margin: 0;
-  color: #354052; }
+  color: #fff; }
 
+/**
+ * Chat Divider
+ */
 .c-chat__divider {
-  position: relative;
   display: block;
-  text-align: center;
-  color: #7F8FA4;
-  font-size: 0.875rem; }
-  .c-chat__divider:before, .c-chat__divider:after {
-    content: ' ';
+  position: relative;
+  color: #7f8fa4;
+  font-size: 0.875rem;
+  text-align: center; }
+  .c-chat__divider::before, .c-chat__divider::after {
     position: absolute;
     top: 50%;
     width: 42%;
     height: 1px;
-    background-color: #E3E8EF; }
+    background-color: #313D4F;
+    content: ""; }
   .c-chat__divider::before {
     left: 0; }
   .c-chat__divider::after {
@@ -10447,7 +10462,7 @@ textarea.c-input {
   height: 60px;
   margin: 0 auto 20px;
   padding: 0;
-  background-color: #fff; }
+  background-color: #273142; }
   .c-chat__composer .c-field__addon {
     padding: 5px 25px; }
 
@@ -11356,7 +11371,7 @@ textarea.c-input {
   padding: 10px;
   border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #f5f8fa;
+  background-color: #313C4E;
   overflow-y: auto; }
 
 .c-board__btn {
@@ -12004,7 +12019,7 @@ textarea.c-input {
       width: 12px;
       height: 100%;
       border-radius: 0;
-      background-color: #fff;
+      background-color: #273142;
       content: ""; }
   .c-feed__item.has-icon::before {
     display: none; }
@@ -12165,7 +12180,7 @@ textarea.c-input {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 0.9375rem;
-  border-bottom: 1px solid #F2F4F6; }
+  border-bottom: 1px solid #313D4F; }
 
 .c-candidate__avatar {
   display: -webkit-inline-box;
@@ -12176,7 +12191,7 @@ textarea.c-input {
       flex-shrink: 0;
   margin-right: 0.9375rem;
   margin-left: 0.625rem;
-  border: 4px solid #fff;
+  border: 4px solid #273142;
   border-radius: 100%;
   overflow: hidden; }
 
@@ -12291,7 +12306,7 @@ textarea.c-input {
     transition: height 0.3s;
     overflow: hidden; }
   .c-stage__panel--mute {
-    background-color: #FAFBFC; }
+    background-color: #313C4E; }
 
 .c-stage__label {
   display: -webkit-box;
@@ -12552,7 +12567,7 @@ textarea.c-input {
   color: #45B854 !important; }
 
 .u-text-dark {
-  color: #354052; }
+  color: #fff; }
 
 .u-text-white {
   color: #fff; }

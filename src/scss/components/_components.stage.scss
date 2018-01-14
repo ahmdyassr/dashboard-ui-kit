@@ -69,7 +69,7 @@
 	}
 
 	&--mute {
-		background-color: #FAFBFC;
+		background-color: $secondary-background-color;
 	}
 }
 
@@ -89,5 +89,3 @@
 .c-stage__label-title {
 	color: $white;
 }
-
-

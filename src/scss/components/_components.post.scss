@@ -19,6 +19,7 @@
 	min-height: 120px;
 	padding: $spacer-xsmall $spacer $spacer-xsmall 20px;
 	border: $base-border-width solid $base-border-color;
+	background-color: $base-background-color;
 	color: $heading-color;
 	font-size: $text-font-size;
 	overflow-y: auto;
@@ -29,7 +30,7 @@
 	padding: 12px;
 	border: $base-border-width solid $base-border-color;
 	border-top: 0;
-	background-color: #FAFBFC;
+	background-color: $secondary-background-color;
 	overflow: hidden;
 }
 

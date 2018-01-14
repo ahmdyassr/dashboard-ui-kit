@@ -50,6 +50,11 @@ strong {
 	color: $text-strong-color;
 }
 
+dl dt,
+dl dd {
+	color: $text-color;
+}
+
 
 /**
  * 1. Remove the gray background on active links in IE 10.

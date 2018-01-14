@@ -15,22 +15,30 @@
    ========================================================================== */
 
 /**
+ * A container for the messanger app.
+ */
+
+.c-messanger {
+	background-color: $base-background-color;
+}
+
+/**
  * A container for inbox messages.
  */
 
 .c-messages {
 	@include scrollbar;
-	overflow-y: auto;
 	height: calc(100vh - (69px + 70px));
-	border-right: $base-border-width solid #E3E8EF;
+	border-right: $base-border-width solid $base-border-color;
+	overflow-y: auto;
 }
 
 .c-message {
 	display: block;
 	position: relative;
 	padding: 15px 20px 15px 30px;
-	border-bottom: $base-border-width solid #E3E8EF;
-	color: #354052;
+	border-bottom: $base-border-width solid $base-border-color;
+	color: $heading-color;
 
 	&:hover {
 		text-decoration: none;
@@ -43,13 +51,13 @@
 
 .c-message__title {
 	margin: 0;
-	color: #354052;
+	color: $heading-color;
 	font-size: 16px;
 }
 
 .c-message__title-meta {
 	display: block;
-	color: #7F8FA4;
+	color: $color-mute;
 	font-size: $text-font-size;
 }
 
@@ -57,7 +65,7 @@
 	position: absolute;
 	top: 15px;
 	right: 20px;
-	color: #7F8FA4;
+	color: $color-mute;
 	font-size: 14px;
 }
 
@@ -114,40 +122,42 @@
 .c-chat__message-author {
 	display: inline-block;
 	margin-bottom: 10px;
-	color: #354052;
+	color: $heading-color;
 	font-size: $h6-font-size;
 	font-weight: $font-weight-semibold;
 }
 
 .c-chat__message-time {
 	margin-left: 8px;
-	color: #7F8FA4;
+	color: $color-mute;
 	font-size: 14px;
 }
 
 .c-chat__message-content {
 	margin: 0;
-	color: #354052;
+	color: $text-color;
 }
 
-//
-// DEVELOPER NOTE: NEEDS IMPROVEMENTS
-//
-.c-chat__divider {
-	position: relative;
-	display: block;
-	text-align: center;
-	color: #7F8FA4;
-	font-size: $text-font-size;
 
-	&:before,
-	&:after {
-		content: ' ';
+/**
+ * Chat Divider
+ */
+
+.c-chat__divider {
+	display: block;
+	position: relative;
+	color: $color-mute;
+	font-size: $text-font-size;
+	text-align: center;
+
+	&::before,
+	&::after {
 		position: absolute;
 		top: 50%; // at the center
 		width: 42%;
 		height: 1px;
-		background-color: #E3E8EF;
+		background-color: $base-border-color;
+		content: "";
 	}
 
 	&::before {
@@ -181,7 +191,7 @@
 	height: 60px;
 	margin: 0 auto 20px;
 	padding: 0;
-	background-color: #fff;
+	background-color: $base-background-color;
 
 	// customize addon to suite composer's design
 	.c-field__addon {

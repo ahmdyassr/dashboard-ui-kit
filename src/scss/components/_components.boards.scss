@@ -54,7 +54,7 @@
 	padding: 10px;
 	border: $base-border-width solid $base-border-color;
 	border-radius: $base-border-radius;
-	background-color: $grey-100;
+	background-color: $secondary-background-color;// $grey-100;
 	overflow-y: auto;
 }
 // sass-lint:enable no-duplicate-properties

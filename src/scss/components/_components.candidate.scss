@@ -34,7 +34,7 @@
 	top: -$spacer-small;
 	align-items: flex-end;
 	padding-bottom: $spacer-small;
-	border-bottom: $base-border-width solid #F2F4F6;
+	border-bottom: $base-border-width solid $base-border-color;
 }
 
 
@@ -44,7 +44,7 @@
 	flex-shrink: 0;
 	margin-right: $spacer-small;
 	margin-left: $spacer-xsmall;
-	border: 4px solid $white;
+	border: 4px solid $base-background-color;
 	border-radius: 100%;
 	overflow: hidden;
 }
