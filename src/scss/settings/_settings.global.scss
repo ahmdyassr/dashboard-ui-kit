@@ -122,11 +122,11 @@ $text-small-font-size: rem(12px) !default;
 $text-font-size: rem(14px) !default;
 $text-large-font-size: rem(16px) !default;
 
-$text-color: $gunmetal-200;
-$text-strong-color: $gunmetal-200;
-$text-mark-color: $white;
-$text-mark-background-color: #ff0;
-$text-mute-color: $color-mute;
+$text-color: $gunmetal-200 !default;
+$text-strong-color: $gunmetal-200 !default;
+$text-mark-color: $white !default;
+$text-mark-background-color: #ff0 !default;
+$text-mute-color: $color-mute !default;
 
 // Headings
 $h1-font-size: rem(36px) !default;
@@ -137,8 +137,8 @@ $h5-font-size: rem(18px) !default;
 $h6-font-size: rem(16px) !default;
 
 $heading-margin-bottom: rem(8px) !default;
-$heading-color: $gunmetal-200;
-$heading-font-weight: $font-weight-semibold;
+$heading-color: $gunmetal-200 !default;
+$heading-font-weight: $font-weight-semibold !default;
 
 // Links
 $link-color: $blue-300 !default;
@@ -176,11 +176,11 @@ $z-index-500: 500 !default; // over everything
 // 6. Spacing
 // ========================================================================== */
 
-$spacer-xsmall: rem(10px);
-$spacer-small:  rem(15px);
-$spacer:        rem(30px);
-$spacer-large:  rem(50px);
-$spacer-xlarge: rem(100px);
+$spacer-xsmall: rem(10px) !default;
+$spacer-small:  rem(15px) !default;
+$spacer:        rem(30px) !default;
+$spacer-large:  rem(50px) !default;
+$spacer-xlarge: rem(100px) !default;
 
 
 //
@@ -190,13 +190,13 @@ $spacer-xlarge: rem(100px);
 // Use these breakpoints with media-queries to create responsive website, these
 // numbers are based on Bootstrap's grid breakpoints
 
-$breakpoint-xs: 0;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+$breakpoint-xs: 0 !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
 
-$breakpoint-mobile:  $breakpoint-sm;
-$breakpoint-tablet:  $breakpoint-md;
-$breakpoint-desktop: $breakpoint-lg;
-$breakpoint-wide:    $breakpoint-xl;
+$breakpoint-mobile:  $breakpoint-sm !default;
+$breakpoint-tablet:  $breakpoint-md !default;
+$breakpoint-desktop: $breakpoint-lg !default;
+$breakpoint-wide:    $breakpoint-xl !default;

@@ -14,7 +14,7 @@
 	position: relative;
     align-items: center;
     justify-content: center;
-	background-color: $white;
+	background-color: $base-background-color;
 	color: $color-mute;
 	border: $base-border-width solid $base-border-color;
 	border-radius: $base-border-radius;	
@@ -49,6 +49,3 @@
 	font-size: 30px;
 	color: #E2E3E9;
 }
-
-
-

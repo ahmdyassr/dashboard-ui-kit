@@ -77,7 +77,7 @@
 
 .c-table--zebra {
 	tbody tr:nth-of-type(odd) {
-		background-color: rgba(#e6eaee, 0.3);
+		background-color: $table-zebra-row-background-color;
 	}
 }
 
@@ -88,7 +88,7 @@
 
 .c-table--highlight {
 	tbody tr:hover {
-		background-color: rgba(#e6eaee, 0.3);
+		background-color: $table-highlight-row-background-color;
 	}
 }
 
@@ -105,18 +105,18 @@
 .c-table__title {
 	position: relative;
 	padding: 25px 30px;
-	border: 1px solid #E6EAEE;
+	border: $base-border-width solid $base-border-color;
 	border-bottom: 0;
 	border-radius: 4px 4px 0 0;
-	background-color: #fff;
-	color: #354052;
+	background-color: $table-title-background-color;
+	color: $table-title-color;
 	font-size: 24px;
 	text-align: left;
 
 	small {
 		display: inline-block;
 		margin-left: 10px;
-		color: #7F8FA4;
+		color: $color-mute;
 		font-size: 14px;
 
 		// divider

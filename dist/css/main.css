@@ -146,7 +146,7 @@ p {
   font-size: 0.875rem; }
 
 strong {
-  color: #354052; }
+  color: #fff; }
 
 /**
  * 1. Remove the gray background on active links in IE 10.
@@ -5992,20 +5992,20 @@ be a descendant of the grid when it is being dragged.
  * Instead of modifying `_select2.scss` directly, we add Dashboard's custom
  * styles for select2 plugin here.
  *
- * The code is a littly messy because of the default select2 css styles is 
+ * The code is a littly messy because the default select2 css styles is 
  * difficult to be overriden.
  *
  * This file depends on scss variables from `settings.select` file located in:
  * [ settings/_settings.select.scss ]
  */
 .select2-container--default .select2-selection--single {
-  background: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f2f4f7));
-  background: linear-gradient(to bottom, #fff, #f2f4f7);
+  background: #273142;
+  background: -webkit-gradient(linear, left top, left bottom, from(#273142), to(#273142));
+  background: linear-gradient(to bottom, #273142, #273142);
   height: 39px;
-  border: 1px solid #dfe3e9;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  color: rgba(53, 64, 82, 0.5);
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 500;
   outline: 0; }
@@ -6020,7 +6020,8 @@ be a descendant of the grid when it is being dragged.
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 39px;
   padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-left: 0.9375rem;
+  color: #fff; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 39px; }
@@ -6031,7 +6032,7 @@ be a descendant of the grid when it is being dragged.
 
 .select2-dropdown {
   margin: 5px 0;
-  background-color: #fff;
+  background-color: #273142;
   border: 1px solid #313D4F;
   border-radius: 4px;
   border-top-right-radius: 4px;
@@ -6046,16 +6047,17 @@ be a descendant of the grid when it is being dragged.
 
 .select2-results__option {
   padding: 0.625rem 0.9375rem;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  color: #fff; }
   .select2-results__option + .select2-results__option {
     border-top: 1px solid #313D4F; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #fff;
+  background-color: #313D4F;
   color: #2ea1f8; }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
-  background-color: #F1F4F8;
+  background-color: #313D4F;
   color: #2ea1f8; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -6118,8 +6120,8 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 3px;
-  background-color: #fff;
-  border-color: #DFE3E9; }
+  background-color: #273142;
+  border-color: #313D4F; }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
   border: 1px solid #2ea2f8; }
@@ -6138,9 +6140,9 @@ be a descendant of the grid when it is being dragged.
   margin-right: 3px;
   margin-top: 3px;
   padding: 4px 30px 4px 12px;
-  background-color: #F1F4F8;
-  border-color: #D5DCE6;
-  color: #354052; }
+  background-color: rgba(46, 161, 248, 0.5);
+  border-color: #2ea1f8;
+  color: #fff; }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   position: absolute;
@@ -6152,10 +6154,12 @@ be a descendant of the grid when it is being dragged.
  * Disabled Select
  */
 .select2-container--default.select2-container--disabled .select2-selection--single {
-  border-color: #DFE3E9;
-  background: #EAEEF1;
-  background-color: #EAEEF1;
-  color: rgba(53, 64, 82, 0.5); }
+  border-color: #313D4F;
+  background: #273142;
+  background-color: #273142;
+  color: rgba(255, 255, 255, 0.5); }
+  .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__rendered {
+    color: rgba(255, 255, 255, 0.5); }
 
 /*
  * The MIT License
@@ -6483,7 +6487,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #fff;
+  background-color: #273142;
   color: #7f8fa4;
   border: 1px solid #313D4F;
   border-radius: 4px;
@@ -7154,13 +7158,13 @@ be a descendant of the grid when it is being dragged.
       content: "\f107"; }
   .c-btn.is-disabled, .c-btn:disabled {
     /* [4] */
-    border-color: #e6eaee;
-    background: #f5f8fa;
-    color: rgba(53, 64, 82, 0.5); }
+    border-color: #313D4F;
+    background: #222C3C;
+    color: #354052; }
     .c-btn.is-disabled:hover, .c-btn.is-disabled:focus, .c-btn:disabled:hover, .c-btn:disabled:focus {
-      border-color: #e6eaee;
-      background: #f5f8fa;
-      color: rgba(53, 64, 82, 0.5);
+      border-color: #313D4F;
+      background: #222C3C;
+      color: #354052;
       cursor: not-allowed; }
 
 .c-btn--fullwidth {
@@ -7185,38 +7189,38 @@ be a descendant of the grid when it is being dragged.
 /**
  * Buttons have a simple, nice gradient on the background, we use 
  * sass's `darken()` method to generate a dark shade of the requested color, 
- * then we use our `linear-gradient` mixin to generate the background gradient.
+ * then we use our `linear-gradient` mixin to generate the gradient background.
  */
 .c-btn--primary {
-  background: #475364;
-  background: -webkit-gradient(linear, left top, left bottom, from(#475364), to(#273142));
-  background: linear-gradient(to bottom, #475364, #273142);
+  background: #273142;
+  background: -webkit-gradient(linear, left top, left bottom, from(#273142), to(#273142));
+  background: linear-gradient(to bottom, #273142, #273142);
   border-color: #354052; }
   .c-btn--primary:hover {
-    background: #3f4958;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3f4958), to(#151b24));
-    background: linear-gradient(to bottom, #3f4958, #151b24); }
+    background: #1f2735;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1f2735), to(#1f2735));
+    background: linear-gradient(to bottom, #1f2735, #1f2735); }
   .c-btn--primary:focus {
-    background: #3a4452;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3a4452), to(#12161e));
-    background: linear-gradient(to bottom, #3a4452, #12161e); }
+    background: #1c232f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1c232f), to(#1c232f));
+    background: linear-gradient(to bottom, #1c232f, #1c232f); }
 
 .c-btn--secondary {
-  background: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f2f4f7));
-  background: linear-gradient(to bottom, #fff, #f2f4f7);
-  border-color: #dfe3e9;
-  color: #354052; }
+  background: #506072;
+  background: -webkit-gradient(linear, left top, left bottom, from(#506072), to(#506072));
+  background: linear-gradient(to bottom, #506072, #506072);
+  border-color: #506072;
+  color: #fff; }
   .c-btn--secondary:hover {
-    background: #fcfcfc;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eceff3));
-    background: linear-gradient(to bottom, #fcfcfc, #eceff3);
-    color: #354052; }
+    background: #4e5d6f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4e5d6f), to(#4c5b6c));
+    background: linear-gradient(to bottom, #4e5d6f, #4c5b6c);
+    color: #fff; }
   .c-btn--secondary:focus {
-    background: #fafafa;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e9ecf1));
-    background: linear-gradient(to bottom, #fafafa, #e9ecf1);
-    color: #354052; }
+    background: #4c5b6c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#4c5b6c), to(#4a5869));
+    background: linear-gradient(to bottom, #4c5b6c, #4a5869);
+    color: #fff; }
 
 .c-btn--info {
   background: #2ea1f8;
@@ -7548,9 +7552,9 @@ be a descendant of the grid when it is being dragged.
   display: table;
   width: 100%;
   max-width: 100%;
-  border: 1px solid #E6EAEE;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #273142;
   border-collapse: collapse;
   /* [1] */ }
 
@@ -7602,13 +7606,13 @@ be a descendant of the grid when it is being dragged.
  * Use `c-table--zebra` to add zebra-styling to table rows inside the table.
  */
 .c-table--zebra tbody tr:nth-of-type(odd) {
-  background-color: rgba(230, 234, 238, 0.3); }
+  background-color: #313D4F; }
 
 /**
  * Highlight table row on hover.
  */
 .c-table--highlight tbody tr:hover {
-  background-color: rgba(230, 234, 238, 0.3); }
+  background-color: #313D4F; }
 
 .c-table--fixed {
   table-layout: fixed; }
@@ -7620,17 +7624,17 @@ be a descendant of the grid when it is being dragged.
 .c-table__title {
   position: relative;
   padding: 25px 30px;
-  border: 1px solid #E6EAEE;
+  border: 1px solid #313D4F;
   border-bottom: 0;
   border-radius: 4px 4px 0 0;
-  background-color: #fff;
-  color: #354052;
+  background-color: #313D4F;
+  color: #fff;
   font-size: 24px;
   text-align: left; }
   .c-table__title small {
     display: inline-block;
     margin-left: 10px;
-    color: #7F8FA4;
+    color: #7f8fa4;
     font-size: 14px; }
     .c-table__title small::before {
       display: inline-block;
@@ -7660,7 +7664,7 @@ be a descendant of the grid when it is being dragged.
  */
 .c-table__head--slim {
   padding: 0;
-  background-color: #F5F8FA; }
+  background-color: #273142; }
   .c-table__head--slim .c-table__cell {
     padding: 10px 0 10px 30px; }
 
@@ -7668,9 +7672,9 @@ be a descendant of the grid when it is being dragged.
  * Table Row
  */
 .c-table__row {
-  border-top: 1px solid #E6EAEE;
+  border-top: 1px solid #313D4F;
   /* [1] */
-  border-bottom: 1px solid #E6EAEE;
+  border-bottom: 1px solid #313D4F;
   /* [1] */ }
   .c-table__row:last-child {
     border-bottom: 0; }
@@ -7698,7 +7702,7 @@ be a descendant of the grid when it is being dragged.
  */
 .c-table__cell {
   padding: 20px 0 20px 30px;
-  color: #354052;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 500;
   text-align: left;
@@ -7941,10 +7945,11 @@ be a descendant of the grid when it is being dragged.
   background-color: #ed1c24; }
 
 .c-badge--primary {
-  background-color: #475364; }
+  background-color: #313D4F; }
 
 .c-badge--secondary {
-  background-color: #b7c0cd; }
+  background-color: #DFE1E5;
+  color: rgba(53, 64, 82, 0.5); }
 
 /* ==========================================================================
    #TOOLTIPS
@@ -8361,9 +8366,9 @@ be a descendant of the grid when it is being dragged.
   margin: 5px 0 0;
   -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
   transition: visibility 0.3s ease, opacity 0.3s ease;
-  border: 1px solid #dfe3e9;
+  border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #273142;
   text-align: left;
   z-index: 400; }
   .c-dropdown .c-dropdown__menu,
@@ -8390,12 +8395,12 @@ be a descendant of the grid when it is being dragged.
 .c-dropdown__item {
   display: block;
   padding: 0.5rem 0.9375rem;
-  border-bottom: 1px solid #dfe3e9;
-  color: #354052;
+  border-bottom: 1px solid #313D4F;
+  color: #fff;
   font-size: 0.875rem;
   font-weight: 400; }
   .c-dropdown__item:hover {
-    background-color: #f2f4f7;
+    background-color: #313D4F;
     color: #2ea1f8;
     text-decoration: none; }
   .c-dropdown__item:last-child {
@@ -8473,7 +8478,7 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-align: center;
           align-items: center;
   padding: 20px 30px;
-  background-color: #fff;
+  background-color: #273142;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07); }
   @media only screen and (max-width: 768px) {
@@ -8490,7 +8495,7 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  color: #354052;
+  color: #fff;
   font-size: 18px; }
   .c-toolbar__title.has-divider::after {
     display: block;
@@ -10606,7 +10611,7 @@ textarea.c-input {
 .c-card__header {
   padding: 1.5625rem 1.875rem;
   border-bottom: 1px solid #313D4F;
-  background-color: #fafbfc; }
+  background-color: #313C4E; }
 
 /**
  * Remove default background-color of card's header
@@ -10657,7 +10662,7 @@ textarea.c-input {
    ========================================================================== */
 .c-graph-card {
   margin: 0 0 1.875rem;
-  border: 1px solid #e6eaee;
+  border: 1px solid #313D4F;
   border-radius: 4px;
   background-color: #273142;
   overflow: hidden; }
@@ -10676,7 +10681,7 @@ textarea.c-input {
 
 .c-graph-card__number {
   margin: 0;
-  color: #354052;
+  color: #fff;
   font-size: 2.5rem;
   font-weight: 300; }
 
@@ -10694,7 +10699,7 @@ textarea.c-input {
   height: 100%;
   padding: 0.9375rem 1.875rem;
   border-top: #313D4F solid 1px;
-  background-color: #fafbfc; }
+  background-color: #313C4E; }
 
 /* ==========================================================================
    #DIVIDER
@@ -10703,7 +10708,7 @@ textarea.c-input {
   display: block;
   position: relative;
   height: 1px;
-  background-color: #dfe3e9;
+  background-color: #313D4F;
   color: #7f8fa4;
   font-size: 0.75rem;
   font-weight: 400;
@@ -10726,7 +10731,7 @@ textarea.c-input {
     .c-divider.has-text::before, .c-divider.has-text::after {
       width: 42%;
       height: 1px;
-      background-color: #dfe3e9;
+      background-color: #313D4F;
       content: ""; }
   @media (max-width: 768px) {
     .c-divider::before, .c-divider::after {
@@ -10738,7 +10743,7 @@ textarea.c-input {
   .c-divider--small.has-text::before, .c-divider--small.has-text::after {
     width: 25%;
     height: 1px;
-    background-color: #dfe3e9; }
+    background-color: #313D4F; }
 
 /* ==========================================================================
    #PROGRESS CARD
@@ -11070,7 +11075,7 @@ textarea.c-input {
   border-bottom: 1px solid #313D4F;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #fafbfc; }
+  background-color: #313C4E; }
 
 .c-login__brand {
   display: block;
@@ -12027,7 +12032,7 @@ textarea.c-input {
   padding: 0.625rem;
   border: 1px solid #313D4F;
   border-radius: 4px;
-  background-color: #fafbfc; }
+  background-color: #313C4E; }
 
 .c-feed__gallery {
   display: -webkit-box;
@@ -12355,7 +12360,7 @@ textarea.c-input {
   margin-right: 10px;
   border: 1px solid #313D4F;
   border-radius: 100%;
-  background-color: #fafbfc;
+  background-color: #313C4E;
   color: #7f8fa4;
   text-align: center; }
   .c-counter-nav__link.is-active .c-counter-nav__counter {
@@ -13031,8 +13036,8 @@ textarea.c-input {
   background-color: #475364 !important; }
 
 .u-bg-secondary {
-  background: #fafbfc !important;
-  background-color: #fafbfc !important; }
+  background: #313C4E !important;
+  background-color: #313C4E !important; }
 
 .u-bg-white {
   background: #fff !important;

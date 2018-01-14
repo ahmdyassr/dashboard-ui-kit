@@ -8,7 +8,7 @@
  * Instead of modifying `_select2.scss` directly, we add Dashboard's custom
  * styles for select2 plugin here.
  *
- * The code is a littly messy because of the default select2 css styles is 
+ * The code is a littly messy because the default select2 css styles is 
  * difficult to be overriden.
  *
  * This file depends on scss variables from `settings.select` file located in:
@@ -38,6 +38,7 @@
 	line-height: $select-height;
 	padding-right: $spacer-small;
 	padding-left: $spacer-small;
+	color: $select-color;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -70,6 +71,7 @@
 .select2-results__option {
 	padding: $spacer-xsmall $spacer-small;
 	font-size: $text-font-size;
+	color: $select-color;
 
 	& + .select2-results__option {
 		border-top: $base-border-width solid $base-border-color;
@@ -77,12 +79,13 @@
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-	background-color: $white;
+	background-color: $select-option-highlighted-background-color;
 	color: $link-color;
 }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
-	background-color: #F1F4F8;
+	//background-color: #F1F4F8;
+	background-color: $select-option-highlighted-background-color;
 	color: $link-color;
 }
 
@@ -155,8 +158,8 @@
 	display: flex;
 	align-items: center;
 	padding-bottom: 3px;
-	background-color: $white;
-	border-color: #DFE3E9;
+	background-color: $select-multiple-background-color;
+	border-color: $select-border-color;
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
@@ -174,9 +177,9 @@
 	margin-right: 3px;
     margin-top: 3px;
 	padding: 4px 30px 4px 12px;
-	background-color: #F1F4F8;
-	border-color: #D5DCE6;
-	color: #354052;
+	background-color: $select-multiple-choice-background-color;
+	border-color: $select-multiple-choice-border-color;
+	color: $select-multiple-choice-color;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
@@ -195,6 +198,10 @@
 	background: $select-disabled-background-color;
 	background-color: $select-disabled-background-color;
 	color: $select-disabled-color;
+
+	.select2-selection__rendered {
+		color: $select-disabled-color;
+	}
 }
 
 
