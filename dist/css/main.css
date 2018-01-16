@@ -11748,56 +11748,13 @@ textarea.c-input {
   left: 30px;
   font-size: 14px; }
 
-/**
- * A wrapper for plans
- */
-.c-plans {
-  position: relative;
-  width: 910px;
-  margin: 0 auto;
-  padding: 40px 0 0;
-  border-radius: 4px;
-  background-color: #fff;
-  text-align: center;
-  overflow: hidden; }
-
-.c-plans__header {
-  width: 55%;
-  margin: 0 auto; }
-
-.c-plans__close {
-  position: absolute;
-  top: 1.875rem;
-  right: 1.875rem;
-  color: #1d2531;
-  font-size: 18px;
-  opacity: 0.75; }
-  .c-plans__close:hover {
-    opacity: 1; }
-
-.c-plans__title {
-  margin: 0 0 5px; }
-
-.c-plans__description {
-  margin: 0 0 50px;
-  color: #7f8fa4; }
-
-.c-plans__body {
-  padding: 0 60px; }
-
-.c-plans__footer {
-  padding: 17px 0;
-  background-color: #F0F3F8;
-  -webkit-box-shadow: 0 -1px 0 0 #E6EAEE;
-          box-shadow: 0 -1px 0 0 #E6EAEE; }
-
-/**
-  * The actual plan
-  */
+/* ==========================================================================
+   #PLANS 
+   ========================================================================== */
 .c-plan {
   margin: 0 5px 30px;
   padding: 40px 20px 25px;
-  border: 1px solid #DFE3E9;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
   background-color: transparent;
   text-align: left; }
@@ -11808,7 +11765,7 @@ textarea.c-input {
 
 .c-plan__title {
   margin: 0;
-  color: #7383A1;
+  color: #7f8fa4;
   font-size: 12px;
   text-transform: uppercase; }
 
@@ -11827,11 +11784,11 @@ textarea.c-input {
   width: 100%;
   height: 1px;
   margin: 15px 0;
-  background-color: #DFE3E9; }
+  background-color: #e6eaee; }
 
 .c-plan__feature {
   margin-bottom: 5px;
-  color: #7E8DA9;
+  color: #7f8fa4;
   font-size: 0.875rem; }
 
 /* ==========================================================================
