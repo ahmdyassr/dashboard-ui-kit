@@ -12,6 +12,7 @@
 .c-switch {
 	display: inline-flex;
 	position: relative;
+	flex-wrap: wrap;
 	align-items: center;
 	cursor: pointer;
 
@@ -21,6 +22,7 @@
 		width: $switch-width;
 		height: $switch-height;
 		transition: all .3s;
+		border: 1px solid $base-border-color;
 		border-radius: $switch-border-radius;
 		background-color: $switch-background-color;
 		content: " ";
@@ -28,8 +30,8 @@
 
 	&::after { /* [2] */
 		position: absolute;
-		top: 2px;
-		left: 2px;
+		top: 3px;
+		left: 3px;
 		width: $switch-toggle-width;
 		height: $switch-toggle-height;
 		transition: all .3s;
@@ -46,7 +48,7 @@
 		}
 
 		&::after {
-			left: 26px; /* [3] */
+			left: 25px; /* [3] */
 		}
 	}
 

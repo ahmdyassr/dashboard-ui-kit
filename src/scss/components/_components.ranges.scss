@@ -22,7 +22,7 @@
 	border-radius: 100%;
 	cursor: pointer;
 	appearance: none;
-	@include linear-gradient(to bottom, #2DA1F8, #1991EB);
+	@include linear-gradient(to bottom, $range-thumb-gradient);
 }
 
 .c-range::-webkit-slider-runnable-track {

@@ -7778,11 +7778,13 @@ be a descendant of the grid when it is being dragged.
 /**
  * Inline fields don't take up whole width 
  *
- * Used with search input in the navbar.
+ * Used with search input in the navbar & toolbar.
  */
-@media (max-width: 768px) {
-  .c-field--inline {
-    width: 270px; } }
+.c-field--inline {
+  width: 270px; }
+  @media (max-width: 768px) {
+    .c-field--inline {
+      width: 100%; } }
 
 /**
  * Labels are used with inputs, always use labels with inputs for better 
@@ -8686,6 +8688,8 @@ textarea.c-input {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8694,17 +8698,18 @@ textarea.c-input {
     display: inline-block;
     position: relative;
     width: 48px;
-    height: 24px;
+    height: 26px;
     -webkit-transition: all .3s;
     transition: all .3s;
+    border: 1px solid #e6eaee;
     border-radius: 83px;
     background-color: #dfe3e9;
     content: " "; }
   .c-switch::after {
     /* [2] */
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
     width: 20px;
     height: 20px;
     -webkit-transition: all .3s;
@@ -8716,7 +8721,7 @@ textarea.c-input {
   .c-switch.is-active::before {
     background-color: #34aa44; }
   .c-switch.is-active::after {
-    left: 26px;
+    left: 25px;
     /* [3] */ }
   .c-switch.is-disabled {
     cursor: not-allowed; }
@@ -8759,6 +8764,8 @@ textarea.c-input {
   display: -ms-inline-flexbox;
   display: inline-flex;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -8767,17 +8774,18 @@ textarea.c-input {
     display: inline-block;
     position: relative;
     width: 48px;
-    height: 24px;
+    height: 26px;
     -webkit-transition: all .3s;
     transition: all .3s;
+    border: 1px solid #e6eaee;
     border-radius: 83px;
     background-color: #dfe3e9;
     content: " "; }
   .c-switch::after {
     /* [2] */
     position: absolute;
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
     width: 20px;
     height: 20px;
     -webkit-transition: all .3s;
@@ -8789,7 +8797,7 @@ textarea.c-input {
   .c-switch.is-active::before {
     background-color: #34aa44; }
   .c-switch.is-active::after {
-    left: 26px;
+    left: 25px;
     /* [3] */ }
   .c-switch.is-disabled {
     cursor: not-allowed; }
