@@ -14,6 +14,7 @@
 	background-color: $popover-background-color;
 	color: $popover-color;
 	text-align: center;
+	z-index: $z-index-400;
 	word-wrap: break-word;
 
 	// hide Bootstrap's default arrow

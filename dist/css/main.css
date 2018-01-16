@@ -8686,6 +8686,7 @@ textarea.c-input {
   background-color: #1d2531;
   color: #fff;
   text-align: center;
+  z-index: 400;
   word-wrap: break-word;
   /**
 	 * 1. (bs-popover-*) classes are inserted by bootstrap's popover plugin, we 
