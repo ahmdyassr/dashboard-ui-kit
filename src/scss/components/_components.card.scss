@@ -9,9 +9,9 @@
 
 .c-card {
 	position: relative;
-	border: $base-border-width solid $base-border-color;
-	border-radius: $base-border-radius;
-	background-color: $base-background-color;
+	border: $card-border-width solid $card-border-color;
+	border-radius: $card-border-radius;
+	background-color: $card-background-color;
 }
 
 
@@ -30,9 +30,9 @@
  */
 
 .c-card__header {
-	padding: rem(25px) $spacer;
-	border-bottom: $base-border-width solid $base-border-color;
-	background-color: $secondary-background-color;
+	padding: $card-header-padding;
+	border-bottom: $card-border-width solid $card-border-color;
+	background-color: $card-header-background-color;
 }
 
 
@@ -46,12 +46,12 @@
 
 .c-card__title {
 	margin: 0;
-	font-size: $h5-font-size;
+	font-size: $card-title-font-size;
 }
 
 .c-card__meta {
-	color: $color-mute;
-	font-size: $text-small-font-size;
+	color: $card-meta-color;
+	font-size: $card-meta-font-size;
 }
 
 .c-card__icon {
@@ -66,8 +66,8 @@
 	height: 70px;
 	margin: 0 auto;
 	border-radius: 100%;
-	color: $white;
-	font-size: $h2-font-size;
+	color: $card-icon-color;
+	font-size: $card-icon-font-size;
 	@include linear-gradient(to bottom, $gradient-info);
 
 	&:hover i {
@@ -77,5 +77,5 @@
 }
 
 .c-card__body {
-	padding: $spacer;
+	padding: $card-body-padding;
 }

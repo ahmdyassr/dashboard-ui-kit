@@ -233,5 +233,6 @@
 
 .c-table__cell--img {
 	display: flex; /* [2] */
+	flex-wrap: wrap;
 	align-items: center;
 }
