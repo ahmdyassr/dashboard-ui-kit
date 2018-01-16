@@ -10,7 +10,7 @@
 .c-notification {
 	display: inline-block;
 	position: relative; /* [1] */
-	margin-right: 10px; /* [2] */
+	margin-right: $spacer-xsmall; /* [2] */
 }
 
 .c-notification__icon {
@@ -27,7 +27,7 @@
 	display: inline-block;
 	position: absolute;
 	top: -3px; /* [1] */
-	right: -10px; /* [1] */
+	right: -$spacer-xsmall; /* [1] */
 	min-width: $notification-number-width;
 	height: $notification-number-height;
 	padding: $notification-number-padding;
