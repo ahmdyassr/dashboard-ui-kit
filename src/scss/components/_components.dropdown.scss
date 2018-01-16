@@ -30,6 +30,7 @@
 	border-radius: $dropdown-menu-border-radius;
 	background-color: $dropdown-menu-background-color;
 	text-align: left;
+	box-shadow: $dropdown-menu-box-shadow;
 	z-index: $z-index-400;
 
 	.c-dropdown &,
