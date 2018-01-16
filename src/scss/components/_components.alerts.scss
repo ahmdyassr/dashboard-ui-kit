@@ -2,10 +2,6 @@
    #ALERTS
    ========================================================================== */
 
-/**
- * 1. Position close icon (x) based on alert padding.
- */
-
 .c-alert {
 	display: flex;
 	position: relative;
@@ -18,8 +14,8 @@
 
 	.c-close {
 		position: absolute;
-		top: $alert-close-top; /* [1] */
-		right: $alert-close-right; /* [1] */
+		top: $alert-close-top;
+		right: $alert-close-right;
 	}
 
 
@@ -34,10 +30,10 @@
 }
 
 
-
 /**
  * 1. Align icon with text properly.
  */
+
 .c-alert__icon {
 	position: relative;
 	bottom: -4px; /* [1] */
@@ -45,6 +41,7 @@
 	font-size: $alert-icon-font-size;
 	opacity: $alert-icon-opacity;
 }
+
 
 /* Style variants
    ========================================================================== */

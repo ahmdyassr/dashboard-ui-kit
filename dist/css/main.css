@@ -7091,9 +7091,6 @@ be a descendant of the grid when it is being dragged.
 /* ==========================================================================
    #ALERTS
    ========================================================================== */
-/**
- * 1. Position close icon (x) based on alert padding.
- */
 .c-alert {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7109,9 +7106,7 @@ be a descendant of the grid when it is being dragged.
   .c-alert .c-close {
     position: absolute;
     top: 0.75rem;
-    /* [1] */
-    right: 1rem;
-    /* [1] */ }
+    right: 1rem; }
   .c-alert.fade {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
