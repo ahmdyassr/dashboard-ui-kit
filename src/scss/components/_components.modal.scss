@@ -2,9 +2,6 @@
    #MODAL 
    ========================================================================== */
 
-//
-// modal sizes, different sizes of the modal based on its width
-//
 
 .modal-open {
 	overflow: hidden;
@@ -17,6 +14,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
+	padding: 0 $spacer-small;
 	outline: 0;
 	z-index: $z-index-500;
 
@@ -110,6 +108,23 @@
 
 	&:hover {
 		color: $white;
+	}
+}
+
+
+/**
+ * Use this clas to quicklu position the close icon relative 
+ * to its container, `c-modal__content`.
+ */
+
+.c-modal__close--absolute {
+	position: absolute;
+	top: $spacer;
+	right: $spacer;
+	z-index: $z-index-500; // ensure that it's always at the top
+
+	@include respond-to ($breakpoint-tablet) {
+		top: $spacer-small;
 	}
 }
 

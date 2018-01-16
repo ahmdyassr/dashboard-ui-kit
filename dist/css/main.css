@@ -8124,6 +8124,7 @@ textarea.c-input {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 0 0.9375rem;
   outline: 0;
   z-index: 500; }
   .modal-open .c-modal {
@@ -8197,6 +8198,19 @@ textarea.c-input {
   opacity: 0.8; }
   .c-modal__close:hover {
     color: #fff; }
+
+/**
+ * Use this clas to quicklu position the close icon relative 
+ * to its container, `c-modal__content`.
+ */
+.c-modal__close--absolute {
+  position: absolute;
+  top: 1.875rem;
+  right: 1.875rem;
+  z-index: 500; }
+  @media (max-width: 768px) {
+    .c-modal__close--absolute {
+      top: 0.9375rem; } }
 
 .c-modal__subheader {
   display: -webkit-box;
@@ -11735,8 +11749,8 @@ textarea.c-input {
   font-size: 14px; }
 
 /**
-  * A wrapper for plans
-  */
+ * A wrapper for plans
+ */
 .c-plans {
   position: relative;
   width: 910px;
