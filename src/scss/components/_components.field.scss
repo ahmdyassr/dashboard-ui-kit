@@ -84,12 +84,14 @@
 /**
  * Inline fields don't take up whole width 
  *
- * Used with search input in the navbar.
+ * Used with search input in the navbar & toolbar.
  */
 
 .c-field--inline {
+	width: 270px;
+
 	@include respond-to($breakpoint-tablet) {
-		width: 270px;
+		width: 100%;
 	}
 }
 
