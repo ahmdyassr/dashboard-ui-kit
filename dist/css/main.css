@@ -7721,12 +7721,15 @@ be a descendant of the grid when it is being dragged.
     border-bottom: 0;
     /* [1] */ }
 
+/* ==========================================================================
+   #FIELD
+   ========================================================================== */
 /**
-  * Form field `c-field` component is used as a wrapper for more complex inputs
-  * that contain an icon, addon, form feedback and form message.
-  *
-  * 1. Take up (full width - width of field addon).
-  */
+ * Form field `c-field` component is used as a wrapper for more complex inputs
+ * that contain an icon, addon, form feedback and form message.
+ *
+ * 1. Take up (full width - width of field addon).
+ */
 .c-field {
   position: relative;
   width: 100%; }
@@ -7774,18 +7777,20 @@ be a descendant of the grid when it is being dragged.
 
 /**
  * Inline fields don't take up whole width 
+ *
+ * Used with search input in the navbar.
  */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .c-field--inline {
     width: 270px; } }
 
 /**
-  * Labels are used with inputs, always use labels with inputs for better 
-  * accesibility. Hide labels using `u-hidden-visually` to display it for 
-  * screen readers.
-  *
-  * USAGE: <label class="c-field__label u-hidden-visually"></label>
-  */
+ * Labels are used with inputs, always use labels with inputs for better 
+ * accesibility. Hide labels using `u-hidden-visually` to display it for 
+ * screen readers.
+ *
+ * USAGE: <label class="c-field__label u-hidden-visually"></label>
+ */
 .c-field__label {
   display: block;
   -ms-flex-preferred-size: 100%;
@@ -7796,8 +7801,8 @@ be a descendant of the grid when it is being dragged.
   font-weight: 400; }
 
 /**
-  * Addon is an icon placed in box next to input, used as a visual indicator
-  */
+ * Addon is an icon placed in box next to input, used as a visual indicator
+ */
 .c-field__addon {
   background: #FFF;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F2F4F7));
@@ -7818,12 +7823,12 @@ be a descendant of the grid when it is being dragged.
   border: 1px solid #dfe3e9;
   border-radius: 4px;
   color: #CED0DA;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center; }
 
 /**
-  * Field message used as a helper note or feedback.
-  */
+ * Field message used as a helper note or feedback.
+ */
 .c-field__message {
   display: inline-block;
   margin: 0 0.3125rem 0 0;
@@ -7831,7 +7836,7 @@ be a descendant of the grid when it is being dragged.
   color: rgba(53, 64, 82, 0.5);
   font-size: 0.75rem; }
   .c-field__message > i {
-    margin-right: 5px; }
+    margin-right: 0.3125rem; }
 
 /* ==========================================================================
    #ICONS

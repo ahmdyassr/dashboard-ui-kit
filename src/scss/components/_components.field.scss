@@ -1,13 +1,13 @@
-// =============================================================================
-// # Fields
-// =============================================================================
+/* ==========================================================================
+   #FIELD
+   ========================================================================== */
 
 /**
-  * Form field `c-field` component is used as a wrapper for more complex inputs
-  * that contain an icon, addon, form feedback and form message.
-  *
-  * 1. Take up (full width - width of field addon).
-  */
+ * Form field `c-field` component is used as a wrapper for more complex inputs
+ * that contain an icon, addon, form feedback and form message.
+ *
+ * 1. Take up (full width - width of field addon).
+ */
 
 .c-field {
 	position: relative;
@@ -81,28 +81,26 @@
 	}
 }
 
-//
-// DEVELOPER NOTE: THIS NEEDS IMPROVEMENTS
-// 
-
 /**
  * Inline fields don't take up whole width 
+ *
+ * Used with search input in the navbar.
  */
 
 .c-field--inline {
-	@media (min-width: $breakpoint-md) {
+	@include respond-to($breakpoint-tablet) {
 		width: 270px;
 	}
 }
 
 
 /**
-  * Labels are used with inputs, always use labels with inputs for better 
-  * accesibility. Hide labels using `u-hidden-visually` to display it for 
-  * screen readers.
-  *
-  * USAGE: <label class="c-field__label u-hidden-visually"></label>
-  */
+ * Labels are used with inputs, always use labels with inputs for better 
+ * accesibility. Hide labels using `u-hidden-visually` to display it for 
+ * screen readers.
+ *
+ * USAGE: <label class="c-field__label u-hidden-visually"></label>
+ */
 
 .c-field__label {
 	display: block;
@@ -115,8 +113,8 @@
 
 
 /**
-  * Addon is an icon placed in box next to input, used as a visual indicator
-  */
+ * Addon is an icon placed in box next to input, used as a visual indicator
+ */
 
 .c-field__addon {
 	@include linear-gradient(to bottom, $field-addon-gradient);
@@ -128,14 +126,14 @@
 	border: $field-addon-border-width solid $field-addon-border-color;
 	border-radius: $base-border-radius;
 	color: $field-addon-color;
-	font-size: 18px;
+	font-size: rem(18px);
 	text-align: center;
 }
 
 
 /**
-  * Field message used as a helper note or feedback.
-  */
+ * Field message used as a helper note or feedback.
+ */
 
 .c-field__message {
 	display: inline-block;
@@ -145,6 +143,6 @@
 	font-size: $field-message-font-size;
 
 	> i {
-		margin-right: 5px;
+		margin-right: rem(5px);
 	}
 }
