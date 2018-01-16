@@ -7285,8 +7285,8 @@ be a descendant of the grid when it is being dragged.
    #BUTTON GROUP
    ========================================================================== */
 /**
-  * Button Group is a series of buttons grouped together on a single line.
-  */
+ * A series of buttons grouped together on a single line.
+ */
 .c-btn-group {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
