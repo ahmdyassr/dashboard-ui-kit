@@ -157,13 +157,13 @@
 
 .fc-day-number {
 	padding: 15px 15px 0 0 !important;
-	color: #354052;
+	color: $text-color;
 	font-size: $h6-font-size;
 	font-weight: $font-weight-bold;
 }
 
 .fc-unthemed td {
-	border-color: #E6EAEE;
+	border-color: $base-border-color;
 }
 
 /**
@@ -194,7 +194,7 @@
 
 .fc-event {
 	margin: 2px 0 0 0;
-	color: #354052;
+	color: $text-color;
 	font-size: $text-font-size;
 	font-weight: $font-weight-bold;
 	background-color: rgba(#1BB934, .1);
@@ -203,7 +203,7 @@
 	border-left: 2px solid #E6EAEE;
 
 	&:hover {
-		color: #354052;
+		color: $text-color;
 	}
 }
 
