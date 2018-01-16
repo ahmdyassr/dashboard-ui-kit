@@ -6548,6 +6548,28 @@ be a descendant of the grid when it is being dragged.
   .dataTable .sorting_desc:focus {
     outline: none; }
 
+.dataTables_filter {
+  margin-bottom: 0.9375rem;
+  color: #354052; }
+  .dataTables_filter input {
+    display: inline-block;
+    width: 100%;
+    max-width: 230px;
+    margin-left: 0.625rem;
+    padding: 0.59375rem 0.9375rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border: 1px solid #dfe3e9;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #354052;
+    font-size: 0.875rem;
+    font-weight: 400;
+    resize: none; }
+    .dataTables_filter input:focus {
+      border-color: #2ea1f8;
+      outline: none; }
+
 .dataTable thead .sorting:before,
 .dataTable thead .sorting:after,
 .dataTable thead .sorting_asc:before,
@@ -6564,11 +6586,24 @@ be a descendant of the grid when it is being dragged.
 .dataTable thead .sorting_asc:before,
 .dataTable thead .sorting_desc:before {
   right: 10px;
-  top: 6px; }
+  top: 25%; }
 
 .dataTable thead .sorting:after,
 .dataTable thead .sorting_asc:after,
 .dataTable thead .sorting_desc:after {
+  right: 10px;
+  bottom: 25%;
+  content: "\f0d7"; }
+
+.dataTable thead.c-table__head--slim .sorting:before,
+.dataTable thead.c-table__head--slim .sorting_asc:before,
+.dataTable thead.c-table__head--slim .sorting_desc:before {
+  right: 10px;
+  top: 6px; }
+
+.dataTable thead.c-table__head--slim .sorting:after,
+.dataTable thead.c-table__head--slim .sorting_asc:after,
+.dataTable thead.c-table__head--slim .sorting_desc:after {
   right: 10px;
   bottom: 6px;
   content: "\f0d7"; }
@@ -6592,6 +6627,10 @@ be a descendant of the grid when it is being dragged.
   margin-top: 0.9375rem;
   float: left;
   color: #7f8fa4; }
+
+.dataTables_empty {
+  padding: 1.875rem;
+  color: #354052; }
 
 .dataTables_paginate {
   display: -webkit-box;
@@ -8841,7 +8880,8 @@ textarea.c-input {
   border-radius: 4px;
   background-color: #fff;
   border-collapse: collapse;
-  /* [1] */ }
+  /* [1] */
+  overflow: hidden; }
 
 /**
  * Responsive Tables
@@ -8968,7 +9008,7 @@ textarea.c-input {
 .c-table__row--danger,
 .c-table__row--info,
 .c-table__row--warning {
-  border-left: 3px solid; }
+  border-left: 5px solid; }
 
 .c-table__row--success {
   border-left-color: #1bb934; }

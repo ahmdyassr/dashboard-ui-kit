@@ -15,6 +15,7 @@
 	border-radius: $table-border-radius;
 	background-color: $table-background-color;
 	border-collapse: collapse; /* [1] */
+	overflow: hidden;
 }
 
 
@@ -179,7 +180,7 @@
 .c-table__row--danger,
 .c-table__row--info,
 .c-table__row--warning {
-	border-left: 3px solid;
+	border-left: 5px solid;
 }
 
 .c-table__row--success {
