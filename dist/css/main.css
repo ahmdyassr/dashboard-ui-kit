@@ -9021,36 +9021,44 @@ textarea.c-input {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch; }
-  .c-table-responsive table {
-    overflow-y: hidden; }
+  .c-table-responsive .c-table {
+    overflow: hidden; }
 
 @media (max-width: 576px) {
   .c-table-responsive\@mobile {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
+    -webkit-overflow-scrolling: touch; }
+    .c-table-responsive\@mobile .c-table {
+      overflow: hidden; } }
 
 @media (max-width: 768px) {
   .c-table-responsive\@tablet {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
+    -webkit-overflow-scrolling: touch; }
+    .c-table-responsive\@tablet .c-table {
+      overflow: hidden; } }
 
 @media (max-width: 992px) {
   .c-table-responsive\@desktop {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
+    -webkit-overflow-scrolling: touch; }
+    .c-table-responsive\@desktop .c-table {
+      overflow: hidden; } }
 
 @media (max-width: 1200px) {
-  .c-table-responsve\@wide {
+  .c-table-responsive\@wide {
     display: block;
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
+    -webkit-overflow-scrolling: touch; }
+    .c-table-responsive\@wide .c-table {
+      overflow: hidden; } }
 
 /**
  * Use `c-table--zebra` to add zebra-styling to table rows inside the table.

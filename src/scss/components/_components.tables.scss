@@ -34,8 +34,8 @@
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
 
-	table {
-		overflow-y: hidden;
+	.c-table {
+		overflow: hidden;
 	}
 }
 
@@ -45,6 +45,10 @@
 		width: 100%;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+
+		.c-table {
+			overflow: hidden;
+		}
 	}
 }
 
@@ -54,6 +58,10 @@
 		width: 100%;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+
+		.c-table {
+			overflow: hidden;
+		}
 	}
 }
 
@@ -63,15 +71,23 @@
 		width: 100%;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+
+		.c-table {
+			overflow: hidden;
+		}
 	}
 }
 
 @media (max-width: $breakpoint-wide) {
-	.c-table-responsve\@wide {
+	.c-table-responsive\@wide {
 		display: block;
 		width: 100%;
 		overflow-x: auto;
 		-webkit-overflow-scrolling: touch;
+
+		.c-table {
+			overflow: hidden;
+		}
 	}
 }
 
