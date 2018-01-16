@@ -168,7 +168,7 @@ gulp.task('javascript', function(){
             suffix: ".min"
         }))
         .pipe(uglify())
-        .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
+        //.on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(out));
 });

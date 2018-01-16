@@ -6,15 +6,6 @@
 // modal sizes, different sizes of the modal based on its width
 //
 
-$modal-width: (
-	xsmall: 350px,
-	small:  450px,
-	medium: 550px,
-	large:  650px,
-	xlarge: 750px,
-	huge: 950px
-);
-
 .modal-open {
 	overflow: hidden;
 }
@@ -45,7 +36,7 @@ $modal-width: (
 .c-modal__dialog {
 	position: relative;
 	max-width: map-get($modal-width, medium);
-	margin: 30px auto;
+	margin: $modal-dialog-margin;
 
 	.c-modal.fade & {
 		animation-duration: 0.3s;
@@ -53,7 +44,7 @@ $modal-width: (
 	}
 
 	.c-modal.show & {
-		animation-name: zoomIn;
+		animation-name: move;
 	}
 
 	// default size
@@ -97,7 +88,7 @@ $modal-width: (
 }
 
 .c-modal__header {
-	@include linear-gradient(to bottom, #2EA1F8, #1990EA);
+	@include linear-gradient(to bottom, $gradient-info);
 	display: flex;
 	align-content: center;
 	align-items: center;
@@ -128,7 +119,7 @@ $modal-width: (
 	align-content: center;
 	align-items: center;
 	padding: 15px 30px;
-	background-color: #222C3C;
+	background-color: $modal-subheader-background-color;
 	color: $white;
 
 	p {
@@ -151,14 +142,14 @@ $modal-width: (
 
 	&.is-active {
 		padding: $spacer-small 0;
-		border-bottom: $base-border-width*3 solid $color-info;
+		border-bottom: $base-border-width * 3 solid $color-info;
 		color: $white;
 	}
 }
 
 .c-modal__body {
-	padding: $spacer;
-	background-color: $white;
+	padding: $modal-body-padding;
+	background-color: $modal-body-background-color;
 	overflow: hidden;
 }
 
@@ -168,7 +159,7 @@ $modal-width: (
  */
 
 .c-modal__body--maximized {
-	max-height: 450px;
+	max-height: $modal-maximized-height;
 	overflow: auto;
 }
 
@@ -195,8 +186,7 @@ $modal-width: (
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: $gunmetal-500; // fallback
-	background-color: rgba($gunmetal-500, .9);
+	background-color: $modal-backdrop-background-color;
 	z-index: $z-index-400;
 
 	// Fade for backdrop
@@ -220,10 +210,10 @@ $modal-width: (
 }
 
 /**
- * Modal zoom animation
+ * Modal move animation
  */
 
-@-webkit-keyframes zoomIn {
+@-webkit-keyframes move {
   	from {
   		transform: translateY(30px);
 		opacity: 0;
@@ -235,7 +225,7 @@ $modal-width: (
 	}
 }
 
-@keyframes zoomIn {
+@keyframes move {
 	from {
 		transform: translateY(30px);
 		opacity: 0;

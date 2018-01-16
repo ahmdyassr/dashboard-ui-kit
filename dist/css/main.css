@@ -41,7 +41,7 @@ body {
   min-height: 100%;
   /* [1] */
   margin: 0;
-  background-color: #1B2431; }
+  background-color: #EFF3F6; }
 
 button,
 input,
@@ -120,7 +120,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem;
-  color: #fff;
+  color: #354052;
   font-weight: 500; }
 
 h1 {
@@ -142,15 +142,15 @@ h6 {
   font-size: 1rem; }
 
 p {
-  color: #fff;
+  color: #354052;
   font-size: 0.875rem; }
 
 strong {
-  color: #fff; }
+  color: #354052; }
 
 dl dt,
 dl dd {
-  color: #fff; }
+  color: #354052; }
 
 /**
  * 1. Remove the gray background on active links in IE 10.
@@ -193,7 +193,7 @@ small {
 
 blockquote {
   padding-left: 15px;
-  border-left: 3px solid #313D4F; }
+  border-left: 3px solid #e6eaee; }
 
 /*!
  * Bootstrap Grid v4.0.0-beta.3 (https://getbootstrap.com)
@@ -5224,7 +5224,7 @@ be a descendant of the grid when it is being dragged.
  * Calendar Wrapper
  */
 .fc-view-container {
-  background-color: #273142; }
+  background-color: #fff; }
 
 /**
  * Calendar Header
@@ -6003,13 +6003,13 @@ be a descendant of the grid when it is being dragged.
  * [ settings/_settings.select.scss ]
  */
 .select2-container--default .select2-selection--single {
-  background: #273142;
-  background: -webkit-gradient(linear, left top, left bottom, from(#273142), to(#273142));
-  background: linear-gradient(to bottom, #273142, #273142);
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f2f4f7));
+  background: linear-gradient(to bottom, #fff, #f2f4f7);
   height: 39px;
-  border: 1px solid #313D4F;
+  border: 1px solid #dfe3e9;
   border-radius: 4px;
-  color: #fff;
+  color: rgba(53, 64, 82, 0.5);
   font-size: 0.875rem;
   font-weight: 500;
   outline: 0; }
@@ -6025,19 +6025,19 @@ be a descendant of the grid when it is being dragged.
   line-height: 39px;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-  color: #fff; }
+  color: rgba(53, 64, 82, 0.5); }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 39px; }
 
 .select2-results {
   border-radius: 4px;
-  border: 1px solid #313D4F; }
+  border: 1px solid #e6eaee; }
 
 .select2-dropdown {
   margin: 5px 0;
-  background-color: #273142;
-  border: 1px solid #313D4F;
+  background-color: #fff;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px; }
@@ -6052,16 +6052,16 @@ be a descendant of the grid when it is being dragged.
 .select2-results__option {
   padding: 0.625rem 0.9375rem;
   font-size: 0.875rem;
-  color: #fff; }
+  color: rgba(53, 64, 82, 0.5); }
   .select2-results__option + .select2-results__option {
-    border-top: 1px solid #313D4F; }
+    border-top: 1px solid #e6eaee; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #313D4F;
+  background-color: #F1F4F8;
   color: #2ea1f8; }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
-  background-color: #313D4F;
+  background-color: #F1F4F8;
   color: #2ea1f8; }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -6106,7 +6106,7 @@ be a descendant of the grid when it is being dragged.
     content: "\f002"; }
 
 .select2-container--default .select2-search--dropdown .select2-search__field {
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
   padding: 8px 15px;
   outline: none;
@@ -6124,8 +6124,8 @@ be a descendant of the grid when it is being dragged.
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 3px;
-  background-color: #273142;
-  border-color: #313D4F; }
+  background-color: #fff;
+  border-color: #dfe3e9; }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
   border: 1px solid #2ea2f8; }
@@ -6144,9 +6144,9 @@ be a descendant of the grid when it is being dragged.
   margin-right: 3px;
   margin-top: 3px;
   padding: 4px 30px 4px 12px;
-  background-color: rgba(46, 161, 248, 0.5);
-  border-color: #2ea1f8;
-  color: #fff; }
+  background-color: #F1F4F8;
+  border-color: #D5DCE6;
+  color: #354052; }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   position: absolute;
@@ -6158,12 +6158,12 @@ be a descendant of the grid when it is being dragged.
  * Disabled Select
  */
 .select2-container--default.select2-container--disabled .select2-selection--single {
-  border-color: #313D4F;
-  background: #273142;
-  background-color: #273142;
-  color: rgba(255, 255, 255, 0.5); }
+  border-color: #DFE3E9;
+  background: #EAEEF1;
+  background-color: #EAEEF1;
+  color: rgba(53, 64, 82, 0.7); }
   .select2-container--default.select2-container--disabled .select2-selection--single .select2-selection__rendered {
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(53, 64, 82, 0.7); }
 
 /*
  * The MIT License
@@ -6491,9 +6491,9 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #273142;
+  background-color: #fff;
   color: #7f8fa4;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
   padding: 5px;
   -webkit-transition: border-color 0.3s;
@@ -6608,19 +6608,19 @@ be a descendant of the grid when it is being dragged.
     height: 2.1875rem;
     /* [1] */
     padding: 0 16px;
-    border: 1px solid #313D4F;
-    background-color: #273142;
-    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #e6eaee;
+    background-color: #fff;
+    color: rgba(53, 64, 82, 0.5);
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 2.1875rem;
     /* [1] */
     text-align: center; }
     .dataTables_paginate .paginate_button:hover {
-      color: #fff;
+      color: #354052;
       text-decoration: none; }
     .dataTables_paginate .paginate_button.current {
-      color: #fff; }
+      color: #354052; }
     .dataTables_paginate .paginate_button + .paginate_button {
       border-left: 0; }
     .dataTables_paginate .paginate_button.previous {
@@ -7089,972 +7089,6 @@ be a descendant of the grid when it is being dragged.
   padding-bottom: 50%; }
 
 /* ==========================================================================
-   #BUTTONS
-   ========================================================================== */
-/**
- * 1. Apply (btn--info) background if `c-btn--{style}` class isn't specified.
- * 2. Align icon (if placed inside button) with text properly.
- * 3. Add dropdown icon/arrow to button with `has-dropdown` class, it depends 
- *    on (FontAwesome) icon font so make sure to modify it if you changed your 
- *    base icon font.
- * 4. Use `disabled` property on <button> elements, and `is-disabled` class on
- *    <a> elements as they don't support `disabled` property.
- */
-.c-btn {
-  display: inline-block;
-  position: relative;
-  max-width: 100%;
-  margin: 0;
-  padding: 0.5rem 1.25rem;
-  -webkit-transition: all 0.15s ease-in-out;
-  transition: all 0.15s ease-in-out;
-  border: 1px solid;
-  border-radius: 4px;
-  border-color: #1a91eb;
-  /* [1] */
-  color: #fff;
-  /* [1] */
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  cursor: pointer;
-  overflow: hidden;
-  vertical-align: middle;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background: #2ea1f8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
-  background: linear-gradient(to bottom, #2ea1f8, #1990ea);
-  /* [1] */ }
-  .c-btn:hover, .c-btn:focus {
-    outline: 0;
-    color: #fff;
-    text-decoration: none; }
-  .c-btn i {
-    position: relative;
-    bottom: -1px;
-    /* [2] */
-    font-size: 16px; }
-  .c-btn.has-dropdown {
-    position: relative;
-    padding-right: 2.5rem; }
-    .c-btn.has-dropdown::after {
-      /* [3] */
-      display: inline-block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-      margin-left: 1.25rem;
-      padding: 0.5rem 8px;
-      border-left: 1px solid;
-      border-color: inherit;
-      color: inherit;
-      font-family: "FontAwesome";
-      content: "\f107"; }
-  .c-btn.is-disabled, .c-btn:disabled {
-    /* [4] */
-    border-color: #313D4F;
-    background: #222C3C;
-    color: #354052; }
-    .c-btn.is-disabled:hover, .c-btn.is-disabled:focus, .c-btn:disabled:hover, .c-btn:disabled:focus {
-      border-color: #313D4F;
-      background: #222C3C;
-      color: #354052;
-      cursor: not-allowed; }
-
-.c-btn--fullwidth {
-  width: 100%; }
-
-/**
- * 1. Reduce spacing between the icon and text in small buttons.
- */
-.c-btn--small {
-  padding: 0.25rem 1.125rem;
-  font-size: 0.75rem; }
-  .c-btn--small i {
-    margin-right: 5px;
-    /* [1] */ }
-
-.c-btn--large {
-  padding: 0.5rem 1.875rem;
-  font-size: 1rem; }
-
-/* Style variants
-   ========================================================================== */
-/**
- * Buttons have a simple, nice gradient on the background, we use 
- * sass's `darken()` method to generate a dark shade of the requested color, 
- * then we use our `linear-gradient` mixin to generate the gradient background.
- */
-.c-btn--primary {
-  background: #273142;
-  background: -webkit-gradient(linear, left top, left bottom, from(#273142), to(#273142));
-  background: linear-gradient(to bottom, #273142, #273142);
-  border-color: #354052; }
-  .c-btn--primary:hover {
-    background: #1f2735;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1f2735), to(#1f2735));
-    background: linear-gradient(to bottom, #1f2735, #1f2735); }
-  .c-btn--primary:focus {
-    background: #1c232f;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1c232f), to(#1c232f));
-    background: linear-gradient(to bottom, #1c232f, #1c232f); }
-
-.c-btn--secondary {
-  background: #506072;
-  background: -webkit-gradient(linear, left top, left bottom, from(#506072), to(#506072));
-  background: linear-gradient(to bottom, #506072, #506072);
-  border-color: #506072;
-  color: #fff; }
-  .c-btn--secondary:hover {
-    background: #4e5d6f;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4e5d6f), to(#4c5b6c));
-    background: linear-gradient(to bottom, #4e5d6f, #4c5b6c);
-    color: #fff; }
-  .c-btn--secondary:focus {
-    background: #4c5b6c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4c5b6c), to(#4a5869));
-    background: linear-gradient(to bottom, #4c5b6c, #4a5869);
-    color: #fff; }
-
-.c-btn--info {
-  background: #2ea1f8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
-  background: linear-gradient(to bottom, #2ea1f8, #1990ea);
-  border-color: #1a91eb; }
-  .c-btn--info:hover {
-    background: #1a98f7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1a98f7), to(#1485db));
-    background: linear-gradient(to bottom, #1a98f7, #1485db); }
-  .c-btn--info:focus {
-    background: #1094f7;
-    background: -webkit-gradient(linear, left top, left bottom, from(#1094f7), to(#137fd1));
-    background: linear-gradient(to bottom, #1094f7, #137fd1); }
-
-.c-btn--success {
-  background: #39b54a;
-  background: -webkit-gradient(linear, left top, left bottom, from(#39b54a), to(#34aa44));
-  background: linear-gradient(to bottom, #39b54a, #34aa44);
-  border-color: #249533; }
-  .c-btn--success:hover {
-    background: #34a544;
-    background: -webkit-gradient(linear, left top, left bottom, from(#34a544), to(#2f9a3e));
-    background: linear-gradient(to bottom, #34a544, #2f9a3e); }
-  .c-btn--success:focus {
-    background: #329e40;
-    background: -webkit-gradient(linear, left top, left bottom, from(#329e40), to(#2d933b));
-    background: linear-gradient(to bottom, #329e40, #2d933b); }
-
-.c-btn--fancy {
-  background: #886ce6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#886ce6), to(#7d5be2));
-  background: linear-gradient(to bottom, #886ce6, #7d5be2);
-  border-color: #7d5be2; }
-  .c-btn--fancy:hover {
-    background: #7a5be3;
-    background: -webkit-gradient(linear, left top, left bottom, from(#7a5be3), to(#6f4adf));
-    background: linear-gradient(to bottom, #7a5be3, #6f4adf); }
-  .c-btn--fancy:focus {
-    background: #7352e2;
-    background: -webkit-gradient(linear, left top, left bottom, from(#7352e2), to(#6841dd));
-    background: linear-gradient(to bottom, #7352e2, #6841dd); }
-
-.c-btn--warning {
-  background: #fd9a18;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fd9a18), to(#f16911));
-  background: linear-gradient(to bottom, #fd9a18, #f16911);
-  border-color: #f16911; }
-  .c-btn--warning:hover {
-    background: #fd9104;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fd9104), to(#e0600d));
-    background: linear-gradient(to bottom, #fd9104, #e0600d); }
-  .c-btn--warning:focus {
-    background: #f48c02;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f48c02), to(#d75c0d));
-    background: linear-gradient(to bottom, #f48c02, #d75c0d); }
-
-.c-btn--danger {
-  background: #f95359;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f95359), to(#d35847));
-  background: linear-gradient(to bottom, #f95359, #d35847);
-  border-color: #d35847; }
-  .c-btn--danger:hover {
-    background: #f83f46;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f83f46), to(#cf4937));
-    background: linear-gradient(to bottom, #f83f46, #cf4937); }
-  .c-btn--danger:focus {
-    background: #f8353c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#f8353c), to(#cb4331));
-    background: linear-gradient(to bottom, #f8353c, #cb4331); }
-
-/* ==========================================================================
-   #BUTTON GROUP
-   ========================================================================== */
-/**
-  * Button Group is a series of buttons grouped together on a single line.
-  */
-.c-btn-group {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex; }
-  .c-btn-group > .c-btn:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  .c-btn-group > .c-btn:last-child {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .c-btn-group > .c-btn:not(:first-child):not(:last-child) {
-    border-radius: 0; }
-  .c-btn-group > .c-btn + .c-btn {
-    border-left: 0; }
-
-/**
- * Force button group to take full width.
- */
-.c-btn-group--fullwidth {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%; }
-  .c-btn-group--fullwidth > .c-btn {
-    width: 100%; }
-
-/* ==========================================================================
-   #NAVBAR
-   ========================================================================== */
-/**
- * The site's main page header, used as a wrapper for its sub-components.
- */
-.c-navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  min-width: 100%;
-  min-height: 70px;
-  padding: 13px 30px;
-  border-bottom: 1px solid #313D4F;
-  background-color: #273142; }
-  @media (max-width: 768px) {
-    .c-navbar {
-      padding: 0.625rem 0.9375rem; } }
-
-/**
- * Set a fixed width for search input when placed in navbar.
- */
-.c-navbar__search {
-  width: 270px !important; }
-
-/**
- * 1. Custom width, height is specififed for proper alignment, adding your own 
- *    brand/logo image will require custom styles for proper alignment.
- * 2. On small screens, seperate logo/brand from other navbar components as 
- *    navbar links would be collapsed.
- */
-.c-navbar__brand {
-  display: inline-block;
-  width: 44px;
-  /* [1] */
-  height: 44px;
-  /* [1] */
-  margin: 0 20px 0 0; }
-  @media (max-width: 768px) {
-    .c-navbar__brand {
-      margin-right: auto;
-      /* [2] */ } }
-
-.c-navbar__title {
-  margin: 0;
-  padding: 0;
-  font-size: 1.125rem; }
-
-/* Style variants
-   ========================================================================== */
-/**
- * Use `c-navbar--inverse` for dark background colors.
- *
- */
-.c-navbar--inverse {
-  background: #2ea1f8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
-  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
-  .c-navbar--inverse .c-nav,
-  .c-navbar--inverse .c-nav__item {
-    border-color: #53b2f9; }
-  .c-navbar--inverse .c-nav__link {
-    color: #fff; }
-  .c-navbar--inverse .c-avatar.has-dropdown::after {
-    color: #fff; }
-  .c-navbar--inverse .c-nav-toggle__icon,
-  .c-navbar--inverse .c-nav-toggle__icon::before,
-  .c-navbar--inverse .c-nav-toggle__icon::after {
-    background-color: #273142;
-    opacity: 0.95; }
-
-/* ==========================================================================
-   #NAV
-   ========================================================================== */
-/**
- * Nav sits within the main navbar area. It’s fully responsive as it holds 
- * navigation items/links that will be collapsed, toggled in small 
- * screens via `c-nav-toggle` component.
- */
-.c-nav {
-  display: block;
-  /**
-	 * Responsive Nav
-	 *
-	 * 1. Remove extra margin when `u-mr-auto` utility is used. 
-	 */ }
-  @media (max-width: 768px) {
-    .c-nav {
-      position: relative;
-      -webkit-box-flex: 1;
-          -ms-flex: 1 0 100%;
-              flex: 1 0 100%;
-      -webkit-box-ordinal-group: 3;
-          -ms-flex-order: 2;
-              order: 2;
-      margin-top: 0.9375rem;
-      margin-right: -0.9375rem !important;
-      /* [1] */
-      margin-left: -0.9375rem;
-      border-top: 1px solid #313D4F;
-      /**
-		 * Bootstrap classes used to show and hide nav.
-		 * This behaviour depends on collapse.js plugin.
-		 */ }
-      .c-nav.collapse {
-        display: none; }
-      .c-nav.show {
-        display: block; }
-      .c-nav.collapsing {
-        position: relative;
-        height: 0;
-        -webkit-transition: height 0.6s;
-        transition: height 0.6s;
-        overflow: hidden; } }
-
-.c-nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-/** 
- * 1. Allow positioning dropdown menus inside nav items.
- */
-.c-nav__item {
-  position: relative;
-  /* [1] */
-  margin: 0 40px 0 0; }
-  @media (max-width: 768px) {
-    .c-nav__item {
-      -ms-flex-preferred-size: 100%;
-          flex-basis: 100%;
-      margin-right: 0;
-      padding: 15px;
-      border-bottom: 1px solid #f2f4f7; } }
-  .c-nav__item:last-child {
-    margin-right: 0; }
-    @media (max-width: 768px) {
-      .c-nav__item:last-child {
-        padding-bottom: 5px;
-        border-bottom: 0; } }
-
-.c-nav__link {
-  color: #9FA9BA;
-  font-size: 0.875rem;
-  font-weight: 400; }
-  .c-nav__link:hover {
-    text-decoration: none; }
-  .c-nav__link.is-active {
-    color: #2ea1f8; }
-  @media (max-width: 768px) {
-    .c-nav__link {
-      display: block;
-      color: #fff;
-      font-size: 1rem; } }
-
-/* Nav Toggle
-   ========================================================================== */
-/**
- * Nav toggle is the popular hamburger-like icon that would show/hide `c-nav` 
- * via javascript through `js-nav-toggle` to toggle `is-open` class.
- * 
- * 1. Remove default button styles.
- * 2. Show only on small screens, hide on large screen.
- */
-.c-nav-toggle {
-  display: none;
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin: 0 0 0 0.9375rem;
-  /* [1] */
-  padding: 0;
-  /* [1] */
-  border: 0;
-  /* [1] */
-  outline: none;
-  background-color: transparent;
-  /* [1] */
-  cursor: pointer; }
-  @media (max-width: 768px) {
-    .c-nav-toggle {
-      display: block;
-      /* [2] */ } }
-
-/**
- * The hamburger icon itself, 3 bars stacked on top of each other. 
- */
-.c-nav-toggle__bar {
-  display: block;
-  position: relative;
-  width: 30px;
-  height: 4px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border-radius: 4px;
-  background-color: #fff; }
-  .c-nav-toggle__bar:first-child {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px); }
-  .c-nav-toggle__bar:last-child {
-    -webkit-transform: translateY(6px);
-            transform: translateY(6px); }
-
-/* ==========================================================================
-   #TABLES
-   ========================================================================== */
-/**
- * 1. The border-collapse CSS property specifies that the table's borders are 
- *    collapsed and it means that adjacent cells share borders.
- */
-.c-table {
-  display: table;
-  width: 100%;
-  max-width: 100%;
-  border: 1px solid #313D4F;
-  border-radius: 4px;
-  background-color: #273142;
-  border-collapse: collapse;
-  /* [1] */ }
-
-/**
- * Responsive Tables
- *
- * Wrap any table with one of these classes to make it responsive at certain
- * breakpoint.
- *
- * 1. Wrap your table with this class `c-table-responsive` if the table's width 
- * is larger than 1200px.
- */
-.c-table-responsive {
-  /* [1] */
-  display: block;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch; }
-
-@media (max-width: 576px) {
-  .c-table-responsive\@mobile {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
-
-@media (max-width: 768px) {
-  .c-table-responsive\@tablet {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
-
-@media (max-width: 992px) {
-  .c-table-responsive\@desktop {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
-
-@media (max-width: 1200px) {
-  .c-table-responsve\@wide {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; } }
-
-/**
- * Use `c-table--zebra` to add zebra-styling to table rows inside the table.
- */
-.c-table--zebra tbody tr:nth-of-type(odd) {
-  background-color: #313D4F; }
-
-/**
- * Highlight table row on hover.
- */
-.c-table--highlight tbody tr:hover {
-  background-color: #313D4F; }
-
-.c-table--fixed {
-  table-layout: fixed; }
-
-/**
- * Table title/caption
- * <caption> 
- */
-.c-table__title {
-  position: relative;
-  padding: 25px 30px;
-  border: 1px solid #313D4F;
-  border-bottom: 0;
-  border-radius: 4px 4px 0 0;
-  background-color: #313D4F;
-  color: #fff;
-  font-size: 24px;
-  text-align: left; }
-  .c-table__title small {
-    display: inline-block;
-    margin-left: 10px;
-    color: #7f8fa4;
-    font-size: 14px; }
-    .c-table__title small::before {
-      display: inline-block;
-      position: relative;
-      bottom: -2px;
-      width: 1px;
-      height: 14px;
-      margin-right: 12px;
-      background-color: #DFE3E9;
-      content: ""; }
-
-/**
- * A small icon in table title used to perform general action on table like
- * downloading table content as a report.
- */
-.c-table__title-action {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  color: #AFB4BB;
-  font-size: 22px; }
-
-/**
- * Table Head
- *
- * Slimmer version of table's head with less sapcing and darker background
- */
-.c-table__head--slim {
-  padding: 0;
-  background-color: #273142; }
-  .c-table__head--slim .c-table__cell {
-    padding: 10px 0 10px 30px; }
-
-/**
- * Table Row
- */
-.c-table__row {
-  border-top: 1px solid #313D4F;
-  /* [1] */
-  border-bottom: 1px solid #313D4F;
-  /* [1] */ }
-  .c-table__row:last-child {
-    border-bottom: 0; }
-
-.c-table__row--success,
-.c-table__row--danger,
-.c-table__row--info,
-.c-table__row--warning {
-  border-left: 3px solid; }
-
-.c-table__row--success {
-  border-left-color: #1bb934; }
-
-.c-table__row--danger {
-  border-left-color: #ed1c24; }
-
-.c-table__row--info {
-  border-left-color: #2ea1f8; }
-
-.c-table__row--warning {
-  border-left-color: #fd9a18; }
-
-/**
- * Table Cell
- */
-.c-table__cell {
-  padding: 20px 0 20px 30px;
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 500;
-  text-align: left;
-  white-space: nowrap;
-  vertical-align: middle; }
-  .c-table__cell:last-child {
-    padding-right: 1.875rem; }
-
-.c-table__cell--head {
-  color: #7f8fa4;
-  font-size: 0.875rem;
-  font-weight: 500; }
-
-/**
- * Table cell with image
- *
- * 2. Use flexbox to make sure all table-cell content is vertically centered.
- */
-.c-table__cell--img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /* [2] */
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-/* ==========================================================================
-   #PAGINATION
-   ========================================================================== */
-/**
- * 1. Use flex utilitites with `c-pagination` for proper alignement of its
- *    children.
- */
-.c-pagination {
-  /* [1] */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 15px;
-  text-align: center; }
-
-/**
- * 1. Remove wierd space between list items.
- */
-.c-pagination__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 0;
-  /* [1] */ }
-
-.c-pagination__item {
-  display: inline-block;
-  margin-left: -1px;
-  /* [1] */ }
-  .c-pagination__item:first-child .c-pagination__control {
-    border-right: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  .c-pagination__item:last-child .c-pagination__control {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-
-/**
- * 1. Line height of pagination control should equal its height for proper
- *    vertical alignment.
- */
-.c-pagination__control {
-  display: block;
-  height: 2.1875rem;
-  /* [1] */
-  padding: 0 16px;
-  border: 1px solid #313D4F;
-  border-radius: 4px;
-  background-color: #273142;
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 2.1875rem;
-  /* [1] */
-  text-align: center;
-  color: #fff;
-  /**
-	 * 1. You may resize this icon if you used another icon font.
-	 */ }
-  .c-pagination__control i {
-    position: relative;
-    bottom: -1px;
-    -webkit-transition: color .15s;
-    transition: color .15s;
-    color: #fff;
-    font-size: 16px;
-    /* [1] */ }
-  .c-pagination__control:hover {
-    color: #fff;
-    text-decoration: none; }
-    .c-pagination__control:hover i {
-      color: #fff; }
-
-.c-pagination__link {
-  display: block;
-  height: 2.1875rem;
-  padding: 0 16px;
-  border: 1px solid #313D4F;
-  background-color: #273142;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  line-height: 2.1875rem;
-  text-align: center; }
-  .c-pagination__link.is-active {
-    color: #fff; }
-  .c-pagination__link:hover {
-    color: #fff;
-    text-decoration: none; }
-
-.c-pagination__counter {
-  display: inline-block;
-  margin: 0;
-  padding: 8px 15px;
-  color: #7F8FA4;
-  vertical-align: middle; }
-
-/* ==========================================================================
-   #SWITCH
-   ========================================================================== */
-/**
- * 1. Radius of `toggle` should be equal to radius of `c-switch`.
- * 2. The small circle that move to the right and left.
- * 3. Calculation: (width of switch bar) - (toggle's width + 2px )
- * 4. Don't allow active state on a disabled switch.
- */
-.c-switch {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  position: relative;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer; }
-  .c-switch::before {
-    display: inline-block;
-    position: relative;
-    width: 48px;
-    height: 24px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    border-radius: 83px;
-    background-color: #273142;
-    content: " "; }
-  .c-switch::after {
-    /* [2] */
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    border-radius: 83px;
-    /* [1] */
-    background-color: #fff;
-    content: " "; }
-  .c-switch.is-active::before {
-    background-color: #34aa44; }
-  .c-switch.is-active::after {
-    left: 26px;
-    /* [3] */ }
-  .c-switch.is-disabled {
-    cursor: not-allowed; }
-    .c-switch.is-disabled::after {
-      opacity: 0.5; }
-    .c-switch.is-disabled.is-active {
-      /* [4] */ }
-      .c-switch.is-disabled.is-active::before {
-        background-color: #273142; }
-      .c-switch.is-disabled.is-active::after {
-        right: 2px; }
-
-/**
- * 1. Hide input to replace it with switch-style input
- */
-.c-switch__input {
-  display: none;
-  /* [1] */ }
-
-.c-switch__label {
-  margin: 0 0 0 0.625rem;
-  color: #fff;
-  font-size: 0.875rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
-
-/* ==========================================================================
-   #BADGES
-   ========================================================================== */
-.c-badge {
-  display: inline-block;
-  margin: 0;
-  padding: 4px 12px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  /**
-	 * Badges with icons
-	 */ }
-  .c-badge > i {
-    margin-right: 0.3125rem; }
-
-.c-badge--small {
-  padding: 4px 10px;
-  font-size: 10px; }
-
-.c-badge--xsmall {
-  padding: 2px 5px;
-  font-size: 10px; }
-
-/* Style variants
-   ========================================================================== */
-.c-badge--success {
-  background-color: #1bb934; }
-
-.c-badge--info {
-  background-color: #2ea1f8; }
-
-.c-badge--warning {
-  background-color: #fd9a18; }
-
-.c-badge--danger {
-  background-color: #ed1c24; }
-
-.c-badge--primary {
-  background-color: #313D4F; }
-
-.c-badge--secondary {
-  background-color: #DFE1E5;
-  color: rgba(53, 64, 82, 0.5); }
-
-/* ==========================================================================
-   #TOOLTIPS
-   ========================================================================== */
-/**
- * Simple, css-only based tooltips.
- *
- * 1. Prevent other components from overrideing tooltip's line-height.
- * 2. Get tooltip text from `aria-label` and place it using `content` property.
- */
-.c-tooltip {
-  position: relative; }
-  .c-tooltip::after {
-    position: absolute;
-    max-height: 5rem;
-    padding: 0.625rem 0.9375rem;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    border-radius: 4px;
-    background-color: #353C48;
-    color: #fff;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5;
-    /* [1] */
-    text-align: center;
-    text-transform: none;
-    white-space: nowrap;
-    content: attr(aria-label);
-    /* [2] */
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    z-index: 200; }
-  .c-tooltip::before {
-    position: absolute;
-    -webkit-transition: opacity 0.3s;
-    transition: opacity 0.3s;
-    border: 6px solid transparent;
-    content: " ";
-    opacity: 0;
-    visibility: hidden; }
-  .c-tooltip:hover::before, .c-tooltip:hover::after {
-    opacity: 1;
-    visibility: visible; }
-
-/* Direction variants
-   ========================================================================== */
-.c-tooltip--top::after {
-  bottom: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -12px);
-          transform: translate(-50%, -12px); }
-
-.c-tooltip--top::before {
-  bottom: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  border-top-color: #353C48; }
-
-.c-tooltip--bottom::after {
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 12px);
-          transform: translate(-50%, 12px); }
-
-.c-tooltip--bottom::before {
-  top: 100%;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  border-bottom-color: #353C48; }
-
-.c-tooltip--right::after {
-  top: 50%;
-  left: 100%;
-  -webkit-transform: translate(12px, -50%);
-          transform: translate(12px, -50%); }
-
-.c-tooltip--right::before {
-  top: 50%;
-  left: 100%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  border-right-color: #353C48; }
-
-.c-tooltip--left::after {
-  top: 50%;
-  right: 100%;
-  -webkit-transform: translate(-12px, -50%);
-          transform: translate(-12px, -50%); }
-
-.c-tooltip--left::before {
-  top: 50%;
-  right: 100%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  border-left-color: #353C48; }
-
-/* ==========================================================================
    #ALERTS
    ========================================================================== */
 /**
@@ -8067,7 +7101,7 @@ be a descendant of the grid when it is being dragged.
   position: relative;
   width: 100%;
   margin: 0 0 0.9375rem 0;
-  padding: 0.75rem;
+  padding: 0.75rem 2rem 0.75rem 0.75rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 4px;
@@ -8076,7 +7110,7 @@ be a descendant of the grid when it is being dragged.
     position: absolute;
     top: 0.75rem;
     /* [1] */
-    right: 0.75rem;
+    right: 1rem;
     /* [1] */ }
   .c-alert.fade {
     -webkit-transition: opacity 0.3s;
@@ -8186,230 +7220,51 @@ be a descendant of the grid when it is being dragged.
   height: 130px; }
 
 /* ==========================================================================
-   #PROGRESS
+   #BADGES
    ========================================================================== */
-.c-progress {
-  display: block;
-  width: 100%;
-  height: 20px;
-  margin: 0 0 15px 0;
-  border-radius: 20px;
-  background-color: rgba(49, 61, 79, 0.3); }
+.c-badge {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  /**
+	 * Badges with icons
+	 */ }
+  .c-badge > i {
+    margin-right: 0.3125rem; }
 
-/**
-  * 1. Default (dark) background-color would be applied, if class 
-  *    `c-progress--[color]` isn't specified.
-  */
-.c-progress__bar {
-  position: relative;
-  height: 100%;
-  border-radius: 20px;
-  background-color: #354052;
-  /* [1] */
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  background: #2ea1f8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
-  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+.c-badge--small {
+  padding: 4px 10px;
+  font-size: 10px; }
 
-/* Size variants
-   ========================================================================== */
-.c-progress--xsmall {
-  height: 2px; }
-
-.c-progress--small {
-  height: 4px; }
-
-.c-progress--medium {
-  height: 8px; }
+.c-badge--xsmall {
+  padding: 2px 5px;
+  font-size: 10px; }
 
 /* Style variants
    ========================================================================== */
-.c-progress--danger .c-progress__bar {
-  background: #f95359;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f95359), to(#d35847));
-  background: linear-gradient(to bottom, #f95359, #d35847); }
+.c-badge--success {
+  background-color: #1bb934; }
 
-.c-progress--info .c-progress__bar {
-  background: #2DA1F8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
-  background: linear-gradient(to bottom, #2DA1F8, #1991EB); }
+.c-badge--info {
+  background-color: #2ea1f8; }
 
-.c-progress--primary .c-progress__bar {
-  background: #475364;
-  background: -webkit-gradient(linear, left top, left bottom, from(#475364), to(#273142));
-  background: linear-gradient(to bottom, #475364, #273142); }
+.c-badge--warning {
+  background-color: #fd9a18; }
 
-.c-progress--success .c-progress__bar {
-  background: #5AD946;
-  background: -webkit-gradient(linear, left top, left bottom, from(#5AD946), to(#2BB415));
-  background: linear-gradient(to bottom, #5AD946, #2BB415); }
+.c-badge--danger {
+  background-color: #ed1c24; }
 
-.c-progress--warning .c-progress__bar {
-  background: #F8CF5D;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF5D), to(#FDC018));
-  background: linear-gradient(to bottom, #F8CF5D, #FDC018); }
+.c-badge--primary {
+  background-color: #475364; }
 
-.c-progress--fancy .c-progress__bar {
-  background: #9D90E4;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9D90E4), to(#8261E6));
-  background: linear-gradient(to bottom, #9D90E4, #8261E6); }
-
-/**
- * Multi-level progress bars
- */
-.c-progress__bar .c-progress__bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: red;
-  z-index: 200; }
-
-/* ==========================================================================
-   #TABS
-   ========================================================================== */
-/**
- * A wrapper for tabs navigation and content.
- */
-/**
- * 1. Works as a wrapper for tabs navigation links.
- */
-.c-tabs__list {
-  /* [1] */
-  padding: 20px 30px;
-  border: 1px solid #313D4F;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  background-color: #273142; }
-  .c-tabs__list li {
-    display: inline-block; }
-
-.c-tabs__link {
-  margin: 0 30px 0 0;
-  padding: 0 0 21px 0;
-  color: #7f8fa4;
-  font-size: 1rem; }
-  .c-tabs__link:hover {
-    color: #fff;
-    text-decoration: none; }
-  .c-tabs__link.is-active, .c-tabs__link.active {
-    border-bottom: 2px solid #2ea1f8;
-    color: #fff;
-    font-weight: 600; }
-
-/**
- * Splitted-style of tabs navigation list
- */
-.c-tabs__list--splitted {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0;
-  border: 0;
-  background-color: transparent; }
-  .c-tabs__list--splitted .c-tabs__item {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin: 0; }
-  .c-tabs__list--splitted .c-tabs__link {
-    display: inline-block;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-right: 4px;
-    padding: 15px 30px;
-    border: 1px solid #313D4F;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    font-size: 14px;
-    background: #fff;
-    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F4F7FA));
-    background: linear-gradient(to bottom, #fff, #F4F7FA); }
-    .c-tabs__list--splitted .c-tabs__link.is-active, .c-tabs__list--splitted .c-tabs__link.active {
-      padding: 20px 35px;
-      border-bottom-color: #fff;
-      background: #fff;
-      font-size: 18px; }
-
-.c-tabs__pane {
-  display: none;
-  margin: 0;
-  padding: 20px 30px;
-  border: 1px solid #313D4F;
-  border-top: 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  background-color: #273142;
+.c-badge--secondary {
+  background-color: #b7c0cd;
   color: #fff; }
-  .c-tabs__pane.is-active, .c-tabs__pane.active {
-    display: block; }
-
-/* ==========================================================================
-   #DROPDOWN
-   ========================================================================== */
-/**
- * A wrapper for the dropdown
- */
-.c-dropdown {
-  display: inline-block;
-  position: relative; }
-
-/**
- * Dropdown Menu
- * 
- * 1. No matter what size is the dropdown toggle `dropdown-toggle` (a class from
- *    bootstrap), dropdown menu should be positioned properly.
- */
-.c-dropdown__menu {
-  position: absolute;
-  top: 100%;
-  /* [1] */
-  right: 0;
-  width: 9.375rem;
-  margin: 5px 0 0;
-  -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
-  transition: visibility 0.3s ease, opacity 0.3s ease;
-  border: 1px solid #313D4F;
-  border-radius: 4px;
-  background-color: #273142;
-  text-align: left;
-  z-index: 400; }
-  .c-dropdown .c-dropdown__menu,
-  .dropdown .c-dropdown__menu {
-    opacity: 0;
-    visibility: hidden; }
-  .c-dropdown.show .c-dropdown__menu,
-  .dropdown.show .c-dropdown__menu {
-    opacity: 1;
-    visibility: visible; }
-
-/**
- * A larger dropdown menu for dropdowns used in navbar.
- */
-.c-dropdown__menu--large {
-  width: 18.75rem; }
-  .c-dropdown__menu--large .c-dropdown__item {
-    padding: 0.625rem 0.9375rem; }
-
-/**
- * 1. Remove border from last item to prevent it from collapsing with dropdown
- *    menu's last border.
- */
-.c-dropdown__item {
-  display: block;
-  padding: 0.5rem 0.9375rem;
-  border-bottom: 1px solid #313D4F;
-  color: #fff;
-  font-size: 0.875rem;
-  font-weight: 400; }
-  .c-dropdown__item:hover {
-    background-color: #313D4F;
-    color: #2ea1f8;
-    text-decoration: none; }
-  .c-dropdown__item:last-child {
-    border-bottom: 0;
-    /* [1] */ }
 
 /* ==========================================================================
    #BREADCRUMB
@@ -8432,234 +7287,244 @@ be a descendant of the grid when it is being dragged.
     color: #354052; }
 
 /* ==========================================================================
-   #NOTIFICATIONS
+   #BUTTON GROUP
    ========================================================================== */
 /**
- * 1. Allow notification to have a dropdown menu.
- * 2. Fix additional space added by positioning number absolutely.
- */
-.c-notification {
-  display: inline-block;
-  position: relative;
-  /* [1] */
-  margin-right: 10px;
-  /* [2] */ }
-
-.c-notification__icon {
-  color: #7F8FA4;
-  font-size: 20px; }
-
-/**
- * 1. Align number with notifcation icon properly.
- */
-.c-notification__number {
-  display: inline-block;
-  position: absolute;
-  top: -3px;
-  /* [1] */
-  right: -10px;
-  /* [1] */
-  min-width: 20px;
-  height: 20px;
-  padding: 0 5px;
-  border-radius: 20px;
-  background-color: #FF7800;
-  color: #fff;
-  font-size: 0.75rem;
-  line-height: 20px;
-  text-align: center; }
-
-/* ==========================================================================
-   #TOOLBAR
-   ========================================================================== */
-.c-toolbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 20px 30px;
-  background-color: #273142;
-  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
-          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07); }
-  @media only screen and (max-width: 768px) {
-    .c-toolbar {
-      padding: 20px 15px; } }
-
-.c-toolbar__title {
+  * Button Group is a series of buttons grouped together on a single line.
+  */
+.c-btn-group {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-  color: #fff;
-  font-size: 18px; }
-  .c-toolbar__title.has-divider::after {
-    display: block;
-    width: 1px;
-    height: 15px;
-    margin: 0 13px;
-    background-color: #DFE3E9;
-    content: " "; }
-
-.c-toolbar__meta {
-  margin: 0;
-  color: #7F8FA4;
-  font-size: 14px; }
-
-.c-toolbar__icon {
-  display: block;
-  color: #CED0DA;
-  font-size: 18px; }
-  .c-toolbar__icon.is-active {
-    color: #2ea1f8; }
-  .c-toolbar__icon.has-divider::after {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    width: 1px;
-    height: 15px;
-    margin: 0 13px;
-    background-color: #DFE3E9;
-    content: " "; }
-
-.c-toolbar__link {
-  color: #7F8FA4;
-  font-size: 14px; }
-  .c-toolbar__link.has-dropdown::after {
-    display: inline-block;
-    margin-left: 10px;
-    color: inherit;
-    font-family: "FontAwesome";
-    font-size: 12px;
-    content: "\f3d0"; }
+  display: inline-flex; }
+  .c-btn-group > .c-btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .c-btn-group > .c-btn:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .c-btn-group > .c-btn:not(:first-child):not(:last-child) {
+    border-radius: 0; }
+  .c-btn-group > .c-btn + .c-btn {
+    border-left: 0; }
 
 /**
- * Toolbar (tab-like) Navigation
+ * Force button group to take full width.
  */
-@media only screen and (max-width: 576px) {
-  .c-toolbar__nav {
-    margin-right: auto;
-    margin-left: auto; } }
-
-.c-toolbar__nav-item {
-  margin-right: 25px;
-  padding: 0 0 27px;
-  color: #7f8fa4;
-  font-size: 1rem; }
-  .c-toolbar__nav-item:last-child {
-    margin-right: 0; }
-  .c-toolbar__nav-item:hover {
-    color: #fff;
-    text-decoration: none; }
-  .c-toolbar__nav-item.is-active {
-    border-bottom: 2px solid #2ea1f8;
-    color: #fff;
-    font-weight: 600; }
-  @media only screen and (max-width: 576px) {
-    .c-toolbar__nav-item {
-      padding-bottom: 20px; } }
-
-/**
- * Toolbar stats
- *
- * Numbers & states placed in the toolbar, used in performance.html page
- */
-.c-toolbar__state {
-  border-right: 1px solid #313D4F;
-  text-align: center; }
-  @media (max-width: 768px) {
-    .c-toolbar__state {
-      margin-bottom: 1.875rem;
-      border-right: 0; }
-      .c-toolbar__state:nth-child(3), .c-toolbar__state:nth-child(4) {
-        margin-bottom: 0; } }
-  .c-toolbar__state:last-child {
-    border-right: 0; }
-
-.c-toolbar__state-number {
-  margin-bottom: 0;
-  font-size: 1.75rem; }
-
-.c-toolbar__state-title {
-  color: #7f8fa4;
-  font-size: 0.875rem;
-  text-transform: uppercase; }
-
-/* ==========================================================================
-   #TOGGLE
-   ========================================================================== */
-/**
- * Toggles are a pair of buttons useful for (Yes/No)-like questions.
- *
- * 1. Remove `is-active` styles when `c-toggle` is disabled
- */
-.c-toggle {
+.c-btn-group--fullwidth {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 45px;
-  cursor: pointer; }
-  .c-toggle.is-disabled {
-    cursor: not-allowed;
-    opacity: 0.5; }
-    .c-toggle.is-disabled .c-toggle__btn.is-active {
-      /* [1] */
-      border-color: #313D4F;
-      background-color: #273142;
-      color: #565F6D; }
+  width: 100%; }
+  .c-btn-group--fullwidth > .c-btn {
+    width: 100%; }
 
-.c-toggle__btn {
-  width: 50%;
-  height: 45px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border: 1px solid #313D4F;
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+/**
+ * 1. Apply (btn--info) background if `c-btn--{style}` class isn't specified.
+ * 2. Align icon (if placed inside button) with text properly.
+ * 3. Add dropdown icon/arrow to button with `has-dropdown` class, it depends 
+ *    on (FontAwesome) icon font so make sure to modify it if you changed your 
+ *    base icon font.
+ * 4. Use `disabled` property on <button> elements, and `is-disabled` class on
+ *    <a> elements as they don't support `disabled` property.
+ */
+.c-btn {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.5rem 1.25rem;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  border: 1px solid;
   border-radius: 4px;
-  background-color: #273142;
-  color: #565F6D;
-  font-size: 14px;
+  border-color: #1a91eb;
+  /* [1] */
+  color: #fff;
+  /* [1] */
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
   text-align: center;
-  text-transform: uppercase;
-  cursor: inherit; }
-  .c-toggle__btn:nth-child(1) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
-  .c-toggle__btn:nth-child(2) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0; }
-  .c-toggle__btn.is-active {
-    border-color: #249533;
-    background-color: #39B54A;
-    color: #fff; }
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  overflow: hidden;
+  vertical-align: middle;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea);
+  /* [1] */ }
+  .c-btn:hover, .c-btn:focus {
+    outline: 0;
+    color: #fff;
+    text-decoration: none; }
+  .c-btn i {
+    position: relative;
+    bottom: -1px;
+    /* [2] */
+    font-size: 16px; }
+  .c-btn.has-dropdown {
+    position: relative;
+    padding-right: 2.5rem; }
+    .c-btn.has-dropdown::after {
+      /* [3] */
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      margin-left: 1.25rem;
+      padding: 0.5rem 8px;
+      border-left: 1px solid;
+      border-color: inherit;
+      color: inherit;
+      font-family: "FontAwesome";
+      content: "\f107"; }
+  .c-btn.is-disabled, .c-btn:disabled {
+    /* [4] */
+    border-color: #e6eaee;
+    background: #f5f8fa;
+    color: rgba(53, 64, 82, 0.5); }
+    .c-btn.is-disabled:hover, .c-btn.is-disabled:focus, .c-btn:disabled:hover, .c-btn:disabled:focus {
+      border-color: #e6eaee;
+      background: #f5f8fa;
+      color: rgba(53, 64, 82, 0.5);
+      cursor: not-allowed; }
 
-.c-toggle__label {
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  cursor: inherit; }
+.c-btn--fullwidth {
+  width: 100%; }
 
 /**
- * 1. Hide default radio button
+ * 1. Reduce spacing between the icon and text in small buttons.
  */
-.c-toggle__input {
-  display: none;
-  /* [1] */
-  width: 100%;
-  height: 100%; }
+.c-btn--small {
+  padding: 0.25rem 1.125rem;
+  font-size: 0.75rem; }
+  .c-btn--small i {
+    margin-right: 5px;
+    /* [1] */ }
+
+.c-btn--large {
+  padding: 0.5rem 1.875rem;
+  font-size: 1rem; }
+
+/* Style variants
+   ========================================================================== */
+/**
+ * Buttons have a simple, nice gradient on the background, we use 
+ * sass's `darken()` method to generate a dark shade of the requested color, 
+ * then we use our `linear-gradient` mixin to generate the gradient background.
+ */
+.c-btn--primary {
+  background: #475364;
+  background: -webkit-gradient(linear, left top, left bottom, from(#475364), to(#273142));
+  background: linear-gradient(to bottom, #475364, #273142);
+  border-color: #354052; }
+  .c-btn--primary:hover {
+    background: #3f4958;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3f4958), to(#151b24));
+    background: linear-gradient(to bottom, #3f4958, #151b24); }
+  .c-btn--primary:focus {
+    background: #3a4452;
+    background: -webkit-gradient(linear, left top, left bottom, from(#3a4452), to(#12161e));
+    background: linear-gradient(to bottom, #3a4452, #12161e); }
+
+.c-btn--secondary {
+  background: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f2f4f7));
+  background: linear-gradient(to bottom, #fff, #f2f4f7);
+  border-color: #dfe3e9;
+  color: #354052; }
+  .c-btn--secondary:hover {
+    background: #fcfcfc;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#eceff3));
+    background: linear-gradient(to bottom, #fcfcfc, #eceff3);
+    color: #354052; }
+  .c-btn--secondary:focus {
+    background: #fafafa;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fafafa), to(#e9ecf1));
+    background: linear-gradient(to bottom, #fafafa, #e9ecf1);
+    color: #354052; }
+
+.c-btn--info {
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea);
+  border-color: #1a91eb; }
+  .c-btn--info:hover {
+    background: #1a98f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1a98f7), to(#1485db));
+    background: linear-gradient(to bottom, #1a98f7, #1485db); }
+  .c-btn--info:focus {
+    background: #1094f7;
+    background: -webkit-gradient(linear, left top, left bottom, from(#1094f7), to(#137fd1));
+    background: linear-gradient(to bottom, #1094f7, #137fd1); }
+
+.c-btn--success {
+  background: #39b54a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#39b54a), to(#34aa44));
+  background: linear-gradient(to bottom, #39b54a, #34aa44);
+  border-color: #249533; }
+  .c-btn--success:hover {
+    background: #34a544;
+    background: -webkit-gradient(linear, left top, left bottom, from(#34a544), to(#2f9a3e));
+    background: linear-gradient(to bottom, #34a544, #2f9a3e); }
+  .c-btn--success:focus {
+    background: #329e40;
+    background: -webkit-gradient(linear, left top, left bottom, from(#329e40), to(#2d933b));
+    background: linear-gradient(to bottom, #329e40, #2d933b); }
+
+.c-btn--fancy {
+  background: #886ce6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#886ce6), to(#7d5be2));
+  background: linear-gradient(to bottom, #886ce6, #7d5be2);
+  border-color: #7d5be2; }
+  .c-btn--fancy:hover {
+    background: #7a5be3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7a5be3), to(#6f4adf));
+    background: linear-gradient(to bottom, #7a5be3, #6f4adf); }
+  .c-btn--fancy:focus {
+    background: #7352e2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#7352e2), to(#6841dd));
+    background: linear-gradient(to bottom, #7352e2, #6841dd); }
+
+.c-btn--warning {
+  background: #fd9a18;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd9a18), to(#f16911));
+  background: linear-gradient(to bottom, #fd9a18, #f16911);
+  border-color: #f16911; }
+  .c-btn--warning:hover {
+    background: #fd9104;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fd9104), to(#e0600d));
+    background: linear-gradient(to bottom, #fd9104, #e0600d); }
+  .c-btn--warning:focus {
+    background: #f48c02;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f48c02), to(#d75c0d));
+    background: linear-gradient(to bottom, #f48c02, #d75c0d); }
+
+.c-btn--danger {
+  background: #f95359;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f95359), to(#d35847));
+  background: linear-gradient(to bottom, #f95359, #d35847);
+  border-color: #d35847; }
+  .c-btn--danger:hover {
+    background: #f83f46;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f83f46), to(#cf4937));
+    background: linear-gradient(to bottom, #f83f46, #cf4937); }
+  .c-btn--danger:focus {
+    background: #f8353c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8353c), to(#cb4331));
+    background: linear-gradient(to bottom, #f8353c, #cb4331); }
 
 /* ==========================================================================
    #CHOICES (Checkboxes & Radios)
@@ -8683,7 +7548,7 @@ be a descendant of the grid when it is being dragged.
  */
 .c-choice {
   margin: 0 0 0.9375rem 0;
-  color: #fff;
+  color: #354052;
   font-size: 0;
   /* [1] */
   font-weight: 400;
@@ -8693,11 +7558,11 @@ be a descendant of the grid when it is being dragged.
 	 * NOTE: `disabled` attribute must be added to <input>
 	 */ }
   .c-choice.is-disabled .c-choice__label {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(53, 64, 82, 0.5);
     cursor: default; }
     .c-choice.is-disabled .c-choice__label::before {
-      border-color: #313D4F;
-      background-color: #273142; }
+      border-color: #dfe3e9;
+      background-color: #e6eaee; }
 
 /**
  * 1. Hide default input and create a customized input.
@@ -8723,7 +7588,7 @@ be a descendant of the grid when it is being dragged.
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #fff;
+    color: #354052;
     font-size: 0.875rem;
     cursor: pointer; }
   .c-choice__input + .c-choice__label::before {
@@ -8736,8 +7601,8 @@ be a descendant of the grid when it is being dragged.
     margin: 0 15px 0 0;
     -webkit-transition: all .3s;
     transition: all .3s;
-    border: 1px solid #313D4F;
-    background-color: #273142;
+    border: 1px solid #bbc5d5;
+    background-color: #fff;
     color: #fff;
     line-height: 15px;
     text-align: center;
@@ -8769,6 +7634,95 @@ be a descendant of the grid when it is being dragged.
   background-color: #fff;
   -webkit-box-shadow: 0 0 0 1px #34aa44;
           box-shadow: 0 0 0 1px #34aa44; }
+
+/* ==========================================================================
+   #CLOSE
+   ========================================================================== */
+/**
+ * A small button for closing components, used with closable components 
+ * like modals, alerts. 
+ */
+.c-close {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.625rem;
+  line-height: 1;
+  opacity: 0.7;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+  .c-close:hover, .c-close:focus {
+    opacity: 1; }
+  .c-close:focus {
+    outline: 0; }
+
+/* ==========================================================================
+   #DROPDOWN
+   ========================================================================== */
+/**
+ * A wrapper for the dropdown
+ */
+.c-dropdown {
+  display: inline-block;
+  position: relative; }
+
+/**
+ * Dropdown Menu
+ * 
+ * 1. No matter what size is the dropdown toggle `dropdown-toggle` (a class from
+ *    bootstrap), dropdown menu should be positioned properly.
+ */
+.c-dropdown__menu {
+  position: absolute;
+  top: 100%;
+  /* [1] */
+  right: 0;
+  width: 9.375rem;
+  margin: 5px 0 0;
+  -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+  border: 1px solid #dfe3e9;
+  border-radius: 4px;
+  background-color: #fff;
+  text-align: left;
+  z-index: 400; }
+  .c-dropdown .c-dropdown__menu,
+  .dropdown .c-dropdown__menu {
+    opacity: 0;
+    visibility: hidden; }
+  .c-dropdown.show .c-dropdown__menu,
+  .dropdown.show .c-dropdown__menu {
+    opacity: 1;
+    visibility: visible; }
+
+/**
+ * A larger dropdown menu for dropdowns used in navbar.
+ */
+.c-dropdown__menu--large {
+  width: 18.75rem; }
+  .c-dropdown__menu--large .c-dropdown__item {
+    padding: 0.625rem 0.9375rem; }
+
+/**
+ * 1. Remove border from last item to prevent it from collapsing with dropdown
+ *    menu's last border.
+ */
+.c-dropdown__item {
+  display: block;
+  padding: 0.5rem 0.9375rem;
+  border-bottom: 1px solid #dfe3e9;
+  color: #354052;
+  font-size: 0.875rem;
+  font-weight: 400; }
+  .c-dropdown__item:hover {
+    background-color: #f2f4f7;
+    color: #2ea1f8;
+    text-decoration: none; }
+  .c-dropdown__item:last-child {
+    border-bottom: 0;
+    /* [1] */ }
 
 /**
   * Form field `c-field` component is used as a wrapper for more complex inputs
@@ -8848,9 +7802,9 @@ be a descendant of the grid when it is being dragged.
   * Addon is an icon placed in box next to input, used as a visual indicator
   */
 .c-field__addon {
-  background: #273142;
-  background: -webkit-gradient(linear, left top, left bottom, from(#273142), to(#273142));
-  background: linear-gradient(to bottom, #273142, #273142);
+  background: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFF), to(#F2F4F7));
+  background: linear-gradient(to bottom, #FFF, #F2F4F7);
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -8864,7 +7818,7 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid #313D4F;
+  border: 1px solid #dfe3e9;
   border-radius: 4px;
   color: #CED0DA;
   font-size: 18px;
@@ -8883,77 +7837,27 @@ be a descendant of the grid when it is being dragged.
     margin-right: 5px; }
 
 /* ==========================================================================
-   #SWITCH
+   #ICONS
    ========================================================================== */
-/**
- * 1. Radius of `toggle` should be equal to radius of `c-switch`.
- * 2. The small circle that move to the right and left.
- * 3. Calculation: (width of switch bar) - (toggle's width + 2px )
- * 4. Don't allow active state on a disabled switch.
- */
-.c-switch {
+.c-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  cursor: pointer; }
-  .c-switch::before {
-    display: inline-block;
-    position: relative;
-    width: 48px;
-    height: 24px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    border-radius: 83px;
-    background-color: #273142;
-    content: " "; }
-  .c-switch::after {
-    /* [2] */
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 20px;
-    height: 20px;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    border-radius: 83px;
-    /* [1] */
-    background-color: #fff;
-    content: " "; }
-  .c-switch.is-active::before {
-    background-color: #34aa44; }
-  .c-switch.is-active::after {
-    left: 26px;
-    /* [3] */ }
-  .c-switch.is-disabled {
-    cursor: not-allowed; }
-    .c-switch.is-disabled::after {
-      opacity: 0.5; }
-    .c-switch.is-disabled.is-active {
-      /* [4] */ }
-      .c-switch.is-disabled.is-active::before {
-        background-color: #273142; }
-      .c-switch.is-disabled.is-active::after {
-        right: 2px; }
-
-/**
- * 1. Hide input to replace it with switch-style input
- */
-.c-switch__input {
-  display: none;
-  /* [1] */ }
-
-.c-switch__label {
-  margin: 0 0 0 0.625rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 4px;
+  background: #2ea1f8;
   color: #fff;
-  font-size: 0.875rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none; }
+  font-size: 1.5rem; }
+  .c-icon:hover {
+    color: #fff;
+    text-decoration: none; }
 
 /* ==========================================================================
    #INPUTS
@@ -8965,35 +7869,35 @@ be a descendant of the grid when it is being dragged.
   padding: 0.59375rem 0.9375rem;
   -webkit-transition: all .3s;
   transition: all .3s;
-  border: 1px solid #313D4F;
+  border: 1px solid #dfe3e9;
   border-radius: 4px;
-  background-color: #273142;
-  color: #fff;
+  background-color: #fff;
+  color: #354052;
   font-size: 0.875rem;
   font-weight: 400;
   resize: none; }
   .c-input::-webkit-input-placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: #7f8fa4;
+    color: rgba(53, 64, 82, 0.5);
     font-weight: 400;
     opacity: 0.5; }
   .c-input:-ms-input-placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: #7f8fa4;
+    color: rgba(53, 64, 82, 0.5);
     font-weight: 400;
     opacity: 0.5; }
   .c-input::-ms-input-placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: #7f8fa4;
+    color: rgba(53, 64, 82, 0.5);
     font-weight: 400;
     opacity: 0.5; }
   .c-input::placeholder {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
-    color: #7f8fa4;
+    color: rgba(53, 64, 82, 0.5);
     font-weight: 400;
     opacity: 0.5; }
   .c-input:focus {
@@ -9008,9 +7912,9 @@ be a descendant of the grid when it is being dragged.
     .c-input:focus::placeholder {
       opacity: 0.2; }
   .c-input.is-disabled, .c-input:disabled {
-    border-color: #313D4F;
-    background-color: #273142;
-    color: rgba(255, 255, 255, 0.5);
+    border-color: #dfe3e9;
+    background-color: #e6eaee;
+    color: rgba(53, 64, 82, 0.5);
     cursor: not-allowed; }
 
 textarea.c-input {
@@ -9038,60 +7942,6 @@ textarea.c-input {
     color: #ed1c24; }
 
 /* ==========================================================================
-   #RANGES
-   ========================================================================== */
-.c-range {
-  width: 100%;
-  outline: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
-
-.c-range--inline {
-  width: 96px; }
-
-.c-range::-webkit-slider-thumb {
-  position: relative;
-  top: -4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  cursor: pointer;
-  -webkit-appearance: none;
-          appearance: none;
-  background: #2DA1F8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
-  background: linear-gradient(to bottom, #2DA1F8, #1991EB); }
-
-.c-range::-webkit-slider-runnable-track {
-  height: 2px;
-  border-radius: 1px;
-  background-color: #CED0DA; }
-
-/* ==========================================================================
-   #CLOSE
-   ========================================================================== */
-/**
- * A small button for closing components, used with closable components 
- * like modals, alerts. 
- */
-.c-close {
-  padding: 0;
-  border: 0;
-  background-color: transparent;
-  color: #fff;
-  font-size: 1.625rem;
-  line-height: 1;
-  opacity: 0.7;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
-  .c-close:hover, .c-close:focus {
-    opacity: 1; }
-  .c-close:focus {
-    outline: 0; }
-
-/* ==========================================================================
    #MODAL 
    ========================================================================== */
 .modal-open {
@@ -9117,15 +7967,15 @@ textarea.c-input {
 .c-modal__dialog {
   position: relative;
   max-width: 550px;
-  margin: 30px auto; }
+  margin: 1.875rem auto; }
   .c-modal.fade .c-modal__dialog {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both; }
   .c-modal.show .c-modal__dialog {
-    -webkit-animation-name: zoomIn;
-            animation-name: zoomIn; }
+    -webkit-animation-name: move;
+            animation-name: move; }
   .c-modal .c-modal__dialog {
     max-width: 550px; }
   .c-modal--xsmall .c-modal__dialog {
@@ -9149,9 +7999,9 @@ textarea.c-input {
   overflow: hidden; }
 
 .c-modal__header {
-  background: #2EA1F8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2EA1F8), to(#1990EA));
-  background: linear-gradient(to bottom, #2EA1F8, #1990EA);
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9233,8 +8083,8 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.9375rem 1.875rem;
-  border-top: 1px solid #313D4F;
-  background-color: #1B2431; }
+  border-top: 1px solid #e6eaee;
+  background-color: #EFF3F6; }
 
 /** 
  * Add a dark background to make modal dialog standout.
@@ -9245,7 +8095,6 @@ textarea.c-input {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #1d2531;
   background-color: rgba(29, 37, 49, 0.9);
   z-index: 400; }
   .modal-backdrop.fade {
@@ -9261,9 +8110,9 @@ textarea.c-input {
   overflow: scroll; }
 
 /**
- * Modal zoom animation
+ * Modal move animation
  */
-@-webkit-keyframes zoomIn {
+@-webkit-keyframes move {
   from {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
@@ -9273,7 +8122,7 @@ textarea.c-input {
             transform: translateY(0);
     opacity: 1; } }
 
-@keyframes zoomIn {
+@keyframes move {
   from {
     -webkit-transform: translateY(30px);
             transform: translateY(30px);
@@ -9282,6 +8131,362 @@ textarea.c-input {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1; } }
+
+/* ==========================================================================
+   #NAV
+   ========================================================================== */
+/**
+ * Nav sits within the main navbar area. It’s fully responsive as it holds 
+ * navigation items/links that will be collapsed, toggled in small 
+ * screens via `c-nav-toggle` component.
+ */
+.c-nav {
+  display: block;
+  /**
+	 * Responsive Nav
+	 *
+	 * 1. Remove extra margin when `u-mr-auto` utility is used. 
+	 */ }
+  @media (max-width: 768px) {
+    .c-nav {
+      position: relative;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 0 100%;
+              flex: 1 0 100%;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      margin-top: 0.9375rem;
+      margin-right: -0.9375rem !important;
+      /* [1] */
+      margin-left: -0.9375rem;
+      border-top: 1px solid #e6eaee;
+      /**
+		 * Bootstrap classes used to show and hide nav.
+		 * This behaviour depends on collapse.js plugin.
+		 */ }
+      .c-nav.collapse {
+        display: none; }
+      .c-nav.show {
+        display: block; }
+      .c-nav.collapsing {
+        position: relative;
+        height: 0;
+        -webkit-transition: height 0.6s;
+        transition: height 0.6s;
+        overflow: hidden; } }
+
+.c-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/** 
+ * 1. Allow positioning dropdown menus inside nav items.
+ */
+.c-nav__item {
+  position: relative;
+  /* [1] */
+  margin: 0 40px 0 0; }
+  @media (max-width: 768px) {
+    .c-nav__item {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin-right: 0;
+      padding: 15px;
+      border-bottom: 1px solid #f2f4f7; } }
+  .c-nav__item:last-child {
+    margin-right: 0; }
+    @media (max-width: 768px) {
+      .c-nav__item:last-child {
+        padding-bottom: 5px;
+        border-bottom: 0; } }
+
+.c-nav__link {
+  color: #9FA9BA;
+  font-size: 0.875rem;
+  font-weight: 400; }
+  .c-nav__link:hover {
+    text-decoration: none; }
+  .c-nav__link.is-active {
+    color: #2ea1f8; }
+  @media (max-width: 768px) {
+    .c-nav__link {
+      display: block;
+      color: #354052;
+      font-size: 1rem; } }
+
+/* Nav Toggle
+   ========================================================================== */
+/**
+ * Nav toggle is the popular hamburger-like icon that would show/hide `c-nav` 
+ * via javascript through `js-nav-toggle` to toggle `is-open` class.
+ * 
+ * 1. Remove default button styles.
+ * 2. Show only on small screens, hide on large screen.
+ */
+.c-nav-toggle {
+  display: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 0.9375rem;
+  /* [1] */
+  padding: 0;
+  /* [1] */
+  border: 0;
+  /* [1] */
+  outline: none;
+  background-color: transparent;
+  /* [1] */
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .c-nav-toggle {
+      display: block;
+      /* [2] */ } }
+
+/**
+ * The hamburger icon itself, 3 bars stacked on top of each other. 
+ */
+.c-nav-toggle__bar {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 4px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-radius: 4px;
+  background-color: #354052; }
+  .c-nav-toggle__bar:first-child {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px); }
+  .c-nav-toggle__bar:last-child {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px); }
+
+/* ==========================================================================
+   #NAVBAR
+   ========================================================================== */
+/**
+ * The site's main page header, used as a wrapper for its sub-components.
+ */
+.c-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-width: 100%;
+  min-height: 70px;
+  padding: 13px 30px;
+  border-bottom: 1px solid #E6EAEE;
+  background-color: #fff; }
+  @media (max-width: 768px) {
+    .c-navbar {
+      padding: 0.625rem 0.9375rem; } }
+
+/**
+ * Set a fixed width for search input when placed in navbar.
+ */
+.c-navbar__search {
+  width: 270px !important; }
+
+/**
+ * 1. Custom width, height is specififed for proper alignment, adding your own 
+ *    brand/logo image will require custom styles for proper alignment.
+ * 2. On small screens, seperate logo/brand from other navbar components as 
+ *    navbar links would be collapsed.
+ */
+.c-navbar__brand {
+  display: inline-block;
+  width: 44px;
+  /* [1] */
+  height: 44px;
+  /* [1] */
+  margin: 0 20px 0 0; }
+  @media (max-width: 768px) {
+    .c-navbar__brand {
+      margin-right: auto;
+      /* [2] */ } }
+
+.c-navbar__title {
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem; }
+
+/* Style variants
+   ========================================================================== */
+/**
+ * Use `c-navbar--inverse` for dark background colors.
+ *
+ */
+.c-navbar--inverse {
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+  .c-navbar--inverse .c-nav,
+  .c-navbar--inverse .c-nav__item {
+    border-color: #53b2f9; }
+  .c-navbar--inverse .c-nav__link {
+    color: #fff; }
+  .c-navbar--inverse .c-avatar.has-dropdown::after {
+    color: #fff; }
+  .c-navbar--inverse .c-nav-toggle__icon,
+  .c-navbar--inverse .c-nav-toggle__icon::before,
+  .c-navbar--inverse .c-nav-toggle__icon::after {
+    background-color: #fff;
+    opacity: 0.95; }
+
+/* ==========================================================================
+   #NOTIFICATIONS
+   ========================================================================== */
+/**
+ * 1. Allow notification to have a dropdown menu.
+ * 2. Fix additional space added by positioning number absolutely.
+ */
+.c-notification {
+  display: inline-block;
+  position: relative;
+  /* [1] */
+  margin-right: 10px;
+  /* [2] */ }
+
+.c-notification__icon {
+  color: #7F8FA4;
+  font-size: 20px; }
+
+/**
+ * 1. Align number with notifcation icon properly.
+ */
+.c-notification__number {
+  display: inline-block;
+  position: absolute;
+  top: -3px;
+  /* [1] */
+  right: -10px;
+  /* [1] */
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 20px;
+  background-color: #FF7800;
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 20px;
+  text-align: center; }
+
+/* ==========================================================================
+   #PAGINATION
+   ========================================================================== */
+/**
+ * 1. Use flex utilitites with `c-pagination` for proper alignement of its
+ *    children.
+ */
+.c-pagination {
+  /* [1] */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  text-align: center; }
+
+/**
+ * 1. Remove wierd space between list items.
+ */
+.c-pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  /* [1] */ }
+
+.c-pagination__item {
+  display: inline-block;
+  margin-left: -1px;
+  /* [1] */ }
+  .c-pagination__item:first-child .c-pagination__control {
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .c-pagination__item:last-child .c-pagination__control {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+
+/**
+ * 1. Line height of pagination control should equal its height for proper
+ *    vertical alignment.
+ */
+.c-pagination__control {
+  display: block;
+  height: 2.1875rem;
+  /* [1] */
+  padding: 0 16px;
+  border: 1px solid #e6eaee;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #CED0DA;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2.1875rem;
+  /* [1] */
+  text-align: center;
+  color: #CED0DA;
+  /**
+	 * 1. You may resize this icon if you used another icon font.
+	 */ }
+  .c-pagination__control i {
+    position: relative;
+    bottom: -1px;
+    -webkit-transition: color .15s;
+    transition: color .15s;
+    color: #CED0DA;
+    font-size: 16px;
+    /* [1] */ }
+  .c-pagination__control:hover {
+    color: #354052;
+    text-decoration: none; }
+    .c-pagination__control:hover i {
+      color: #354052; }
+
+.c-pagination__link {
+  display: block;
+  height: 2.1875rem;
+  padding: 0 16px;
+  border: 1px solid #e6eaee;
+  background-color: #fff;
+  color: rgba(53, 64, 82, 0.5);
+  font-size: 14px;
+  line-height: 2.1875rem;
+  text-align: center; }
+  .c-pagination__link.is-active {
+    color: #354052; }
+  .c-pagination__link:hover {
+    color: #354052;
+    text-decoration: none; }
+
+.c-pagination__counter {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 15px;
+  color: #7F8FA4;
+  vertical-align: middle; }
 
 /* ==========================================================================
    #POPOVERS
@@ -9323,7 +8528,7 @@ textarea.c-input {
       left: 50%;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
-      border-top-color: #353C48; }
+      border-top-color: #1d2531; }
   .c-popover.bs-popover-bottom {
     /* [1] */
     margin-top: 0.9375rem; }
@@ -9332,7 +8537,7 @@ textarea.c-input {
       left: 50%;
       -webkit-transform: translate(-50%, 0);
               transform: translate(-50%, 0);
-      border-bottom-color: #353C48; }
+      border-bottom-color: #1d2531; }
   .c-popover.bs-popover-right {
     /* [1] */
     margin-left: 0.9375rem; }
@@ -9341,7 +8546,7 @@ textarea.c-input {
       right: 100%;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%);
-      border-right-color: #353C48; }
+      border-right-color: #1d2531; }
   .c-popover.bs-popover-left {
     /* [1] */
     margin-right: 0.9375rem; }
@@ -9350,30 +8555,824 @@ textarea.c-input {
       left: 100%;
       -webkit-transform: translate(0, -50%);
               transform: translate(0, -50%);
-      border-left-color: #353C48; }
+      border-left-color: #1d2531; }
 
 /* ==========================================================================
-   #ICONS
+   #PROGRESS
    ========================================================================== */
-.c-icon {
+.c-progress {
+  display: block;
+  width: 100%;
+  height: 20px;
+  margin: 0 0 15px 0;
+  border-radius: 20px;
+  background-color: #E2E7EE; }
+
+/**
+  * 1. Default (dark) background-color would be applied, if class 
+  *    `c-progress--[color]` isn't specified.
+  */
+.c-progress__bar {
+  position: relative;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #354052;
+  /* [1] */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+
+/* Size variants
+   ========================================================================== */
+.c-progress--xsmall {
+  height: 2px; }
+
+.c-progress--small {
+  height: 4px; }
+
+.c-progress--medium {
+  height: 8px; }
+
+/* Style variants
+   ========================================================================== */
+.c-progress--danger .c-progress__bar {
+  background: #f95359;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f95359), to(#d35847));
+  background: linear-gradient(to bottom, #f95359, #d35847); }
+
+.c-progress--info .c-progress__bar {
+  background: #2DA1F8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
+  background: linear-gradient(to bottom, #2DA1F8, #1991EB); }
+
+.c-progress--primary .c-progress__bar {
+  background: #475364;
+  background: -webkit-gradient(linear, left top, left bottom, from(#475364), to(#273142));
+  background: linear-gradient(to bottom, #475364, #273142); }
+
+.c-progress--success .c-progress__bar {
+  background: #5AD946;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5AD946), to(#2BB415));
+  background: linear-gradient(to bottom, #5AD946, #2BB415); }
+
+.c-progress--warning .c-progress__bar {
+  background: #F8CF5D;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F8CF5D), to(#FDC018));
+  background: linear-gradient(to bottom, #F8CF5D, #FDC018); }
+
+.c-progress--fancy .c-progress__bar {
+  background: #9D90E4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9D90E4), to(#8261E6));
+  background: linear-gradient(to bottom, #9D90E4, #8261E6); }
+
+/**
+ * Multi-level progress bars
+ */
+.c-progress__bar .c-progress__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: red;
+  z-index: 200; }
+
+/* ==========================================================================
+   #RANGES
+   ========================================================================== */
+.c-range {
+  width: 100%;
+  outline: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.c-range--inline {
+  width: 96px; }
+
+.c-range::-webkit-slider-thumb {
+  position: relative;
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+          appearance: none;
+  background: #2DA1F8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
+  background: linear-gradient(to bottom, #2DA1F8, #1991EB); }
+
+.c-range::-webkit-slider-runnable-track {
+  height: 2px;
+  border-radius: 1px;
+  background-color: #CED0DA; }
+
+/* ==========================================================================
+   #SWITCH
+   ========================================================================== */
+/**
+ * 1. Radius of `toggle` should be equal to radius of `c-switch`.
+ * 2. The small circle that move to the right and left.
+ * 3. Calculation: (width of switch bar) - (toggle's width + 2px )
+ * 4. Don't allow active state on a disabled switch.
+ */
+.c-switch {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 70px;
-  height: 70px;
+  cursor: pointer; }
+  .c-switch::before {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 24px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 83px;
+    background-color: #dfe3e9;
+    content: " "; }
+  .c-switch::after {
+    /* [2] */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 83px;
+    /* [1] */
+    background-color: #fff;
+    content: " "; }
+  .c-switch.is-active::before {
+    background-color: #34aa44; }
+  .c-switch.is-active::after {
+    left: 26px;
+    /* [3] */ }
+  .c-switch.is-disabled {
+    cursor: not-allowed; }
+    .c-switch.is-disabled::after {
+      opacity: 0.5; }
+    .c-switch.is-disabled.is-active {
+      /* [4] */ }
+      .c-switch.is-disabled.is-active::before {
+        background-color: #dfe3e9; }
+      .c-switch.is-disabled.is-active::after {
+        right: 2px; }
+
+/**
+ * 1. Hide input to replace it with switch-style input
+ */
+.c-switch__input {
+  display: none;
+  /* [1] */ }
+
+.c-switch__label {
+  margin: 0 0 0 0.625rem;
+  color: #354052;
+  font-size: 0.875rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+/* ==========================================================================
+   #SWITCH
+   ========================================================================== */
+/**
+ * 1. Radius of `toggle` should be equal to radius of `c-switch`.
+ * 2. The small circle that move to the right and left.
+ * 3. Calculation: (width of switch bar) - (toggle's width + 2px )
+ * 4. Don't allow active state on a disabled switch.
+ */
+.c-switch {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer; }
+  .c-switch::before {
+    display: inline-block;
+    position: relative;
+    width: 48px;
+    height: 24px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 83px;
+    background-color: #dfe3e9;
+    content: " "; }
+  .c-switch::after {
+    /* [2] */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    border-radius: 83px;
+    /* [1] */
+    background-color: #fff;
+    content: " "; }
+  .c-switch.is-active::before {
+    background-color: #34aa44; }
+  .c-switch.is-active::after {
+    left: 26px;
+    /* [3] */ }
+  .c-switch.is-disabled {
+    cursor: not-allowed; }
+    .c-switch.is-disabled::after {
+      opacity: 0.5; }
+    .c-switch.is-disabled.is-active {
+      /* [4] */ }
+      .c-switch.is-disabled.is-active::before {
+        background-color: #dfe3e9; }
+      .c-switch.is-disabled.is-active::after {
+        right: 2px; }
+
+/**
+ * 1. Hide input to replace it with switch-style input
+ */
+.c-switch__input {
+  display: none;
+  /* [1] */ }
+
+.c-switch__label {
+  margin: 0 0 0 0.625rem;
+  color: #354052;
+  font-size: 0.875rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+/* ==========================================================================
+   #TABLES
+   ========================================================================== */
+/**
+ * 1. The border-collapse CSS property specifies that the table's borders are 
+ *    collapsed and it means that adjacent cells share borders.
+ */
+.c-table {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #E6EAEE;
   border-radius: 4px;
-  background: #2ea1f8;
-  color: #fff;
-  font-size: 1.5rem; }
-  .c-icon:hover {
-    color: #fff;
+  background-color: #fff;
+  border-collapse: collapse;
+  /* [1] */ }
+
+/**
+ * Responsive Tables
+ *
+ * Wrap any table with one of these classes to make it responsive at certain
+ * breakpoint.
+ *
+ * 1. Wrap your table with this class `c-table-responsive` if the table's width 
+ * is larger than 1200px.
+ */
+.c-table-responsive {
+  /* [1] */
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+@media (max-width: 576px) {
+  .c-table-responsive\@mobile {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+@media (max-width: 768px) {
+  .c-table-responsive\@tablet {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+@media (max-width: 992px) {
+  .c-table-responsive\@desktop {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+@media (max-width: 1200px) {
+  .c-table-responsve\@wide {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; } }
+
+/**
+ * Use `c-table--zebra` to add zebra-styling to table rows inside the table.
+ */
+.c-table--zebra tbody tr:nth-of-type(odd) {
+  background-color: rgba(230, 234, 238, 0.3); }
+
+/**
+ * Highlight table row on hover.
+ */
+.c-table--highlight tbody tr:hover {
+  background-color: rgba(230, 234, 238, 0.3); }
+
+.c-table--fixed {
+  table-layout: fixed; }
+
+/**
+ * Table title/caption
+ * <caption> 
+ */
+.c-table__title {
+  position: relative;
+  padding: 25px 30px;
+  border: 1px solid #e6eaee;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  background-color: #fff;
+  color: #354052;
+  font-size: 24px;
+  text-align: left; }
+  .c-table__title small {
+    display: inline-block;
+    margin-left: 10px;
+    color: #7f8fa4;
+    font-size: 14px; }
+    .c-table__title small::before {
+      display: inline-block;
+      position: relative;
+      bottom: -2px;
+      width: 1px;
+      height: 14px;
+      margin-right: 12px;
+      background-color: #DFE3E9;
+      content: ""; }
+
+/**
+ * A small icon in table title used to perform general action on table like
+ * downloading table content as a report.
+ */
+.c-table__title-action {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #AFB4BB;
+  font-size: 22px; }
+
+/**
+ * Table Head
+ *
+ * Slimmer version of table's head with less sapcing and darker background
+ */
+.c-table__head--slim {
+  padding: 0;
+  background-color: #F5F8FA; }
+  .c-table__head--slim .c-table__cell {
+    padding: 10px 0 10px 30px; }
+
+/**
+ * Table Row
+ */
+.c-table__row {
+  border-top: 1px solid #E6EAEE;
+  /* [1] */
+  border-bottom: 1px solid #E6EAEE;
+  /* [1] */ }
+  .c-table__row:last-child {
+    border-bottom: 0; }
+
+.c-table__row--success,
+.c-table__row--danger,
+.c-table__row--info,
+.c-table__row--warning {
+  border-left: 3px solid; }
+
+.c-table__row--success {
+  border-left-color: #1bb934; }
+
+.c-table__row--danger {
+  border-left-color: #ed1c24; }
+
+.c-table__row--info {
+  border-left-color: #2ea1f8; }
+
+.c-table__row--warning {
+  border-left-color: #fd9a18; }
+
+/**
+ * Table Cell
+ */
+.c-table__cell {
+  padding: 20px 0 20px 30px;
+  color: #354052;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: middle; }
+  .c-table__cell:last-child {
+    padding-right: 1.875rem; }
+
+.c-table__cell--head {
+  color: #7f8fa4;
+  font-size: 0.875rem;
+  font-weight: 500; }
+
+/**
+ * Table cell with image
+ *
+ * 2. Use flexbox to make sure all table-cell content is vertically centered.
+ */
+.c-table__cell--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* [2] */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* ==========================================================================
+   #TABS
+   ========================================================================== */
+/**
+ * A wrapper for tabs navigation and content.
+ */
+/**
+ * 1. Works as a wrapper for tabs navigation links.
+ */
+.c-tabs__list {
+  /* [1] */
+  padding: 20px 30px;
+  border: 1px solid #dfe3e9;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: #fff; }
+  .c-tabs__list li {
+    display: inline-block; }
+
+.c-tabs__link {
+  margin: 0 30px 0 0;
+  padding: 0 0 21px 0;
+  color: #7f8fa4;
+  font-size: 1rem; }
+  .c-tabs__link:hover {
+    color: #354052;
     text-decoration: none; }
+  .c-tabs__link.is-active, .c-tabs__link.active {
+    border-bottom: 2px solid #2ea1f8;
+    color: #2d3848;
+    font-weight: 600; }
+
+/**
+ * Splitted-style of tabs navigation list
+ */
+.c-tabs__list--splitted {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  border: 0;
+  background-color: transparent; }
+  .c-tabs__list--splitted .c-tabs__item {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin: 0; }
+  .c-tabs__list--splitted .c-tabs__link {
+    display: inline-block;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-right: 4px;
+    padding: 15px 30px;
+    border: 1px solid #dfe3e9;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    font-size: 14px;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#F4F7FA));
+    background: linear-gradient(to bottom, #fff, #F4F7FA); }
+    .c-tabs__list--splitted .c-tabs__link.is-active, .c-tabs__list--splitted .c-tabs__link.active {
+      padding: 20px 35px;
+      border-bottom-color: #fff;
+      background: #fff;
+      font-size: 18px; }
+
+.c-tabs__pane {
+  display: none;
+  margin: 0;
+  padding: 20px 30px;
+  border: 1px solid #dfe3e9;
+  border-top: 0;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #fff;
+  color: #354052; }
+  .c-tabs__pane.is-active, .c-tabs__pane.active {
+    display: block; }
+
+/* ==========================================================================
+   #TOGGLE
+   ========================================================================== */
+/**
+ * Toggles are a pair of buttons useful for (Yes/No)-like questions.
+ *
+ * 1. Remove `is-active` styles when `c-toggle` is disabled
+ */
+.c-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 45px;
+  cursor: pointer; }
+  .c-toggle.is-disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+    .c-toggle.is-disabled .c-toggle__btn.is-active {
+      /* [1] */
+      border-color: #E7E9ED;
+      background-color: #FAFBFC;
+      color: #565F6D; }
+
+.c-toggle__btn {
+  width: 50%;
+  height: 45px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid #E7E9ED;
+  border-radius: 4px;
+  background-color: #FAFBFC;
+  color: #565F6D;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: inherit; }
+  .c-toggle__btn:nth-child(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .c-toggle__btn:nth-child(2) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .c-toggle__btn.is-active {
+    border-color: #249533;
+    background-color: #39B54A;
+    color: #fff; }
+
+.c-toggle__label {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  cursor: inherit; }
+
+/**
+ * 1. Hide default radio button
+ */
+.c-toggle__input {
+  display: none;
+  /* [1] */
+  width: 100%;
+  height: 100%; }
+
+/* ==========================================================================
+   #TOOLBAR
+   ========================================================================== */
+.c-toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07); }
+  @media only screen and (max-width: 768px) {
+    .c-toolbar {
+      padding: 20px 15px; } }
+
+.c-toolbar__title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  color: #354052;
+  font-size: 18px; }
+  .c-toolbar__title.has-divider::after {
+    display: block;
+    width: 1px;
+    height: 15px;
+    margin: 0 13px;
+    background-color: #DFE3E9;
+    content: " "; }
+
+.c-toolbar__meta {
+  margin: 0;
+  color: #7F8FA4;
+  font-size: 14px; }
+
+.c-toolbar__icon {
+  display: block;
+  color: #CED0DA;
+  font-size: 18px; }
+  .c-toolbar__icon.is-active {
+    color: #2ea1f8; }
+  .c-toolbar__icon.has-divider::after {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    width: 1px;
+    height: 15px;
+    margin: 0 13px;
+    background-color: #DFE3E9;
+    content: " "; }
+
+.c-toolbar__link {
+  color: #7F8FA4;
+  font-size: 14px; }
+  .c-toolbar__link.has-dropdown::after {
+    display: inline-block;
+    margin-left: 10px;
+    color: inherit;
+    font-family: "FontAwesome";
+    font-size: 12px;
+    content: "\f3d0"; }
+
+/**
+ * Toolbar (tab-like) Navigation
+ */
+@media only screen and (max-width: 576px) {
+  .c-toolbar__nav {
+    margin-right: auto;
+    margin-left: auto; } }
+
+.c-toolbar__nav-item {
+  margin-right: 25px;
+  padding: 0 0 27px;
+  color: #7f8fa4;
+  font-size: 1rem; }
+  .c-toolbar__nav-item:last-child {
+    margin-right: 0; }
+  .c-toolbar__nav-item:hover {
+    color: #354052;
+    text-decoration: none; }
+  .c-toolbar__nav-item.is-active {
+    border-bottom: 2px solid #2ea1f8;
+    color: #2d3848;
+    font-weight: 600; }
+  @media only screen and (max-width: 576px) {
+    .c-toolbar__nav-item {
+      padding-bottom: 20px; } }
+
+/**
+ * Toolbar stats
+ *
+ * Numbers & states placed in the toolbar, used in performance.html page
+ */
+.c-toolbar__state {
+  border-right: 1px solid #e6eaee;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .c-toolbar__state {
+      margin-bottom: 1.875rem;
+      border-right: 0; }
+      .c-toolbar__state:nth-child(3), .c-toolbar__state:nth-child(4) {
+        margin-bottom: 0; } }
+  .c-toolbar__state:last-child {
+    border-right: 0; }
+
+.c-toolbar__state-number {
+  margin-bottom: 0;
+  font-size: 1.75rem; }
+
+.c-toolbar__state-title {
+  color: #7f8fa4;
+  font-size: 0.875rem;
+  text-transform: uppercase; }
+
+/* ==========================================================================
+   #TOOLTIPS
+   ========================================================================== */
+/**
+ * Simple, css-only based tooltips.
+ *
+ * 1. Prevent other components from overrideing tooltip's line-height.
+ * 2. Get tooltip text from `aria-label` and place it using `content` property.
+ */
+.c-tooltip {
+  position: relative; }
+  .c-tooltip::after {
+    position: absolute;
+    max-height: 5rem;
+    padding: 0.625rem 0.9375rem;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    border-radius: 4px;
+    background-color: #1d2531;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    /* [1] */
+    text-align: center;
+    text-transform: none;
+    white-space: nowrap;
+    content: attr(aria-label);
+    /* [2] */
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 200; }
+  .c-tooltip::before {
+    position: absolute;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    border: 6px solid transparent;
+    content: " ";
+    opacity: 0;
+    visibility: hidden; }
+  .c-tooltip:hover::before, .c-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible; }
+
+/* Direction variants
+   ========================================================================== */
+.c-tooltip--top::after {
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -12px);
+          transform: translate(-50%, -12px); }
+
+.c-tooltip--top::before {
+  bottom: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-top-color: #1d2531; }
+
+.c-tooltip--bottom::after {
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 12px);
+          transform: translate(-50%, 12px); }
+
+.c-tooltip--bottom::before {
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom-color: #1d2531; }
+
+.c-tooltip--right::after {
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(12px, -50%);
+          transform: translate(12px, -50%); }
+
+.c-tooltip--right::before {
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  border-right-color: #1d2531; }
+
+.c-tooltip--left::after {
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translate(-12px, -50%);
+          transform: translate(-12px, -50%); }
+
+.c-tooltip--left::before {
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  border-left-color: #1d2531; }
 
 /* ==========================================================================
    #PROFILE
@@ -9381,9 +9380,9 @@ textarea.c-input {
 .c-profile-card {
   margin: 0 0 0.9375rem;
   padding: 0.625rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-profile-card__cover {
   height: 100px;
@@ -9452,7 +9451,7 @@ textarea.c-input {
 .c-profile-card__state-number {
   display: block;
   margin: 0;
-  color: #fff;
+  color: #354052;
   font-size: 1.25rem;
   font-weight: 600; }
 
@@ -9464,7 +9463,7 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 0.625rem 12px;
-  border-bottom: 1px solid #313D4F; }
+  border-bottom: 1px solid #e6eaee; }
 
 /**
  * Use brand color utilities to set the background-color of every icon.
@@ -9501,7 +9500,7 @@ textarea.c-input {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 0.625rem;
-  color: #fff;
+  color: #354052;
   font-size: 0.875rem; }
   .c-profile-card__meta-item > i {
     margin-right: 0.75rem;
@@ -9514,9 +9513,9 @@ textarea.c-input {
 .c-event {
   margin-bottom: 1.875rem;
   padding: 0.625rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background: #273142; }
+  background: #fff; }
 
 .c-event__img {
   position: relative;
@@ -9711,17 +9710,17 @@ textarea.c-input {
 /* Style Variation - Light Sidebar
    ========================================================================== */
 .c-sidebar--light {
-  border-right: 1px solid #313D4F;
+  border-right: 1px solid #e6eaee;
   background-color: #fff;
   /**
 	 * 1. Add a slight shadow to the sidebar to make it popup a little bit
 	 *    on small screens.
 	 */ }
   .c-sidebar--light .c-sidebar__divider {
-    background-color: #313D4F; }
+    background-color: #e6eaee; }
   .c-sidebar--light .c-sidebar__brand {
-    border-color: #313D4F;
-    color: #fff; }
+    border-color: #e6eaee;
+    color: #354052; }
   .c-sidebar--light .c-sidebar__item.has-submenu > .c-sidebar__link::after {
     /* [1] */
     color: #B7C0CD; }
@@ -9731,13 +9730,13 @@ textarea.c-input {
     color: #7f8fa4; }
     .c-sidebar--light .c-sidebar__link.is-active {
       background-color: transparent;
-      color: #fff; }
+      color: #354052; }
       .c-sidebar--light .c-sidebar__link.is-active i {
         color: #2ea1f8; }
       .c-sidebar--light .c-sidebar__link.is-active:hover {
         color: #2ea1f8; }
     .c-sidebar--light .c-sidebar__link:hover {
-      color: #fff; }
+      color: #354052; }
   @media (max-width: 992px) {
     .c-sidebar--light {
       -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
@@ -9781,7 +9780,7 @@ textarea.c-input {
   -webkit-transition: all .3s;
   transition: all .3s;
   border-radius: 4px;
-  background-color: #fff; }
+  background-color: #354052; }
   .c-sidebar-toggle__bar:first-child {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px); }
@@ -9798,9 +9797,9 @@ textarea.c-input {
 .c-project {
   margin-bottom: 1.875rem;
   padding: 0.625rem 0.625rem 20px;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background: #273142; }
+  background: #fff; }
   .c-project:hover .c-project__profile:nth-child(n) {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
@@ -9896,18 +9895,18 @@ textarea.c-input {
   min-width: 100%;
   min-height: 120px;
   padding: 0.625rem 1.875rem 0.625rem 20px;
-  border: 1px solid #313D4F;
-  background-color: #273142;
-  color: #fff;
+  border: 1px solid #e6eaee;
+  background-color: #fff;
+  color: #354052;
   font-size: 0.875rem;
   overflow-y: auto;
   resize: none; }
 
 .c-post__toolbar {
   padding: 12px;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-top: 0;
-  background-color: #313C4E;
+  background-color: #fafbfc;
   overflow: hidden; }
 
 /**
@@ -9931,7 +9930,7 @@ textarea.c-input {
     left: 0;
     width: 1px;
     height: 70px;
-    background-color: #313D4F;
+    background-color: #e6eaee;
     content: ""; }
   .c-post__time i {
     margin-right: 5px; }
@@ -9947,13 +9946,13 @@ textarea.c-input {
  */
 .c-stream {
   margin: 0 0 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-stream-item {
   padding: 0.9375rem 20px 0.9375rem 12px;
-  border-bottom: 1px solid #313D4F; }
+  border-bottom: 1px solid #e6eaee; }
 
 /**
  * Stream item header
@@ -9971,7 +9970,7 @@ textarea.c-input {
   margin-bottom: 0.3125rem; }
 
 .c-stream-item__name {
-  color: #fff;
+  color: #354052;
   font-weight: 400; }
 
 .c-stream-item__username {
@@ -10040,9 +10039,9 @@ textarea.c-input {
 .c-gallery-card {
   margin: 0 0 1.875rem;
   padding: 10px;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background: #273142; }
+  background: #fff; }
 
 .c-gallery-card__header {
   display: -webkit-box;
@@ -10154,9 +10153,9 @@ textarea.c-input {
    ========================================================================== */
 .c-landing-card {
   padding: 2.5rem 2.5rem 2.5rem 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142;
+  background-color: #fff;
   text-align: center; }
 
 .c-landing-card__img {
@@ -10183,7 +10182,7 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 1.25rem 1.875rem;
-  border-top: 1px solid #313D4F;
+  border-top: 1px solid #e6eaee;
   font-size: 0;
   /* [1] */
   font-weight: 400;
@@ -10193,11 +10192,11 @@ textarea.c-input {
 	 * NOTE: `disabled` attribute must be added to <input>
 	 */ }
   .c-todo.is-disabled .c-todo__label {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(53, 64, 82, 0.5);
     cursor: default; }
     .c-todo.is-disabled .c-todo__label::before {
-      border-color: #313D4F;
-      background-color: #273142;
+      border-color: #dfe3e9;
+      background-color: #e6eaee;
       text-decoration: none; }
 
 /**
@@ -10226,7 +10225,7 @@ textarea.c-input {
         -ms-flex-align: center;
             align-items: center;
     padding-left: 1.5625rem;
-    color: #fff;
+    color: #354052;
     font-size: 0.875rem;
     cursor: pointer; }
     .c-todo.is-completed .c-todo__input + .c-todo__label {
@@ -10300,14 +10299,14 @@ textarea.c-input {
  * A container for the messanger app.
  */
 .c-messanger {
-  background-color: #273142; }
+  background-color: #fff; }
 
 /**
  * A container for inbox messages.
  */
 .c-messages {
   height: calc(100vh - (69px + 70px));
-  border-right: 1px solid #313D4F;
+  border-right: 1px solid #e6eaee;
   overflow-y: auto; }
   .c-messages::-webkit-scrollbar {
     /* [2] */
@@ -10322,8 +10321,8 @@ textarea.c-input {
   display: block;
   position: relative;
   padding: 15px 20px 15px 30px;
-  border-bottom: 1px solid #313D4F;
-  color: #fff; }
+  border-bottom: 1px solid #e6eaee;
+  color: #354052; }
   .c-message:hover {
     text-decoration: none; }
   .c-message.is-active {
@@ -10331,7 +10330,7 @@ textarea.c-input {
 
 .c-message__title {
   margin: 0;
-  color: #fff;
+  color: #354052;
   font-size: 16px; }
 
 .c-message__title-meta {
@@ -10408,7 +10407,7 @@ textarea.c-input {
 .c-chat__message-author {
   display: inline-block;
   margin-bottom: 10px;
-  color: #fff;
+  color: #354052;
   font-size: 1rem;
   font-weight: 500; }
 
@@ -10419,7 +10418,7 @@ textarea.c-input {
 
 .c-chat__message-content {
   margin: 0;
-  color: #fff; }
+  color: #354052; }
 
 /**
  * Chat Divider
@@ -10435,7 +10434,7 @@ textarea.c-input {
     top: 50%;
     width: 42%;
     height: 1px;
-    background-color: #313D4F;
+    background-color: #e6eaee;
     content: ""; }
   .c-chat__divider::before {
     left: 0; }
@@ -10462,7 +10461,7 @@ textarea.c-input {
   height: 60px;
   margin: 0 auto 20px;
   padding: 0;
-  background-color: #273142; }
+  background-color: #fff; }
   .c-chat__composer .c-field__addon {
     padding: 5px 25px; }
 
@@ -10486,14 +10485,14 @@ textarea.c-input {
   padding: 1.5625rem 1.875rem;
   border: 2px solid #2ea1f8;
   border-radius: 8px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-credit-card__logo {
   margin-bottom: 0.9375rem; }
 
 .c-credit-card__number {
   margin-bottom: 0.3125rem;
-  color: #fff;
+  color: #354052;
   font-size: 1.25rem;
   font-weight: 600; }
 
@@ -10509,9 +10508,9 @@ textarea.c-input {
   max-height: 195px;
   padding: 30px 0;
   padding-left: calc(50% + 60px);
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-credit-card__user-title {
   margin-bottom: 20px;
@@ -10529,9 +10528,9 @@ textarea.c-input {
   position: relative;
   margin-bottom: 1.875rem;
   padding: 1.25rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-search-result__avatar {
   margin-right: 1.25rem; }
@@ -10587,7 +10586,7 @@ textarea.c-input {
   margin-bottom: 1.875rem;
   padding: 1.25rem;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-search-form__label {
   margin-bottom: 0.625rem;
@@ -10608,9 +10607,9 @@ textarea.c-input {
  */
 .c-card {
   position: relative;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 /**
  * 1. Display a scrollbar if the content of the card is larger than the 
@@ -10625,8 +10624,8 @@ textarea.c-input {
  */
 .c-card__header {
   padding: 1.5625rem 1.875rem;
-  border-bottom: 1px solid #313D4F;
-  background-color: #313C4E; }
+  border-bottom: 1px solid #e6eaee;
+  background-color: #fafbfc; }
 
 /**
  * Remove default background-color of card's header
@@ -10677,9 +10676,9 @@ textarea.c-input {
    ========================================================================== */
 .c-graph-card {
   margin: 0 0 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142;
+  background-color: #fff;
   overflow: hidden; }
 
 .c-graph-card__content {
@@ -10696,7 +10695,7 @@ textarea.c-input {
 
 .c-graph-card__number {
   margin: 0;
-  color: #fff;
+  color: #354052;
   font-size: 2.5rem;
   font-weight: 300; }
 
@@ -10713,8 +10712,8 @@ textarea.c-input {
 .c-graph-card__footer {
   height: 100%;
   padding: 0.9375rem 1.875rem;
-  border-top: #313D4F solid 1px;
-  background-color: #313C4E; }
+  border-top: #e6eaee solid 1px;
+  background-color: #fafbfc; }
 
 /* ==========================================================================
    #DIVIDER
@@ -10723,7 +10722,7 @@ textarea.c-input {
   display: block;
   position: relative;
   height: 1px;
-  background-color: #313D4F;
+  background-color: #dfe3e9;
   color: #7f8fa4;
   font-size: 0.75rem;
   font-weight: 400;
@@ -10746,7 +10745,7 @@ textarea.c-input {
     .c-divider.has-text::before, .c-divider.has-text::after {
       width: 42%;
       height: 1px;
-      background-color: #313D4F;
+      background-color: #dfe3e9;
       content: ""; }
   @media (max-width: 768px) {
     .c-divider::before, .c-divider::after {
@@ -10758,7 +10757,7 @@ textarea.c-input {
   .c-divider--small.has-text::before, .c-divider--small.has-text::after {
     width: 25%;
     height: 1px;
-    background-color: #313D4F; }
+    background-color: #dfe3e9; }
 
 /* ==========================================================================
    #PROGRESS CARD
@@ -10766,9 +10765,9 @@ textarea.c-input {
 .c-progress-card {
   margin: 0 0 1.875rem;
   padding: 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-progress-card__title {
   margin: 0;
@@ -10835,10 +10834,10 @@ textarea.c-input {
   height: 100%;
   margin: 0;
   padding: 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-top: 0;
   /* [1] */
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-panel__title {
   margin-bottom: 1.875rem;
@@ -10848,7 +10847,7 @@ textarea.c-input {
   display: block;
   height: 1px;
   margin: 1.875rem 0;
-  background-color: #313D4F;
+  background-color: #e6eaee;
   content: " ";
   opacity: 0.5; }
 
@@ -10880,9 +10879,9 @@ textarea.c-input {
           justify-content: flex-start;
   margin-bottom: 1.875rem;
   padding: 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-state-card__icon {
   display: -webkit-box;
@@ -11075,9 +11074,9 @@ textarea.c-input {
   margin: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
   @media (max-width: 576px) {
     .c-login {
       width: 95%;
@@ -11087,10 +11086,10 @@ textarea.c-input {
 .c-login__head {
   position: relative;
   padding: 3.125rem 0 1.875rem;
-  border-bottom: 1px solid #313D4F;
+  border-bottom: 1px solid #e6eaee;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  background-color: #313C4E; }
+  background-color: #fafbfc; }
 
 .c-login__brand {
   display: block;
@@ -11258,9 +11257,9 @@ textarea.c-input {
  * used in `home-overview.html`
  */
 .c-project-card {
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142;
+  background-color: #fff;
   overflow: hidden; }
 
 .c-project-card__img {
@@ -11268,7 +11267,7 @@ textarea.c-input {
 
 .c-project-card__head {
   padding: 1.25rem 1.875rem;
-  border-bottom: 1px solid #313D4F; }
+  border-bottom: 1px solid #e6eaee; }
 
 .c-project-card__title {
   margin: 0;
@@ -11307,7 +11306,7 @@ textarea.c-input {
   width: 100%;
   padding: 5px 0 5px 20px;
   border-radius: 4px;
-  color: #fff;
+  color: #354052;
   font-size: 0.875rem;
   font-weight: 400; }
   .c-menu__link:hover {
@@ -11369,9 +11368,9 @@ textarea.c-input {
 .c-board__content {
   position: relative;
   padding: 10px;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #313C4E;
+  background-color: #fafbfc;
   overflow-y: auto; }
 
 .c-board__btn {
@@ -11444,9 +11443,9 @@ textarea.c-input {
    ========================================================================== */
 .c-task {
   margin-bottom: 0.625rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142;
+  background-color: #fff;
   cursor: -webkit-grabbing;
   cursor: grabbing;
   overflow: hidden; }
@@ -11459,7 +11458,7 @@ textarea.c-input {
 .c-task__content {
   margin: 0;
   padding: 0.9375rem 0.625rem 0.625rem;
-  color: #fff;
+  color: #354052;
   font-size: 0.875rem;
   font-weight: 600; }
 
@@ -11741,7 +11740,7 @@ textarea.c-input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.9375rem 0;
-  border-bottom: 1px solid #313D4F; }
+  border-bottom: 1px solid #e6eaee; }
   .c-fileitem:first-child {
     padding-top: 0; }
   .c-fileitem:last-child {
@@ -11771,7 +11770,7 @@ textarea.c-input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  color: #354052;
   font-weight: 600; }
   .c-fileitem__name > img {
     margin-right: 8px; }
@@ -11806,10 +11805,10 @@ textarea.c-input {
 .c-invoice {
   position: relative;
   padding: 6.25rem 6.25rem 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142;
-  color: #fff;
+  background-color: #fff;
+  color: #354052;
   -webkit-box-shadow: 0 0 10px 1px rgba(53, 64, 82, 0.1);
           box-shadow: 0 0 10px 1px rgba(53, 64, 82, 0.1); }
   @media (max-width: 768px) {
@@ -11935,7 +11934,7 @@ textarea.c-input {
           justify-content: space-between;
   margin-top: 6.25rem;
   padding-top: 1.875rem;
-  border-top: 1px solid #313D4F; }
+  border-top: 1px solid #e6eaee; }
   @media (max-width: 576px) {
     .c-invoice__footer {
       -webkit-box-orient: vertical;
@@ -11988,7 +11987,7 @@ textarea.c-input {
     left: 6px;
     width: 1px;
     height: 100%;
-    background-color: #313D4F;
+    background-color: #e6eaee;
     content: ""; }
   .c-feed.has-icons {
     padding-left: 47px; }
@@ -12019,7 +12018,7 @@ textarea.c-input {
       width: 12px;
       height: 100%;
       border-radius: 0;
-      background-color: #273142;
+      background-color: #fff;
       content: ""; }
   .c-feed__item.has-icon::before {
     display: none; }
@@ -12045,9 +12044,9 @@ textarea.c-input {
   display: inline-block;
   margin: 0.625rem 0;
   padding: 0.625rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #313C4E; }
+  background-color: #fafbfc; }
 
 .c-feed__gallery {
   display: -webkit-box;
@@ -12144,7 +12143,7 @@ textarea.c-input {
 
 .c-map__country,
 .c-map__number {
-  color: #fff; }
+  color: #354052; }
 
 /* ==========================================================================
    #CANDIDATE
@@ -12155,9 +12154,9 @@ textarea.c-input {
 .c-candidate {
   margin-bottom: 1.875rem;
   padding: 0.9375rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 /**
  * 1. Remove weird extra space.
@@ -12180,7 +12179,7 @@ textarea.c-input {
       -ms-flex-align: end;
           align-items: flex-end;
   padding-bottom: 0.9375rem;
-  border-bottom: 1px solid #313D4F; }
+  border-bottom: 1px solid #e6eaee; }
 
 .c-candidate__avatar {
   display: -webkit-inline-box;
@@ -12191,7 +12190,7 @@ textarea.c-input {
       flex-shrink: 0;
   margin-right: 0.9375rem;
   margin-left: 0.625rem;
-  border: 4px solid #273142;
+  border: 4px solid #fff;
   border-radius: 100%;
   overflow: hidden; }
 
@@ -12252,9 +12251,9 @@ textarea.c-input {
  */
 .c-stage {
   margin-bottom: 1.875rem;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 4px;
-  background-color: #273142; }
+  background-color: #fff; }
 
 .c-stage__header {
   display: -webkit-box;
@@ -12267,7 +12266,7 @@ textarea.c-input {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0.9375rem 1.875rem;
-  border-bottom: 1px solid #313D4F;
+  border-bottom: 1px solid #e6eaee;
   cursor: pointer; }
   .c-stage__header:hover {
     text-decoration: none; }
@@ -12282,7 +12281,7 @@ textarea.c-input {
   width: 30px;
   height: 30px;
   margin-right: 0.625rem;
-  border: #313D4F solid 1px;
+  border: #e6eaee solid 1px;
   border-radius: 100%;
   color: #7f8fa4;
   font-size: 14px;
@@ -12290,7 +12289,7 @@ textarea.c-input {
   text-align: center; }
 
 .c-stage__panel {
-  border-bottom: 1px solid #313D4F;
+  border-bottom: 1px solid #e6eaee;
   /**
 	 * Bootstrap classes used to show and hide sidebar submenu.
 	 * This behaviour depends on collapse.js plugin.
@@ -12306,7 +12305,7 @@ textarea.c-input {
     transition: height 0.3s;
     overflow: hidden; }
   .c-stage__panel--mute {
-    background-color: #313C4E; }
+    background-color: #fafbfc; }
 
 .c-stage__label {
   display: -webkit-box;
@@ -12358,7 +12357,7 @@ textarea.c-input {
   .c-counter-nav__link:hover {
     text-decoration: none; }
   .c-counter-nav__link.is-active {
-    color: #fff; }
+    color: #354052; }
 
 .c-counter-nav__counter {
   display: -webkit-inline-box;
@@ -12373,9 +12372,9 @@ textarea.c-input {
   width: 28px;
   height: 28px;
   margin-right: 10px;
-  border: 1px solid #313D4F;
+  border: 1px solid #e6eaee;
   border-radius: 100%;
-  background-color: #313C4E;
+  background-color: #fafbfc;
   color: #7f8fa4;
   text-align: center; }
   .c-counter-nav__link.is-active .c-counter-nav__counter {
@@ -12433,7 +12432,7 @@ textarea.c-input {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   padding: 1.875rem;
-  border-bottom: 1px solid #313D4F; }
+  border-bottom: 1px solid #e6eaee; }
 
 .c-chat-dialogue__team {
   position: relative;
@@ -12507,9 +12506,9 @@ textarea.c-input {
   text-align: right; }
   .c-chat-dialogue__message--self .c-chat-dialogue__message-content {
     margin-left: auto;
-    border: 1px solid #313D4F;
+    border: 1px solid #e6eaee;
     background: #fff;
-    color: #fff; }
+    color: #354052; }
     .c-chat-dialogue__message--self .c-chat-dialogue__message-content::before {
       left: 100%;
       border: 6px solid transparent;
@@ -12517,7 +12516,7 @@ textarea.c-input {
 
 .c-chat-dialogue__footer {
   padding: 1.25rem;
-  border-top: 1px solid #313D4F;
+  border-top: 1px solid #e6eaee;
   background-color: #fff; }
 
 /* ==========================================================================
@@ -12567,7 +12566,7 @@ textarea.c-input {
   color: #45B854 !important; }
 
 .u-text-dark {
-  color: #fff; }
+  color: #354052; }
 
 .u-text-white {
   color: #fff; }
@@ -13015,7 +13014,7 @@ textarea.c-input {
   color: #fd9a18 !important; }
 
 .u-color-primary {
-  color: #fff !important; }
+  color: #354052 !important; }
 
 .u-color-secondary {
   color: #fff !important; }
@@ -13051,8 +13050,8 @@ textarea.c-input {
   background-color: #475364 !important; }
 
 .u-bg-secondary {
-  background: #313C4E !important;
-  background-color: #313C4E !important; }
+  background: #fafbfc !important;
+  background-color: #fafbfc !important; }
 
 .u-bg-white {
   background: #fff !important;
@@ -13137,16 +13136,16 @@ textarea.c-input {
  * Add borders
  */
 .u-border-top {
-  border-top: 1px solid #313D4F !important; }
+  border-top: 1px solid #e6eaee !important; }
 
 .u-border-right {
-  border-right: 1px solid #313D4F !important; }
+  border-right: 1px solid #e6eaee !important; }
 
 .u-border-bottom {
-  border-bottom: 1px solid #313D4F !important; }
+  border-bottom: 1px solid #e6eaee !important; }
 
 .u-border-left {
-  border-left: 1px solid #313D4F !important; }
+  border-left: 1px solid #e6eaee !important; }
 
 /**
  * Remove borders

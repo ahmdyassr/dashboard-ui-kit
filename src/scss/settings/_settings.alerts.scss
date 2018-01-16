@@ -4,13 +4,18 @@
 
 
 $alert-margin: 0 0 rem(15px) 0;
-$alert-padding: rem(12px);
+
+$alert-padding: rem(12px) rem(32px) rem(12px) rem(12px);
+
 $alert-border-radius: $base-border-radius;
 $alert-color: $white;
 
 $alert-icon-margin-right: rem(10px);
 $alert-icon-opacity: 0.7;
 $alert-icon-font-size: rem(18px);
+
+$alert-close-top: rem(12px);
+$alert-close-right: rem(16px);
 
 $alert-success-background-color: $color-success;
 $alert-info-background-color: $color-info;

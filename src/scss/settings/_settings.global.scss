@@ -82,11 +82,11 @@ $color-fancy:   $purple-400 !default;
 $color-mute:    $grey-800 !default;
 
 // gradients
-$gradient-blue:   $blue-300, $blue-400 !default;
-$gradient-green:  $green-300, $green-400 !default;
-$gradient-purple: $purple-300, $purple-500 !default;
-$gradient-red:    $red-100, $red-300 !default;
-$gradient-orange: $orange-300, $orange-500 !default;
+$gradient-info:     $blue-300, $blue-400 !default;
+$gradient-success:  $green-300, $green-400 !default;
+$gradient-fancy:    $purple-300, $purple-500 !default;
+$gradient-danger:   $red-100, $red-300 !default;
+$gradient-warning:  $orange-300, $orange-500 !default;
 
 // brands
 $color-facebook:  #2492E4 !default;

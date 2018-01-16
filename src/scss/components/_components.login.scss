@@ -59,7 +59,7 @@
 	border-radius: 100%;
 	color: $white;
 	font-size: $h4-font-size;
-	@include linear-gradient(to bottom, $gradient-blue);
+	@include linear-gradient(to bottom, $gradient-info);
 }
 
 .c-login__icon--left {

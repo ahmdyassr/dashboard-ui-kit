@@ -31550,7 +31550,7 @@ var ChatDialogue = function(){
 // 
 //
 // Initialize & Configure plugins
-"use strict";
+
 
 //
 // Table of content:
@@ -31567,6 +31567,8 @@ var ChatDialogue = function(){
 // 10. Date Picker (datepicker plugin)
 // 11. Map (jqvmap plugin)
 
+"use strict";
+
 //
 // Note: Bootstrap plugins is enabled via data attributes
 //
@@ -31577,7 +31579,7 @@ Dropzone.autoDiscover = false;
 
 $(function() {
     // Initialize 
-    
+
     Sidebar(); // 1. Sidebar
     Switch();  // 2. Switches
     Toggle();  // 3. Toggles

@@ -68,7 +68,7 @@
 	border-radius: 100%;
 	color: $white;
 	font-size: $h2-font-size;
-	@include linear-gradient(to bottom, $gradient-blue);
+	@include linear-gradient(to bottom, $gradient-info);
 
 	&:hover i {
 		color: inherit;

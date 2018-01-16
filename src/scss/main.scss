@@ -14,6 +14,8 @@
 // Objects......... Layout-specific 
 // Components...... UI-Kit, admin dashboard components
 // Utilities....... Helper classes e.g. display utilities
+//
+
 
 //
 // TOOLS
@@ -32,40 +34,42 @@
 @import "settings/settings.global";
 
 // UI-Kit Settings
-@import "settings/settings.buttons";
-@import "settings/settings.tables";
-@import "settings/settings.navbar";
-@import "settings/settings.nav";
-@import "settings/settings.toolbar";
-@import "settings/settings.badges";
 @import "settings/settings.alerts";
-@import "settings/settings.pagination";
 @import "settings/settings.avatars";
-@import "settings/settings.progress";
-@import "settings/settings.tabs";
-@import "settings/settings.calendar";
-@import "settings/settings.dropdown";
+@import "settings/settings.badges";
 @import "settings/settings.breadcrumb";
-@import "settings/settings.notifications";
-@import "settings/settings.tooltips";
-@import "settings/settings.inputs";
-@import "settings/settings.toggle";
-@import "settings/settings.select";
+@import "settings/settings.buttons";
+@import "settings/settings.calendar";
 @import "settings/settings.choice";
-@import "settings/settings.field";
-@import "settings/settings.switches";
-@import "settings/settings.divider";
 @import "settings/settings.close";
-@import "settings/settings.scrollbar";
-@import "settings/settings.range";
+@import "settings/settings.divider";
+@import "settings/settings.dropdown";
+@import "settings/settings.field";
+@import "settings/settings.inputs";
+@import "settings/settings.modals";
+@import "settings/settings.nav";
+@import "settings/settings.navbar";
+@import "settings/settings.notifications";
+@import "settings/settings.pagination";
 @import "settings/settings.popovers";
+@import "settings/settings.progress";
+@import "settings/settings.range";
+@import "settings/settings.scrollbar";
+@import "settings/settings.select";
+@import "settings/settings.switches";
+@import "settings/settings.tables";
+@import "settings/settings.tabs";
+@import "settings/settings.toggle";
+@import "settings/settings.toolbar";
+@import "settings/settings.tooltips";
 
 @import "tools/tools.scrollbar";
+
 
 //
 // THEMES
 //
-@import "themes/themes.dark";
+//@import "themes/themes.dark";
 
 
 //
@@ -107,34 +111,33 @@
 //
 
 // UI-Kit Components
-@import "components/components.buttons";
-@import "components/components.button-group";
-@import "components/components.navbar";
-@import "components/components.nav";
-@import "components/components.tables";
-@import "components/components.pagination";
-@import "components/components.switch";
-@import "components/components.badges";
-@import "components/components.tooltips";
 @import "components/components.alerts";
 @import "components/components.avatars";
-@import "components/components.progress";
-@import "components/components.tabs";
-@import "components/components.dropdown";
+@import "components/components.badges";
 @import "components/components.breadcrumb";
-@import "components/components.notifications";
-@import "components/components.toolbar";
-@import "components/components.toggle";
+@import "components/components.button-group";
+@import "components/components.buttons";
 @import "components/components.choice";
-@import "components/components.field";
-@import "components/components.switch";
-@import "components/components.inputs";
-@import "components/components.ranges";
 @import "components/components.close";
-@import "components/components.modal";
-@import "components/components.popover";
+@import "components/components.dropdown";
+@import "components/components.field";
 @import "components/components.icon";
-
+@import "components/components.inputs";
+@import "components/components.modal";
+@import "components/components.nav";
+@import "components/components.navbar";
+@import "components/components.notifications";
+@import "components/components.pagination";
+@import "components/components.popover";
+@import "components/components.progress";
+@import "components/components.ranges";
+@import "components/components.switch";
+@import "components/components.switch";
+@import "components/components.tables";
+@import "components/components.tabs";
+@import "components/components.toggle";
+@import "components/components.toolbar";
+@import "components/components.tooltips";
 
 // Dashboard/Admin-Related Components
 @import "components/components.profile-card";
@@ -177,7 +180,11 @@
 @import "components/components.counter-nav";
 @import "components/components.chat-dialogue";
 
+
+//
 // UTILITIES
+//
+
 @import "utilities/utilities.typography";
 @import "utilities/utilities.floats";
 @import "utilities/utilities.clearfix";

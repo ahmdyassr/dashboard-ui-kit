@@ -18,8 +18,8 @@
 
 	.c-close {
 		position: absolute;
-		top: $alert-padding; /* [1] */
-		right: $alert-padding; /* [1] */
+		top: $alert-close-top; /* [1] */
+		right: $alert-close-right; /* [1] */
 	}
 
 
