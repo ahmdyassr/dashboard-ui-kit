@@ -6825,7 +6825,7 @@ be a descendant of the grid when it is being dragged.
  */
 .datepicker-container {
   width: 224px;
-  padding: 10px; }
+  padding: 0.625rem; }
 
 .datepicker-panel > ul > li[data-view="month current"],
 .datepicker-panel > ul > li[data-view="year current"],

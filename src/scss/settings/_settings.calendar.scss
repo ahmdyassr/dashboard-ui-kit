@@ -1,10 +1,10 @@
 ///* ========================================================================
-//   #FULLCALENDAR
+//   #CALENDAR
 //   ======================================================================== */
 
 
 $calendar-width: 224px !default;
-$calendar-padding: 10px;
+$calendar-padding: $spacer-xsmall !default;
 $calendar-border-color: $grey-400 !default;
 $calendar-border-width: $base-border-width !default;
 $calendar-border-radius: $base-border-radius !default;
