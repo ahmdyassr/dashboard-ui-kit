@@ -8452,7 +8452,6 @@ textarea.c-input {
   line-height: 2.1875rem;
   /* [1] */
   text-align: center;
-  color: #CED0DA;
   /**
 	 * 1. You may resize this icon if you used another icon font.
 	 */ }
@@ -8490,7 +8489,7 @@ textarea.c-input {
   display: inline-block;
   margin: 0;
   padding: 8px 15px;
-  color: #7F8FA4;
+  color: #7f8fa4;
   vertical-align: middle; }
 
 /* ==========================================================================
