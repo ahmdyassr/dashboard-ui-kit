@@ -7317,7 +7317,7 @@ be a descendant of the grid when it is being dragged.
    #BUTTONS
    ========================================================================== */
 /**
- * 1. Apply (btn--info) background if `c-btn--{style}` class isn't specified.
+ * 1. Apply (c-btn--info) background if `c-btn--{style}` class isn't specified.
  * 2. Align icon (if placed inside button) with text properly.
  * 3. Add dropdown icon/arrow to button with `has-dropdown` class, it depends 
  *    on (FontAwesome) icon font so make sure to modify it if you changed your 
