@@ -7220,7 +7220,7 @@ be a descendant of the grid when it is being dragged.
 .c-badge {
   display: inline-block;
   margin: 0;
-  padding: 4px 12px;
+  padding: 0.25rem 0.75rem;
   border-radius: 4px;
   color: #fff;
   font-size: 0.75rem;
@@ -7233,11 +7233,11 @@ be a descendant of the grid when it is being dragged.
     margin-right: 0.3125rem; }
 
 .c-badge--small {
-  padding: 4px 10px;
+  padding: 0.25rem 0.625rem;
   font-size: 10px; }
 
 .c-badge--xsmall {
-  padding: 2px 5px;
+  padding: 0.125rem 0.3125rem;
   font-size: 10px; }
 
 /* Style variants

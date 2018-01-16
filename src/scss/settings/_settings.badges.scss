@@ -2,9 +2,10 @@
 //   #BADGES
 //   ======================================================================== */
 
-$badge-padding: 4px 12px;
-$badge-small-padding: 4px 10px;
-$badge-xsmall-padding: 2px 5px;
+
+$badge-padding: rem(4px) rem(12px);
+$badge-small-padding: rem(4px) rem(10px);
+$badge-xsmall-padding: rem(2px) rem(5px);
 
 $badge-border-radius: $base-border-radius;
 
@@ -13,6 +14,7 @@ $badge-font-size: $text-small-font-size;
 $badge-font-weight: $font-weight-bold;
 $badge-color: $white;
 
+// Style variants
 $badge-success-background-color: $color-success;
 $badge-info-background-color: $color-info;
 $badge-danger-background-color: $color-danger;
