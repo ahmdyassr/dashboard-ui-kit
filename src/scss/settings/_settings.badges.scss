@@ -3,24 +3,24 @@
 //   ======================================================================== */
 
 
-$badge-padding: rem(4px) rem(12px);
-$badge-small-padding: rem(4px) rem(10px);
-$badge-xsmall-padding: rem(2px) rem(5px);
+$badge-padding: rem(4px) rem(12px) !default;
+$badge-small-padding: rem(4px) rem(10px) !default;
+$badge-xsmall-padding: rem(2px) rem(5px) !default;
 
-$badge-border-radius: $base-border-radius;
+$badge-border-radius: $base-border-radius !default;
 
-$badge-small-font-size: 10px;
-$badge-font-size: $text-small-font-size;
-$badge-font-weight: $font-weight-bold;
-$badge-color: $white;
+$badge-small-font-size: 10px !default;
+$badge-font-size: $text-small-font-size !default;
+$badge-font-weight: $font-weight-bold !default;
+$badge-color: $white !default;
 
 // Style variants
-$badge-success-background-color: $color-success;
-$badge-info-background-color: $color-info;
-$badge-danger-background-color: $color-danger;
-$badge-warning-background-color: $color-warning;
-$badge-primary-background-color: $gunmetal-100;
-$badge-secondary-background-color: $grey-600;
+$badge-success-background-color: $color-success !default;
+$badge-info-background-color: $color-info !default;
+$badge-danger-background-color: $color-danger !default;
+$badge-warning-background-color: $color-warning !default;
+$badge-primary-background-color: $gunmetal-100 !default;
+$badge-secondary-background-color: $grey-600 !default;
 
-$badge-secondary-color: $white;
+$badge-secondary-color: $white !default;
 
