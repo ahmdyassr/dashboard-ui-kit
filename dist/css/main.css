@@ -7919,6 +7919,9 @@ be a descendant of the grid when it is being dragged.
     color: rgba(53, 64, 82, 0.5);
     cursor: not-allowed; }
 
+/**
+ * Textarea
+ */
 textarea.c-input {
   min-height: 90px;
   font-size: 0.875rem;
