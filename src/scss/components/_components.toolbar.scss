@@ -10,7 +10,7 @@
 	background-color: $toolbar-background-color;
 	box-shadow: $toolbar-box-shadow;
 
-	@media only screen and (max-width: $breakpoint-md) {
+	@include respond-to($breakpoint-tablet) {
 		padding: 20px 15px;
 	}
 }
@@ -79,9 +79,7 @@
  * Toolbar (tab-like) Navigation
  */
 
-//
 // We reuse scss variables from `c-tabs` component.
-// 
 .c-toolbar__nav {
 	@media only screen and (max-width: $breakpoint-mobile) {
 		margin-right: auto;
