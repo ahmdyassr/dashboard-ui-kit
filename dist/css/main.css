@@ -7882,6 +7882,15 @@ be a descendant of the grid when it is being dragged.
 /* ==========================================================================
    #ICONS
    ========================================================================== */
+/**
+ * Add rounded/circular box background to any icon.
+ *
+ * USAGE: 
+ *      
+ * <div class="c-icon c-icon--large c-icon--success">
+ *     <i class="fa fa-facebook"></i>
+ * </div>
+ */
 .c-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -7892,15 +7901,57 @@ be a descendant of the grid when it is being dragged.
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   border-radius: 4px;
   background: #2ea1f8;
   color: #fff;
-  font-size: 1.5rem; }
+  font-size: 1.25rem; }
   .c-icon:hover {
     color: #fff;
     text-decoration: none; }
+
+.c-icon--circle {
+  border-radius: 100%; }
+
+/* Size variants
+   ========================================================================== */
+.c-icon--large {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem; }
+
+.c-icon--small {
+  width: 40px;
+  height: 40px;
+  font-size: 1rem; }
+
+/* Style variants
+   ========================================================================== */
+.c-icon--success {
+  background: #39b54a;
+  background: -webkit-gradient(linear, left top, left bottom, from(#39b54a), to(#34aa44));
+  background: linear-gradient(to bottom, #39b54a, #34aa44); }
+
+.c-icon--info {
+  background: #2ea1f8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+
+.c-icon--warning {
+  background: #fd9a18;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd9a18), to(#f16911));
+  background: linear-gradient(to bottom, #fd9a18, #f16911); }
+
+.c-icon--danger {
+  background: #f95359;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f95359), to(#d35847));
+  background: linear-gradient(to bottom, #f95359, #d35847); }
+
+.c-icon--fancy {
+  background: #886ce6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#886ce6), to(#7d5be2));
+  background: linear-gradient(to bottom, #886ce6, #7d5be2); }
 
 /* ==========================================================================
    #INPUTS
