@@ -8573,21 +8573,20 @@ textarea.c-input {
   background-color: #E2E7EE; }
 
 /**
-  * 1. Default (dark) background-color would be applied, if class 
-  *    `c-progress--[color]` isn't specified.
-  */
+ * 1. Default (info) background-color would be applied, if class 
+ *    `c-progress--[color]` isn't specified.
+ */
 .c-progress__bar {
   position: relative;
   height: 100%;
   border-radius: 20px;
-  background-color: #354052;
-  /* [1] */
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  background: #2ea1f8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
-  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+  background: #2DA1F8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2DA1F8), to(#1991EB));
+  background: linear-gradient(to bottom, #2DA1F8, #1991EB);
+  /* [1] */ }
 
 /* Size variants
    ========================================================================== */
@@ -8632,9 +8631,8 @@ textarea.c-input {
   background: -webkit-gradient(linear, left top, left bottom, from(#9D90E4), to(#8261E6));
   background: linear-gradient(to bottom, #9D90E4, #8261E6); }
 
-/**
- * Multi-level progress bars
- */
+/* Multi-level progress bars
+   ========================================================================== */
 .c-progress__bar .c-progress__bar {
   position: absolute;
   top: 0;
