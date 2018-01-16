@@ -7635,7 +7635,7 @@ be a descendant of the grid when it is being dragged.
    ========================================================================== */
 /**
  * A small button for closing components, used with closable components 
- * like modals, alerts. 
+ * like alerts, modals. 
  */
 .c-close {
   padding: 0;
