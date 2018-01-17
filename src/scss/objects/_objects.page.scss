@@ -87,13 +87,17 @@
 }
 
 
+/** 
+ * Horizontal Page Card
+ *
+ * Used with login-2 page.
+ */
 
+.o-page__card--horizontal {
+	width: 800px;
+	margin: 0 auto $spacer-large;
 
-
-
-
-
-
-
-
-
+	@include respond-to ($breakpoint-desktop) {
+		width: 95%;
+	}
+}

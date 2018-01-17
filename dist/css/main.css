@@ -7038,6 +7038,18 @@ be a descendant of the grid when it is being dragged.
     .o-page__card {
       width: 95%; } }
 
+/** 
+ * Horizontal Page Card
+ *
+ * Used with login-2 page.
+ */
+.o-page__card--horizontal {
+  width: 800px;
+  margin: 0 auto 3.125rem; }
+  @media (max-width: 992px) {
+    .o-page__card--horizontal {
+      width: 95%; } }
+
 /* ==========================================================================
    #MEDIA OBJECT
    ========================================================================== */
@@ -11169,197 +11181,6 @@ textarea.c-input {
   padding: 0 1.875rem; }
 
 /* ==========================================================================
-   #LOGIN
-   ========================================================================== */
-.c-login-wrapper {
-  position: relative;
-  height: 100%; }
-
-.c-login {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 450px;
-  margin: auto;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 1px solid #e6eaee;
-  border-radius: 4px;
-  background-color: #fff; }
-  @media (max-width: 576px) {
-    .c-login {
-      width: 95%;
-      margin-top: 3.125rem;
-      margin-bottom: 6.25rem; } }
-
-.c-login__head {
-  position: relative;
-  padding: 3.125rem 0 1.875rem;
-  border-bottom: 1px solid #e6eaee;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  background-color: #fafbfc; }
-
-.c-login__brand {
-  display: block;
-  position: absolute;
-  top: -35px;
-  right: 0;
-  left: 0;
-  width: 70px;
-  height: 70px;
-  margin: 0 auto; }
-
-.c-login__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: -35px;
-  right: 0;
-  left: 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 70px;
-  height: 70px;
-  margin: 0 auto;
-  border-radius: 100%;
-  color: #fff;
-  font-size: 1.25rem;
-  background: #2ea1f8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
-  background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
-
-.c-login__icon--left {
-  right: initial;
-  left: 30px; }
-
-.c-login__icon--rounded {
-  top: -25px;
-  width: 45px;
-  height: 45px;
-  border-radius: 4px; }
-
-.c-login__title {
-  margin: 0;
-  font-size: 24px;
-  text-align: center; }
-
-.c-login__content {
-  padding: 1.875rem; }
-
-.c-login__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.c-login__social-icon {
-  -ms-flex-preferred-size: 18%;
-      flex-basis: 18%;
-  height: 70px;
-  border-radius: 4px;
-  background-color: #354052;
-  color: #fff;
-  font-size: 24px;
-  line-height: 70px;
-  text-align: center; }
-  .c-login__social-icon:hover {
-    color: #fff; }
-  @media (max-width: 576px) {
-    .c-login__social-icon {
-      -ms-flex-preferred-size: 23%;
-          flex-basis: 23%; } }
-
-.c-login__footer {
-  position: absolute;
-  bottom: -40px;
-  width: 100%; }
-  .c-login__footer::after {
-    display: table !important;
-    clear: both !important;
-    content: "" !important; }
-
-.c-login__footer-link {
-  color: #7f8fa4;
-  font-size: 0.875rem; }
-
-/* Horizontal Login - Login v2
-   ========================================================================== */
-.c-login--horizontal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70%;
-  max-width: 800px; }
-  .c-login--horizontal .c-login__content-wrapper,
-  .c-login--horizontal .c-login__content-image {
-    width: 50%; }
-    @media (max-width: 768px) {
-      .c-login--horizontal .c-login__content-wrapper,
-      .c-login--horizontal .c-login__content-image {
-        width: 100%; } }
-  .c-login--horizontal .c-login__head {
-    padding: 1.875rem 0 0;
-    padding-left: 1.875rem;
-    border: 0;
-    background-color: transparent; }
-  .c-login--horizontal .c-login__title {
-    margin: 0;
-    text-align: left; }
-  .c-login--horizontal .c-login__content {
-    padding-top: 0.9375rem; }
-  .c-login--horizontal .c-login__content-image {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    padding: 1.875rem;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background-color: #49515D;
-    color: #fff;
-    overflow: hidden; }
-    .c-login--horizontal .c-login__content-image img {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: .2; }
-    .c-login--horizontal .c-login__content-image h3,
-    .c-login--horizontal .c-login__content-image p {
-      color: #fff; }
-    .c-login--horizontal .c-login__content-image p {
-      font-size: 1rem;
-      opacity: .9; }
-  @media (max-width: 768px) {
-    .c-login--horizontal {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
-      width: 95%; }
-      .c-login--horizontal .c-login__head {
-        margin-top: 3.125rem; } }
-
-/* ==========================================================================
    #PROJECT CARD
    ========================================================================== */
 /**
@@ -12584,6 +12405,105 @@ textarea.c-input {
   padding: 1.25rem;
   border-top: 1px solid #e6eaee;
   background-color: #fff; }
+
+/* ==========================================================================
+   #LOGIN HORIZONTAL
+   ========================================================================== */
+.c-login-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .c-login-horizontal .c-login__content-wrapper,
+  .c-login-horizontal .c-login__content-image {
+    width: 50%; }
+    @media (max-width: 768px) {
+      .c-login-horizontal .c-login__content-wrapper,
+      .c-login-horizontal .c-login__content-image {
+        width: 100%; } }
+  .c-login-horizontal .c-login__header {
+    position: relative;
+    padding: 1.875rem 0 0;
+    padding-left: 1.875rem;
+    border: 0;
+    background-color: transparent; }
+    @media (max-width: 768px) {
+      .c-login-horizontal .c-login__header {
+        padding-top: 3.125rem; } }
+  .c-login-horizontal .c-login__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: -35px;
+    right: 0;
+    left: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border-radius: 100%;
+    color: #fff;
+    font-size: 1.25rem;
+    background: #2ea1f8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2ea1f8), to(#1990ea));
+    background: linear-gradient(to bottom, #2ea1f8, #1990ea); }
+  .c-login-horizontal .c-login__icon--left {
+    right: initial;
+    left: 30px; }
+  .c-login-horizontal .c-login__icon--rounded {
+    top: -25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 4px; }
+  .c-login-horizontal .c-login__title {
+    margin: 0;
+    font-size: 24px;
+    text-align: left; }
+  .c-login-horizontal .c-login__content {
+    padding: 0.9375rem 1.875rem 1.875rem 1.875rem; }
+  .c-login-horizontal .c-login__content-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding: 1.875rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #49515D;
+    color: #fff;
+    overflow: hidden; }
+    .c-login-horizontal .c-login__content-image img {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: .2; }
+    .c-login-horizontal .c-login__content-image h3,
+    .c-login-horizontal .c-login__content-image p {
+      color: #fff; }
+    .c-login-horizontal .c-login__content-image p {
+      font-size: 1rem;
+      opacity: .9; }
+    @media (max-width: 768px) {
+      .c-login-horizontal .c-login__content-image {
+        display: none; } }
 
 /* ==========================================================================
    #TYPOGRAPHY UTILITIES
