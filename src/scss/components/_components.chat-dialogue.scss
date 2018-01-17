@@ -78,7 +78,7 @@
 	transform: translateY(-20px);
 	transition: all 0.3s;
 	border-radius: $base-border-radius;
-	background-color: $white;
+	background-color: $base-background-color;
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.35);
 	opacity: 0;
 	overflow: hidden;
@@ -94,7 +94,7 @@
 .c-chat-dialogue__messages {
 	height: 400px;
 	padding: 0 rem(20px);
-	background-color: #F0F3F8;
+	background-color: $secondary-background-color;
 	overflow-y: auto;
 }
 
@@ -129,13 +129,14 @@
 	.c-chat-dialogue__message-content {
 		margin-left: auto;
 		border: $base-border-width solid $base-border-color;
-		background: $white;
+		background: $base-background-color;
 		color: $heading-color;
 
+		// arrow
 		&::before {
 			left: 100%;
 			border: 6px solid transparent;
-			border-left-color: $white;
+			border-left-color: $base-background-color;
 		}
 	}
 }
@@ -143,5 +144,5 @@
 .c-chat-dialogue__footer {
 	padding: rem(20px);
 	border-top: $base-border-width solid $base-border-color;
-	background-color: $white;
+	background-color: $base-background-color;
 }
