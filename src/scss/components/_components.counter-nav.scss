@@ -57,4 +57,37 @@
 	}
 }
 
+/**
+ * Inverse 
+ *
+ * Use `.c-counter-nav--inverse` when using this component on a dark background.
+ */
+
+.c-counter-nav--inverse {
+	.c-counter-nav__counter {
+		border-radius: 100%;
+		border-color: #313C4D;
+		background-color: #313C4D;
+		color: #828A96;
+		text-align: center;
+
+		.c-counter-nav__link.is-active & {
+			color: $white;
+		}
+	}
+
+	.c-counter-nav__link.is-active {
+		color: $white;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 

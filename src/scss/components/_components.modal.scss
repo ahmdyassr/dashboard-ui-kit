@@ -2,7 +2,7 @@
    #MODAL 
    ========================================================================== */
 
-
+// bootstrap class for hiding scrollbar when modal is opened
 .modal-open {
 	overflow: hidden;
 }
@@ -18,7 +18,6 @@
 	outline: 0;
 	z-index: $z-index-500;
 
-	// bootstrap class for hiding scrollbar when modal is opened
 	.modal-open & {
 		overflow-x: hidden;
 		overflow-y: auto;

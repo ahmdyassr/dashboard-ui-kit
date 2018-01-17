@@ -90,57 +90,61 @@
             </button>
 
             <!-- Modal -->
-            <div class="c-modal modal fade" id="onBoardModal" tabindex="-1" role="dialog" aria-labelledby="onBoardModal" data-backdrop="static">
+            <div class="c-modal c-modal--xlarge modal fade" id="onBoardModal" tabindex="-1" role="dialog" aria-labelledby="onBoardModal" data-backdrop="static">
                 <div class="c-modal__dialog modal-dialog" role="document">
                     <div class="modal-content">
-                        <div class="c-onboard">
-                        
-                            <header class="c-onboard__header">
-                                <h1 class="c-onboard__title">Welcome To Our App</h1>
-                                <button class="c-onboard__close c-close" data-dismiss="modal" aria-label="Close">
-                                    <i class="fa fa-close"></i>
-                                </button>
-                            </header>
 
-                            <nav class="c-onboard__nav">
-                                <p class="c-onboard__nav-title">Quick Tour</p>
+                        <header class="c-modal__header">
+                            <h1 class="c-modal__title">Welcome To Our App</h1>
+                            <span class="c-modal__close" data-dismiss="modal" aria-label="Close">
+                                <i class="fa fa-close"></i>
+                            </span>
+                        </header>
 
-                                <ul class="c-onboard__nav-list">
-                                    <li>
-                                        <a class="c-onboard__nav-link" href="#">
-                                        <span class="c-onboard__nav-counter">1</span>Setup your account</a>
-                                    </li>
-                                    <li>
-                                        <a class="c-onboard__nav-link is-active" href="#">
-                                        <span class="c-onboard__nav-counter">2</span>Start Your first board</a>
-                                    </li>
-                                    <li>
-                                        <a class="c-onboard__nav-link" href="#">
-                                        <span class="c-onboard__nav-counter">3</span>Organize</a>
-                                    </li>
-                                    <li>
-                                        <a class="c-onboard__nav-link" href="#">
-                                        <span class="c-onboard__nav-counter">4</span>Share</a>
-                                    </li>
-                                </ul>
-                            </nav>
-
-                            <div class="c-onboard__body">
-                                <h2 class="u-h5 u-mb-small">Start your first board</h2>
-                                <p class="u-text-mute u-nosapce">Click on the right panel and start your first board. Boards are our core feature for helping you keep your work in order and easy to manage.</p>
+                        <div class="u-overflow-x-auto u-width-100">
+                            <div class="c-modal__subheader" style="width:750px;">
+                                <nav class="c-counter-nav c-counter-nav--inverse">
+                                    <p class="c-counter-nav__title">Status:</p>
+                                    <div class="c-counter-nav__item">
+                                        <a class="c-counter-nav__link" href="#">
+                                            <span class="c-counter-nav__counter"><i class="fa fa-check"></i></span>Contract
+                                        </a>
+                                    </div>
+                                    <div class="c-counter-nav__item">
+                                        <a class="c-counter-nav__link" href="#">
+                                            <span class="c-counter-nav__counter"><i class="fa fa-check"></i></span>Initial Design Draft
+                                        </a>
+                                    </div>
+                                    <div class="c-counter-nav__item">
+                                        <a class="c-counter-nav__link is-active" href="#">
+                                            <span class="c-counter-nav__counter">3</span>Coding Sprint
+                                        </a>
+                                    </div>
+                                    <div class="c-counter-nav__item">
+                                        <a class="c-counter-nav__link" href="#">
+                                            <span class="c-counter-nav__counter">4</span>SEO Optimization
+                                        </a>
+                                    </div>
+                                </nav>
                             </div>
-                        
-                            <div class="c-onboard__img">
-                                <img src="img/onboard-img1.svg" alt="About image">
+                        </div>
+
+                        <div class="c-modal__body u-text-center u-pb-small">
+                            <div class="row u-justify-center">
+                                <div class="col-sm-8">
+                                    <h2 class="u-h5 u-mb-small">Start your first board</h2>
+                                    <p class="u-text-mute u-mb-xsmall">Click on the right panel and start your first board. Boards are our core feature for helping you keep your work in order and easy to manage.</p>
+                                </div>
                             </div>
                             
-                            <span class="c-onboard__skip">
-                                <a class="u-text-mute" href="#">Skip</a>
-                            </span>
+                            <div class="o-line">
+                                <a class="u-text-mute u-align-self-end" href="#">Skip</a>
 
-                            <span class="c-onboard__next">
-                                <a class="c-btn c-btn--green" href="#">Next</a>
-                            </span>
+                                <img src="img/onboard.png" class="u-width-75 u-hidden-down@mobile" style="transform:translate(30px, 30px);" alt="About image">
+
+                                <a class="c-btn c-btn--green u-align-self-end" href="#">Next</a>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
