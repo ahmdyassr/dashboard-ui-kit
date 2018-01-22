@@ -8590,7 +8590,7 @@ textarea.c-input {
           flex-basis: 100%;
       margin-right: 0;
       padding: 15px;
-      border-bottom: 1px solid #f2f4f7; } }
+      border-bottom: 1px solid #e6eaee; } }
   .c-nav__item:last-child {
     margin-right: 0; }
     @media (max-width: 768px) {
@@ -11305,9 +11305,9 @@ textarea.c-input {
     width: 1px;
     height: 100%;
     content: "";
-    background: #DFE2E5;
-    background: -webkit-gradient(linear, left bottom, left top, from(#DFE2E5), to(#fff));
-    background: linear-gradient(to top, #DFE2E5, #fff); }
+    background: #e6eaee;
+    background: -webkit-gradient(linear, left bottom, left top, from(#e6eaee), to(#fff));
+    background: linear-gradient(to top, #e6eaee, #fff); }
     @media (max-width: 768px) {
       .c-summary.has-divider::after {
         top: initial;

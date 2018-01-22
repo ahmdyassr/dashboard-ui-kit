@@ -19,7 +19,7 @@
 			width: $base-border-width;
 			height: 100%;
 			content: "";
-			@include linear-gradient(to top, #DFE2E5, #fff);
+			@include linear-gradient(to top, $base-border-color, $base-background-color);
 
 			@include respond-to($breakpoint-tablet) {
 				top: initial;

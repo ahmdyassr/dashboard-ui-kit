@@ -69,13 +69,13 @@
 		border-top-left-radius: 4px;
 		border-top-right-radius: 4px;
 		font-size: 14px;
-		@include linear-gradient(to bottom, #fff, #F4F7FA);
+		@include linear-gradient(to bottom, $tabs-splitted-link-gradient);
 
 		&.is-active,
 		&.active {
 			padding: 20px 35px;
-			border-bottom-color: $white;
-			background: $white;
+			border-bottom-color: $base-background-color;
+			background: $base-background-color;
 			font-size: 18px;
 		}
 	}

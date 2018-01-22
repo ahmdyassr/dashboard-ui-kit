@@ -88,6 +88,7 @@ $modal-body-background-color: $base-background-color;
 
 // card
 $card-background-color: $base-background-color;
+$card-header-background-color: $secondary-background-color;
 $card-border-color: $base-border-color;
 
 // select
@@ -161,6 +162,8 @@ $tabs-link-active-color: $white;
 $tabs-pane-background-color: #273142;
 $tabs-pane-border-color: $base-border-color;
 $tabs-pane-color: $text-color;
+
+$tabs-splitted-link-gradient: $base-background-color, $base-background-color;
 
 // tables
 $table-border-color: $base-border-color;
