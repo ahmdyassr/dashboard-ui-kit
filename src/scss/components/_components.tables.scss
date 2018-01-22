@@ -35,7 +35,8 @@
 	-webkit-overflow-scrolling: touch;
 
 	.c-table {
-		overflow: hidden;
+		display: block;
+		overflow-y: hidden;
 	}
 }
 
@@ -47,7 +48,8 @@
 		-webkit-overflow-scrolling: touch;
 
 		.c-table {
-			overflow: hidden;
+			display: block;
+			overflow-y: hidden;
 		}
 	}
 }
@@ -60,7 +62,8 @@
 		-webkit-overflow-scrolling: touch;
 
 		.c-table {
-			overflow: hidden;
+			display: block;
+			overflow-y: hidden;
 		}
 	}
 }
@@ -73,7 +76,8 @@
 		-webkit-overflow-scrolling: touch;
 
 		.c-table {
-			overflow: hidden;
+			display: block;
+			overflow-y: hidden;
 		}
 	}
 }
@@ -86,7 +90,8 @@
 		-webkit-overflow-scrolling: touch;
 
 		.c-table {
-			overflow: hidden;
+			display: block;
+			overflow-y: hidden;
 		}
 	}
 }
