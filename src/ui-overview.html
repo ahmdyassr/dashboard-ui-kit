@@ -1118,42 +1118,42 @@
                                     <div class="o-line u-border-bottom u-pv-small">
                                        <p>Allow keyboard arrow for switching between requests</p>
                                        <div class="c-switch is-active">
-                                            <input class="c-switch__input" id="switch12" type="checkbox" checked="checked">
+                                            <input class="c-switch__input" id="switch13" type="checkbox" checked="checked">
                                         </div>
                                     </div>
 
                                     <div class="o-line u-border-bottom u-pv-small">
                                        <p>Show input as first method of answer</p>
                                        <div class="c-switch">
-                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                            <input class="c-switch__input" id="switch14" type="checkbox">
                                         </div>
                                     </div>
 
                                     <div class="o-line u-border-bottom u-pv-small">
                                        <p>Show Notes opened in default</p>
                                        <div class="c-switch is-active">
-                                            <input class="c-switch__input" id="switch12" type="checkbox" checked="checked">
+                                            <input class="c-switch__input" id="switch15" type="checkbox" checked="checked">
                                         </div>
                                     </div>
 
                                     <div class="o-line u-border-bottom u-pv-small">
                                        <p>Connect Automatic Signature</p>
                                        <div class="c-switch">
-                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                            <input class="c-switch__input" id="switch16" type="checkbox">
                                         </div>
                                     </div>
 
                                     <div class="o-line u-border-bottom u-pv-small">
                                        <p>Automatically erase all messages after delete (Skip Trash)</p>
                                        <div class="c-switch">
-                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                            <input class="c-switch__input" id="switch17" type="checkbox">
                                         </div>
                                     </div>
 
                                     <div class="o-line u-pt-small">
                                        <p>Go to next request after reply</p>
                                        <div class="c-switch">
-                                            <input class="c-switch__input" id="switch12" type="checkbox">
+                                            <input class="c-switch__input" id="switch18" type="checkbox">
                                         </div>
                                     </div>
                                 </div>
@@ -1196,9 +1196,7 @@
 
                                         <!-- Select2 jquery plugin is used -->
                                         <select class="c-select" id="select12">
-                                            <option>
-                                                <img src="img/paypal-icon.svg" alt="PayPal Logo">PayPal
-                                            </option>
+                                            <option>PayPal</option>
                                             <option>Skrill</option>
                                             <option>TransferWise</option>
                                         </select>
@@ -1251,7 +1249,7 @@
                                 </div>
 
                                 <div class="c-modal__body">
-                                    <form action="/file-upload" class="dropzone u-mb-small" id="custom-dropzone" style="height: 180px;">
+                                    <form action="/file-upload" class="dropzone u-mb-small" id="modal-dropzone" style="height: 180px;">
                                         <div class="dz-message" data-dz-message>
                                             <i class="dz-icon fa fa-cloud-upload"></i>
                                             <span>Drag a file here or browse for a file to upload.</span>
@@ -1263,17 +1261,15 @@
                                     </form>
 
                                     <div class="c-field u-mb-xsmall">
-                                        <label class="c-field__label" for="select24">Project Name</label>
+                                        <label class="c-field__label" for="input-project">Project Name</label>
 
-                                        <input type="text" class="c-input" placeholder="Twitter Background">
+                                        <input type="text" class="c-input" id="input-project" placeholder="Twitter Background">
                                     </div>
 
                                     <div class="c-field u-mb-xsmall">
                                         <!-- Select2 jquery plugin is used -->
                                         <select class="c-select" id="select14">
-                                            <option>
-                                                <img src="img/paypal-icon.svg" alt="PayPal Logo">Twitter
-                                            </option>
+                                            <option>Twitter</option>
                                             <option>Facebook</option>
                                             <option>Google</option>
                                         </select>
@@ -1320,8 +1316,8 @@
                                                 <span class="c-field__icon">
                                                     <i class="fa fa-user-o"></i>
                                                 </span> 
-                                                <label class="c-field__label u-hidden-visually" for="input11">Email</label>
-                                                <input class="c-input" id="input11" type="text" placeholder="Email">
+                                                <label class="c-field__label u-hidden-visually" for="input21">Email</label>
+                                                <input class="c-input" id="input21" type="text" placeholder="Email">
                                             </div>
                                         </div>
 
@@ -1330,8 +1326,8 @@
                                                 <span class="c-field__icon">
                                                     <i class="fa fa-credit-card"></i>
                                                 </span> 
-                                                <label class="c-field__label u-hidden-visually" for="input11">Card Number</label>
-                                                <input class="c-input" id="input11" type="text" placeholder="Card Number">
+                                                <label class="c-field__label u-hidden-visually" for="input22">Card Number</label>
+                                                <input class="c-input" id="input22" type="text" placeholder="Card Number">
                                             </div>
                                         </div>
 
@@ -1342,8 +1338,8 @@
                                                         <span class="c-field__icon">
                                                             <i class="fa fa-calendar-o"></i>
                                                         </span> 
-                                                        <label class="c-field__label u-hidden-visually" for="input11">MM / YY</label>
-                                                        <input class="c-input" id="input11" type="text" placeholder="MM/YY">
+                                                        <label class="c-field__label u-hidden-visually" for="input23">MM / YY</label>
+                                                        <input class="c-input" id="input23" type="text" placeholder="MM/YY">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1353,8 +1349,8 @@
                                                         <span class="c-field__icon">
                                                             <i class="fa fa-lock"></i>
                                                         </span> 
-                                                        <label class="c-field__label u-hidden-visually" for="input11">CVC</label>
-                                                        <input class="c-input" id="input11" type="text" placeholder="CVC">
+                                                        <label class="c-field__label u-hidden-visually" for="input24">CVC</label>
+                                                        <input class="c-input" id="input24" type="text" placeholder="CVC">
                                                     </div>
                                                 </div>
                                             </div>
@@ -1735,9 +1731,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton20">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton11">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -1779,9 +1775,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton30" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton30">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton12">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2023,9 +2019,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton21" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton10">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton21">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2110,9 +2106,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton30" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton22" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton30">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton22">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2154,9 +2150,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton40" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton23" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton40">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton23">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2198,9 +2194,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton70" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton24" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton70">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton24">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2242,9 +2238,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton50" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton25" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton50">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton25">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2286,9 +2282,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton60" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton26" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton60">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton26">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2362,9 +2358,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton27" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton10">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton27">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2405,9 +2401,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton28" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton12">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton28">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2449,9 +2445,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton13" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton29" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton13">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton29">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2493,9 +2489,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton14" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton30" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton14">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton30">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2537,9 +2533,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton15" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton31" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton15">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton31">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2581,9 +2577,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton16" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton32" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton16">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton32">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
@@ -2625,9 +2621,9 @@
 
                                     <td class="c-table__cell u-text-right">
                                         <div class="c-dropdown dropdown">
-                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton17" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                            <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton33" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
                                             
-                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton17">
+                                            <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton33">
                                                 <a class="c-dropdown__item dropdown-item" href="#">Edit Profile</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">View Activity</a>
                                                 <a class="c-dropdown__item dropdown-item" href="#">Manage Roles</a>
