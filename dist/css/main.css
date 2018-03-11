@@ -12634,6 +12634,10 @@ textarea.c-input {
   font-size: 20px;
   text-align: center; }
 
+.c-sidebar.is-minimized .c-sidebar__item.has-submenu > .c-sidebar__link::after {
+  display: none;
+  top: 20px; }
+
 /**
  * On Hover
  */
@@ -12647,6 +12651,9 @@ textarea.c-input {
   margin-right: 15px; }
 
 .c-sidebar.is-minimized:hover .c-sidebar__title {
+  display: block; }
+
+.c-sidebar.is-minimized:hover .c-sidebar__item.has-submenu > .c-sidebar__link::after {
   display: block; }
 
 /* ==========================================================================
